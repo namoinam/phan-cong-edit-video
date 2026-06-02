@@ -383,374 +383,470 @@
   },
   "2026-06-01": {
     "assignments": {
-      "Thư": [
-        {
-          "name": "Máy xay gia vị Deerma",
-          "count": 3
-        },
-        {
-          "name": "Lọ tỏa hương Forlove",
-          "count": 3
-        },
-        {
-          "name": "Bàn Chải Đánh Răng Tokyolife",
-          "count": 3
-        },
-        {
-          "name": "Bộ cọ toilet Parroti",
-          "count": 3
-        },
-        {
-          "name": "Túi ngâm chân gấp gọn",
-          "count": 2
-        },
-        {
-          "name": "Cây đâm lưng ngải cứu",
-          "count": 1
-        },
-        {
-          "name": "Màn hình phản chiếu từ tính",
-          "count": 1
-        },
-        {
-          "name": "Cây chà sàn Parroti",
-          "count": 1
-        },
-        {
-          "name": "Đèn pin led zoom F35",
-          "count": 1
-        },
-        {
-          "name": "Quạt điều khiển giọng nói AQUA",
-          "count": 1
-        },
-        {
-          "name": "Tripod từ tính ULANZI MA38",
-          "count": 1
-        }
-      ],
-      "Sơn": [
-        {
-          "name": "Máy xay gia vị Deerma",
-          "count": 2
-        },
-        {
-          "name": "Lọ tỏa hương Forlove",
-          "count": 2
-        },
-        {
-          "name": "Bàn Chải Đánh Răng Tokyolife",
-          "count": 2
-        },
-        {
-          "name": "Bộ cọ toilet Parroti",
-          "count": 2
-        },
-        {
-          "name": "Túi ngâm chân gấp gọn",
-          "count": 1
-        },
-        {
-          "name": "Cây đâm lưng ngải cứu",
-          "count": 1
-        },
-        {
-          "name": "Màn hình phản chiếu từ tính",
-          "count": 1
-        },
-        {
-          "name": "Cây chà sàn Parroti",
-          "count": 1
-        },
-        {
-          "name": "Đèn pin led zoom F35",
-          "count": 1
-        },
-        {
-          "name": "Quạt điều khiển giọng nói AQUA",
-          "count": 1
-        },
-        {
-          "name": "Tripod từ tính ULANZI MA38",
-          "count": 1
-        }
-      ],
-      "Dung": [
-        {
-          "name": "Máy xay gia vị Deerma",
-          "count": 3
-        },
-        {
-          "name": "Lọ tỏa hương Forlove",
-          "count": 3
-        },
-        {
-          "name": "Bàn Chải Đánh Răng Tokyolife",
-          "count": 3
-        },
-        {
-          "name": "Bộ cọ toilet Parroti",
-          "count": 2
-        },
-        {
-          "name": "Túi ngâm chân gấp gọn",
-          "count": 1
-        },
-        {
-          "name": "Cây đâm lưng ngải cứu",
-          "count": 2
-        },
-        {
-          "name": "Màn hình phản chiếu từ tính",
-          "count": 2
-        },
-        {
-          "name": "Cây chà sàn Parroti",
-          "count": 1
-        },
-        {
-          "name": "Đèn pin led zoom F35",
-          "count": 1
-        },
-        {
-          "name": "Quạt điều khiển giọng nói AQUA",
-          "count": 1
-        },
-        {
-          "name": "Tripod từ tính ULANZI MA38",
-          "count": 1
-        }
-      ],
-      "Duyên": [
-        {
-          "name": "Máy xay gia vị Deerma",
-          "count": 3
-        },
-        {
-          "name": "Lọ tỏa hương Forlove",
-          "count": 3
-        },
-        {
-          "name": "Bàn Chải Đánh Răng Tokyolife",
-          "count": 2
-        },
-        {
-          "name": "Bộ cọ toilet Parroti",
-          "count": 3
-        },
-        {
-          "name": "Túi ngâm chân gấp gọn",
-          "count": 1
-        },
-        {
-          "name": "Cây đâm lưng ngải cứu",
-          "count": 1
-        },
-        {
-          "name": "Màn hình phản chiếu từ tính",
-          "count": 1
-        },
-        {
-          "name": "Cây chà sàn Parroti",
-          "count": 2
-        },
-        {
-          "name": "Đèn pin led zoom F35",
-          "count": 2
-        },
-        {
-          "name": "Quạt điều khiển giọng nói AQUA",
-          "count": 1
-        },
-        {
-          "name": "Tripod từ tính ULANZI MA38",
-          "count": 1
-        }
-      ],
-      "Hiếu": [
-        {
-          "name": "Máy xay gia vị Deerma",
-          "count": 3
-        },
-        {
-          "name": "Lọ tỏa hương Forlove",
-          "count": 2
-        },
-        {
-          "name": "Bàn Chải Đánh Răng Tokyolife",
-          "count": 3
-        },
-        {
-          "name": "Bộ cọ toilet Parroti",
-          "count": 3
-        },
-        {
-          "name": "Túi ngâm chân gấp gọn",
-          "count": 1
-        },
-        {
-          "name": "Cây đâm lưng ngải cứu",
-          "count": 1
-        },
-        {
-          "name": "Màn hình phản chiếu từ tính",
-          "count": 1
-        },
-        {
-          "name": "Cây chà sàn Parroti",
-          "count": 1
-        },
-        {
-          "name": "Đèn pin led zoom F35",
-          "count": 1
-        },
-        {
-          "name": "Quạt điều khiển giọng nói AQUA",
-          "count": 2
-        },
-        {
-          "name": "Tripod từ tính ULANZI MA38",
-          "count": 2
-        }
-      ],
-      "Thắm": [
-        {
-          "name": "Máy xay gia vị Deerma",
-          "count": 2
-        },
-        {
-          "name": "Lọ tỏa hương Forlove",
-          "count": 3
-        },
-        {
-          "name": "Bàn Chải Đánh Răng Tokyolife",
-          "count": 3
-        },
-        {
-          "name": "Bộ cọ toilet Parroti",
-          "count": 3
-        },
-        {
-          "name": "Túi ngâm chân gấp gọn",
-          "count": 1
-        },
-        {
-          "name": "Cây đâm lưng ngải cứu",
-          "count": 1
-        },
-        {
-          "name": "Màn hình phản chiếu từ tính",
-          "count": 1
-        },
-        {
-          "name": "Cây chà sàn Parroti",
-          "count": 1
-        },
-        {
-          "name": "Đèn pin led zoom F35",
-          "count": 1
-        },
-        {
-          "name": "Quạt điều khiển giọng nói AQUA",
-          "count": 2
-        },
-        {
-          "name": "Tripod từ tính ULANZI MA38",
-          "count": 2
-        }
-      ],
-      "Trân": [
-        {
-          "name": "Máy xay gia vị Deerma",
-          "count": 2
-        },
-        {
-          "name": "Lọ tỏa hương Forlove",
-          "count": 2
-        },
-        {
-          "name": "Bàn Chải Đánh Răng Tokyolife",
-          "count": 2
-        },
-        {
-          "name": "Bộ cọ toilet Parroti",
-          "count": 2
-        },
-        {
-          "name": "Túi ngâm chân gấp gọn",
-          "count": 2
-        },
-        {
-          "name": "Cây đâm lưng ngải cứu",
-          "count": 2
-        },
-        {
-          "name": "Màn hình phản chiếu từ tính",
-          "count": 2
-        },
-        {
-          "name": "Cây chà sàn Parroti",
-          "count": 2
-        },
-        {
-          "name": "Đèn pin led zoom F35",
-          "count": 2
-        },
-        {
-          "name": "Quạt điều khiển giọng nói AQUA",
-          "count": 1
-        },
-        {
-          "name": "Tripod từ tính ULANZI MA38",
-          "count": 1
-        }
-      ],
-      "Tuyên": [
-        {
-          "name": "Máy xay gia vị Deerma",
-          "count": 2
-        },
-        {
-          "name": "Lọ tỏa hương Forlove",
-          "count": 2
-        },
-        {
-          "name": "Bàn Chải Đánh Răng Tokyolife",
-          "count": 2
-        },
-        {
-          "name": "Bộ cọ toilet Parroti",
-          "count": 2
-        },
-        {
-          "name": "Túi ngâm chân gấp gọn",
-          "count": 1
-        },
-        {
-          "name": "Cây đâm lưng ngải cứu",
-          "count": 1
-        },
-        {
-          "name": "Màn hình phản chiếu từ tính",
-          "count": 1
-        },
-        {
-          "name": "Cây chà sàn Parroti",
-          "count": 1
-        },
-        {
-          "name": "Đèn pin led zoom F35",
-          "count": 1
-        },
-        {
-          "name": "Quạt điều khiển giọng nói AQUA",
-          "count": 1
-        },
-        {
-          "name": "Tripod từ tính ULANZI MA38",
-          "count": 1
-        }
-      ]
+      "Thư": {
+        "videos": [
+          {
+            "name": "Máy xay gia vị Deerma",
+            "count": 3
+          },
+          {
+            "name": "Lọ tỏa hương Forlove",
+            "count": 3
+          },
+          {
+            "name": "Bàn Chải Đánh Răng Tokyolife",
+            "count": 3
+          },
+          {
+            "name": "Bộ cọ toilet Parroti",
+            "count": 3
+          },
+          {
+            "name": "Túi ngâm chân gấp gọn",
+            "count": 2
+          },
+          {
+            "name": "Cây đâm lưng ngải cứu",
+            "count": 1
+          },
+          {
+            "name": "Màn hình phản chiếu từ tính",
+            "count": 1
+          },
+          {
+            "name": "Cây chà sàn Parroti",
+            "count": 1
+          },
+          {
+            "name": "Đèn pin led zoom F35",
+            "count": 1
+          },
+          {
+            "name": "Quạt điều khiển giọng nói AQUA",
+            "count": 1
+          },
+          {
+            "name": "Tripod từ tính ULANZI MA38",
+            "count": 1
+          }
+        ],
+        "voices": [
+          {
+            "name": "Máy xay gia vị Deerma",
+            "count": 1
+          },
+          {
+            "name": "Lọ tỏa hương Forlove",
+            "count": 1
+          }
+        ]
+      },
+      "Sơn": {
+        "videos": [
+          {
+            "name": "Máy xay gia vị Deerma",
+            "count": 2
+          },
+          {
+            "name": "Lọ tỏa hương Forlove",
+            "count": 2
+          },
+          {
+            "name": "Bàn Chải Đánh Răng Tokyolife",
+            "count": 2
+          },
+          {
+            "name": "Bộ cọ toilet Parroti",
+            "count": 2
+          },
+          {
+            "name": "Túi ngâm chân gấp gọn",
+            "count": 1
+          },
+          {
+            "name": "Cây đâm lưng ngải cứu",
+            "count": 1
+          },
+          {
+            "name": "Màn hình phản chiếu từ tính",
+            "count": 1
+          },
+          {
+            "name": "Cây chà sàn Parroti",
+            "count": 1
+          },
+          {
+            "name": "Đèn pin led zoom F35",
+            "count": 1
+          },
+          {
+            "name": "Quạt điều khiển giọng nói AQUA",
+            "count": 1
+          },
+          {
+            "name": "Tripod từ tính ULANZI MA38",
+            "count": 1
+          }
+        ],
+        "voices": [
+          {
+            "name": "Máy xay gia vị Deerma",
+            "count": 1
+          },
+          {
+            "name": "Lọ tỏa hương Forlove",
+            "count": 1
+          }
+        ]
+      },
+      "Dung": {
+        "videos": [
+          {
+            "name": "Máy xay gia vị Deerma",
+            "count": 3
+          },
+          {
+            "name": "Lọ tỏa hương Forlove",
+            "count": 3
+          },
+          {
+            "name": "Bàn Chải Đánh Răng Tokyolife",
+            "count": 3
+          },
+          {
+            "name": "Bộ cọ toilet Parroti",
+            "count": 2
+          },
+          {
+            "name": "Túi ngâm chân gấp gọn",
+            "count": 1
+          },
+          {
+            "name": "Cây đâm lưng ngải cứu",
+            "count": 2
+          },
+          {
+            "name": "Màn hình phản chiếu từ tính",
+            "count": 2
+          },
+          {
+            "name": "Cây chà sàn Parroti",
+            "count": 1
+          },
+          {
+            "name": "Đèn pin led zoom F35",
+            "count": 1
+          },
+          {
+            "name": "Quạt điều khiển giọng nói AQUA",
+            "count": 1
+          },
+          {
+            "name": "Tripod từ tính ULANZI MA38",
+            "count": 1
+          }
+        ],
+        "voices": [
+          {
+            "name": "Máy xay gia vị Deerma",
+            "count": 1
+          },
+          {
+            "name": "Lọ tỏa hương Forlove",
+            "count": 1
+          }
+        ]
+      },
+      "Duyên": {
+        "videos": [
+          {
+            "name": "Máy xay gia vị Deerma",
+            "count": 3
+          },
+          {
+            "name": "Lọ tỏa hương Forlove",
+            "count": 3
+          },
+          {
+            "name": "Bàn Chải Đánh Răng Tokyolife",
+            "count": 2
+          },
+          {
+            "name": "Bộ cọ toilet Parroti",
+            "count": 3
+          },
+          {
+            "name": "Túi ngâm chân gấp gọn",
+            "count": 1
+          },
+          {
+            "name": "Cây đâm lưng ngải cứu",
+            "count": 1
+          },
+          {
+            "name": "Màn hình phản chiếu từ tính",
+            "count": 1
+          },
+          {
+            "name": "Cây chà sàn Parroti",
+            "count": 2
+          },
+          {
+            "name": "Đèn pin led zoom F35",
+            "count": 2
+          },
+          {
+            "name": "Quạt điều khiển giọng nói AQUA",
+            "count": 1
+          },
+          {
+            "name": "Tripod từ tính ULANZI MA38",
+            "count": 1
+          }
+        ],
+        "voices": [
+          {
+            "name": "Máy xay gia vị Deerma",
+            "count": 1
+          },
+          {
+            "name": "Lọ tỏa hương Forlove",
+            "count": 1
+          }
+        ]
+      },
+      "Hiếu": {
+        "videos": [
+          {
+            "name": "Máy xay gia vị Deerma",
+            "count": 3
+          },
+          {
+            "name": "Lọ tỏa hương Forlove",
+            "count": 2
+          },
+          {
+            "name": "Bàn Chải Đánh Răng Tokyolife",
+            "count": 3
+          },
+          {
+            "name": "Bộ cọ toilet Parroti",
+            "count": 3
+          },
+          {
+            "name": "Túi ngâm chân gấp gọn",
+            "count": 1
+          },
+          {
+            "name": "Cây đâm lưng ngải cứu",
+            "count": 1
+          },
+          {
+            "name": "Màn hình phản chiếu từ tính",
+            "count": 1
+          },
+          {
+            "name": "Cây chà sàn Parroti",
+            "count": 1
+          },
+          {
+            "name": "Đèn pin led zoom F35",
+            "count": 1
+          },
+          {
+            "name": "Quạt điều khiển giọng nói AQUA",
+            "count": 2
+          },
+          {
+            "name": "Tripod từ tính ULANZI MA38",
+            "count": 2
+          }
+        ],
+        "voices": [
+          {
+            "name": "Máy xay gia vị Deerma",
+            "count": 1
+          },
+          {
+            "name": "Lọ tỏa hương Forlove",
+            "count": 1
+          }
+        ]
+      },
+      "Thắm": {
+        "videos": [
+          {
+            "name": "Máy xay gia vị Deerma",
+            "count": 2
+          },
+          {
+            "name": "Lọ tỏa hương Forlove",
+            "count": 3
+          },
+          {
+            "name": "Bàn Chải Đánh Răng Tokyolife",
+            "count": 3
+          },
+          {
+            "name": "Bộ cọ toilet Parroti",
+            "count": 3
+          },
+          {
+            "name": "Túi ngâm chân gấp gọn",
+            "count": 1
+          },
+          {
+            "name": "Cây đâm lưng ngải cứu",
+            "count": 1
+          },
+          {
+            "name": "Màn hình phản chiếu từ tính",
+            "count": 1
+          },
+          {
+            "name": "Cây chà sàn Parroti",
+            "count": 1
+          },
+          {
+            "name": "Đèn pin led zoom F35",
+            "count": 1
+          },
+          {
+            "name": "Quạt điều khiển giọng nói AQUA",
+            "count": 2
+          },
+          {
+            "name": "Tripod từ tính ULANZI MA38",
+            "count": 2
+          }
+        ],
+        "voices": [
+          {
+            "name": "Máy xay gia vị Deerma",
+            "count": 1
+          },
+          {
+            "name": "Lọ tỏa hương Forlove",
+            "count": 1
+          }
+        ]
+      },
+      "Trân": {
+        "videos": [
+          {
+            "name": "Máy xay gia vị Deerma",
+            "count": 2
+          },
+          {
+            "name": "Lọ tỏa hương Forlove",
+            "count": 2
+          },
+          {
+            "name": "Bàn Chải Đánh Răng Tokyolife",
+            "count": 2
+          },
+          {
+            "name": "Bộ cọ toilet Parroti",
+            "count": 2
+          },
+          {
+            "name": "Túi ngâm chân gấp gọn",
+            "count": 2
+          },
+          {
+            "name": "Cây đâm lưng ngải cứu",
+            "count": 2
+          },
+          {
+            "name": "Màn hình phản chiếu từ tính",
+            "count": 2
+          },
+          {
+            "name": "Cây chà sàn Parroti",
+            "count": 2
+          },
+          {
+            "name": "Đèn pin led zoom F35",
+            "count": 2
+          },
+          {
+            "name": "Quạt điều khiển giọng nói AQUA",
+            "count": 1
+          },
+          {
+            "name": "Tripod từ tính ULANZI MA38",
+            "count": 1
+          }
+        ],
+        "voices": [
+          {
+            "name": "Máy xay gia vị Deerma",
+            "count": 1
+          },
+          {
+            "name": "Lọ tỏa hương Forlove",
+            "count": 1
+          }
+        ]
+      },
+      "Tuyên": {
+        "videos": [
+          {
+            "name": "Máy xay gia vị Deerma",
+            "count": 2
+          },
+          {
+            "name": "Lọ tỏa hương Forlove",
+            "count": 2
+          },
+          {
+            "name": "Bàn Chải Đánh Răng Tokyolife",
+            "count": 2
+          },
+          {
+            "name": "Bộ cọ toilet Parroti",
+            "count": 2
+          },
+          {
+            "name": "Túi ngâm chân gấp gọn",
+            "count": 1
+          },
+          {
+            "name": "Cây đâm lưng ngải cứu",
+            "count": 1
+          },
+          {
+            "name": "Màn hình phản chiếu từ tính",
+            "count": 1
+          },
+          {
+            "name": "Cây chà sàn Parroti",
+            "count": 1
+          },
+          {
+            "name": "Đèn pin led zoom F35",
+            "count": 1
+          },
+          {
+            "name": "Quạt điều khiển giọng nói AQUA",
+            "count": 1
+          },
+          {
+            "name": "Tripod từ tính ULANZI MA38",
+            "count": 1
+          }
+        ],
+        "voices": [
+          {
+            "name": "Máy xay gia vị Deerma",
+            "count": 1
+          },
+          {
+            "name": "Lọ tỏa hương Forlove",
+            "count": 1
+          }
+        ]
+      }
     },
     "links": [
       {

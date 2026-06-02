@@ -5,36 +5,37 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Phân công edit video</title>
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#f5f5f0;padding:24px;color:#1a1a1a}
+body{font-family:'Inter',sans-serif;background:#F9FAFB;padding:24px;color:#111827}
 .date-nav{display:flex;align-items:center;justify-content:center;gap:12px;width:100%;margin-bottom:6px}
-.nav-btn{background:none;border:none;font-size:20px;cursor:pointer;color:#1a1a1a;padding:0 4px;line-height:1;opacity:0.5;transition:opacity .15s}
+.nav-btn{background:none;border:none;font-size:20px;cursor:pointer;color:#7C3AED;padding:0 4px;line-height:1;opacity:0.5;transition:opacity .15s}
 .nav-btn:hover:not(:disabled){opacity:1}
 .nav-btn:disabled{opacity:0.15;cursor:default}
-.date-banner{font-size:22px;font-weight:700;letter-spacing:0.03em;color:#1a1a1a;text-transform:uppercase}
-h1{font-size:20px;font-weight:500;margin-bottom:20px}
+.date-banner{font-size:22px;font-weight:700;letter-spacing:0.03em;color:#7C3AED;text-transform:uppercase}
+h1{font-size:20px;font-weight:500;margin-bottom:20px;color:#111827}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px;margin-bottom:32px}
-.card{background:#fff;border:0.5px solid rgba(0,0,0,0.12);border-radius:12px;padding:16px 20px}
+.card{background:#FFFFFF;border:1px solid #E5E7EB;border-radius:12px;padding:16px 20px}
 .hdr{display:flex;align-items:center;gap:12px;margin-bottom:14px}
 .av{width:48px;height:48px;border-radius:50%;object-fit:cover;flex-shrink:0}
-.name{font-weight:500;font-size:15px}
-.cnt{font-size:13px;color:#666;margin-top:1px}
-.list{border-top:0.5px solid rgba(0,0,0,0.1);padding-top:10px;display:flex;flex-direction:column;gap:5px}
+.name{font-weight:600;font-size:15px;color:#111827}
+.cnt{font-size:13px;color:#6B7280;margin-top:1px}
+.list{border-top:1px solid #E5E7EB;padding-top:10px;display:flex;flex-direction:column;gap:5px}
 .row{display:flex;justify-content:space-between;align-items:center;gap:8px}
-.pname{font-size:13px;background:#f5f5f0;border-radius:8px;padding:4px 10px;flex:1}
-.pct{font-size:13px;color:#666;white-space:nowrap}
-.section{background:#fff;border:0.5px solid rgba(0,0,0,0.12);border-radius:12px;padding:20px 24px;margin-bottom:16px}
-h2{font-size:16px;font-weight:500;margin-bottom:16px}
+.pname{font-size:13px;background:#EDE9FE;color:#7C3AED;border-radius:8px;padding:4px 10px;flex:1;font-weight:500}
+.pct{font-size:13px;color:#6B7280;white-space:nowrap}
+.section{background:#FFFFFF;border:1px solid #E5E7EB;border-radius:12px;padding:20px 24px;margin-bottom:16px}
+h2{font-size:16px;font-weight:600;margin-bottom:16px;color:#111827}
 .link-table{width:100%;border-collapse:collapse}
-.link-table tr{border-bottom:0.5px solid rgba(0,0,0,0.08)}
+.link-table tr{border-bottom:1px solid #E5E7EB}
 .link-table tr:last-child{border-bottom:none}
 .link-table td{padding:10px 0;font-size:13px}
-.link-table td:first-child{color:#1a1a1a;width:55%}
+.link-table td:first-child{color:#111827;width:55%}
 .link-table td:last-child{text-align:right}
-.link-table a{color:#0066cc;text-decoration:none;font-size:13px}
+.link-table a{color:#7C3AED;text-decoration:none;font-size:13px;font-weight:500}
 .link-table a:hover{text-decoration:underline}
-.no-link{color:#aaa;font-size:13px}
-.loading{color:#999;font-size:13px;padding:12px 0}
+.no-link{color:#9CA3AF;font-size:13px}
+.loading{color:#9CA3AF;font-size:13px;padding:12px 0}
 </style>
 </head>
 <body>

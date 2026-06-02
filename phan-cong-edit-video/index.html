@@ -168,7 +168,7 @@ function navigate(dir) {
 
 (async function init() {
   try {
-    const res = await fetch('history.json?t='+Date.now());
+    const res = await fetch('/history.json?t='+Date.now());
     historyData = await res.json();
     dates = Object.keys(historyData).sort();
     idx = dates.length - 1;

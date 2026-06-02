@@ -20,10 +20,10 @@ h1{font-family:'Cubano',sans-serif;font-size:16px;font-weight:400;margin-bottom:
 .av{width:48px;height:48px;border-radius:50%;object-fit:cover;flex-shrink:0}
 .name{font-weight:600;font-size:15px;color:#1F2329}
 .list{border-top:1px solid #DEE0E3;padding-top:8px}
-.sp-header{display:grid;grid-template-columns:1fr 44px 60px;gap:6px;padding:0 0 5px 0;border-bottom:1px solid #DEE0E3;margin-bottom:4px}
-.sp-header span{font-size:11px;font-weight:600;color:#9EA4AF;text-transform:uppercase;letter-spacing:0.04em}
+.sp-header{display:grid;grid-template-columns:1fr 36px 56px;gap:8px;padding:0 0 5px 0;border-bottom:1px solid #DEE0E3;margin-bottom:4px}
+.sp-header span{font-size:11px;font-weight:600;color:#9EA4AF;text-transform:uppercase;letter-spacing:0.04em;white-space:nowrap}
 .sp-header .sp-vid,.sp-header .sp-voice{text-align:center}
-.sp-row{display:grid;grid-template-columns:1fr 44px 60px;align-items:center;gap:6px;padding:4px 0;border-bottom:1px solid #F0F1F3}
+.sp-row{display:grid;grid-template-columns:1fr 36px 56px;align-items:center;gap:8px;padding:4px 0;border-bottom:1px solid #F0F1F3}
 .sp-row:last-child{border-bottom:none}
 .sp-name{font-size:13px;color:#1456F0;font-weight:500;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .sp-vid{font-size:13px;color:#646A73;text-align:center;white-space:nowrap}
@@ -155,7 +155,7 @@ function render(date) {
       return '<div class="sp-row"><span class="sp-name">'+name+'</span><span class="sp-vid">'+vidCell+'</span><span class="sp-voice">'+vocCell+'</span></div>';
     }).join('');
     if (allNames.length) {
-      listEl.innerHTML = '<div class="sp-header"><span>Tên sản phẩm</span><span class="sp-vid">Số lượng</span><span class="sp-voice">Voice</span></div>' + listEl.innerHTML;
+      listEl.innerHTML = '<div class="sp-header"><span>Tên sản phẩm</span><span class="sp-vid">SL</span><span class="sp-voice">Voice</span></div>' + listEl.innerHTML;
     }
   });
   const table = document.getElementById('link-table');

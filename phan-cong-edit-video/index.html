@@ -136,6 +136,7 @@ function render(date) {
   document.getElementById('date-banner').textContent = 'SẢN PHẨM EDIT NGÀY ' + fmtDate(date);
   EMPLOYEES.forEach(emp => {
     const listEl = document.getElementById('list-' + emp);
+    const cntEl  = document.getElementById('cnt-'  + emp);
     if (!listEl) return;
     const empData = (data.assignments && data.assignments[emp]) || [];
     // Backward compat: old format là array, new format là {videos, voices}
@@ -154,6 +155,8 @@ function render(date) {
         : voc.count) : '';
       return '<div class="sp-row"><span class="sp-name">'+name+'</span><span class="sp-vid">'+vidCell+'</span><span class="sp-voice">'+vocCell+'</span></div>';
     }).join('');
+    const totalVid = videos.reduce((s,p) => s+p.count, 0);
+    if (cntEl) cntEl.textContent = totalVid + ' video';
     if (allNames.length) {
       listEl.innerHTML = '<div class="sp-header"><span>Tên sản phẩm</span><span class="sp-vid">SL</span><span class="sp-voice">Voice</span></div>' + listEl.innerHTML;
     }

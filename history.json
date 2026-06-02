@@ -1,342 +1,366 @@
 {
   "2026-06-02": {
     "assignments": {
-      "Thư": [
-        {
-          "name": "TIEU MAN THAU STORE - Khẩu trang chống nắng ninja",
-          "count": 3
-        },
-        {
-          "name": "PERYSMITH - Máy hút bụi cầm tay XS1pro",
-          "count": 3
-        },
-        {
-          "name": "JISULIFE - Quạt đeo cổ Jisulife Life 5",
-          "count": 2
-        },
-        {
-          "name": "TORRAS - Ốp lưng trong suốt",
-          "count": 3
-        },
-        {
-          "name": "TORRAS - Kính cường lực không viền",
-          "count": 3
-        },
-        {
-          "name": "MENCANON - Rèm che nắng ô tô",
-          "count": 1
-        },
-        {
-          "name": "REDCHEF - Bộ dao kéo 6 món",
-          "count": 1
-        },
-        {
-          "name": "REDCHEF - Bộ nồi chảo",
-          "count": 1
-        },
-        {
-          "name": "GOKU - Ổ khóa vân tay",
-          "count": 1
-        },
-        {
-          "name": "ONECHI - Dây dán velcro quản chống rối",
-          "count": 2
-        }
-      ],
-      "Sơn": [
-        {
-          "name": "TIEU MAN THAU STORE - Khẩu trang chống nắng ninja",
-          "count": 2
-        },
-        {
-          "name": "PERYSMITH - Máy hút bụi cầm tay XS1pro",
-          "count": 2
-        },
-        {
-          "name": "JISULIFE - Quạt đeo cổ Jisulife Life 5",
-          "count": 2
-        },
-        {
-          "name": "TORRAS - Ốp lưng trong suốt",
-          "count": 2
-        },
-        {
-          "name": "TORRAS - Kính cường lực không viền",
-          "count": 2
-        },
-        {
-          "name": "MENCANON - Rèm che nắng ô tô",
-          "count": 1
-        },
-        {
-          "name": "REDCHEF - Bộ dao kéo 6 món",
-          "count": 1
-        },
-        {
-          "name": "REDCHEF - Bộ nồi chảo",
-          "count": 1
-        },
-        {
-          "name": "GOKU - Ổ khóa vân tay",
-          "count": 1
-        },
-        {
-          "name": "ONECHI - Dây dán velcro quản chống rối",
-          "count": 1
-        }
-      ],
-      "Dung": [
-        {
-          "name": "TIEU MAN THAU STORE - Khẩu trang chống nắng ninja",
-          "count": 3
-        },
-        {
-          "name": "PERYSMITH - Máy hút bụi cầm tay XS1pro",
-          "count": 3
-        },
-        {
-          "name": "JISULIFE - Quạt đeo cổ Jisulife Life 5",
-          "count": 3
-        },
-        {
-          "name": "TORRAS - Ốp lưng trong suốt",
-          "count": 3
-        },
-        {
-          "name": "TORRAS - Kính cường lực không viền",
-          "count": 2
-        },
-        {
-          "name": "MENCANON - Rèm che nắng ô tô",
-          "count": 1
-        },
-        {
-          "name": "REDCHEF - Bộ dao kéo 6 món",
-          "count": 1
-        },
-        {
-          "name": "REDCHEF - Bộ nồi chảo",
-          "count": 1
-        },
-        {
-          "name": "GOKU - Ổ khóa vân tay",
-          "count": 1
-        },
-        {
-          "name": "ONECHI - Dây dán velcro quản chống rối",
-          "count": 2
-        }
-      ],
-      "Duyên": [
-        {
-          "name": "TIEU MAN THAU STORE - Khẩu trang chống nắng ninja",
-          "count": 3
-        },
-        {
-          "name": "PERYSMITH - Máy hút bụi cầm tay XS1pro",
-          "count": 2
-        },
-        {
-          "name": "JISULIFE - Quạt đeo cổ Jisulife Life 5",
-          "count": 3
-        },
-        {
-          "name": "TORRAS - Ốp lưng trong suốt",
-          "count": 2
-        },
-        {
-          "name": "TORRAS - Kính cường lực không viền",
-          "count": 3
-        },
-        {
-          "name": "MENCANON - Rèm che nắng ô tô",
-          "count": 2
-        },
-        {
-          "name": "REDCHEF - Bộ dao kéo 6 món",
-          "count": 1
-        },
-        {
-          "name": "REDCHEF - Bộ nồi chảo",
-          "count": 2
-        },
-        {
-          "name": "GOKU - Ổ khóa vân tay",
-          "count": 1
-        },
-        {
-          "name": "ONECHI - Dây dán velcro quản chống rối",
-          "count": 1
-        }
-      ],
-      "Hiếu": [
-        {
-          "name": "TIEU MAN THAU STORE - Khẩu trang chống nắng ninja",
-          "count": 3
-        },
-        {
-          "name": "PERYSMITH - Máy hút bụi cầm tay XS1pro",
-          "count": 2
-        },
-        {
-          "name": "JISULIFE - Quạt đeo cổ Jisulife Life 5",
-          "count": 3
-        },
-        {
-          "name": "TORRAS - Ốp lưng trong suốt",
-          "count": 2
-        },
-        {
-          "name": "TORRAS - Kính cường lực không viền",
-          "count": 3
-        },
-        {
-          "name": "MENCANON - Rèm che nắng ô tô",
-          "count": 2
-        },
-        {
-          "name": "REDCHEF - Bộ dao kéo 6 món",
-          "count": 1
-        },
-        {
-          "name": "REDCHEF - Bộ nồi chảo",
-          "count": 2
-        },
-        {
-          "name": "GOKU - Ổ khóa vân tay",
-          "count": 1
-        },
-        {
-          "name": "ONECHI - Dây dán velcro quản chống rối",
-          "count": 1
-        }
-      ],
-      "Thắm": [
-        {
-          "name": "TIEU MAN THAU STORE - Khẩu trang chống nắng ninja",
-          "count": 2
-        },
-        {
-          "name": "PERYSMITH - Máy hút bụi cầm tay XS1pro",
-          "count": 3
-        },
-        {
-          "name": "JISULIFE - Quạt đeo cổ Jisulife Life 5",
-          "count": 2
-        },
-        {
-          "name": "TORRAS - Ốp lưng trong suốt",
-          "count": 3
-        },
-        {
-          "name": "TORRAS - Kính cường lực không viền",
-          "count": 3
-        },
-        {
-          "name": "MENCANON - Rèm che nắng ô tô",
-          "count": 1
-        },
-        {
-          "name": "REDCHEF - Bộ dao kéo 6 món",
-          "count": 2
-        },
-        {
-          "name": "REDCHEF - Bộ nồi chảo",
-          "count": 1
-        },
-        {
-          "name": "GOKU - Ổ khóa vân tay",
-          "count": 2
-        },
-        {
-          "name": "ONECHI - Dây dán velcro quản chống rối",
-          "count": 1
-        }
-      ],
-      "Trân": [
-        {
-          "name": "TIEU MAN THAU STORE - Khẩu trang chống nắng ninja",
-          "count": 2
-        },
-        {
-          "name": "PERYSMITH - Máy hút bụi cầm tay XS1pro",
-          "count": 3
-        },
-        {
-          "name": "JISULIFE - Quạt đeo cổ Jisulife Life 5",
-          "count": 2
-        },
-        {
-          "name": "TORRAS - Ốp lưng trong suốt",
-          "count": 3
-        },
-        {
-          "name": "TORRAS - Kính cường lực không viền",
-          "count": 3
-        },
-        {
-          "name": "MENCANON - Rèm che nắng ô tô",
-          "count": 1
-        },
-        {
-          "name": "REDCHEF - Bộ dao kéo 6 món",
-          "count": 2
-        },
-        {
-          "name": "REDCHEF - Bộ nồi chảo",
-          "count": 1
-        },
-        {
-          "name": "GOKU - Ổ khóa vân tay",
-          "count": 2
-        },
-        {
-          "name": "ONECHI - Dây dán velcro quản chống rối",
-          "count": 1
-        }
-      ],
-      "Tuyên": [
-        {
-          "name": "TIEU MAN THAU STORE - Khẩu trang chống nắng ninja",
-          "count": 2
-        },
-        {
-          "name": "PERYSMITH - Máy hút bụi cầm tay XS1pro",
-          "count": 2
-        },
-        {
-          "name": "JISULIFE - Quạt đeo cổ Jisulife Life 5",
-          "count": 2
-        },
-        {
-          "name": "TORRAS - Ốp lưng trong suốt",
-          "count": 2
-        },
-        {
-          "name": "TORRAS - Kính cường lực không viền",
-          "count": 2
-        },
-        {
-          "name": "MENCANON - Rèm che nắng ô tô",
-          "count": 1
-        },
-        {
-          "name": "REDCHEF - Bộ dao kéo 6 món",
-          "count": 1
-        },
-        {
-          "name": "REDCHEF - Bộ nồi chảo",
-          "count": 1
-        },
-        {
-          "name": "GOKU - Ổ khóa vân tay",
-          "count": 1
-        },
-        {
-          "name": "ONECHI - Dây dán velcro quản chống rối",
-          "count": 1
-        }
-      ]
+      "Thư": {
+        "videos": [
+          {
+            "name": "TIEU MAN THAU STORE - Khẩu trang chống nắng ninja",
+            "count": 3
+          },
+          {
+            "name": "PERYSMITH - Máy hút bụi cầm tay XS1pro",
+            "count": 3
+          },
+          {
+            "name": "JISULIFE - Quạt đeo cổ Jisulife Life 5",
+            "count": 2
+          },
+          {
+            "name": "TORRAS - Ốp lưng trong suốt",
+            "count": 3
+          },
+          {
+            "name": "TORRAS - Kính cường lực không viền",
+            "count": 3
+          },
+          {
+            "name": "MENCANON - Rèm che nắng ô tô",
+            "count": 1
+          },
+          {
+            "name": "REDCHEF - Bộ dao kéo 6 món",
+            "count": 1
+          },
+          {
+            "name": "REDCHEF - Bộ nồi chảo",
+            "count": 1
+          },
+          {
+            "name": "GOKU - Ổ khóa vân tay",
+            "count": 1
+          },
+          {
+            "name": "ONECHI - Dây dán velcro quản chống rối",
+            "count": 2
+          }
+        ],
+        "voices": []
+      },
+      "Sơn": {
+        "videos": [
+          {
+            "name": "TIEU MAN THAU STORE - Khẩu trang chống nắng ninja",
+            "count": 2
+          },
+          {
+            "name": "PERYSMITH - Máy hút bụi cầm tay XS1pro",
+            "count": 2
+          },
+          {
+            "name": "JISULIFE - Quạt đeo cổ Jisulife Life 5",
+            "count": 2
+          },
+          {
+            "name": "TORRAS - Ốp lưng trong suốt",
+            "count": 2
+          },
+          {
+            "name": "TORRAS - Kính cường lực không viền",
+            "count": 2
+          },
+          {
+            "name": "MENCANON - Rèm che nắng ô tô",
+            "count": 1
+          },
+          {
+            "name": "REDCHEF - Bộ dao kéo 6 món",
+            "count": 1
+          },
+          {
+            "name": "REDCHEF - Bộ nồi chảo",
+            "count": 1
+          },
+          {
+            "name": "GOKU - Ổ khóa vân tay",
+            "count": 1
+          },
+          {
+            "name": "ONECHI - Dây dán velcro quản chống rối",
+            "count": 1
+          }
+        ],
+        "voices": []
+      },
+      "Dung": {
+        "videos": [
+          {
+            "name": "TIEU MAN THAU STORE - Khẩu trang chống nắng ninja",
+            "count": 3
+          },
+          {
+            "name": "PERYSMITH - Máy hút bụi cầm tay XS1pro",
+            "count": 3
+          },
+          {
+            "name": "JISULIFE - Quạt đeo cổ Jisulife Life 5",
+            "count": 3
+          },
+          {
+            "name": "TORRAS - Ốp lưng trong suốt",
+            "count": 3
+          },
+          {
+            "name": "TORRAS - Kính cường lực không viền",
+            "count": 2
+          },
+          {
+            "name": "MENCANON - Rèm che nắng ô tô",
+            "count": 1
+          },
+          {
+            "name": "REDCHEF - Bộ dao kéo 6 món",
+            "count": 1
+          },
+          {
+            "name": "REDCHEF - Bộ nồi chảo",
+            "count": 1
+          },
+          {
+            "name": "GOKU - Ổ khóa vân tay",
+            "count": 1
+          },
+          {
+            "name": "ONECHI - Dây dán velcro quản chống rối",
+            "count": 2
+          }
+        ],
+        "voices": []
+      },
+      "Duyên": {
+        "videos": [
+          {
+            "name": "TIEU MAN THAU STORE - Khẩu trang chống nắng ninja",
+            "count": 3
+          },
+          {
+            "name": "PERYSMITH - Máy hút bụi cầm tay XS1pro",
+            "count": 2
+          },
+          {
+            "name": "JISULIFE - Quạt đeo cổ Jisulife Life 5",
+            "count": 3
+          },
+          {
+            "name": "TORRAS - Ốp lưng trong suốt",
+            "count": 2
+          },
+          {
+            "name": "TORRAS - Kính cường lực không viền",
+            "count": 3
+          },
+          {
+            "name": "MENCANON - Rèm che nắng ô tô",
+            "count": 2
+          },
+          {
+            "name": "REDCHEF - Bộ dao kéo 6 món",
+            "count": 1
+          },
+          {
+            "name": "REDCHEF - Bộ nồi chảo",
+            "count": 2
+          },
+          {
+            "name": "GOKU - Ổ khóa vân tay",
+            "count": 1
+          },
+          {
+            "name": "ONECHI - Dây dán velcro quản chống rối",
+            "count": 1
+          }
+        ],
+        "voices": []
+      },
+      "Hiếu": {
+        "videos": [
+          {
+            "name": "TIEU MAN THAU STORE - Khẩu trang chống nắng ninja",
+            "count": 3
+          },
+          {
+            "name": "PERYSMITH - Máy hút bụi cầm tay XS1pro",
+            "count": 2
+          },
+          {
+            "name": "JISULIFE - Quạt đeo cổ Jisulife Life 5",
+            "count": 3
+          },
+          {
+            "name": "TORRAS - Ốp lưng trong suốt",
+            "count": 2
+          },
+          {
+            "name": "TORRAS - Kính cường lực không viền",
+            "count": 3
+          },
+          {
+            "name": "MENCANON - Rèm che nắng ô tô",
+            "count": 2
+          },
+          {
+            "name": "REDCHEF - Bộ dao kéo 6 món",
+            "count": 1
+          },
+          {
+            "name": "REDCHEF - Bộ nồi chảo",
+            "count": 2
+          },
+          {
+            "name": "GOKU - Ổ khóa vân tay",
+            "count": 1
+          },
+          {
+            "name": "ONECHI - Dây dán velcro quản chống rối",
+            "count": 1
+          }
+        ],
+        "voices": []
+      },
+      "Thắm": {
+        "videos": [
+          {
+            "name": "TIEU MAN THAU STORE - Khẩu trang chống nắng ninja",
+            "count": 2
+          },
+          {
+            "name": "PERYSMITH - Máy hút bụi cầm tay XS1pro",
+            "count": 3
+          },
+          {
+            "name": "JISULIFE - Quạt đeo cổ Jisulife Life 5",
+            "count": 2
+          },
+          {
+            "name": "TORRAS - Ốp lưng trong suốt",
+            "count": 3
+          },
+          {
+            "name": "TORRAS - Kính cường lực không viền",
+            "count": 3
+          },
+          {
+            "name": "MENCANON - Rèm che nắng ô tô",
+            "count": 1
+          },
+          {
+            "name": "REDCHEF - Bộ dao kéo 6 món",
+            "count": 2
+          },
+          {
+            "name": "REDCHEF - Bộ nồi chảo",
+            "count": 1
+          },
+          {
+            "name": "GOKU - Ổ khóa vân tay",
+            "count": 2
+          },
+          {
+            "name": "ONECHI - Dây dán velcro quản chống rối",
+            "count": 1
+          }
+        ],
+        "voices": []
+      },
+      "Trân": {
+        "videos": [
+          {
+            "name": "TIEU MAN THAU STORE - Khẩu trang chống nắng ninja",
+            "count": 2
+          },
+          {
+            "name": "PERYSMITH - Máy hút bụi cầm tay XS1pro",
+            "count": 3
+          },
+          {
+            "name": "JISULIFE - Quạt đeo cổ Jisulife Life 5",
+            "count": 2
+          },
+          {
+            "name": "TORRAS - Ốp lưng trong suốt",
+            "count": 3
+          },
+          {
+            "name": "TORRAS - Kính cường lực không viền",
+            "count": 3
+          },
+          {
+            "name": "MENCANON - Rèm che nắng ô tô",
+            "count": 1
+          },
+          {
+            "name": "REDCHEF - Bộ dao kéo 6 món",
+            "count": 2
+          },
+          {
+            "name": "REDCHEF - Bộ nồi chảo",
+            "count": 1
+          },
+          {
+            "name": "GOKU - Ổ khóa vân tay",
+            "count": 2
+          },
+          {
+            "name": "ONECHI - Dây dán velcro quản chống rối",
+            "count": 1
+          }
+        ],
+        "voices": []
+      },
+      "Tuyên": {
+        "videos": [
+          {
+            "name": "TIEU MAN THAU STORE - Khẩu trang chống nắng ninja",
+            "count": 2
+          },
+          {
+            "name": "PERYSMITH - Máy hút bụi cầm tay XS1pro",
+            "count": 2
+          },
+          {
+            "name": "JISULIFE - Quạt đeo cổ Jisulife Life 5",
+            "count": 2
+          },
+          {
+            "name": "TORRAS - Ốp lưng trong suốt",
+            "count": 2
+          },
+          {
+            "name": "TORRAS - Kính cường lực không viền",
+            "count": 2
+          },
+          {
+            "name": "MENCANON - Rèm che nắng ô tô",
+            "count": 1
+          },
+          {
+            "name": "REDCHEF - Bộ dao kéo 6 món",
+            "count": 1
+          },
+          {
+            "name": "REDCHEF - Bộ nồi chảo",
+            "count": 1
+          },
+          {
+            "name": "GOKU - Ổ khóa vân tay",
+            "count": 1
+          },
+          {
+            "name": "ONECHI - Dây dán velcro quản chống rối",
+            "count": 1
+          }
+        ],
+        "voices": []
+      }
     },
     "links": [
       {

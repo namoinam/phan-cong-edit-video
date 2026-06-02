@@ -141,15 +141,18 @@ function render(date) {
     const videos = Array.isArray(empData) ? empData : (empData.videos || []);
     const voices = Array.isArray(empData) ? [] : (empData.voices || []);
     const totalVid = videos.reduce((s,p) => s+p.count, 0);
-    const totalVoice = voices.reduce((s,p) => s+p.count, 0);
+    const totalVoice = voices.reduce((s,p) => s + (p.voice_to !== undefined ? p.voice_to - p.voice_from + 1 : p.count || 0), 0);
     cntEl.textContent = totalVid + ' video' + (totalVoice ? ' · ' + totalVoice + ' voice' : '');
     listEl.innerHTML =
       (videos.length ? '<div class="section-label">Video</div>' + videos.map(p =>
         '<div class="row"><span class="pname">'+p.name+'</span><span class="pct">'+p.count+' video</span></div>'
       ).join('') : '') +
-      (voices.length ? '<div class="section-label">Voice</div>' + voices.map(p =>
-        '<div class="row"><span class="pname voice">'+p.name+'</span><span class="pct">'+p.count+' voice</span></div>'
-      ).join('') : '');
+      (voices.length ? '<div class="section-label">Voice</div>' + voices.map(p => {
+        const label = p.voice_from !== undefined
+          ? 'voice ' + p.voice_from + (p.voice_to > p.voice_from ? '-' + p.voice_to : '')
+          : p.count + ' voice';
+        return '<div class="row"><span class="pname voice">'+p.name+'</span><span class="pct">'+label+'</span></div>';
+      }).join('') : '');
   });
   const table = document.getElementById('link-table');
   const links = data.links || [];

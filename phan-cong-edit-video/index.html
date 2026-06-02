@@ -19,12 +19,15 @@ h1{font-family:'Cubano',sans-serif;font-size:16px;font-weight:400;margin-bottom:
 .hdr{display:flex;align-items:center;gap:12px;margin-bottom:14px}
 .av{width:48px;height:48px;border-radius:50%;object-fit:cover;flex-shrink:0}
 .name{font-weight:600;font-size:15px;color:#1F2329}
-.list{border-top:1px solid #DEE0E3;padding-top:10px}
-.sp-row{display:grid;grid-template-columns:1fr 56px 72px;align-items:center;gap:6px;padding:5px 0;border-bottom:1px solid #F0F1F3}
+.list{border-top:1px solid #DEE0E3;padding-top:8px}
+.sp-header{display:grid;grid-template-columns:1fr 44px 60px;gap:6px;padding:0 0 5px 0;border-bottom:1px solid #DEE0E3;margin-bottom:4px}
+.sp-header span{font-size:11px;font-weight:600;color:#9EA4AF;text-transform:uppercase;letter-spacing:0.04em}
+.sp-header .sp-vid,.sp-header .sp-voice{text-align:center}
+.sp-row{display:grid;grid-template-columns:1fr 44px 60px;align-items:center;gap:6px;padding:4px 0;border-bottom:1px solid #F0F1F3}
 .sp-row:last-child{border-bottom:none}
 .sp-name{font-size:13px;color:#1456F0;font-weight:500;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.sp-vid{font-size:12px;color:#646A73;text-align:center;white-space:nowrap}
-.sp-voice{font-size:12px;color:#D4580A;font-weight:500;text-align:right;white-space:nowrap}
+.sp-vid{font-size:13px;color:#646A73;text-align:center;white-space:nowrap}
+.sp-voice{font-size:13px;color:#D4580A;font-weight:500;text-align:center;white-space:nowrap}
 .section{background:#FFFFFF;border:1px solid #DEE0E3;border-radius:12px;padding:20px 24px;margin-bottom:16px}
 h2{font-family:'Cubano',sans-serif;font-size:16px;font-weight:400;margin-bottom:16px;color:#1F2329;letter-spacing:0.03em}
 .link-table{width:100%;border-collapse:collapse}
@@ -145,12 +148,15 @@ function render(date) {
     listEl.innerHTML = allNames.map(name => {
       const vid = videos.find(v => v.name === name);
       const voc = voiceMap[name];
-      const vidCell = vid ? vid.count + ' video' : '';
+      const vidCell = vid ? vid.count : '';
       const vocCell = voc ? (voc.voice_from !== undefined
-        ? 'voice ' + voc.voice_from + (voc.voice_to > voc.voice_from ? '-' + voc.voice_to : '')
-        : voc.count + ' voice') : '';
+        ? voc.voice_from + (voc.voice_to > voc.voice_from ? '-' + voc.voice_to : '')
+        : voc.count) : '';
       return '<div class="sp-row"><span class="sp-name">'+name+'</span><span class="sp-vid">'+vidCell+'</span><span class="sp-voice">'+vocCell+'</span></div>';
     }).join('');
+    if (allNames.length) {
+      listEl.innerHTML = '<div class="sp-header"><span>Tên sản phẩm</span><span class="sp-vid">Số lượng</span><span class="sp-voice">Voice</span></div>' + listEl.innerHTML;
+    }
   });
   const table = document.getElementById('link-table');
   const links = data.links || [];

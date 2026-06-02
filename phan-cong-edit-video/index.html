@@ -14,18 +14,18 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
 .nav-btn:disabled{opacity:0.15;cursor:default}
 .date-banner{font-family:'Cubano',sans-serif;font-size:32px;font-weight:400;letter-spacing:0.04em;color:#1456F0;text-transform:uppercase}
 h1{font-family:'Cubano',sans-serif;font-size:16px;font-weight:400;margin-bottom:20px;color:#1F2329;text-align:left;letter-spacing:0.03em}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px;margin-bottom:32px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(360px,1fr));gap:16px;margin-bottom:32px}
 .card{background:#FFFFFF;border:1px solid #DEE0E3;border-radius:12px;padding:16px 20px}
 .hdr{display:flex;align-items:center;gap:12px;margin-bottom:14px}
 .av{width:48px;height:48px;border-radius:50%;object-fit:cover;flex-shrink:0}
 .name{font-weight:600;font-size:15px;color:#1F2329}
 .list{border-top:1px solid #DEE0E3;padding-top:8px}
-.sp-header{display:grid;grid-template-columns:1fr 36px 56px;gap:8px;padding:0 0 5px 0;border-bottom:1px solid #DEE0E3;margin-bottom:4px}
+.sp-header{display:grid;grid-template-columns:1fr 90px 70px;gap:8px;padding:0 0 5px 0;border-bottom:1px solid #DEE0E3;margin-bottom:4px}
 .sp-header span{font-size:11px;font-weight:600;color:#9EA4AF;text-transform:uppercase;letter-spacing:0.04em;white-space:nowrap}
 .sp-header .sp-vid,.sp-header .sp-voice{text-align:center}
-.sp-row{display:grid;grid-template-columns:1fr 36px 56px;align-items:center;gap:8px;padding:4px 0;border-bottom:1px solid #F0F1F3}
+.sp-row{display:grid;grid-template-columns:1fr 90px 70px;align-items:center;gap:8px;padding:4px 0;border-bottom:1px solid #F0F1F3}
 .sp-row:last-child{border-bottom:none}
-.sp-name{font-size:13px;color:#1456F0;font-weight:500;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.sp-name{font-size:13px;color:#1456F0;font-weight:500}
 .sp-vid{font-size:13px;color:#646A73;text-align:center;white-space:nowrap}
 .sp-voice{font-size:13px;color:#D4580A;font-weight:500;text-align:center;white-space:nowrap}
 .section{background:#FFFFFF;border:1px solid #DEE0E3;border-radius:12px;padding:20px 24px;margin-bottom:16px}
@@ -158,7 +158,7 @@ function render(date) {
     const totalVid = videos.reduce((s,p) => s+p.count, 0);
     if (cntEl) cntEl.textContent = totalVid + ' video';
     if (allNames.length) {
-      listEl.innerHTML = '<div class="sp-header"><span>Tên sản phẩm</span><span class="sp-vid">SL</span><span class="sp-voice">Voice</span></div>' + listEl.innerHTML;
+      listEl.innerHTML = '<div class="sp-header"><span>Tên sản phẩm</span><span class="sp-vid">Số lượng</span><span class="sp-voice">Voice</span></div>' + listEl.innerHTML;
     }
   });
   const table = document.getElementById('link-table');

@@ -799,7 +799,971 @@
       }
     ]
   },
-  "voice_state": {
+  "2026-06-03": {
+    "assignments": {
+      "Thư": {
+        "videos": [
+          {
+            "name": "ULUCKY - Đai chườm ấm bụng",
+            "count": 3
+          },
+          {
+            "name": "ETOE - Máy chiếu E3 Pro",
+            "count": 3
+          },
+          {
+            "name": "JETZ - Máy hút bụi X9",
+            "count": 2
+          },
+          {
+            "name": "AOUB-VN - Thiết bị quay góc POV",
+            "count": 3
+          },
+          {
+            "name": "DELI - Hộp đựng thực phẩm",
+            "count": 3
+          },
+          {
+            "name": "VUA NỆM - Nệm lò xo",
+            "count": 1
+          },
+          {
+            "name": "XPANSE - Ghế công thái học",
+            "count": 1
+          },
+          {
+            "name": "BOXERMAN - Quần sịp nam",
+            "count": 2
+          },
+          {
+            "name": "TOSUDO - Móc treo đồ",
+            "count": 1
+          },
+          {
+            "name": "MIA - Vali kéo du lịch Larita Aly",
+            "count": 1
+          }
+        ],
+        "voices": [
+          {
+            "name": "ULUCKY - Đai chườm ấm bụng",
+            "list": [
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "name": "ETOE - Máy chiếu E3 Pro",
+            "list": [
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "name": "JETZ - Máy hút bụi X9",
+            "list": [
+              1,
+              2
+            ]
+          },
+          {
+            "name": "AOUB-VN - Thiết bị quay góc POV",
+            "list": [
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "name": "DELI - Hộp đựng thực phẩm",
+            "list": [
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "name": "VUA NỆM - Nệm lò xo",
+            "list": [
+              1
+            ]
+          },
+          {
+            "name": "XPANSE - Ghế công thái học",
+            "list": [
+              1
+            ]
+          },
+          {
+            "name": "BOXERMAN - Quần sịp nam",
+            "list": [
+              1,
+              2
+            ]
+          },
+          {
+            "name": "TOSUDO - Móc treo đồ",
+            "list": [
+              1
+            ]
+          },
+          {
+            "name": "MIA - Vali kéo du lịch Larita Aly",
+            "list": [
+              1
+            ]
+          }
+        ]
+      },
+      "Sơn": {
+        "videos": [
+          {
+            "name": "ULUCKY - Đai chườm ấm bụng",
+            "count": 2
+          },
+          {
+            "name": "ETOE - Máy chiếu E3 Pro",
+            "count": 2
+          },
+          {
+            "name": "JETZ - Máy hút bụi X9",
+            "count": 2
+          },
+          {
+            "name": "AOUB-VN - Thiết bị quay góc POV",
+            "count": 2
+          },
+          {
+            "name": "DELI - Hộp đựng thực phẩm",
+            "count": 2
+          },
+          {
+            "name": "VUA NỆM - Nệm lò xo",
+            "count": 1
+          },
+          {
+            "name": "XPANSE - Ghế công thái học",
+            "count": 1
+          },
+          {
+            "name": "BOXERMAN - Quần sịp nam",
+            "count": 1
+          },
+          {
+            "name": "TOSUDO - Móc treo đồ",
+            "count": 1
+          },
+          {
+            "name": "MIA - Vali kéo du lịch Larita Aly",
+            "count": 1
+          }
+        ],
+        "voices": [
+          {
+            "name": "ULUCKY - Đai chườm ấm bụng",
+            "list": [
+              4,
+              5
+            ]
+          },
+          {
+            "name": "ETOE - Máy chiếu E3 Pro",
+            "list": [
+              4,
+              5
+            ]
+          },
+          {
+            "name": "JETZ - Máy hút bụi X9",
+            "list": [
+              3,
+              4
+            ]
+          },
+          {
+            "name": "AOUB-VN - Thiết bị quay góc POV",
+            "list": [
+              4,
+              5
+            ]
+          },
+          {
+            "name": "DELI - Hộp đựng thực phẩm",
+            "list": [
+              4,
+              5
+            ]
+          },
+          {
+            "name": "VUA NỆM - Nệm lò xo",
+            "list": [
+              2
+            ]
+          },
+          {
+            "name": "XPANSE - Ghế công thái học",
+            "list": [
+              2
+            ]
+          },
+          {
+            "name": "BOXERMAN - Quần sịp nam",
+            "list": [
+              3
+            ]
+          },
+          {
+            "name": "TOSUDO - Móc treo đồ",
+            "list": [
+              2
+            ]
+          },
+          {
+            "name": "MIA - Vali kéo du lịch Larita Aly",
+            "list": [
+              2
+            ]
+          }
+        ]
+      },
+      "Dung": {
+        "videos": [
+          {
+            "name": "ULUCKY - Đai chườm ấm bụng",
+            "count": 3
+          },
+          {
+            "name": "ETOE - Máy chiếu E3 Pro",
+            "count": 3
+          },
+          {
+            "name": "JETZ - Máy hút bụi X9",
+            "count": 2
+          },
+          {
+            "name": "AOUB-VN - Thiết bị quay góc POV",
+            "count": 3
+          },
+          {
+            "name": "DELI - Hộp đựng thực phẩm",
+            "count": 3
+          },
+          {
+            "name": "VUA NỆM - Nệm lò xo",
+            "count": 1
+          },
+          {
+            "name": "XPANSE - Ghế công thái học",
+            "count": 1
+          },
+          {
+            "name": "BOXERMAN - Quần sịp nam",
+            "count": 2
+          },
+          {
+            "name": "TOSUDO - Móc treo đồ",
+            "count": 1
+          },
+          {
+            "name": "MIA - Vali kéo du lịch Larita Aly",
+            "count": 1
+          }
+        ],
+        "voices": [
+          {
+            "name": "ULUCKY - Đai chườm ấm bụng",
+            "list": [
+              6,
+              7,
+              8
+            ]
+          },
+          {
+            "name": "ETOE - Máy chiếu E3 Pro",
+            "list": [
+              6,
+              7,
+              8
+            ]
+          },
+          {
+            "name": "JETZ - Máy hút bụi X9",
+            "list": [
+              5,
+              6
+            ]
+          },
+          {
+            "name": "AOUB-VN - Thiết bị quay góc POV",
+            "list": [
+              6,
+              7,
+              8
+            ]
+          },
+          {
+            "name": "DELI - Hộp đựng thực phẩm",
+            "list": [
+              6,
+              7,
+              8
+            ]
+          },
+          {
+            "name": "VUA NỆM - Nệm lò xo",
+            "list": [
+              3
+            ]
+          },
+          {
+            "name": "XPANSE - Ghế công thái học",
+            "list": [
+              3
+            ]
+          },
+          {
+            "name": "BOXERMAN - Quần sịp nam",
+            "list": [
+              4,
+              5
+            ]
+          },
+          {
+            "name": "TOSUDO - Móc treo đồ",
+            "list": [
+              3
+            ]
+          },
+          {
+            "name": "MIA - Vali kéo du lịch Larita Aly",
+            "list": [
+              3
+            ]
+          }
+        ]
+      },
+      "Duyên": {
+        "videos": [
+          {
+            "name": "ULUCKY - Đai chườm ấm bụng",
+            "count": 3
+          },
+          {
+            "name": "ETOE - Máy chiếu E3 Pro",
+            "count": 2
+          },
+          {
+            "name": "JETZ - Máy hút bụi X9",
+            "count": 3
+          },
+          {
+            "name": "AOUB-VN - Thiết bị quay góc POV",
+            "count": 3
+          },
+          {
+            "name": "DELI - Hộp đựng thực phẩm",
+            "count": 2
+          },
+          {
+            "name": "VUA NỆM - Nệm lò xo",
+            "count": 2
+          },
+          {
+            "name": "XPANSE - Ghế công thái học",
+            "count": 1
+          },
+          {
+            "name": "BOXERMAN - Quần sịp nam",
+            "count": 1
+          },
+          {
+            "name": "TOSUDO - Móc treo đồ",
+            "count": 2
+          },
+          {
+            "name": "MIA - Vali kéo du lịch Larita Aly",
+            "count": 1
+          }
+        ],
+        "voices": [
+          {
+            "name": "ULUCKY - Đai chườm ấm bụng",
+            "list": [
+              9,
+              10,
+              11
+            ]
+          },
+          {
+            "name": "ETOE - Máy chiếu E3 Pro",
+            "list": [
+              9,
+              10
+            ]
+          },
+          {
+            "name": "JETZ - Máy hút bụi X9",
+            "list": [
+              7,
+              8,
+              9
+            ]
+          },
+          {
+            "name": "AOUB-VN - Thiết bị quay góc POV",
+            "list": [
+              9,
+              10,
+              11
+            ]
+          },
+          {
+            "name": "DELI - Hộp đựng thực phẩm",
+            "list": [
+              9,
+              10
+            ]
+          },
+          {
+            "name": "VUA NỆM - Nệm lò xo",
+            "list": [
+              4,
+              5
+            ]
+          },
+          {
+            "name": "XPANSE - Ghế công thái học",
+            "list": [
+              4
+            ]
+          },
+          {
+            "name": "BOXERMAN - Quần sịp nam",
+            "list": [
+              6
+            ]
+          },
+          {
+            "name": "TOSUDO - Móc treo đồ",
+            "list": [
+              4,
+              5
+            ]
+          },
+          {
+            "name": "MIA - Vali kéo du lịch Larita Aly",
+            "list": [
+              4
+            ]
+          }
+        ]
+      },
+      "Hiếu": {
+        "videos": [
+          {
+            "name": "ULUCKY - Đai chườm ấm bụng",
+            "count": 3
+          },
+          {
+            "name": "ETOE - Máy chiếu E3 Pro",
+            "count": 2
+          },
+          {
+            "name": "JETZ - Máy hút bụi X9",
+            "count": 3
+          },
+          {
+            "name": "AOUB-VN - Thiết bị quay góc POV",
+            "count": 3
+          },
+          {
+            "name": "DELI - Hộp đựng thực phẩm",
+            "count": 2
+          },
+          {
+            "name": "VUA NỆM - Nệm lò xo",
+            "count": 2
+          },
+          {
+            "name": "XPANSE - Ghế công thái học",
+            "count": 1
+          },
+          {
+            "name": "BOXERMAN - Quần sịp nam",
+            "count": 1
+          },
+          {
+            "name": "TOSUDO - Móc treo đồ",
+            "count": 2
+          },
+          {
+            "name": "MIA - Vali kéo du lịch Larita Aly",
+            "count": 1
+          }
+        ],
+        "voices": [
+          {
+            "name": "ULUCKY - Đai chườm ấm bụng",
+            "list": [
+              12,
+              13,
+              14
+            ]
+          },
+          {
+            "name": "ETOE - Máy chiếu E3 Pro",
+            "list": [
+              11,
+              12
+            ]
+          },
+          {
+            "name": "JETZ - Máy hút bụi X9",
+            "list": [
+              10,
+              11,
+              10
+            ]
+          },
+          {
+            "name": "AOUB-VN - Thiết bị quay góc POV",
+            "list": [
+              12,
+              13,
+              14
+            ]
+          },
+          {
+            "name": "DELI - Hộp đựng thực phẩm",
+            "list": [
+              11,
+              12
+            ]
+          },
+          {
+            "name": "VUA NỆM - Nệm lò xo",
+            "list": [
+              6,
+              7
+            ]
+          },
+          {
+            "name": "XPANSE - Ghế công thái học",
+            "list": [
+              5
+            ]
+          },
+          {
+            "name": "BOXERMAN - Quần sịp nam",
+            "list": [
+              7
+            ]
+          },
+          {
+            "name": "TOSUDO - Móc treo đồ",
+            "list": [
+              6,
+              7
+            ]
+          },
+          {
+            "name": "MIA - Vali kéo du lịch Larita Aly",
+            "list": [
+              5
+            ]
+          }
+        ]
+      },
+      "Thắm": {
+        "videos": [
+          {
+            "name": "ULUCKY - Đai chườm ấm bụng",
+            "count": 2
+          },
+          {
+            "name": "ETOE - Máy chiếu E3 Pro",
+            "count": 3
+          },
+          {
+            "name": "JETZ - Máy hút bụi X9",
+            "count": 3
+          },
+          {
+            "name": "AOUB-VN - Thiết bị quay góc POV",
+            "count": 2
+          },
+          {
+            "name": "DELI - Hộp đựng thực phẩm",
+            "count": 3
+          },
+          {
+            "name": "VUA NỆM - Nệm lò xo",
+            "count": 1
+          },
+          {
+            "name": "XPANSE - Ghế công thái học",
+            "count": 2
+          },
+          {
+            "name": "BOXERMAN - Quần sịp nam",
+            "count": 1
+          },
+          {
+            "name": "TOSUDO - Móc treo đồ",
+            "count": 1
+          },
+          {
+            "name": "MIA - Vali kéo du lịch Larita Aly",
+            "count": 2
+          }
+        ],
+        "voices": [
+          {
+            "name": "ULUCKY - Đai chườm ấm bụng",
+            "list": [
+              15,
+              15
+            ]
+          },
+          {
+            "name": "ETOE - Máy chiếu E3 Pro",
+            "list": [
+              13,
+              14,
+              15
+            ]
+          },
+          {
+            "name": "JETZ - Máy hút bụi X9",
+            "list": [
+              2,
+              5,
+              7
+            ]
+          },
+          {
+            "name": "AOUB-VN - Thiết bị quay góc POV",
+            "list": [
+              15,
+              16
+            ]
+          },
+          {
+            "name": "DELI - Hộp đựng thực phẩm",
+            "list": [
+              13,
+              14,
+              15
+            ]
+          },
+          {
+            "name": "VUA NỆM - Nệm lò xo",
+            "list": [
+              8
+            ]
+          },
+          {
+            "name": "XPANSE - Ghế công thái học",
+            "list": [
+              6,
+              7
+            ]
+          },
+          {
+            "name": "BOXERMAN - Quần sịp nam",
+            "list": [
+              8
+            ]
+          },
+          {
+            "name": "TOSUDO - Móc treo đồ",
+            "list": [
+              8
+            ]
+          },
+          {
+            "name": "MIA - Vali kéo du lịch Larita Aly",
+            "list": [
+              6,
+              7
+            ]
+          }
+        ]
+      },
+      "Trân": {
+        "videos": [
+          {
+            "name": "ULUCKY - Đai chườm ấm bụng",
+            "count": 2
+          },
+          {
+            "name": "ETOE - Máy chiếu E3 Pro",
+            "count": 3
+          },
+          {
+            "name": "JETZ - Máy hút bụi X9",
+            "count": 3
+          },
+          {
+            "name": "AOUB-VN - Thiết bị quay góc POV",
+            "count": 2
+          },
+          {
+            "name": "DELI - Hộp đựng thực phẩm",
+            "count": 3
+          },
+          {
+            "name": "VUA NỆM - Nệm lò xo",
+            "count": 1
+          },
+          {
+            "name": "XPANSE - Ghế công thái học",
+            "count": 2
+          },
+          {
+            "name": "BOXERMAN - Quần sịp nam",
+            "count": 1
+          },
+          {
+            "name": "TOSUDO - Móc treo đồ",
+            "count": 1
+          },
+          {
+            "name": "MIA - Vali kéo du lịch Larita Aly",
+            "count": 2
+          }
+        ],
+        "voices": [
+          {
+            "name": "ULUCKY - Đai chườm ấm bụng",
+            "list": [
+              13,
+              11
+            ]
+          },
+          {
+            "name": "ETOE - Máy chiếu E3 Pro",
+            "list": [
+              1,
+              2,
+              13
+            ]
+          },
+          {
+            "name": "JETZ - Máy hút bụi X9",
+            "list": [
+              3,
+              2,
+              8
+            ]
+          },
+          {
+            "name": "AOUB-VN - Thiết bị quay góc POV",
+            "list": [
+              17,
+              18
+            ]
+          },
+          {
+            "name": "DELI - Hộp đựng thực phẩm",
+            "list": [
+              16,
+              17,
+              18
+            ]
+          },
+          {
+            "name": "VUA NỆM - Nệm lò xo",
+            "list": [
+              9
+            ]
+          },
+          {
+            "name": "XPANSE - Ghế công thái học",
+            "list": [
+              8,
+              9
+            ]
+          },
+          {
+            "name": "BOXERMAN - Quần sịp nam",
+            "list": [
+              9
+            ]
+          },
+          {
+            "name": "TOSUDO - Móc treo đồ",
+            "list": [
+              9
+            ]
+          },
+          {
+            "name": "MIA - Vali kéo du lịch Larita Aly",
+            "list": [
+              8,
+              9
+            ]
+          }
+        ]
+      },
+      "Tuyên": {
+        "videos": [
+          {
+            "name": "ULUCKY - Đai chườm ấm bụng",
+            "count": 2
+          },
+          {
+            "name": "ETOE - Máy chiếu E3 Pro",
+            "count": 2
+          },
+          {
+            "name": "JETZ - Máy hút bụi X9",
+            "count": 2
+          },
+          {
+            "name": "AOUB-VN - Thiết bị quay góc POV",
+            "count": 2
+          },
+          {
+            "name": "DELI - Hộp đựng thực phẩm",
+            "count": 2
+          },
+          {
+            "name": "VUA NỆM - Nệm lò xo",
+            "count": 1
+          },
+          {
+            "name": "XPANSE - Ghế công thái học",
+            "count": 1
+          },
+          {
+            "name": "BOXERMAN - Quần sịp nam",
+            "count": 1
+          },
+          {
+            "name": "TOSUDO - Móc treo đồ",
+            "count": 1
+          },
+          {
+            "name": "MIA - Vali kéo du lịch Larita Aly",
+            "count": 1
+          }
+        ],
+        "voices": [
+          {
+            "name": "ULUCKY - Đai chườm ấm bụng",
+            "list": [
+              1,
+              3
+            ]
+          },
+          {
+            "name": "ETOE - Máy chiếu E3 Pro",
+            "list": [
+              8,
+              6
+            ]
+          },
+          {
+            "name": "JETZ - Máy hút bụi X9",
+            "list": [
+              8,
+              10
+            ]
+          },
+          {
+            "name": "AOUB-VN - Thiết bị quay góc POV",
+            "list": [
+              19,
+              20
+            ]
+          },
+          {
+            "name": "DELI - Hộp đựng thực phẩm",
+            "list": [
+              19,
+              20
+            ]
+          },
+          {
+            "name": "VUA NỆM - Nệm lò xo",
+            "list": [
+              10
+            ]
+          },
+          {
+            "name": "XPANSE - Ghế công thái học",
+            "list": [
+              10
+            ]
+          },
+          {
+            "name": "BOXERMAN - Quần sịp nam",
+            "list": [
+              10
+            ]
+          },
+          {
+            "name": "TOSUDO - Móc treo đồ",
+            "list": [
+              10
+            ]
+          },
+          {
+            "name": "MIA - Vali kéo du lịch Larita Aly",
+            "list": [
+              10
+            ]
+          }
+        ]
+      }
+    },
+    "links": [
+      {
+        "full_name": "ULUCKY - Đai chườm ấm bụng",
+        "url": "https://drive.google.com/drive/folders/1BM4G4qNqabTGkapyW61SdfcdXLAVQuvD"
+      },
+      {
+        "full_name": "ETOE - Máy chiếu E3 Pro",
+        "url": "https://drive.google.com/drive/folders/1qjw0O3EPTHLWPotdz0Hu_WjIf2QchCZ3"
+      },
+      {
+        "full_name": "JETZ - Máy hút bụi X9",
+        "url": "https://drive.google.com/drive/folders/1zsnDwsXgw23OeM8G_UX5g76xf4XLipYu"
+      },
+      {
+        "full_name": "AOUB-VN - Thiết bị quay góc POV",
+        "url": "https://drive.google.com/drive/folders/1-MzpEe64gRZVg_jMTabwaYjQPBDt102-"
+      },
+      {
+        "full_name": "DELI - Hộp đựng thực phẩm",
+        "url": "https://drive.google.com/drive/folders/1Bjf-Ak1yEKniuxnQ9Ycg6M5UEFPcf4LR"
+      },
+      {
+        "full_name": "VUA NỆM - Nệm lò xo",
+        "url": "https://drive.google.com/drive/folders/1F-wyVQ735p7P2b6sj1Oyv7abGFK-vzGL"
+      },
+      {
+        "full_name": "XPANSE - Ghế công thái học",
+        "url": "https://drive.google.com/drive/folders/1SrflrVq0RkiYKm6HmEDPIUSOy-_tNFlk"
+      },
+      {
+        "full_name": "BOXERMAN - Quần sịp nam",
+        "url": "https://drive.google.com/drive/folders/1shaRug2EYYKuf7ESawi1E_r0wNLSUOI1"
+      },
+      {
+        "full_name": "TOSUDO - Móc treo đồ",
+        "url": "https://drive.google.com/drive/folders/1NVguQOkZdm0YnwFR5-HYkyuW7nXEnyaO"
+      },
+      {
+        "full_name": "MIA - Vali kéo du lịch Larita Aly",
+        "url": "https://drive.google.com/drive/folders/1Zjui3REILL9_yBNJu3l21XqA8h1ZL3Ye"
+      }
+    ]
+  },
+  "!voice_state": {
     "ULUCKY - Đai chườm ấm bụng": {
       "total": 15,
       "Thư": {
@@ -2316,969 +3280,5 @@
         ]
       }
     }
-  },
-  "2026-06-03": {
-    "assignments": {
-      "Thư": {
-        "videos": [
-          {
-            "name": "ULUCKY - Đai chườm ấm bụng",
-            "count": 3
-          },
-          {
-            "name": "ETOE - Máy chiếu E3 Pro",
-            "count": 3
-          },
-          {
-            "name": "JETZ - Máy hút bụi X9",
-            "count": 2
-          },
-          {
-            "name": "AOUB-VN - Thiết bị quay góc POV",
-            "count": 3
-          },
-          {
-            "name": "DELI - Hộp đựng thực phẩm",
-            "count": 3
-          },
-          {
-            "name": "VUA NỆM - Nệm lò xo",
-            "count": 1
-          },
-          {
-            "name": "XPANSE - Ghế công thái học",
-            "count": 1
-          },
-          {
-            "name": "BOXERMAN - Quần sịp nam",
-            "count": 2
-          },
-          {
-            "name": "TOSUDO - Móc treo đồ",
-            "count": 1
-          },
-          {
-            "name": "MIA - Vali kéo du lịch Larita Aly",
-            "count": 1
-          }
-        ],
-        "voices": [
-          {
-            "name": "ULUCKY - Đai chườm ấm bụng",
-            "list": [
-              1,
-              2,
-              3
-            ]
-          },
-          {
-            "name": "ETOE - Máy chiếu E3 Pro",
-            "list": [
-              1,
-              2,
-              3
-            ]
-          },
-          {
-            "name": "JETZ - Máy hút bụi X9",
-            "list": [
-              1,
-              2
-            ]
-          },
-          {
-            "name": "AOUB-VN - Thiết bị quay góc POV",
-            "list": [
-              1,
-              2,
-              3
-            ]
-          },
-          {
-            "name": "DELI - Hộp đựng thực phẩm",
-            "list": [
-              1,
-              2,
-              3
-            ]
-          },
-          {
-            "name": "VUA NỆM - Nệm lò xo",
-            "list": [
-              1
-            ]
-          },
-          {
-            "name": "XPANSE - Ghế công thái học",
-            "list": [
-              1
-            ]
-          },
-          {
-            "name": "BOXERMAN - Quần sịp nam",
-            "list": [
-              1,
-              2
-            ]
-          },
-          {
-            "name": "TOSUDO - Móc treo đồ",
-            "list": [
-              1
-            ]
-          },
-          {
-            "name": "MIA - Vali kéo du lịch Larita Aly",
-            "list": [
-              1
-            ]
-          }
-        ]
-      },
-      "Sơn": {
-        "videos": [
-          {
-            "name": "ULUCKY - Đai chườm ấm bụng",
-            "count": 2
-          },
-          {
-            "name": "ETOE - Máy chiếu E3 Pro",
-            "count": 2
-          },
-          {
-            "name": "JETZ - Máy hút bụi X9",
-            "count": 2
-          },
-          {
-            "name": "AOUB-VN - Thiết bị quay góc POV",
-            "count": 2
-          },
-          {
-            "name": "DELI - Hộp đựng thực phẩm",
-            "count": 2
-          },
-          {
-            "name": "VUA NỆM - Nệm lò xo",
-            "count": 1
-          },
-          {
-            "name": "XPANSE - Ghế công thái học",
-            "count": 1
-          },
-          {
-            "name": "BOXERMAN - Quần sịp nam",
-            "count": 1
-          },
-          {
-            "name": "TOSUDO - Móc treo đồ",
-            "count": 1
-          },
-          {
-            "name": "MIA - Vali kéo du lịch Larita Aly",
-            "count": 1
-          }
-        ],
-        "voices": [
-          {
-            "name": "ULUCKY - Đai chườm ấm bụng",
-            "list": [
-              4,
-              5
-            ]
-          },
-          {
-            "name": "ETOE - Máy chiếu E3 Pro",
-            "list": [
-              4,
-              5
-            ]
-          },
-          {
-            "name": "JETZ - Máy hút bụi X9",
-            "list": [
-              3,
-              4
-            ]
-          },
-          {
-            "name": "AOUB-VN - Thiết bị quay góc POV",
-            "list": [
-              4,
-              5
-            ]
-          },
-          {
-            "name": "DELI - Hộp đựng thực phẩm",
-            "list": [
-              4,
-              5
-            ]
-          },
-          {
-            "name": "VUA NỆM - Nệm lò xo",
-            "list": [
-              2
-            ]
-          },
-          {
-            "name": "XPANSE - Ghế công thái học",
-            "list": [
-              2
-            ]
-          },
-          {
-            "name": "BOXERMAN - Quần sịp nam",
-            "list": [
-              3
-            ]
-          },
-          {
-            "name": "TOSUDO - Móc treo đồ",
-            "list": [
-              2
-            ]
-          },
-          {
-            "name": "MIA - Vali kéo du lịch Larita Aly",
-            "list": [
-              2
-            ]
-          }
-        ]
-      },
-      "Dung": {
-        "videos": [
-          {
-            "name": "ULUCKY - Đai chườm ấm bụng",
-            "count": 3
-          },
-          {
-            "name": "ETOE - Máy chiếu E3 Pro",
-            "count": 3
-          },
-          {
-            "name": "JETZ - Máy hút bụi X9",
-            "count": 2
-          },
-          {
-            "name": "AOUB-VN - Thiết bị quay góc POV",
-            "count": 3
-          },
-          {
-            "name": "DELI - Hộp đựng thực phẩm",
-            "count": 3
-          },
-          {
-            "name": "VUA NỆM - Nệm lò xo",
-            "count": 1
-          },
-          {
-            "name": "XPANSE - Ghế công thái học",
-            "count": 1
-          },
-          {
-            "name": "BOXERMAN - Quần sịp nam",
-            "count": 2
-          },
-          {
-            "name": "TOSUDO - Móc treo đồ",
-            "count": 1
-          },
-          {
-            "name": "MIA - Vali kéo du lịch Larita Aly",
-            "count": 1
-          }
-        ],
-        "voices": [
-          {
-            "name": "ULUCKY - Đai chườm ấm bụng",
-            "list": [
-              6,
-              7,
-              8
-            ]
-          },
-          {
-            "name": "ETOE - Máy chiếu E3 Pro",
-            "list": [
-              6,
-              7,
-              8
-            ]
-          },
-          {
-            "name": "JETZ - Máy hút bụi X9",
-            "list": [
-              5,
-              6
-            ]
-          },
-          {
-            "name": "AOUB-VN - Thiết bị quay góc POV",
-            "list": [
-              6,
-              7,
-              8
-            ]
-          },
-          {
-            "name": "DELI - Hộp đựng thực phẩm",
-            "list": [
-              6,
-              7,
-              8
-            ]
-          },
-          {
-            "name": "VUA NỆM - Nệm lò xo",
-            "list": [
-              3
-            ]
-          },
-          {
-            "name": "XPANSE - Ghế công thái học",
-            "list": [
-              3
-            ]
-          },
-          {
-            "name": "BOXERMAN - Quần sịp nam",
-            "list": [
-              4,
-              5
-            ]
-          },
-          {
-            "name": "TOSUDO - Móc treo đồ",
-            "list": [
-              3
-            ]
-          },
-          {
-            "name": "MIA - Vali kéo du lịch Larita Aly",
-            "list": [
-              3
-            ]
-          }
-        ]
-      },
-      "Duyên": {
-        "videos": [
-          {
-            "name": "ULUCKY - Đai chườm ấm bụng",
-            "count": 3
-          },
-          {
-            "name": "ETOE - Máy chiếu E3 Pro",
-            "count": 2
-          },
-          {
-            "name": "JETZ - Máy hút bụi X9",
-            "count": 3
-          },
-          {
-            "name": "AOUB-VN - Thiết bị quay góc POV",
-            "count": 3
-          },
-          {
-            "name": "DELI - Hộp đựng thực phẩm",
-            "count": 2
-          },
-          {
-            "name": "VUA NỆM - Nệm lò xo",
-            "count": 2
-          },
-          {
-            "name": "XPANSE - Ghế công thái học",
-            "count": 1
-          },
-          {
-            "name": "BOXERMAN - Quần sịp nam",
-            "count": 1
-          },
-          {
-            "name": "TOSUDO - Móc treo đồ",
-            "count": 2
-          },
-          {
-            "name": "MIA - Vali kéo du lịch Larita Aly",
-            "count": 1
-          }
-        ],
-        "voices": [
-          {
-            "name": "ULUCKY - Đai chườm ấm bụng",
-            "list": [
-              9,
-              10,
-              11
-            ]
-          },
-          {
-            "name": "ETOE - Máy chiếu E3 Pro",
-            "list": [
-              9,
-              10
-            ]
-          },
-          {
-            "name": "JETZ - Máy hút bụi X9",
-            "list": [
-              7,
-              8,
-              9
-            ]
-          },
-          {
-            "name": "AOUB-VN - Thiết bị quay góc POV",
-            "list": [
-              9,
-              10,
-              11
-            ]
-          },
-          {
-            "name": "DELI - Hộp đựng thực phẩm",
-            "list": [
-              9,
-              10
-            ]
-          },
-          {
-            "name": "VUA NỆM - Nệm lò xo",
-            "list": [
-              4,
-              5
-            ]
-          },
-          {
-            "name": "XPANSE - Ghế công thái học",
-            "list": [
-              4
-            ]
-          },
-          {
-            "name": "BOXERMAN - Quần sịp nam",
-            "list": [
-              6
-            ]
-          },
-          {
-            "name": "TOSUDO - Móc treo đồ",
-            "list": [
-              4,
-              5
-            ]
-          },
-          {
-            "name": "MIA - Vali kéo du lịch Larita Aly",
-            "list": [
-              4
-            ]
-          }
-        ]
-      },
-      "Hiếu": {
-        "videos": [
-          {
-            "name": "ULUCKY - Đai chườm ấm bụng",
-            "count": 3
-          },
-          {
-            "name": "ETOE - Máy chiếu E3 Pro",
-            "count": 2
-          },
-          {
-            "name": "JETZ - Máy hút bụi X9",
-            "count": 3
-          },
-          {
-            "name": "AOUB-VN - Thiết bị quay góc POV",
-            "count": 3
-          },
-          {
-            "name": "DELI - Hộp đựng thực phẩm",
-            "count": 2
-          },
-          {
-            "name": "VUA NỆM - Nệm lò xo",
-            "count": 2
-          },
-          {
-            "name": "XPANSE - Ghế công thái học",
-            "count": 1
-          },
-          {
-            "name": "BOXERMAN - Quần sịp nam",
-            "count": 1
-          },
-          {
-            "name": "TOSUDO - Móc treo đồ",
-            "count": 2
-          },
-          {
-            "name": "MIA - Vali kéo du lịch Larita Aly",
-            "count": 1
-          }
-        ],
-        "voices": [
-          {
-            "name": "ULUCKY - Đai chườm ấm bụng",
-            "list": [
-              12,
-              13,
-              14
-            ]
-          },
-          {
-            "name": "ETOE - Máy chiếu E3 Pro",
-            "list": [
-              11,
-              12
-            ]
-          },
-          {
-            "name": "JETZ - Máy hút bụi X9",
-            "list": [
-              10,
-              11,
-              10
-            ]
-          },
-          {
-            "name": "AOUB-VN - Thiết bị quay góc POV",
-            "list": [
-              12,
-              13,
-              14
-            ]
-          },
-          {
-            "name": "DELI - Hộp đựng thực phẩm",
-            "list": [
-              11,
-              12
-            ]
-          },
-          {
-            "name": "VUA NỆM - Nệm lò xo",
-            "list": [
-              6,
-              7
-            ]
-          },
-          {
-            "name": "XPANSE - Ghế công thái học",
-            "list": [
-              5
-            ]
-          },
-          {
-            "name": "BOXERMAN - Quần sịp nam",
-            "list": [
-              7
-            ]
-          },
-          {
-            "name": "TOSUDO - Móc treo đồ",
-            "list": [
-              6,
-              7
-            ]
-          },
-          {
-            "name": "MIA - Vali kéo du lịch Larita Aly",
-            "list": [
-              5
-            ]
-          }
-        ]
-      },
-      "Thắm": {
-        "videos": [
-          {
-            "name": "ULUCKY - Đai chườm ấm bụng",
-            "count": 2
-          },
-          {
-            "name": "ETOE - Máy chiếu E3 Pro",
-            "count": 3
-          },
-          {
-            "name": "JETZ - Máy hút bụi X9",
-            "count": 3
-          },
-          {
-            "name": "AOUB-VN - Thiết bị quay góc POV",
-            "count": 2
-          },
-          {
-            "name": "DELI - Hộp đựng thực phẩm",
-            "count": 3
-          },
-          {
-            "name": "VUA NỆM - Nệm lò xo",
-            "count": 1
-          },
-          {
-            "name": "XPANSE - Ghế công thái học",
-            "count": 2
-          },
-          {
-            "name": "BOXERMAN - Quần sịp nam",
-            "count": 1
-          },
-          {
-            "name": "TOSUDO - Móc treo đồ",
-            "count": 1
-          },
-          {
-            "name": "MIA - Vali kéo du lịch Larita Aly",
-            "count": 2
-          }
-        ],
-        "voices": [
-          {
-            "name": "ULUCKY - Đai chườm ấm bụng",
-            "list": [
-              15,
-              15
-            ]
-          },
-          {
-            "name": "ETOE - Máy chiếu E3 Pro",
-            "list": [
-              13,
-              14,
-              15
-            ]
-          },
-          {
-            "name": "JETZ - Máy hút bụi X9",
-            "list": [
-              2,
-              5,
-              7
-            ]
-          },
-          {
-            "name": "AOUB-VN - Thiết bị quay góc POV",
-            "list": [
-              15,
-              16
-            ]
-          },
-          {
-            "name": "DELI - Hộp đựng thực phẩm",
-            "list": [
-              13,
-              14,
-              15
-            ]
-          },
-          {
-            "name": "VUA NỆM - Nệm lò xo",
-            "list": [
-              8
-            ]
-          },
-          {
-            "name": "XPANSE - Ghế công thái học",
-            "list": [
-              6,
-              7
-            ]
-          },
-          {
-            "name": "BOXERMAN - Quần sịp nam",
-            "list": [
-              8
-            ]
-          },
-          {
-            "name": "TOSUDO - Móc treo đồ",
-            "list": [
-              8
-            ]
-          },
-          {
-            "name": "MIA - Vali kéo du lịch Larita Aly",
-            "list": [
-              6,
-              7
-            ]
-          }
-        ]
-      },
-      "Trân": {
-        "videos": [
-          {
-            "name": "ULUCKY - Đai chườm ấm bụng",
-            "count": 2
-          },
-          {
-            "name": "ETOE - Máy chiếu E3 Pro",
-            "count": 3
-          },
-          {
-            "name": "JETZ - Máy hút bụi X9",
-            "count": 3
-          },
-          {
-            "name": "AOUB-VN - Thiết bị quay góc POV",
-            "count": 2
-          },
-          {
-            "name": "DELI - Hộp đựng thực phẩm",
-            "count": 3
-          },
-          {
-            "name": "VUA NỆM - Nệm lò xo",
-            "count": 1
-          },
-          {
-            "name": "XPANSE - Ghế công thái học",
-            "count": 2
-          },
-          {
-            "name": "BOXERMAN - Quần sịp nam",
-            "count": 1
-          },
-          {
-            "name": "TOSUDO - Móc treo đồ",
-            "count": 1
-          },
-          {
-            "name": "MIA - Vali kéo du lịch Larita Aly",
-            "count": 2
-          }
-        ],
-        "voices": [
-          {
-            "name": "ULUCKY - Đai chườm ấm bụng",
-            "list": [
-              13,
-              11
-            ]
-          },
-          {
-            "name": "ETOE - Máy chiếu E3 Pro",
-            "list": [
-              1,
-              2,
-              13
-            ]
-          },
-          {
-            "name": "JETZ - Máy hút bụi X9",
-            "list": [
-              3,
-              2,
-              8
-            ]
-          },
-          {
-            "name": "AOUB-VN - Thiết bị quay góc POV",
-            "list": [
-              17,
-              18
-            ]
-          },
-          {
-            "name": "DELI - Hộp đựng thực phẩm",
-            "list": [
-              16,
-              17,
-              18
-            ]
-          },
-          {
-            "name": "VUA NỆM - Nệm lò xo",
-            "list": [
-              9
-            ]
-          },
-          {
-            "name": "XPANSE - Ghế công thái học",
-            "list": [
-              8,
-              9
-            ]
-          },
-          {
-            "name": "BOXERMAN - Quần sịp nam",
-            "list": [
-              9
-            ]
-          },
-          {
-            "name": "TOSUDO - Móc treo đồ",
-            "list": [
-              9
-            ]
-          },
-          {
-            "name": "MIA - Vali kéo du lịch Larita Aly",
-            "list": [
-              8,
-              9
-            ]
-          }
-        ]
-      },
-      "Tuyên": {
-        "videos": [
-          {
-            "name": "ULUCKY - Đai chườm ấm bụng",
-            "count": 2
-          },
-          {
-            "name": "ETOE - Máy chiếu E3 Pro",
-            "count": 2
-          },
-          {
-            "name": "JETZ - Máy hút bụi X9",
-            "count": 2
-          },
-          {
-            "name": "AOUB-VN - Thiết bị quay góc POV",
-            "count": 2
-          },
-          {
-            "name": "DELI - Hộp đựng thực phẩm",
-            "count": 2
-          },
-          {
-            "name": "VUA NỆM - Nệm lò xo",
-            "count": 1
-          },
-          {
-            "name": "XPANSE - Ghế công thái học",
-            "count": 1
-          },
-          {
-            "name": "BOXERMAN - Quần sịp nam",
-            "count": 1
-          },
-          {
-            "name": "TOSUDO - Móc treo đồ",
-            "count": 1
-          },
-          {
-            "name": "MIA - Vali kéo du lịch Larita Aly",
-            "count": 1
-          }
-        ],
-        "voices": [
-          {
-            "name": "ULUCKY - Đai chườm ấm bụng",
-            "list": [
-              1,
-              3
-            ]
-          },
-          {
-            "name": "ETOE - Máy chiếu E3 Pro",
-            "list": [
-              8,
-              6
-            ]
-          },
-          {
-            "name": "JETZ - Máy hút bụi X9",
-            "list": [
-              8,
-              10
-            ]
-          },
-          {
-            "name": "AOUB-VN - Thiết bị quay góc POV",
-            "list": [
-              19,
-              20
-            ]
-          },
-          {
-            "name": "DELI - Hộp đựng thực phẩm",
-            "list": [
-              19,
-              20
-            ]
-          },
-          {
-            "name": "VUA NỆM - Nệm lò xo",
-            "list": [
-              10
-            ]
-          },
-          {
-            "name": "XPANSE - Ghế công thái học",
-            "list": [
-              10
-            ]
-          },
-          {
-            "name": "BOXERMAN - Quần sịp nam",
-            "list": [
-              10
-            ]
-          },
-          {
-            "name": "TOSUDO - Móc treo đồ",
-            "list": [
-              10
-            ]
-          },
-          {
-            "name": "MIA - Vali kéo du lịch Larita Aly",
-            "list": [
-              10
-            ]
-          }
-        ]
-      }
-    },
-    "links": [
-      {
-        "full_name": "ULUCKY - Đai chườm ấm bụng",
-        "url": "https://drive.google.com/drive/folders/1BM4G4qNqabTGkapyW61SdfcdXLAVQuvD"
-      },
-      {
-        "full_name": "ETOE - Máy chiếu E3 Pro",
-        "url": "https://drive.google.com/drive/folders/1qjw0O3EPTHLWPotdz0Hu_WjIf2QchCZ3"
-      },
-      {
-        "full_name": "JETZ - Máy hút bụi X9",
-        "url": "https://drive.google.com/drive/folders/1zsnDwsXgw23OeM8G_UX5g76xf4XLipYu"
-      },
-      {
-        "full_name": "AOUB-VN - Thiết bị quay góc POV",
-        "url": "https://drive.google.com/drive/folders/1-MzpEe64gRZVg_jMTabwaYjQPBDt102-"
-      },
-      {
-        "full_name": "DELI - Hộp đựng thực phẩm",
-        "url": "https://drive.google.com/drive/folders/1Bjf-Ak1yEKniuxnQ9Ycg6M5UEFPcf4LR"
-      },
-      {
-        "full_name": "VUA NỆM - Nệm lò xo",
-        "url": "https://drive.google.com/drive/folders/1F-wyVQ735p7P2b6sj1Oyv7abGFK-vzGL"
-      },
-      {
-        "full_name": "XPANSE - Ghế công thái học",
-        "url": "https://drive.google.com/drive/folders/1SrflrVq0RkiYKm6HmEDPIUSOy-_tNFlk"
-      },
-      {
-        "full_name": "BOXERMAN - Quần sịp nam",
-        "url": "https://drive.google.com/drive/folders/1shaRug2EYYKuf7ESawi1E_r0wNLSUOI1"
-      },
-      {
-        "full_name": "TOSUDO - Móc treo đồ",
-        "url": "https://drive.google.com/drive/folders/1NVguQOkZdm0YnwFR5-HYkyuW7nXEnyaO"
-      },
-      {
-        "full_name": "MIA - Vali kéo du lịch Larita Aly",
-        "url": "https://drive.google.com/drive/folders/1Zjui3REILL9_yBNJu3l21XqA8h1ZL3Ye"
-      }
-    ]
   }
 }

@@ -2415,63 +2415,53 @@
         "voices": [
           {
             "name": "ULUCKY - Đai chườm ấm bụng",
-            "list": [
-              1
-            ]
+            "voice_from": 1,
+            "voice_to": 1
           },
           {
             "name": "ETOE - Máy chiếu E3 Pro",
-            "list": [
-              1
-            ]
+            "voice_from": 1,
+            "voice_to": 1
           },
           {
             "name": "JETZ - Máy hút bụi X9",
-            "list": [
-              1
-            ]
+            "voice_from": 1,
+            "voice_to": 1
           },
           {
             "name": "AOUB-VN - Thiết bị quay góc POV",
-            "list": [
-              1
-            ]
+            "voice_from": 1,
+            "voice_to": 1
           },
           {
             "name": "DELI - Hộp đựng thực phẩm",
-            "list": [
-              1
-            ]
+            "voice_from": 1,
+            "voice_to": 1
           },
           {
             "name": "VUA NỆM - Nệm lò xo",
-            "list": [
-              1
-            ]
+            "voice_from": 1,
+            "voice_to": 1
           },
           {
             "name": "XPANSE - Ghế công thái học",
-            "list": [
-              1
-            ]
+            "voice_from": 1,
+            "voice_to": 1
           },
           {
             "name": "BOXERMAN - Quần sịp nam",
-            "list": [
-              1
-            ]
+            "voice_from": 1,
+            "voice_to": 1
           },
           {
             "name": "TOSUDO - Móc treo đồ",
-            "list": [
-              1
-            ]
+            "voice_from": 1,
+            "voice_to": 1
           },
           {
             "name": "MIA - Vali kéo du lịch Larita Aly",
-            "list": [
-              1
-            ]
+            "voice_from": 1,
+            "voice_to": 1
           }
         ]
       },
@@ -2521,63 +2511,53 @@
         "voices": [
           {
             "name": "ULUCKY - Đai chườm ấm bụng",
-            "list": [
-              2
-            ]
+            "voice_from": 2,
+            "voice_to": 2
           },
           {
             "name": "ETOE - Máy chiếu E3 Pro",
-            "list": [
-              2
-            ]
+            "voice_from": 2,
+            "voice_to": 2
           },
           {
             "name": "JETZ - Máy hút bụi X9",
-            "list": [
-              2
-            ]
+            "voice_from": 2,
+            "voice_to": 2
           },
           {
             "name": "AOUB-VN - Thiết bị quay góc POV",
-            "list": [
-              2
-            ]
+            "voice_from": 2,
+            "voice_to": 2
           },
           {
             "name": "DELI - Hộp đựng thực phẩm",
-            "list": [
-              2
-            ]
+            "voice_from": 2,
+            "voice_to": 2
           },
           {
             "name": "VUA NỆM - Nệm lò xo",
-            "list": [
-              2
-            ]
+            "voice_from": 2,
+            "voice_to": 2
           },
           {
             "name": "XPANSE - Ghế công thái học",
-            "list": [
-              2
-            ]
+            "voice_from": 2,
+            "voice_to": 2
           },
           {
             "name": "BOXERMAN - Quần sịp nam",
-            "list": [
-              2
-            ]
+            "voice_from": 2,
+            "voice_to": 2
           },
           {
             "name": "TOSUDO - Móc treo đồ",
-            "list": [
-              2
-            ]
+            "voice_from": 2,
+            "voice_to": 2
           },
           {
             "name": "MIA - Vali kéo du lịch Larita Aly",
-            "list": [
-              2
-            ]
+            "voice_from": 2,
+            "voice_to": 2
           }
         ]
       },
@@ -2627,63 +2607,53 @@
         "voices": [
           {
             "name": "ULUCKY - Đai chườm ấm bụng",
-            "list": [
-              3
-            ]
+            "voice_from": 3,
+            "voice_to": 3
           },
           {
             "name": "ETOE - Máy chiếu E3 Pro",
-            "list": [
-              3
-            ]
+            "voice_from": 3,
+            "voice_to": 3
           },
           {
             "name": "JETZ - Máy hút bụi X9",
-            "list": [
-              3
-            ]
+            "voice_from": 3,
+            "voice_to": 3
           },
           {
             "name": "AOUB-VN - Thiết bị quay góc POV",
-            "list": [
-              3
-            ]
+            "voice_from": 3,
+            "voice_to": 3
           },
           {
             "name": "DELI - Hộp đựng thực phẩm",
-            "list": [
-              3
-            ]
+            "voice_from": 3,
+            "voice_to": 3
           },
           {
             "name": "VUA NỆM - Nệm lò xo",
-            "list": [
-              3
-            ]
+            "voice_from": 3,
+            "voice_to": 3
           },
           {
             "name": "XPANSE - Ghế công thái học",
-            "list": [
-              3
-            ]
+            "voice_from": 3,
+            "voice_to": 3
           },
           {
             "name": "BOXERMAN - Quần sịp nam",
-            "list": [
-              3
-            ]
+            "voice_from": 3,
+            "voice_to": 3
           },
           {
             "name": "TOSUDO - Móc treo đồ",
-            "list": [
-              3
-            ]
+            "voice_from": 3,
+            "voice_to": 3
           },
           {
             "name": "MIA - Vali kéo du lịch Larita Aly",
-            "list": [
-              3
-            ]
+            "voice_from": 3,
+            "voice_to": 3
           }
         ]
       },
@@ -2733,63 +2703,53 @@
         "voices": [
           {
             "name": "ULUCKY - Đai chườm ấm bụng",
-            "list": [
-              4
-            ]
+            "voice_from": 4,
+            "voice_to": 4
           },
           {
             "name": "ETOE - Máy chiếu E3 Pro",
-            "list": [
-              4
-            ]
+            "voice_from": 4,
+            "voice_to": 4
           },
           {
             "name": "JETZ - Máy hút bụi X9",
-            "list": [
-              4
-            ]
+            "voice_from": 4,
+            "voice_to": 4
           },
           {
             "name": "AOUB-VN - Thiết bị quay góc POV",
-            "list": [
-              4
-            ]
+            "voice_from": 4,
+            "voice_to": 4
           },
           {
             "name": "DELI - Hộp đựng thực phẩm",
-            "list": [
-              4
-            ]
+            "voice_from": 4,
+            "voice_to": 4
           },
           {
             "name": "VUA NỆM - Nệm lò xo",
-            "list": [
-              4
-            ]
+            "voice_from": 4,
+            "voice_to": 4
           },
           {
             "name": "XPANSE - Ghế công thái học",
-            "list": [
-              4
-            ]
+            "voice_from": 4,
+            "voice_to": 4
           },
           {
             "name": "BOXERMAN - Quần sịp nam",
-            "list": [
-              4
-            ]
+            "voice_from": 4,
+            "voice_to": 4
           },
           {
             "name": "TOSUDO - Móc treo đồ",
-            "list": [
-              4
-            ]
+            "voice_from": 4,
+            "voice_to": 4
           },
           {
             "name": "MIA - Vali kéo du lịch Larita Aly",
-            "list": [
-              4
-            ]
+            "voice_from": 4,
+            "voice_to": 4
           }
         ]
       },
@@ -2839,63 +2799,53 @@
         "voices": [
           {
             "name": "ULUCKY - Đai chườm ấm bụng",
-            "list": [
-              5
-            ]
+            "voice_from": 5,
+            "voice_to": 5
           },
           {
             "name": "ETOE - Máy chiếu E3 Pro",
-            "list": [
-              5
-            ]
+            "voice_from": 5,
+            "voice_to": 5
           },
           {
             "name": "JETZ - Máy hút bụi X9",
-            "list": [
-              5
-            ]
+            "voice_from": 5,
+            "voice_to": 5
           },
           {
             "name": "AOUB-VN - Thiết bị quay góc POV",
-            "list": [
-              5
-            ]
+            "voice_from": 5,
+            "voice_to": 5
           },
           {
             "name": "DELI - Hộp đựng thực phẩm",
-            "list": [
-              5
-            ]
+            "voice_from": 5,
+            "voice_to": 5
           },
           {
             "name": "VUA NỆM - Nệm lò xo",
-            "list": [
-              5
-            ]
+            "voice_from": 5,
+            "voice_to": 5
           },
           {
             "name": "XPANSE - Ghế công thái học",
-            "list": [
-              5
-            ]
+            "voice_from": 5,
+            "voice_to": 5
           },
           {
             "name": "BOXERMAN - Quần sịp nam",
-            "list": [
-              5
-            ]
+            "voice_from": 5,
+            "voice_to": 5
           },
           {
             "name": "TOSUDO - Móc treo đồ",
-            "list": [
-              5
-            ]
+            "voice_from": 5,
+            "voice_to": 5
           },
           {
             "name": "MIA - Vali kéo du lịch Larita Aly",
-            "list": [
-              5
-            ]
+            "voice_from": 5,
+            "voice_to": 5
           }
         ]
       },
@@ -2945,63 +2895,53 @@
         "voices": [
           {
             "name": "ULUCKY - Đai chườm ấm bụng",
-            "list": [
-              6
-            ]
+            "voice_from": 6,
+            "voice_to": 6
           },
           {
             "name": "ETOE - Máy chiếu E3 Pro",
-            "list": [
-              6
-            ]
+            "voice_from": 6,
+            "voice_to": 6
           },
           {
             "name": "JETZ - Máy hút bụi X9",
-            "list": [
-              6
-            ]
+            "voice_from": 6,
+            "voice_to": 6
           },
           {
             "name": "AOUB-VN - Thiết bị quay góc POV",
-            "list": [
-              6
-            ]
+            "voice_from": 6,
+            "voice_to": 6
           },
           {
             "name": "DELI - Hộp đựng thực phẩm",
-            "list": [
-              6
-            ]
+            "voice_from": 6,
+            "voice_to": 6
           },
           {
             "name": "VUA NỆM - Nệm lò xo",
-            "list": [
-              6
-            ]
+            "voice_from": 6,
+            "voice_to": 6
           },
           {
             "name": "XPANSE - Ghế công thái học",
-            "list": [
-              6
-            ]
+            "voice_from": 6,
+            "voice_to": 6
           },
           {
             "name": "BOXERMAN - Quần sịp nam",
-            "list": [
-              6
-            ]
+            "voice_from": 6,
+            "voice_to": 6
           },
           {
             "name": "TOSUDO - Móc treo đồ",
-            "list": [
-              6
-            ]
+            "voice_from": 6,
+            "voice_to": 6
           },
           {
             "name": "MIA - Vali kéo du lịch Larita Aly",
-            "list": [
-              6
-            ]
+            "voice_from": 6,
+            "voice_to": 6
           }
         ]
       },
@@ -3051,63 +2991,53 @@
         "voices": [
           {
             "name": "ULUCKY - Đai chườm ấm bụng",
-            "list": [
-              7
-            ]
+            "voice_from": 7,
+            "voice_to": 7
           },
           {
             "name": "ETOE - Máy chiếu E3 Pro",
-            "list": [
-              7
-            ]
+            "voice_from": 7,
+            "voice_to": 7
           },
           {
             "name": "JETZ - Máy hút bụi X9",
-            "list": [
-              7
-            ]
+            "voice_from": 7,
+            "voice_to": 7
           },
           {
             "name": "AOUB-VN - Thiết bị quay góc POV",
-            "list": [
-              7
-            ]
+            "voice_from": 7,
+            "voice_to": 7
           },
           {
             "name": "DELI - Hộp đựng thực phẩm",
-            "list": [
-              7
-            ]
+            "voice_from": 7,
+            "voice_to": 7
           },
           {
             "name": "VUA NỆM - Nệm lò xo",
-            "list": [
-              7
-            ]
+            "voice_from": 7,
+            "voice_to": 7
           },
           {
             "name": "XPANSE - Ghế công thái học",
-            "list": [
-              7
-            ]
+            "voice_from": 7,
+            "voice_to": 7
           },
           {
             "name": "BOXERMAN - Quần sịp nam",
-            "list": [
-              7
-            ]
+            "voice_from": 7,
+            "voice_to": 7
           },
           {
             "name": "TOSUDO - Móc treo đồ",
-            "list": [
-              7
-            ]
+            "voice_from": 7,
+            "voice_to": 7
           },
           {
             "name": "MIA - Vali kéo du lịch Larita Aly",
-            "list": [
-              7
-            ]
+            "voice_from": 7,
+            "voice_to": 7
           }
         ]
       },
@@ -3157,63 +3087,53 @@
         "voices": [
           {
             "name": "ULUCKY - Đai chườm ấm bụng",
-            "list": [
-              8
-            ]
+            "voice_from": 8,
+            "voice_to": 8
           },
           {
             "name": "ETOE - Máy chiếu E3 Pro",
-            "list": [
-              8
-            ]
+            "voice_from": 8,
+            "voice_to": 8
           },
           {
             "name": "JETZ - Máy hút bụi X9",
-            "list": [
-              8
-            ]
+            "voice_from": 8,
+            "voice_to": 8
           },
           {
             "name": "AOUB-VN - Thiết bị quay góc POV",
-            "list": [
-              8
-            ]
+            "voice_from": 8,
+            "voice_to": 8
           },
           {
             "name": "DELI - Hộp đựng thực phẩm",
-            "list": [
-              8
-            ]
+            "voice_from": 8,
+            "voice_to": 8
           },
           {
             "name": "VUA NỆM - Nệm lò xo",
-            "list": [
-              8
-            ]
+            "voice_from": 8,
+            "voice_to": 8
           },
           {
             "name": "XPANSE - Ghế công thái học",
-            "list": [
-              8
-            ]
+            "voice_from": 8,
+            "voice_to": 8
           },
           {
             "name": "BOXERMAN - Quần sịp nam",
-            "list": [
-              8
-            ]
+            "voice_from": 8,
+            "voice_to": 8
           },
           {
             "name": "TOSUDO - Móc treo đồ",
-            "list": [
-              8
-            ]
+            "voice_from": 8,
+            "voice_to": 8
           },
           {
             "name": "MIA - Vali kéo du lịch Larita Aly",
-            "list": [
-              8
-            ]
+            "voice_from": 8,
+            "voice_to": 8
           }
         ]
       }

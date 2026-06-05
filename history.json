@@ -1548,7 +1548,7 @@
     },
     "AOUB-VN - Thiết bị quay góc POV": {
       "total": 21,
-      "counter": 20
+      "counter": 40
     },
     "DELI - Hộp đựng thực phẩm": {
       "total": 20,
@@ -1613,6 +1613,46 @@
     "MIXUAN - Găng Tay Cao Su Bảo Hộ": {
       "total": 10,
       "counter": 20
+    },
+    "TIEU MAN THAU STORE - Khẩu trang chống nắng ninja": {
+      "total": 10,
+      "counter": 20
+    },
+    "PERYSMITH - Máy hút bụi cầm tay XS1Pro": {
+      "total": 10,
+      "counter": 20
+    },
+    "JISULIFE - Quạt đeo cổ Life 5": {
+      "total": 10,
+      "counter": 20
+    },
+    "REDCHEF - Bộ dao kéo 6 món": {
+      "total": 10,
+      "counter": 10
+    },
+    "HAPAS - Quà tặng Phụ nữ Việt Nam 20.10 (2026)": {
+      "total": 25,
+      "counter": 10
+    },
+    "DEN HOANG KIM - Đèn led năng lượng mặt trời": {
+      "total": 10,
+      "counter": 10
+    },
+    "DOMINIC - Máy tỉa lông mũi": {
+      "total": 5,
+      "counter": 10
+    },
+    "TIGERNU - Ba lô nam doanh nhân": {
+      "total": 10,
+      "counter": 10
+    },
+    "DIGI DOMAIN - Đế sạc không dây 3 in 1": {
+      "total": 13,
+      "counter": 10
+    },
+    "DELI - Dao rọc giấy đa năng": {
+      "total": 12,
+      "counter": 10
     }
   },
   "2026-06-04": {
@@ -2346,6 +2386,776 @@
       {
         "full_name": "MIXUAN - Găng Tay Cao Su Bảo Hộ",
         "url": "https://drive.google.com/drive/folders/1qI71XopJUWDJUJqxSdqJaG7tapeUtk6F"
+      }
+    ]
+  },
+  "2026-06-05": {
+    "assignments": {
+      "Thư": {
+        "videos": [
+          {
+            "name": "JISULIFE - Quạt đeo cổ Life 5",
+            "count": 3
+          },
+          {
+            "name": "REDCHEF - Bộ dao kéo 6 món",
+            "count": 2
+          },
+          {
+            "name": "HAPAS - Quà tặng Phụ nữ Việt Nam 20.10 (2026)",
+            "count": 2
+          },
+          {
+            "name": "AOUB-VN - Thiết bị quay góc POV",
+            "count": 3
+          },
+          {
+            "name": "DEN HOANG KIM - Đèn led năng lượng mặt trời",
+            "count": 2
+          },
+          {
+            "name": "DOMINIC - Máy tỉa lông mũi",
+            "count": 2
+          },
+          {
+            "name": "TIGERNU - Ba lô nam doanh nhân",
+            "count": 2
+          },
+          {
+            "name": "DIGI DOMAIN - Đế sạc không dây 3 in 1",
+            "count": 2
+          },
+          {
+            "name": "DELI - Dao rọc giấy đa năng",
+            "count": 2
+          }
+        ],
+        "voices": [
+          {
+            "name": "JISULIFE - Quạt đeo cổ Life 5",
+            "count": "1, 2, 3"
+          },
+          {
+            "name": "REDCHEF - Bộ dao kéo 6 món",
+            "count": "1, 2"
+          },
+          {
+            "name": "HAPAS - Quà tặng Phụ nữ Việt Nam 20.10 (2026)",
+            "count": "1, 2"
+          },
+          {
+            "name": "AOUB-VN - Thiết bị quay góc POV",
+            "count": "21, 1, 2"
+          },
+          {
+            "name": "DEN HOANG KIM - Đèn led năng lượng mặt trời",
+            "count": "1, 2"
+          },
+          {
+            "name": "DOMINIC - Máy tỉa lông mũi",
+            "count": "1, 2"
+          },
+          {
+            "name": "TIGERNU - Ba lô nam doanh nhân",
+            "count": "1, 2"
+          },
+          {
+            "name": "DIGI DOMAIN - Đế sạc không dây 3 in 1",
+            "count": "1, 2"
+          },
+          {
+            "name": "DELI - Dao rọc giấy đa năng",
+            "count": "1, 2"
+          }
+        ]
+      },
+      "Sơn": {
+        "videos": [
+          {
+            "name": "TIEU MAN THAU STORE - Khẩu trang chống nắng ninja",
+            "count": 2
+          },
+          {
+            "name": "PERYSMITH - Máy hút bụi cầm tay XS1Pro",
+            "count": 2
+          },
+          {
+            "name": "JISULIFE - Quạt đeo cổ Life 5",
+            "count": 2
+          },
+          {
+            "name": "REDCHEF - Bộ dao kéo 6 món",
+            "count": 1
+          },
+          {
+            "name": "HAPAS - Quà tặng Phụ nữ Việt Nam 20.10 (2026)",
+            "count": 1
+          },
+          {
+            "name": "AOUB-VN - Thiết bị quay góc POV",
+            "count": 2
+          },
+          {
+            "name": "DEN HOANG KIM - Đèn led năng lượng mặt trời",
+            "count": 1
+          },
+          {
+            "name": "DOMINIC - Máy tỉa lông mũi",
+            "count": 1
+          },
+          {
+            "name": "TIGERNU - Ba lô nam doanh nhân",
+            "count": 1
+          },
+          {
+            "name": "DIGI DOMAIN - Đế sạc không dây 3 in 1",
+            "count": 1
+          },
+          {
+            "name": "DELI - Dao rọc giấy đa năng",
+            "count": 1
+          }
+        ],
+        "voices": [
+          {
+            "name": "TIEU MAN THAU STORE - Khẩu trang chống nắng ninja",
+            "count": "1, 2"
+          },
+          {
+            "name": "PERYSMITH - Máy hút bụi cầm tay XS1Pro",
+            "count": "1, 2"
+          },
+          {
+            "name": "JISULIFE - Quạt đeo cổ Life 5",
+            "count": "4, 5"
+          },
+          {
+            "name": "REDCHEF - Bộ dao kéo 6 món",
+            "count": "3"
+          },
+          {
+            "name": "HAPAS - Quà tặng Phụ nữ Việt Nam 20.10 (2026)",
+            "count": "3"
+          },
+          {
+            "name": "AOUB-VN - Thiết bị quay góc POV",
+            "count": "3, 4"
+          },
+          {
+            "name": "DEN HOANG KIM - Đèn led năng lượng mặt trời",
+            "count": "3"
+          },
+          {
+            "name": "DOMINIC - Máy tỉa lông mũi",
+            "count": "3"
+          },
+          {
+            "name": "TIGERNU - Ba lô nam doanh nhân",
+            "count": "3"
+          },
+          {
+            "name": "DIGI DOMAIN - Đế sạc không dây 3 in 1",
+            "count": "3"
+          },
+          {
+            "name": "DELI - Dao rọc giấy đa năng",
+            "count": "3"
+          }
+        ]
+      },
+      "Dung": {
+        "videos": [
+          {
+            "name": "JISULIFE - Quạt đeo cổ Life 5",
+            "count": 3
+          },
+          {
+            "name": "REDCHEF - Bộ dao kéo 6 món",
+            "count": 2
+          },
+          {
+            "name": "HAPAS - Quà tặng Phụ nữ Việt Nam 20.10 (2026)",
+            "count": 2
+          },
+          {
+            "name": "AOUB-VN - Thiết bị quay góc POV",
+            "count": 3
+          },
+          {
+            "name": "DEN HOANG KIM - Đèn led năng lượng mặt trời",
+            "count": 2
+          },
+          {
+            "name": "DOMINIC - Máy tỉa lông mũi",
+            "count": 2
+          },
+          {
+            "name": "TIGERNU - Ba lô nam doanh nhân",
+            "count": 2
+          },
+          {
+            "name": "DIGI DOMAIN - Đế sạc không dây 3 in 1",
+            "count": 2
+          },
+          {
+            "name": "DELI - Dao rọc giấy đa năng",
+            "count": 2
+          }
+        ],
+        "voices": [
+          {
+            "name": "JISULIFE - Quạt đeo cổ Life 5",
+            "count": "6, 7, 8"
+          },
+          {
+            "name": "REDCHEF - Bộ dao kéo 6 món",
+            "count": "4, 5"
+          },
+          {
+            "name": "HAPAS - Quà tặng Phụ nữ Việt Nam 20.10 (2026)",
+            "count": "4, 5"
+          },
+          {
+            "name": "AOUB-VN - Thiết bị quay góc POV",
+            "count": "5, 6, 7"
+          },
+          {
+            "name": "DEN HOANG KIM - Đèn led năng lượng mặt trời",
+            "count": "4, 5"
+          },
+          {
+            "name": "DOMINIC - Máy tỉa lông mũi",
+            "count": "4, 5"
+          },
+          {
+            "name": "TIGERNU - Ba lô nam doanh nhân",
+            "count": "4, 5"
+          },
+          {
+            "name": "DIGI DOMAIN - Đế sạc không dây 3 in 1",
+            "count": "4, 5"
+          },
+          {
+            "name": "DELI - Dao rọc giấy đa năng",
+            "count": "4, 5"
+          }
+        ]
+      },
+      "Duyên": {
+        "videos": [
+          {
+            "name": "TIEU MAN THAU STORE - Khẩu trang chống nắng ninja",
+            "count": 4
+          },
+          {
+            "name": "PERYSMITH - Máy hút bụi cầm tay XS1Pro",
+            "count": 3
+          },
+          {
+            "name": "JISULIFE - Quạt đeo cổ Life 5",
+            "count": 3
+          },
+          {
+            "name": "REDCHEF - Bộ dao kéo 6 món",
+            "count": 1
+          },
+          {
+            "name": "HAPAS - Quà tặng Phụ nữ Việt Nam 20.10 (2026)",
+            "count": 1
+          },
+          {
+            "name": "AOUB-VN - Thiết bị quay góc POV",
+            "count": 3
+          },
+          {
+            "name": "DEN HOANG KIM - Đèn led năng lượng mặt trời",
+            "count": 1
+          },
+          {
+            "name": "DOMINIC - Máy tỉa lông mũi",
+            "count": 1
+          },
+          {
+            "name": "TIGERNU - Ba lô nam doanh nhân",
+            "count": 1
+          },
+          {
+            "name": "DIGI DOMAIN - Đế sạc không dây 3 in 1",
+            "count": 1
+          },
+          {
+            "name": "DELI - Dao rọc giấy đa năng",
+            "count": 1
+          }
+        ],
+        "voices": [
+          {
+            "name": "TIEU MAN THAU STORE - Khẩu trang chống nắng ninja",
+            "count": "3, 4, 5, 6"
+          },
+          {
+            "name": "PERYSMITH - Máy hút bụi cầm tay XS1Pro",
+            "count": "3, 4, 5"
+          },
+          {
+            "name": "JISULIFE - Quạt đeo cổ Life 5",
+            "count": "9, 10, 1"
+          },
+          {
+            "name": "REDCHEF - Bộ dao kéo 6 món",
+            "count": "6"
+          },
+          {
+            "name": "HAPAS - Quà tặng Phụ nữ Việt Nam 20.10 (2026)",
+            "count": "6"
+          },
+          {
+            "name": "AOUB-VN - Thiết bị quay góc POV",
+            "count": "8, 9, 10"
+          },
+          {
+            "name": "DEN HOANG KIM - Đèn led năng lượng mặt trời",
+            "count": "6"
+          },
+          {
+            "name": "DOMINIC - Máy tỉa lông mũi",
+            "count": "1"
+          },
+          {
+            "name": "TIGERNU - Ba lô nam doanh nhân",
+            "count": "6"
+          },
+          {
+            "name": "DIGI DOMAIN - Đế sạc không dây 3 in 1",
+            "count": "6"
+          },
+          {
+            "name": "DELI - Dao rọc giấy đa năng",
+            "count": "6"
+          }
+        ]
+      },
+      "Hiếu": {
+        "videos": [
+          {
+            "name": "TIEU MAN THAU STORE - Khẩu trang chống nắng ninja",
+            "count": 4
+          },
+          {
+            "name": "PERYSMITH - Máy hút bụi cầm tay XS1Pro",
+            "count": 3
+          },
+          {
+            "name": "JISULIFE - Quạt đeo cổ Life 5",
+            "count": 3
+          },
+          {
+            "name": "REDCHEF - Bộ dao kéo 6 món",
+            "count": 1
+          },
+          {
+            "name": "HAPAS - Quà tặng Phụ nữ Việt Nam 20.10 (2026)",
+            "count": 1
+          },
+          {
+            "name": "AOUB-VN - Thiết bị quay góc POV",
+            "count": 3
+          },
+          {
+            "name": "DEN HOANG KIM - Đèn led năng lượng mặt trời",
+            "count": 1
+          },
+          {
+            "name": "DOMINIC - Máy tỉa lông mũi",
+            "count": 1
+          },
+          {
+            "name": "TIGERNU - Ba lô nam doanh nhân",
+            "count": 1
+          },
+          {
+            "name": "DIGI DOMAIN - Đế sạc không dây 3 in 1",
+            "count": 1
+          },
+          {
+            "name": "DELI - Dao rọc giấy đa năng",
+            "count": 1
+          }
+        ],
+        "voices": [
+          {
+            "name": "TIEU MAN THAU STORE - Khẩu trang chống nắng ninja",
+            "count": "7, 8, 9, 10"
+          },
+          {
+            "name": "PERYSMITH - Máy hút bụi cầm tay XS1Pro",
+            "count": "6, 7, 8"
+          },
+          {
+            "name": "JISULIFE - Quạt đeo cổ Life 5",
+            "count": "2, 3, 4"
+          },
+          {
+            "name": "REDCHEF - Bộ dao kéo 6 món",
+            "count": "7"
+          },
+          {
+            "name": "HAPAS - Quà tặng Phụ nữ Việt Nam 20.10 (2026)",
+            "count": "7"
+          },
+          {
+            "name": "AOUB-VN - Thiết bị quay góc POV",
+            "count": "11, 12, 13"
+          },
+          {
+            "name": "DEN HOANG KIM - Đèn led năng lượng mặt trời",
+            "count": "7"
+          },
+          {
+            "name": "DOMINIC - Máy tỉa lông mũi",
+            "count": "2"
+          },
+          {
+            "name": "TIGERNU - Ba lô nam doanh nhân",
+            "count": "7"
+          },
+          {
+            "name": "DIGI DOMAIN - Đế sạc không dây 3 in 1",
+            "count": "7"
+          },
+          {
+            "name": "DELI - Dao rọc giấy đa năng",
+            "count": "7"
+          }
+        ]
+      },
+      "Thắm": {
+        "videos": [
+          {
+            "name": "TIEU MAN THAU STORE - Khẩu trang chống nắng ninja",
+            "count": 5
+          },
+          {
+            "name": "PERYSMITH - Máy hút bụi cầm tay XS1Pro",
+            "count": 4
+          },
+          {
+            "name": "JISULIFE - Quạt đeo cổ Life 5",
+            "count": 2
+          },
+          {
+            "name": "REDCHEF - Bộ dao kéo 6 món",
+            "count": 1
+          },
+          {
+            "name": "HAPAS - Quà tặng Phụ nữ Việt Nam 20.10 (2026)",
+            "count": 1
+          },
+          {
+            "name": "AOUB-VN - Thiết bị quay góc POV",
+            "count": 2
+          },
+          {
+            "name": "DEN HOANG KIM - Đèn led năng lượng mặt trời",
+            "count": 1
+          },
+          {
+            "name": "DOMINIC - Máy tỉa lông mũi",
+            "count": 1
+          },
+          {
+            "name": "TIGERNU - Ba lô nam doanh nhân",
+            "count": 1
+          },
+          {
+            "name": "DIGI DOMAIN - Đế sạc không dây 3 in 1",
+            "count": 1
+          },
+          {
+            "name": "DELI - Dao rọc giấy đa năng",
+            "count": 1
+          }
+        ],
+        "voices": [
+          {
+            "name": "TIEU MAN THAU STORE - Khẩu trang chống nắng ninja",
+            "count": "1, 2, 3, 4, 5"
+          },
+          {
+            "name": "PERYSMITH - Máy hút bụi cầm tay XS1Pro",
+            "count": "9, 10, 1, 2"
+          },
+          {
+            "name": "JISULIFE - Quạt đeo cổ Life 5",
+            "count": "5, 6"
+          },
+          {
+            "name": "REDCHEF - Bộ dao kéo 6 món",
+            "count": "8"
+          },
+          {
+            "name": "HAPAS - Quà tặng Phụ nữ Việt Nam 20.10 (2026)",
+            "count": "8"
+          },
+          {
+            "name": "AOUB-VN - Thiết bị quay góc POV",
+            "count": "14, 15"
+          },
+          {
+            "name": "DEN HOANG KIM - Đèn led năng lượng mặt trời",
+            "count": "8"
+          },
+          {
+            "name": "DOMINIC - Máy tỉa lông mũi",
+            "count": "3"
+          },
+          {
+            "name": "TIGERNU - Ba lô nam doanh nhân",
+            "count": "8"
+          },
+          {
+            "name": "DIGI DOMAIN - Đế sạc không dây 3 in 1",
+            "count": "8"
+          },
+          {
+            "name": "DELI - Dao rọc giấy đa năng",
+            "count": "8"
+          }
+        ]
+      },
+      "Trân": {
+        "videos": [
+          {
+            "name": "TIEU MAN THAU STORE - Khẩu trang chống nắng ninja",
+            "count": 3
+          },
+          {
+            "name": "PERYSMITH - Máy hút bụi cầm tay XS1Pro",
+            "count": 6
+          },
+          {
+            "name": "JISULIFE - Quạt đeo cổ Life 5",
+            "count": 2
+          },
+          {
+            "name": "REDCHEF - Bộ dao kéo 6 món",
+            "count": 1
+          },
+          {
+            "name": "HAPAS - Quà tặng Phụ nữ Việt Nam 20.10 (2026)",
+            "count": 1
+          },
+          {
+            "name": "AOUB-VN - Thiết bị quay góc POV",
+            "count": 2
+          },
+          {
+            "name": "DEN HOANG KIM - Đèn led năng lượng mặt trời",
+            "count": 1
+          },
+          {
+            "name": "DOMINIC - Máy tỉa lông mũi",
+            "count": 1
+          },
+          {
+            "name": "TIGERNU - Ba lô nam doanh nhân",
+            "count": 1
+          },
+          {
+            "name": "DIGI DOMAIN - Đế sạc không dây 3 in 1",
+            "count": 1
+          },
+          {
+            "name": "DELI - Dao rọc giấy đa năng",
+            "count": 1
+          }
+        ],
+        "voices": [
+          {
+            "name": "TIEU MAN THAU STORE - Khẩu trang chống nắng ninja",
+            "count": "6, 7, 8"
+          },
+          {
+            "name": "PERYSMITH - Máy hút bụi cầm tay XS1Pro",
+            "count": "3, 4, 5, 6, 7, 8"
+          },
+          {
+            "name": "JISULIFE - Quạt đeo cổ Life 5",
+            "count": "7, 8"
+          },
+          {
+            "name": "REDCHEF - Bộ dao kéo 6 món",
+            "count": "9"
+          },
+          {
+            "name": "HAPAS - Quà tặng Phụ nữ Việt Nam 20.10 (2026)",
+            "count": "9"
+          },
+          {
+            "name": "AOUB-VN - Thiết bị quay góc POV",
+            "count": "16, 17"
+          },
+          {
+            "name": "DEN HOANG KIM - Đèn led năng lượng mặt trời",
+            "count": "9"
+          },
+          {
+            "name": "DOMINIC - Máy tỉa lông mũi",
+            "count": "4"
+          },
+          {
+            "name": "TIGERNU - Ba lô nam doanh nhân",
+            "count": "9"
+          },
+          {
+            "name": "DIGI DOMAIN - Đế sạc không dây 3 in 1",
+            "count": "9"
+          },
+          {
+            "name": "DELI - Dao rọc giấy đa năng",
+            "count": "9"
+          }
+        ]
+      },
+      "Tuyên": {
+        "videos": [
+          {
+            "name": "TIEU MAN THAU STORE - Khẩu trang chống nắng ninja",
+            "count": 2
+          },
+          {
+            "name": "PERYSMITH - Máy hút bụi cầm tay XS1Pro",
+            "count": 2
+          },
+          {
+            "name": "JISULIFE - Quạt đeo cổ Life 5",
+            "count": 2
+          },
+          {
+            "name": "REDCHEF - Bộ dao kéo 6 món",
+            "count": 1
+          },
+          {
+            "name": "HAPAS - Quà tặng Phụ nữ Việt Nam 20.10 (2026)",
+            "count": 1
+          },
+          {
+            "name": "AOUB-VN - Thiết bị quay góc POV",
+            "count": 2
+          },
+          {
+            "name": "DEN HOANG KIM - Đèn led năng lượng mặt trời",
+            "count": 1
+          },
+          {
+            "name": "DOMINIC - Máy tỉa lông mũi",
+            "count": 1
+          },
+          {
+            "name": "TIGERNU - Ba lô nam doanh nhân",
+            "count": 1
+          },
+          {
+            "name": "DIGI DOMAIN - Đế sạc không dây 3 in 1",
+            "count": 1
+          },
+          {
+            "name": "DELI - Dao rọc giấy đa năng",
+            "count": 1
+          }
+        ],
+        "voices": [
+          {
+            "name": "TIEU MAN THAU STORE - Khẩu trang chống nắng ninja",
+            "count": "9, 10"
+          },
+          {
+            "name": "PERYSMITH - Máy hút bụi cầm tay XS1Pro",
+            "count": "9, 10"
+          },
+          {
+            "name": "JISULIFE - Quạt đeo cổ Life 5",
+            "count": "9, 10"
+          },
+          {
+            "name": "REDCHEF - Bộ dao kéo 6 món",
+            "count": "10"
+          },
+          {
+            "name": "HAPAS - Quà tặng Phụ nữ Việt Nam 20.10 (2026)",
+            "count": "10"
+          },
+          {
+            "name": "AOUB-VN - Thiết bị quay góc POV",
+            "count": "18, 19"
+          },
+          {
+            "name": "DEN HOANG KIM - Đèn led năng lượng mặt trời",
+            "count": "10"
+          },
+          {
+            "name": "DOMINIC - Máy tỉa lông mũi",
+            "count": "5"
+          },
+          {
+            "name": "TIGERNU - Ba lô nam doanh nhân",
+            "count": "10"
+          },
+          {
+            "name": "DIGI DOMAIN - Đế sạc không dây 3 in 1",
+            "count": "10"
+          },
+          {
+            "name": "DELI - Dao rọc giấy đa năng",
+            "count": "10"
+          }
+        ]
+      }
+    },
+    "links": [
+      {
+        "full_name": "TIEU MAN THAU STORE - Khẩu trang chống nắng ninja",
+        "url": "https://drive.google.com/drive/folders/11EkJ8JvX1UkAas7isFrrM9OIRGHZHWcj"
+      },
+      {
+        "full_name": "PERYSMITH - Máy hút bụi cầm tay XS1Pro",
+        "url": "https://drive.google.com/drive/folders/18L8T9RTJefIx9wC0cbs4tuXT6i6RVxN1"
+      },
+      {
+        "full_name": "JISULIFE - Quạt đeo cổ Life 5",
+        "url": "https://drive.google.com/drive/folders/1_vPUvtnk56rR0Ir3s9jlnpXr4V1WEj0u"
+      },
+      {
+        "full_name": "REDCHEF - Bộ dao kéo 6 món",
+        "url": "https://drive.google.com/drive/folders/1huqYwqLII2l7JF9o6sdxPoP4eJgr-rR6"
+      },
+      {
+        "full_name": "HAPAS - Quà tặng Phụ nữ Việt Nam 20.10 (2026)",
+        "url": "https://drive.google.com/drive/folders/1lV8YdY3xbmNxjuZpYGhl5XTc8_BoZ8kY"
+      },
+      {
+        "full_name": "AOUB-VN - Thiết bị quay góc POV",
+        "url": "https://drive.google.com/drive/folders/1-MzpEe64gRZVg_jMTabwaYjQPBDt102-"
+      },
+      {
+        "full_name": "DEN HOANG KIM - Đèn led năng lượng mặt trời",
+        "url": "https://drive.google.com/drive/folders/1Eukc82krkBIl4KXca47UraWNyTi3l9vK"
+      },
+      {
+        "full_name": "DOMINIC - Máy tỉa lông mũi",
+        "url": "https://drive.google.com/drive/folders/1Mt_sF4VEqgZq66FFx9fYQ256VKqw7CZ0"
+      },
+      {
+        "full_name": "TIGERNU - Ba lô nam doanh nhân",
+        "url": "https://drive.google.com/drive/folders/1A9Ls_DVKN7b63LXlo_5yV59_8MZ0me53"
+      },
+      {
+        "full_name": "DIGI DOMAIN - Đế sạc không dây 3 in 1",
+        "url": "https://drive.google.com/drive/folders/1aM_XMr8mIMYfHeBBcPJQ7tia4O1DnwnJ"
+      },
+      {
+        "full_name": "DELI - Dao rọc giấy đa năng",
+        "url": "https://drive.google.com/drive/folders/1-UomE0Uo54OvbMU2ZWRLfQXoXnoQCsE1"
       }
     ]
   }

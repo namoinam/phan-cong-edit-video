@@ -485,7 +485,7 @@ async function syncFromLocal() {
     const REPO  = 'namoinam/phan-cong-edit-video';
     const res = await fetch(
       `https://api.github.com/repos/${REPO}/contents/products.json`,
-      { headers: { 'Authorization': 'token ' + TOKEN, 'Cache-Control': 'no-cache' } }
+      { headers: { 'Authorization': 'token ' + TOKEN } }
     );
     if (!res.ok) throw new Error('HTTP ' + res.status);
     const data = await res.json();

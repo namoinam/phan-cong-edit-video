@@ -1548,7 +1548,7 @@
     },
     "AOUB-VN - Thiết bị quay góc POV": {
       "total": 21,
-      "counter": 40
+      "counter": 20
     },
     "DELI - Hộp đựng thực phẩm": {
       "total": 20,
@@ -1653,6 +1653,10 @@
     "DELI - Dao rọc giấy đa năng": {
       "total": 12,
       "counter": 10
+    },
+    "GEBUOANG - Thiết bị quay góc pov": {
+      "total": 5,
+      "counter": 20
     }
   },
   "2026-06-04": {
@@ -2406,10 +2410,6 @@
             "count": 2
           },
           {
-            "name": "AOUB-VN - Thiết bị quay góc POV",
-            "count": 3
-          },
-          {
             "name": "DEN HOANG KIM - Đèn led năng lượng mặt trời",
             "count": 2
           },
@@ -2424,6 +2424,10 @@
           {
             "name": "DIGI DOMAIN - Đế sạc không dây 3 in 1",
             "count": 2
+          },
+          {
+            "name": "GEBUOANG - Thiết bị quay góc pov",
+            "count": 3
           },
           {
             "name": "DELI - Dao rọc giấy đa năng",
@@ -2444,10 +2448,6 @@
             "count": "1, 2"
           },
           {
-            "name": "AOUB-VN - Thiết bị quay góc POV",
-            "count": "21, 1, 2"
-          },
-          {
             "name": "DEN HOANG KIM - Đèn led năng lượng mặt trời",
             "count": "1, 2"
           },
@@ -2462,6 +2462,10 @@
           {
             "name": "DIGI DOMAIN - Đế sạc không dây 3 in 1",
             "count": "1, 2"
+          },
+          {
+            "name": "GEBUOANG - Thiết bị quay góc pov",
+            "count": "1, 2, 3"
           },
           {
             "name": "DELI - Dao rọc giấy đa năng",
@@ -2492,10 +2496,6 @@
             "count": 1
           },
           {
-            "name": "AOUB-VN - Thiết bị quay góc POV",
-            "count": 2
-          },
-          {
             "name": "DEN HOANG KIM - Đèn led năng lượng mặt trời",
             "count": 1
           },
@@ -2510,6 +2510,10 @@
           {
             "name": "DIGI DOMAIN - Đế sạc không dây 3 in 1",
             "count": 1
+          },
+          {
+            "name": "GEBUOANG - Thiết bị quay góc pov",
+            "count": 2
           },
           {
             "name": "DELI - Dao rọc giấy đa năng",
@@ -2538,10 +2542,6 @@
             "count": "3"
           },
           {
-            "name": "AOUB-VN - Thiết bị quay góc POV",
-            "count": "3, 4"
-          },
-          {
             "name": "DEN HOANG KIM - Đèn led năng lượng mặt trời",
             "count": "3"
           },
@@ -2556,6 +2556,10 @@
           {
             "name": "DIGI DOMAIN - Đế sạc không dây 3 in 1",
             "count": "3"
+          },
+          {
+            "name": "GEBUOANG - Thiết bị quay góc pov",
+            "count": "4, 5"
           },
           {
             "name": "DELI - Dao rọc giấy đa năng",
@@ -2578,10 +2582,6 @@
             "count": 2
           },
           {
-            "name": "AOUB-VN - Thiết bị quay góc POV",
-            "count": 3
-          },
-          {
             "name": "DEN HOANG KIM - Đèn led năng lượng mặt trời",
             "count": 2
           },
@@ -2596,6 +2596,10 @@
           {
             "name": "DIGI DOMAIN - Đế sạc không dây 3 in 1",
             "count": 2
+          },
+          {
+            "name": "GEBUOANG - Thiết bị quay góc pov",
+            "count": 3
           },
           {
             "name": "DELI - Dao rọc giấy đa năng",
@@ -2616,10 +2620,6 @@
             "count": "4, 5"
           },
           {
-            "name": "AOUB-VN - Thiết bị quay góc POV",
-            "count": "5, 6, 7"
-          },
-          {
             "name": "DEN HOANG KIM - Đèn led năng lượng mặt trời",
             "count": "4, 5"
           },
@@ -2634,6 +2634,10 @@
           {
             "name": "DIGI DOMAIN - Đế sạc không dây 3 in 1",
             "count": "4, 5"
+          },
+          {
+            "name": "GEBUOANG - Thiết bị quay góc pov",
+            "count": "1, 2, 3"
           },
           {
             "name": "DELI - Dao rọc giấy đa năng",
@@ -2664,10 +2668,6 @@
             "count": 1
           },
           {
-            "name": "AOUB-VN - Thiết bị quay góc POV",
-            "count": 3
-          },
-          {
             "name": "DEN HOANG KIM - Đèn led năng lượng mặt trời",
             "count": 1
           },
@@ -2682,6 +2682,10 @@
           {
             "name": "DIGI DOMAIN - Đế sạc không dây 3 in 1",
             "count": 1
+          },
+          {
+            "name": "GEBUOANG - Thiết bị quay góc pov",
+            "count": 3
           },
           {
             "name": "DELI - Dao rọc giấy đa năng",
@@ -2710,10 +2714,6 @@
             "count": "6"
           },
           {
-            "name": "AOUB-VN - Thiết bị quay góc POV",
-            "count": "8, 9, 10"
-          },
-          {
             "name": "DEN HOANG KIM - Đèn led năng lượng mặt trời",
             "count": "6"
           },
@@ -2728,6 +2728,10 @@
           {
             "name": "DIGI DOMAIN - Đế sạc không dây 3 in 1",
             "count": "6"
+          },
+          {
+            "name": "GEBUOANG - Thiết bị quay góc pov",
+            "count": "4, 5, 1"
           },
           {
             "name": "DELI - Dao rọc giấy đa năng",
@@ -2758,10 +2762,6 @@
             "count": 1
           },
           {
-            "name": "AOUB-VN - Thiết bị quay góc POV",
-            "count": 3
-          },
-          {
             "name": "DEN HOANG KIM - Đèn led năng lượng mặt trời",
             "count": 1
           },
@@ -2776,6 +2776,10 @@
           {
             "name": "DIGI DOMAIN - Đế sạc không dây 3 in 1",
             "count": 1
+          },
+          {
+            "name": "GEBUOANG - Thiết bị quay góc pov",
+            "count": 3
           },
           {
             "name": "DELI - Dao rọc giấy đa năng",
@@ -2804,10 +2808,6 @@
             "count": "7"
           },
           {
-            "name": "AOUB-VN - Thiết bị quay góc POV",
-            "count": "11, 12, 13"
-          },
-          {
             "name": "DEN HOANG KIM - Đèn led năng lượng mặt trời",
             "count": "7"
           },
@@ -2822,6 +2822,10 @@
           {
             "name": "DIGI DOMAIN - Đế sạc không dây 3 in 1",
             "count": "7"
+          },
+          {
+            "name": "GEBUOANG - Thiết bị quay góc pov",
+            "count": "2, 3, 4"
           },
           {
             "name": "DELI - Dao rọc giấy đa năng",
@@ -2852,10 +2856,6 @@
             "count": 1
           },
           {
-            "name": "AOUB-VN - Thiết bị quay góc POV",
-            "count": 2
-          },
-          {
             "name": "DEN HOANG KIM - Đèn led năng lượng mặt trời",
             "count": 1
           },
@@ -2870,6 +2870,10 @@
           {
             "name": "DIGI DOMAIN - Đế sạc không dây 3 in 1",
             "count": 1
+          },
+          {
+            "name": "GEBUOANG - Thiết bị quay góc pov",
+            "count": 2
           },
           {
             "name": "DELI - Dao rọc giấy đa năng",
@@ -2898,10 +2902,6 @@
             "count": "8"
           },
           {
-            "name": "AOUB-VN - Thiết bị quay góc POV",
-            "count": "14, 15"
-          },
-          {
             "name": "DEN HOANG KIM - Đèn led năng lượng mặt trời",
             "count": "8"
           },
@@ -2916,6 +2916,10 @@
           {
             "name": "DIGI DOMAIN - Đế sạc không dây 3 in 1",
             "count": "8"
+          },
+          {
+            "name": "GEBUOANG - Thiết bị quay góc pov",
+            "count": "5, 1"
           },
           {
             "name": "DELI - Dao rọc giấy đa năng",
@@ -2946,10 +2950,6 @@
             "count": 1
           },
           {
-            "name": "AOUB-VN - Thiết bị quay góc POV",
-            "count": 2
-          },
-          {
             "name": "DEN HOANG KIM - Đèn led năng lượng mặt trời",
             "count": 1
           },
@@ -2964,6 +2964,10 @@
           {
             "name": "DIGI DOMAIN - Đế sạc không dây 3 in 1",
             "count": 1
+          },
+          {
+            "name": "GEBUOANG - Thiết bị quay góc pov",
+            "count": 2
           },
           {
             "name": "DELI - Dao rọc giấy đa năng",
@@ -2992,10 +2996,6 @@
             "count": "9"
           },
           {
-            "name": "AOUB-VN - Thiết bị quay góc POV",
-            "count": "16, 17"
-          },
-          {
             "name": "DEN HOANG KIM - Đèn led năng lượng mặt trời",
             "count": "9"
           },
@@ -3010,6 +3010,10 @@
           {
             "name": "DIGI DOMAIN - Đế sạc không dây 3 in 1",
             "count": "9"
+          },
+          {
+            "name": "GEBUOANG - Thiết bị quay góc pov",
+            "count": "2, 3"
           },
           {
             "name": "DELI - Dao rọc giấy đa năng",
@@ -3040,10 +3044,6 @@
             "count": 1
           },
           {
-            "name": "AOUB-VN - Thiết bị quay góc POV",
-            "count": 2
-          },
-          {
             "name": "DEN HOANG KIM - Đèn led năng lượng mặt trời",
             "count": 1
           },
@@ -3058,6 +3058,10 @@
           {
             "name": "DIGI DOMAIN - Đế sạc không dây 3 in 1",
             "count": 1
+          },
+          {
+            "name": "GEBUOANG - Thiết bị quay góc pov",
+            "count": 2
           },
           {
             "name": "DELI - Dao rọc giấy đa năng",
@@ -3086,10 +3090,6 @@
             "count": "10"
           },
           {
-            "name": "AOUB-VN - Thiết bị quay góc POV",
-            "count": "18, 19"
-          },
-          {
             "name": "DEN HOANG KIM - Đèn led năng lượng mặt trời",
             "count": "10"
           },
@@ -3104,6 +3104,10 @@
           {
             "name": "DIGI DOMAIN - Đế sạc không dây 3 in 1",
             "count": "10"
+          },
+          {
+            "name": "GEBUOANG - Thiết bị quay góc pov",
+            "count": "4, 5"
           },
           {
             "name": "DELI - Dao rọc giấy đa năng",
@@ -3134,10 +3138,6 @@
         "url": "https://drive.google.com/drive/folders/1lV8YdY3xbmNxjuZpYGhl5XTc8_BoZ8kY"
       },
       {
-        "full_name": "AOUB-VN - Thiết bị quay góc POV",
-        "url": "https://drive.google.com/drive/folders/1-MzpEe64gRZVg_jMTabwaYjQPBDt102-"
-      },
-      {
         "full_name": "DEN HOANG KIM - Đèn led năng lượng mặt trời",
         "url": "https://drive.google.com/drive/folders/1Eukc82krkBIl4KXca47UraWNyTi3l9vK"
       },
@@ -3152,6 +3152,10 @@
       {
         "full_name": "DIGI DOMAIN - Đế sạc không dây 3 in 1",
         "url": "https://drive.google.com/drive/folders/1aM_XMr8mIMYfHeBBcPJQ7tia4O1DnwnJ"
+      },
+      {
+        "full_name": "GEBUOANG - Thiết bị quay góc pov",
+        "url": "https://drive.google.com/drive/folders/1BsGQpQ93UPohmBoA2TvD--fSsnffP5Jb"
       },
       {
         "full_name": "DELI - Dao rọc giấy đa năng",

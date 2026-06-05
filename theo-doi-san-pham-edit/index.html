@@ -42,7 +42,7 @@
   .status-bar svg { width: 13px; height: 13px; vertical-align: -2px; margin-right: 6px; fill: none; stroke: currentColor; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
   .spin { animation: spin 0.8s linear infinite; transform-origin: center; }
   @keyframes spin { to { transform: rotate(360deg); } }
-  table{width:calc(100% - 48px);margin:24px 24px;border-collapse:collapse;background:white;box-shadow:0 1px 4px rgba(0,0,0,0.08)}
+  table{width:calc(100% - 48px);margin:24px 24px;border-collapse:collapse;background:white;border:1px solid #DEE0E3;border-radius:12px;overflow:hidden}
   thead { position: sticky; top: 57px; z-index: 9; }
   th { background: #F5F6F7; padding: 8px 10px; text-align: left; font-weight: 600; font-size: 11px; color: #9EA4AF; text-transform: uppercase; letter-spacing: 0.04em; border-bottom: 2px solid #DEE0E3; white-space: nowrap; }
   td { padding: 7px 10px; border-bottom: 1px solid #F0F1F3; vertical-align: middle; }
@@ -51,7 +51,7 @@
   .stt { color: #9EA4AF; font-size: 11px; width: 28px; }
   .sp-name { font-weight: 500; color: #1F2329; }
   .brand { color: #646A73; font-size: 11px; }
-  input[type="number"] { width: 64px; padding: 4px 6px; border: 1px solid #DEE0E3; border-radius: 4px; font-size: 12px; text-align: center; color: #1F2329; }
+  input[type="number"] { width: 64px; padding: 4px 6px; border: 1px solid #DEE0E3; border-radius: 6px; font-size: 12px; text-align: center; color: #1F2329; }
   .vpd-wrap { display: flex; align-items: center; gap: 6px; }
   .vpd-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
   .vpd-5 .vpd-dot { background: #1456F0; }
@@ -63,10 +63,10 @@
   .cl-vang { color: #ca8a04; }
   .cl-xanh { color: #16a34a; }
   .cl-chua { color: #9EA4AF; font-style: italic; font-weight: 400; }
-  .toggle-btn { padding: 3px 8px; font-size: 11px; border-radius: 4px; border: 1px solid; cursor: pointer; font-weight: 500; }
+  .toggle-btn { padding: 3px 8px; font-size: 11px; border-radius: 6px; border: 1px solid; cursor: pointer; font-weight: 500; }
   .t-active { background: #fff; color: #1F2329; border-color: #DEE0E3; }
   .t-paused { background: #fff; color: #9EA4AF; border-color: #DEE0E3; }
-  .status-sel { padding: 4px 6px; font-size: 11px; border-radius: 4px; border: 1px solid #DEE0E3; background: #fff; cursor: pointer; font-weight: 600; }
+  .status-sel { padding: 4px 6px; font-size: 11px; border-radius: 6px; border: 1px solid #DEE0E3; background: #fff; cursor: pointer; font-weight: 600; }
   .st-active   { color: #1456F0; }
   .st-het_hang { color: #ea580c; }
   .st-loi_link { color: #dc2626; }

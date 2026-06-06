@@ -4,7 +4,7 @@
     "videos_per_assign": 20,
     "so_video_ngay": 5,
     "status": "active",
-    "ton_video": 11,
+    "ton_video": 29,
     "ton_date": "2026-06-06"
   },
   {
@@ -12,7 +12,7 @@
     "videos_per_assign": 20,
     "so_video_ngay": 5,
     "status": "active",
-    "ton_video": 8,
+    "ton_video": 28,
     "ton_date": "2026-06-06"
   },
   {
@@ -21,7 +21,7 @@
     "so_video_ngay": 5,
     "status": "active",
     "last_assigned": "2026-06-03",
-    "ton_video": 10,
+    "ton_video": 30,
     "ton_date": "2026-06-06"
   },
   {
@@ -53,7 +53,7 @@
     "videos_per_assign": 10,
     "so_video_ngay": 3,
     "status": "active",
-    "ton_video": 6,
+    "ton_video": 16,
     "ton_date": "2026-06-06"
   },
   {
@@ -126,7 +126,7 @@
     "videos_per_assign": 10,
     "so_video_ngay": 1,
     "status": "active",
-    "ton_video": 2
+    "ton_video": 12
   },
   {
     "name": "KINGTECH - Máy massage chân G8",
@@ -166,7 +166,7 @@
     "videos_per_assign": 10,
     "so_video_ngay": 1,
     "status": "active",
-    "ton_video": 2
+    "ton_video": 11
   },
   {
     "name": "DOMINIC - Máy tỉa lông mũi",
@@ -174,7 +174,7 @@
     "videos_per_assign": 10,
     "so_video_ngay": 1,
     "status": "active",
-    "ton_video": 2
+    "ton_video": 12
   },
   {
     "name": "AJIDO - Cân điện tử thông minh",
@@ -189,7 +189,7 @@
     "videos_per_assign": 10,
     "so_video_ngay": 1,
     "status": "active",
-    "ton_video": 1,
+    "ton_video": 11,
     "ton_date": "2026-06-06"
   },
   {
@@ -256,7 +256,7 @@
     "videos_per_assign": 10,
     "so_video_ngay": 2,
     "status": "active",
-    "ton_video": 2,
+    "ton_video": 12,
     "ton_date": "2026-06-06"
   },
   {
@@ -320,11 +320,11 @@
   },
   {
     "name": "GEBUOANG - Thiết bị quay góc pov",
-    "ton_date": "2026-06-05",
+    "ton_date": "2026-06-06",
     "videos_per_assign": 20,
     "so_video_ngay": 5,
     "status": "active",
-    "ton_video": 0
+    "ton_video": 20
   },
   {
     "name": "AMORTALS - Mút rửa mặt bọt biển",
@@ -399,7 +399,7 @@
     "videos_per_assign": 10,
     "so_video_ngay": 2,
     "status": "active",
-    "ton_video": 4,
+    "ton_video": 14,
     "ton_date": "2026-06-06"
   },
   {

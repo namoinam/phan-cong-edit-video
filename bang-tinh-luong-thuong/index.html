@@ -168,7 +168,7 @@ function calculate(){
   const m=+document.getElementById('sel-m').value,y=+document.getElementById('inp-y').value;
   const D=daysOf(m,y);
   const orders=+document.getElementById('inp-orders').value||0;
-  const label=`Luong T${m}/${y}`;
+  const label=`HO KINH DOANH NAM OI NAM CK LUONG T${m}${y}`;
   const pool=orders*0.8*1000;
   const cs3List=EMP.filter(e=>e.policy==='CS3');
   const tongHeSo=cs3List.reduce((s,e)=>s+(e.coef||0),0);

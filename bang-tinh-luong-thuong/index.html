@@ -162,7 +162,6 @@ function renderGrid(){
     const extra=pol==='CS3'?' + THƯỞNG ĐƠN THEO HỆ SỐ':'';
     return`<div class="section"><div class="section-head"><span class="nm">${p.label}</span><span class="tag">${list.length} NGƯỜI  •  LƯƠNG CỨNG: ${fmt(p.salary)}${extra}</span></div><div class="grid">${list.map(cardHtml).join('')}</div></div>`;
   }).join('');
-  }).join('');
 }
 function calculate(){
   const m=+document.getElementById('sel-m').value,y=+document.getElementById('inp-y').value;

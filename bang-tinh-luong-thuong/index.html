@@ -136,8 +136,10 @@ function cardHtml(e){
   const av=IMG[e.id]?`<img src="${IMG[e.id]}" alt="${e.name}">`:e.ini;
   return`<div class="card">
 <div class="card-header"><div style="display:flex;align-items:center;gap:10px;"><div class="avatar" style="background:${e.color}">${av}</div><div class="card-info"><h3>${e.name}</h3></div></div></div>
+<div style="display:flex;gap:16px;margin-bottom:10px;">
 ${coef}
-<div class="off-row"><label>Ngày nghỉ</label><input type="number" id="off-${e.id}" value="0" min="0" max="30" placeholder="0" oninput="calculate()"><span style="font-size:11px;color:#9EA4AF">ngày</span></div>
+<div class="off-row" style="margin-bottom:0;"><label>Ngày nghỉ</label><input type="number" id="off-${e.id}" value="0" min="0" max="30" placeholder="0" oninput="calculate()"><span style="font-size:11px;color:#9EA4AF">ngày</span></div>
+</div>
 <div class="breakdown" id="bd-${e.id}"></div>
 <div class="qr-wrap" id="qrw-${e.id}">
   <button class="btn-qr" id="qrbtn-${e.id}" onclick="toggleQR('${e.id}')">THÔNG TIN CHUYỂN KHOẢN</button>

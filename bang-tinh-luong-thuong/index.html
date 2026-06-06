@@ -74,9 +74,9 @@ input:focus,select:focus{outline:none;border-color:#1456F0!important;box-shadow:
   <select id="sel-m" onchange="autoFillDays()" style="width:96px">
     <option value="1">Tháng 1</option><option value="2">Tháng 2</option><option value="3">Tháng 3</option><option value="4">Tháng 4</option><option value="5">Tháng 5</option><option value="6" selected>Tháng 6</option><option value="7">Tháng 7</option><option value="8">Tháng 8</option><option value="9">Tháng 9</option><option value="10">Tháng 10</option><option value="11">Tháng 11</option><option value="12">Tháng 12</option>
   </select>
-  <label>Năm</label><input type="number" id="inp-y" value="2026" min="2025" max="2030" style="width:68px" onchange="autoFillDays()">
+  <label>Năm</label><input type="text" inputmode="numeric" id="inp-y" value="2026" style="width:68px" oninput="this.value=this.value.replace(/[^0-9]/g,'')">
   <div class="sep"></div>
-  <label>Tổng đơn hàng</label><input type="number" id="inp-orders" value="0" min="0" style="width:90px" placeholder="0">
+  <label>Tổng đơn hàng</label><input type="text" inputmode="numeric" id="inp-orders" value="0" style="width:90px" placeholder="0" oninput="this.value=this.value.replace(/[^0-9]/g,'')">
   <div class="sep"></div>
   <button class="btn btn-primary" onclick="calculate()">Tính lương</button>
   <button class="btn btn-outline" onclick="resetAll()">Reset</button>
@@ -123,7 +123,7 @@ const td={};
 function fmt(n){return Math.round(n).toLocaleString('vi-VN')+'đ';}
 function num(n){return(Math.round(n*100)/100).toLocaleString('vi-VN');}
 function daysOf(m,y){return new Date(y,m,0).getDate();}
-function autoFillDays(){document.getElementById('inp-d').value=daysOf(+document.getElementById('sel-m').value,+document.getElementById('inp-y').value);}
+function autoFillDays(){}
 function qrUrl(bank,acct,amt,name,info){return`https://img.vietqr.io/image/${bank}-${acct}-compact2.jpg?amount=${Math.round(amt)}&addInfo=${encodeURIComponent(info)}&accountName=${encodeURIComponent(name)}`;}
 function copyText(text,btn){navigator.clipboard.writeText(text).then(()=>{btn.textContent='Đã copy';btn.classList.add('copied');setTimeout(()=>{btn.textContent='Copy';btn.classList.remove('copied');},2000);});}
 function copyAll(id){const d=td[id];if(!d)return;copyText(`Ngân hàng: ${d.bankName}\nSố TK: ${d.acct}\nChủ TK: ${d.full}\nSố tiền: ${d.amtStr}\nNội dung: ${d.memo}`,document.getElementById('copy-all-'+id));}
@@ -137,7 +137,7 @@ function cardHtml(e){
   return`<div class="card">
 <div class="card-header"><div style="display:flex;align-items:center;gap:10px;"><div class="avatar" style="background:${e.color}">${av}</div><div class="card-info"><h3>${e.name}</h3></div></div></div>
 ${coef}
-<div class="off-row"><label>Ngày nghỉ</label><input type="number" id="off-${e.id}" value="0" min="0" max="30" placeholder="0"><span style="font-size:11px;color:#9EA4AF">ngày</span></div>
+<div class="off-row"><label>Ngày nghỉ</label><input type="text" inputmode="numeric" id="off-${e.id}" value="0" placeholder="0" oninput="this.value=this.value.replace(/[^0-9]/g,'');if(+this.value>30)this.value='30'"><span style="font-size:11px;color:#9EA4AF">ngày</span></div>
 <div class="breakdown" id="bd-${e.id}"></div>
 <div class="qr-wrap" id="qrw-${e.id}">
   <button class="btn-qr" id="qrbtn-${e.id}" onclick="toggleQR('${e.id}')">THÔNG TIN CHUYỂN KHOẢN</button>

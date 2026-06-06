@@ -158,8 +158,8 @@ function cardHtml(e){
 function renderGrid(){
   document.getElementById('board').innerHTML=ORDER.map(pol=>{
     const p=POL[pol];const list=EMP.filter(e=>e.policy===pol);
-    const extra=pol==='CS3'?' + thưởng đơn theo hệ số':'';
-    return`<div class="section"><div class="section-head"><span class="nm">${p.label}</span><span class="tag">· ${list.length} người · lương cứng ${fmt(p.salary)}${extra}</span></div><div class="grid">${list.map(cardHtml).join('')}</div></div>`;
+    const extra=pol==='CS3'?' + Thưởng đơn theo hệ số':'';
+    return`<div class="section"><div class="section-head"><span class="nm">${p.label}</span><span class="tag">· ${list.length} người · Lương cứng: ${fmt(p.salary)}${extra}</span></div><div class="grid">${list.map(cardHtml).join('')}</div></div>`;
   }).join('');
 }
 function calculate(){

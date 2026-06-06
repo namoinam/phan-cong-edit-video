@@ -48,8 +48,8 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
 .brow .lbl{color:#646A73;}
 .brow.total{border-top:1px solid #DEE0E3;margin-top:6px;padding-top:6px;font-size:13px;font-weight:700;color:#1456F0;}
 .qr-wrap{display:none;}.qr-wrap.show{display:block;}
-.btn-qr{width:100%;padding:6px;border:1px solid #DEE0E3;border-radius:6px;background:#fff;font-size:11px;color:#646A73;cursor:pointer;font-weight:500;}
-.btn-qr:hover{border-color:#1456F0;color:#1456F0;background:#F0F5FF;}
+.btn-qr{width:100%;padding:8px 12px;border:1px solid #DEE0E3;border-radius:8px;background:#F5F6F7;font-size:12px;color:#1F2329;cursor:pointer;font-weight:600;}
+.btn-qr:hover{border-color:#1456F0;color:#fff;background:#1456F0;}
 .qr-box{display:none;margin-top:10px;}.qr-box.open{display:block;}
 .qr-img{text-align:center;}.qr-img img{width:150px;border-radius:8px;border:1px solid #DEE0E3;}
 .qr-meta{font-size:10px;color:#9EA4AF;margin-top:5px;text-align:center;line-height:1.5;}
@@ -129,7 +129,7 @@ function autoFillDays(){document.getElementById('inp-d').value=daysOf(+document.
 function qrUrl(bank,acct,amt,name,info){return`https://img.vietqr.io/image/${bank}-${acct}-compact2.jpg?amount=${Math.round(amt)}&addInfo=${encodeURIComponent(info)}&accountName=${encodeURIComponent(name)}`;}
 function copyText(text,btn){navigator.clipboard.writeText(text).then(()=>{btn.textContent='Đã copy';btn.classList.add('copied');setTimeout(()=>{btn.textContent='Copy';btn.classList.remove('copied');},2000);});}
 function copyAll(id){const d=td[id];if(!d)return;copyText(`Ngân hàng: ${d.bankName}\nSố TK: ${d.acct}\nChủ TK: ${d.full}\nSố tiền: ${d.amtStr}\nNội dung: ${d.memo}`,document.getElementById('copy-all-'+id));}
-function toggleQR(id){const box=document.getElementById('qrbox-'+id);const btn=document.getElementById('qrbtn-'+id);const open=box.classList.toggle('open');btn.textContent=open?'Ẩn QR / Thông tin CK':'Hiện QR / Thông tin CK';}
+function toggleQR(id){const box=document.getElementById('qrbox-'+id);const btn=document.getElementById('qrbtn-'+id);box.classList.toggle('open');btn.textContent='THÔNG TIN CHUYỂN KHOẢN';}
 function updateCoef(id,coef){const emp=EMP.find(e=>e.id===id);if(emp){emp.coef=parseFloat(coef);calculate();}}
 function cardHtml(e){
   const p=POL[e.policy];
@@ -141,7 +141,7 @@ function cardHtml(e){
 <div class="off-row"><label>Ngày nghỉ</label><input type="number" id="off-${e.id}" value="0" min="0" max="99" onchange="this.value=String(this.value).padStart(2,'0');calculate()"><span style="font-size:11px;color:#9EA4AF">ngày</span></div>
 <div class="breakdown" id="bd-${e.id}"></div>
 <div class="qr-wrap" id="qrw-${e.id}">
-  <button class="btn-qr" id="qrbtn-${e.id}" onclick="toggleQR('${e.id}')">Hiện QR / Thông tin CK</button>
+  <button class="btn-qr" id="qrbtn-${e.id}" onclick="toggleQR('${e.id}')">THÔNG TIN CHUYỂN KHOẢN</button>
   <div class="qr-box" id="qrbox-${e.id}">
     <div class="qr-img" id="qrimg-wrap-${e.id}">
       <img id="qrimg-${e.id}" src="" alt="QR" onload="document.getElementById('qrtext-${e.id}').style.display='none';this.parentElement.style.display='block';" onerror="this.parentElement.style.display='none';document.getElementById('qrtext-${e.id}').style.display='block';">
@@ -205,7 +205,7 @@ function calculate(){
     document.getElementById('qt-amt-'+e.id).textContent=fmt(total);
     td[e.id]={bankName:e.bankName,acct:e.acct,full:e.full,amtStr:fmt(total),memo:label};
     document.getElementById('qrbox-'+e.id).classList.remove('open');
-    document.getElementById('qrbtn-'+e.id).textContent='Hiện QR / Thông tin CK';
+    document.getElementById('qrbtn-'+e.id).textContent='THÔNG TIN CHUYỂN KHOẢN';
   });
   document.getElementById('hdr-sub').textContent=`Tháng ${m}/${y} · ${D} ngày`;
   document.getElementById('footer-period').textContent=`Tháng ${m}/${y} · ${D} ngày · ${EMP.length} nhân sự`;
@@ -217,7 +217,7 @@ function resetAll(){
     document.getElementById('bd-'+e.id).classList.remove('show');
     document.getElementById('qrw-'+e.id).classList.remove('show');
     document.getElementById('qrbox-'+e.id).classList.remove('open');
-    const btn=document.getElementById('qrbtn-'+e.id);if(btn)btn.textContent='Hiện QR / Thông tin CK';
+    const btn=document.getElementById('qrbtn-'+e.id);if(btn)btn.textContent='THÔNG TIN CHUYỂN KHOẢN';
   });
   document.getElementById('cs3-bar').classList.remove('show');
   document.getElementById('inp-orders').value=0;

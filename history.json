@@ -1560,7 +1560,7 @@
     },
     "XPANSE - Ghế công thái học": {
       "total": 10,
-      "counter": 10
+      "counter": 20
     },
     "BOXERMAN - Quần sịp nam": {
       "total": 20,
@@ -1568,7 +1568,7 @@
     },
     "TOSUDO - Móc treo đồ": {
       "total": 17,
-      "counter": 10
+      "counter": 20
     },
     "MIA - Vali kéo du lịch Larita Aly": {
       "total": 14,
@@ -1657,6 +1657,30 @@
     "GEBUOANG - Thiết bị quay góc pov": {
       "total": 5,
       "counter": 20
+    },
+    "REDCHEF - Bộ nồi chảo chống dính": {
+      "total": 10,
+      "counter": 10
+    },
+    "AQUA - Máy phun sương tạo ẩm": {
+      "total": 10,
+      "counter": 15
+    },
+    "SELLION - Nước hoa nữ": {
+      "total": 10,
+      "counter": 10
+    },
+    "DEERMA - Vòi sen tăng áp": {
+      "total": 10,
+      "counter": 20
+    },
+    "DEERMA - Máy xay gia vị": {
+      "total": 19,
+      "counter": 20
+    },
+    "ENADE VN - Khẩu trang chống nắng full face": {
+      "total": 7,
+      "counter": 10
     }
   },
   "2026-06-04": {
@@ -3160,6 +3184,534 @@
       {
         "full_name": "DELI - Dao rọc giấy đa năng",
         "url": "https://drive.google.com/drive/folders/1-UomE0Uo54OvbMU2ZWRLfQXoXnoQCsE1"
+      }
+    ]
+  },
+  "2026-06-06": {
+    "assignments": {
+      "Dung": {
+        "videos": [
+          {
+            "name": "REDCHEF - Bộ nồi chảo chống dính",
+            "count": 2
+          },
+          {
+            "name": "AQUA - Máy phun sương tạo ẩm",
+            "count": 2
+          },
+          {
+            "name": "SELLION - Nước hoa nữ",
+            "count": 1
+          },
+          {
+            "name": "ENADE VN - Khẩu trang chống nắng full face",
+            "count": 2
+          },
+          {
+            "name": "TOSUDO - Móc treo đồ",
+            "count": 1
+          },
+          {
+            "name": "DEERMA - Vòi sen tăng áp",
+            "count": 3
+          },
+          {
+            "name": "XPANSE - Ghế công thái học",
+            "count": 2
+          },
+          {
+            "name": "DEERMA - Máy xay gia vị",
+            "count": 2
+          }
+        ],
+        "voices": [
+          {
+            "name": "REDCHEF - Bộ nồi chảo chống dính",
+            "count": "1, 2"
+          },
+          {
+            "name": "AQUA - Máy phun sương tạo ẩm",
+            "count": "1, 2"
+          },
+          {
+            "name": "SELLION - Nước hoa nữ",
+            "count": "1"
+          },
+          {
+            "name": "TOSUDO - Móc treo đồ",
+            "count": "11"
+          },
+          {
+            "name": "DEERMA - Vòi sen tăng áp",
+            "count": "1, 2, 3"
+          },
+          {
+            "name": "XPANSE - Ghế công thái học",
+            "count": "1, 2"
+          },
+          {
+            "name": "DEERMA - Máy xay gia vị",
+            "count": "1, 2"
+          },
+          {
+            "name": "ENADE VN - Khẩu trang chống nắng full face",
+            "count": "1, 2"
+          }
+        ]
+      },
+      "Duyên": {
+        "videos": [
+          {
+            "name": "REDCHEF - Bộ nồi chảo chống dính",
+            "count": 2
+          },
+          {
+            "name": "AQUA - Máy phun sương tạo ẩm",
+            "count": 2
+          },
+          {
+            "name": "SELLION - Nước hoa nữ",
+            "count": 1
+          },
+          {
+            "name": "ENADE VN - Khẩu trang chống nắng full face",
+            "count": 2
+          },
+          {
+            "name": "TOSUDO - Móc treo đồ",
+            "count": 1
+          },
+          {
+            "name": "DEERMA - Vòi sen tăng áp",
+            "count": 3
+          },
+          {
+            "name": "XPANSE - Ghế công thái học",
+            "count": 1
+          },
+          {
+            "name": "DEERMA - Máy xay gia vị",
+            "count": 3
+          }
+        ],
+        "voices": [
+          {
+            "name": "REDCHEF - Bộ nồi chảo chống dính",
+            "count": "3, 4"
+          },
+          {
+            "name": "AQUA - Máy phun sương tạo ẩm",
+            "count": "3, 4"
+          },
+          {
+            "name": "SELLION - Nước hoa nữ",
+            "count": "2"
+          },
+          {
+            "name": "TOSUDO - Móc treo đồ",
+            "count": "12"
+          },
+          {
+            "name": "DEERMA - Vòi sen tăng áp",
+            "count": "4, 5, 6"
+          },
+          {
+            "name": "XPANSE - Ghế công thái học",
+            "count": "3"
+          },
+          {
+            "name": "DEERMA - Máy xay gia vị",
+            "count": "3, 4, 5"
+          },
+          {
+            "name": "ENADE VN - Khẩu trang chống nắng full face",
+            "count": "3, 4"
+          }
+        ]
+      },
+      "Hiếu": {
+        "videos": [
+          {
+            "name": "REDCHEF - Bộ nồi chảo chống dính",
+            "count": 2
+          },
+          {
+            "name": "AQUA - Máy phun sương tạo ẩm",
+            "count": 2
+          },
+          {
+            "name": "SELLION - Nước hoa nữ",
+            "count": 1
+          },
+          {
+            "name": "ENADE VN - Khẩu trang chống nắng full face",
+            "count": 2
+          },
+          {
+            "name": "TOSUDO - Móc treo đồ",
+            "count": 1
+          },
+          {
+            "name": "DEERMA - Vòi sen tăng áp",
+            "count": 3
+          },
+          {
+            "name": "XPANSE - Ghế công thái học",
+            "count": 1
+          },
+          {
+            "name": "DEERMA - Máy xay gia vị",
+            "count": 3
+          }
+        ],
+        "voices": [
+          {
+            "name": "REDCHEF - Bộ nồi chảo chống dính",
+            "count": "5, 6"
+          },
+          {
+            "name": "AQUA - Máy phun sương tạo ẩm",
+            "count": "5, 6"
+          },
+          {
+            "name": "SELLION - Nước hoa nữ",
+            "count": "3"
+          },
+          {
+            "name": "TOSUDO - Móc treo đồ",
+            "count": "13"
+          },
+          {
+            "name": "DEERMA - Vòi sen tăng áp",
+            "count": "7, 8, 9"
+          },
+          {
+            "name": "XPANSE - Ghế công thái học",
+            "count": "4"
+          },
+          {
+            "name": "DEERMA - Máy xay gia vị",
+            "count": "6, 7, 8"
+          },
+          {
+            "name": "ENADE VN - Khẩu trang chống nắng full face",
+            "count": "5, 6"
+          }
+        ]
+      },
+      "Thắm": {
+        "videos": [
+          {
+            "name": "REDCHEF - Bộ nồi chảo chống dính",
+            "count": 1
+          },
+          {
+            "name": "AQUA - Máy phun sương tạo ẩm",
+            "count": 3
+          },
+          {
+            "name": "SELLION - Nước hoa nữ",
+            "count": 1
+          },
+          {
+            "name": "ENADE VN - Khẩu trang chống nắng full face",
+            "count": 1
+          },
+          {
+            "name": "TOSUDO - Móc treo đồ",
+            "count": 2
+          },
+          {
+            "name": "DEERMA - Vòi sen tăng áp",
+            "count": 3
+          },
+          {
+            "name": "XPANSE - Ghế công thái học",
+            "count": 1
+          },
+          {
+            "name": "DEERMA - Máy xay gia vị",
+            "count": 3
+          }
+        ],
+        "voices": [
+          {
+            "name": "REDCHEF - Bộ nồi chảo chống dính",
+            "count": "7"
+          },
+          {
+            "name": "AQUA - Máy phun sương tạo ẩm",
+            "count": "7, 8, 9"
+          },
+          {
+            "name": "SELLION - Nước hoa nữ",
+            "count": "4"
+          },
+          {
+            "name": "TOSUDO - Móc treo đồ",
+            "count": "14, 15"
+          },
+          {
+            "name": "DEERMA - Vòi sen tăng áp",
+            "count": "10, 1, 2"
+          },
+          {
+            "name": "XPANSE - Ghế công thái học",
+            "count": "5"
+          },
+          {
+            "name": "DEERMA - Máy xay gia vị",
+            "count": "9, 10, 11"
+          },
+          {
+            "name": "ENADE VN - Khẩu trang chống nắng full face",
+            "count": "7"
+          }
+        ]
+      },
+      "Trân": {
+        "videos": [
+          {
+            "name": "REDCHEF - Bộ nồi chảo chống dính",
+            "count": 1
+          },
+          {
+            "name": "AQUA - Máy phun sương tạo ẩm",
+            "count": 2
+          },
+          {
+            "name": "SELLION - Nước hoa nữ",
+            "count": 2
+          },
+          {
+            "name": "ENADE VN - Khẩu trang chống nắng full face",
+            "count": 1
+          },
+          {
+            "name": "TOSUDO - Móc treo đồ",
+            "count": 2
+          },
+          {
+            "name": "DEERMA - Vòi sen tăng áp",
+            "count": 3
+          },
+          {
+            "name": "XPANSE - Ghế công thái học",
+            "count": 1
+          },
+          {
+            "name": "DEERMA - Máy xay gia vị",
+            "count": 3
+          }
+        ],
+        "voices": [
+          {
+            "name": "REDCHEF - Bộ nồi chảo chống dính",
+            "count": "8"
+          },
+          {
+            "name": "AQUA - Máy phun sương tạo ẩm",
+            "count": "10, 1"
+          },
+          {
+            "name": "SELLION - Nước hoa nữ",
+            "count": "5, 6"
+          },
+          {
+            "name": "TOSUDO - Móc treo đồ",
+            "count": "16, 17"
+          },
+          {
+            "name": "DEERMA - Vòi sen tăng áp",
+            "count": "3, 4, 5"
+          },
+          {
+            "name": "XPANSE - Ghế công thái học",
+            "count": "6"
+          },
+          {
+            "name": "DEERMA - Máy xay gia vị",
+            "count": "12, 13, 14"
+          },
+          {
+            "name": "ENADE VN - Khẩu trang chống nắng full face",
+            "count": "1"
+          }
+        ]
+      },
+      "Sơn": {
+        "videos": [
+          {
+            "name": "REDCHEF - Bộ nồi chảo chống dính",
+            "count": 1
+          },
+          {
+            "name": "AQUA - Máy phun sương tạo ẩm",
+            "count": 2
+          },
+          {
+            "name": "SELLION - Nước hoa nữ",
+            "count": 2
+          },
+          {
+            "name": "ENADE VN - Khẩu trang chống nắng full face",
+            "count": 1
+          },
+          {
+            "name": "TOSUDO - Móc treo đồ",
+            "count": 2
+          },
+          {
+            "name": "DEERMA - Vòi sen tăng áp",
+            "count": 2
+          },
+          {
+            "name": "XPANSE - Ghế công thái học",
+            "count": 2
+          },
+          {
+            "name": "DEERMA - Máy xay gia vị",
+            "count": 3
+          }
+        ],
+        "voices": [
+          {
+            "name": "REDCHEF - Bộ nồi chảo chống dính",
+            "count": "9"
+          },
+          {
+            "name": "AQUA - Máy phun sương tạo ẩm",
+            "count": "2, 3"
+          },
+          {
+            "name": "SELLION - Nước hoa nữ",
+            "count": "7, 8"
+          },
+          {
+            "name": "TOSUDO - Móc treo đồ",
+            "count": "1, 2"
+          },
+          {
+            "name": "DEERMA - Vòi sen tăng áp",
+            "count": "6, 7"
+          },
+          {
+            "name": "XPANSE - Ghế công thái học",
+            "count": "7, 8"
+          },
+          {
+            "name": "DEERMA - Máy xay gia vị",
+            "count": "15, 16, 17"
+          },
+          {
+            "name": "ENADE VN - Khẩu trang chống nắng full face",
+            "count": "2"
+          }
+        ]
+      },
+      "Tuyên": {
+        "videos": [
+          {
+            "name": "REDCHEF - Bộ nồi chảo chống dính",
+            "count": 1
+          },
+          {
+            "name": "AQUA - Máy phun sương tạo ẩm",
+            "count": 2
+          },
+          {
+            "name": "SELLION - Nước hoa nữ",
+            "count": 2
+          },
+          {
+            "name": "ENADE VN - Khẩu trang chống nắng full face",
+            "count": 1
+          },
+          {
+            "name": "TOSUDO - Móc treo đồ",
+            "count": 1
+          },
+          {
+            "name": "DEERMA - Vòi sen tăng áp",
+            "count": 3
+          },
+          {
+            "name": "XPANSE - Ghế công thái học",
+            "count": 2
+          },
+          {
+            "name": "DEERMA - Máy xay gia vị",
+            "count": 3
+          }
+        ],
+        "voices": [
+          {
+            "name": "REDCHEF - Bộ nồi chảo chống dính",
+            "count": "10"
+          },
+          {
+            "name": "AQUA - Máy phun sương tạo ẩm",
+            "count": "4, 5"
+          },
+          {
+            "name": "SELLION - Nước hoa nữ",
+            "count": "9, 10"
+          },
+          {
+            "name": "TOSUDO - Móc treo đồ",
+            "count": "3"
+          },
+          {
+            "name": "DEERMA - Vòi sen tăng áp",
+            "count": "8, 9, 10"
+          },
+          {
+            "name": "XPANSE - Ghế công thái học",
+            "count": "9, 10"
+          },
+          {
+            "name": "DEERMA - Máy xay gia vị",
+            "count": "18, 19, 1"
+          },
+          {
+            "name": "ENADE VN - Khẩu trang chống nắng full face",
+            "count": "3"
+          }
+        ]
+      }
+    },
+    "links": [
+      {
+        "full_name": "REDCHEF - Bộ nồi chảo chống dính",
+        "url": "https://drive.google.com/drive/folders/1MsG8ybRcomtrheDGPYxwwti7l4BUtEuw"
+      },
+      {
+        "full_name": "AQUA - Máy phun sương tạo ẩm",
+        "url": "https://drive.google.com/drive/folders/1UPD6-SdL9ru3Epj8KuIKdG6JVFhhDktD"
+      },
+      {
+        "full_name": "SELLION - Nước hoa nữ",
+        "url": "https://drive.google.com/drive/folders/1WDqWa_7xVVdmBMnqjHWJvLer83hc-Ssn"
+      },
+      {
+        "full_name": "TOSUDO - Móc treo đồ",
+        "url": "https://drive.google.com/drive/folders/1NVguQOkZdm0YnwFR5-HYkyuW7nXEnyaO"
+      },
+      {
+        "full_name": "DEERMA - Vòi sen tăng áp",
+        "url": "https://drive.google.com/drive/folders/1yPNIAUFJLQjvjBQbhdnIE8NBnsPsKbm3"
+      },
+      {
+        "full_name": "XPANSE - Ghế công thái học",
+        "url": "https://drive.google.com/drive/folders/1SrflrVq0RkiYKm6HmEDPIUSOy-_tNFlk"
+      },
+      {
+        "full_name": "DEERMA - Máy xay gia vị",
+        "url": "https://drive.google.com/drive/folders/1Xz0opVxh2a4SVoB_jOpCS-6kOiLRLR3-"
+      },
+      {
+        "full_name": "ENADE VN - Khẩu trang chống nắng full face",
+        "url": "https://drive.google.com/drive/folders/1fdexP_b5rlkAM4lYon4OjRUQeQeAisH_"
       }
     ]
   }

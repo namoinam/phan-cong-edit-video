@@ -329,7 +329,11 @@ function conLaiHTML(p) {
 }
 
 function tonVideoHTML(p, i) {
-  const val = (p.ton_video !== undefined && p.ton_video !== null) ? p.ton_video : '';
+  let val = '';
+  if (p.ton_video !== undefined && p.ton_video !== null) {
+    const _cl = calcConLai(p);            // ngày còn lại (đã trừ theo ngày)
+    val = Math.max(0, Math.round(_cl * (p.so_video_ngay || 1)));  // tồn thực còn lại
+  }
   return `<input type="number" min="0" max="200" inputmode="numeric" value="${val}" placeholder="—"
     data-idx="${i}" data-field="ton_video"
     oninput="this.value=this.value.replace(/[^0-9]/g,'')"

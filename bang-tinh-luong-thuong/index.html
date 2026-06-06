@@ -132,11 +132,12 @@ function updateCoef(id,coef){const emp=EMP.find(e=>e.id===id);if(emp){emp.coef=p
 function cardHtml(e){
   const p=POL[e.policy];
   const coefOptions=[0.8,0.9,1.0,1.1,1.2].map(v=>`<option value="${v}" ${e.coef===v?'selected':''}>${v}</option>`).join('');
-  const sub=e.policy==='CS3'?` Hệ số: <select id="coef-${e.id}" class="coef-select" onchange="updateCoef('${e.id}', this.value)">${coefOptions}</select>${e.cut?' <span class="cut">cắt thưởng</span>':''}`:'';
+  const coef=e.policy==='CS3'?`<div class="off-row"><label>HỆ SỐ</label><div style="display:flex;align-items:center;gap:8px;"><select id="coef-${e.id}" class="coef-select" onchange="updateCoef('${e.id}', this.value)">${coefOptions}</select>${e.cut?' <span class="cut">cắt thưởng</span>':''}</div></div>`:'';
   const av=IMG[e.id]?`<img src="${IMG[e.id]}" alt="${e.name}">`:e.ini;
   return`<div class="card">
-<div class="card-header"><div style="display:flex;align-items:center;gap:10px;"><div class="avatar" style="background:${e.color}">${av}</div><div class="card-info"><h3>${e.name}</h3></div></div><div>${sub}</div></div>
+<div class="card-header"><div style="display:flex;align-items:center;gap:10px;"><div class="avatar" style="background:${e.color}">${av}</div><div class="card-info"><h3>${e.name}</h3></div></div></div>
 <div class="off-row"><label>Ngày nghỉ</label><input type="number" id="off-${e.id}" value="0" min="0" max="99" onchange="this.value=String(this.value).padStart(2,'0');calculate()"><span style="font-size:11px;color:#9EA4AF">ngày</span></div>
+${coef}
 <div class="breakdown" id="bd-${e.id}"></div>
 <div class="qr-wrap" id="qrw-${e.id}">
   <button class="btn-qr" id="qrbtn-${e.id}" onclick="toggleQR('${e.id}')">THÔNG TIN CHUYỂN KHOẢN</button>

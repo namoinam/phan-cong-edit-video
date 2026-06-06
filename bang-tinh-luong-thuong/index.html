@@ -28,10 +28,11 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:12px;padding:16px 20px 20px;}
 .card{border:1px solid #DEE0E3;border-radius:12px;padding:16px 20px;background:#fff;}
 .card:hover{background:#FAFBFF;}
-.card-header{display:flex;align-items:center;gap:10px;margin-bottom:12px;}
+.card-header{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:12px;}
 .avatar{width:38px;height:38px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;color:#fff;flex-shrink:0;overflow:hidden;}
 .avatar img{width:100%;height:100%;object-fit:cover;display:block;}
-.card-info h3{font-size:14px;font-weight:600;color:#1F2329;}
+.card-info{display:flex;align-items:center;gap:8px;}
+.card-info h3{font-size:14px;font-weight:600;color:#1F2329;margin:0;}
 .badge{display:inline-block;padding:1px 7px;border-radius:10px;font-size:10px;font-weight:600;margin-top:2px;border:1px solid;}
 .badge-cs1{background:#FFF7ED;color:#9A3412;border-color:#FED7AA;}
 .badge-cs2l{background:#EEF2FF;color:#3730A3;border-color:#C7D2FE;}
@@ -138,7 +139,7 @@ function cardHtml(e){
   const sub=e.policy==='CS3'?` Hệ số: <select id="coef-${e.id}" class="coef-select" onchange="updateCoef('${e.id}', this.value)">${coefOptions}</select>${e.cut?' <span class="cut">cắt thưởng</span>':''}`:'';
   const av=IMG[e.id]?`<img src="${IMG[e.id]}" alt="${e.name}">`:e.ini;
   return`<div class="card">
-<div class="card-header"><div class="avatar" style="background:${e.color}">${av}</div><div class="card-info"><h3>${e.name}</h3>${sub}</div></div>
+<div class="card-header"><div style="display:flex;align-items:center;gap:10px;"><div class="avatar" style="background:${e.color}">${av}</div><div class="card-info"><h3>${e.name}</h3></div></div><div>${sub}</div></div>
 <div class="off-row"><label>Ngày nghỉ</label><input type="number" id="off-${e.id}" value="0" min="0" max="31" onchange="calculate()"><span style="font-size:11px;color:#9EA4AF">ngày</span></div>
 <div class="breakdown" id="bd-${e.id}"></div>
 <div class="qr-wrap" id="qrw-${e.id}">

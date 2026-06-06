@@ -132,7 +132,7 @@ function updateCoef(id,coef){const emp=EMP.find(e=>e.id===id);if(emp){emp.coef=p
 function cardHtml(e){
   const p=POL[e.policy];
   const coefOptions=[0.8,0.9,1.0,1.1,1.2].map(v=>`<option value="${v}" ${e.coef===v?'selected':''}>${v}</option>`).join('');
-  const coef=e.policy==='CS3'?`<div class="off-row"><label>HỆ SỐ</label><div style="display:flex;align-items:center;gap:8px;"><select id="coef-${e.id}" class="coef-select" onchange="updateCoef('${e.id}', this.value)">${coefOptions}</select>${e.cut?' <span class="cut">cắt thưởng</span>':''}</div></div>`:'';
+  const coef=e.policy==='CS3'?`<div class="off-row"><label>HỆ SỐ</label><div style="display:flex;align-items:center;gap:6px;flex:1;"><select id="coef-${e.id}" class="coef-select" onchange="updateCoef('${e.id}', this.value)" style="flex:1;">${coefOptions}</select>${e.cut?' <span class="cut">cắt thưởng</span>':''}</div></div>`:'';
   const av=IMG[e.id]?`<img src="${IMG[e.id]}" alt="${e.name}">`:e.ini;
   return`<div class="card">
 <div class="card-header"><div style="display:flex;align-items:center;gap:10px;"><div class="avatar" style="background:${e.color}">${av}</div><div class="card-info"><h3>${e.name}</h3></div></div></div>

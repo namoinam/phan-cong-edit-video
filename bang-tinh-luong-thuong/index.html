@@ -163,7 +163,7 @@ function renderGrid(){
   document.getElementById('board').innerHTML=ORDER.map(pol=>{
     const p=POL[pol];const list=EMP.filter(e=>e.policy===pol);
     const extra=pol==='CS3'?' + Thưởng đơn theo hệ số':'';
-    return`<div class="grid">${list.map(cardHtml).join('')}</div>`;
+    return`<div class="section"><div class="section-head"><span class="nm">${p.label}</span><span class="tag">${list.length} NGƯỜI  •  LƯƠNG CỨNG: ${fmt(p.salary)}${extra}</span></div><div class="grid">${list.map(cardHtml).join('')}</div></div>`;
   }).join('');
 }
 function calculate(){

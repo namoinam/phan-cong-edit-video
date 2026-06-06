@@ -1677,6 +1677,10 @@
     "DEERMA - Máy xay gia vị": {
       "total": 19,
       "counter": 20
+    },
+    "FULLFACE - Khẩu trang chống nắng": {
+      "total": 7,
+      "counter": 10
     }
   },
   "2026-06-04": {
@@ -3248,6 +3252,10 @@
           {
             "name": "DEERMA - Máy xay gia vị",
             "count": "1, 2"
+          },
+          {
+            "name": "FULLFACE - Khẩu trang chống nắng",
+            "count": "1, 2"
           }
         ]
       },
@@ -3314,6 +3322,10 @@
           {
             "name": "DEERMA - Máy xay gia vị",
             "count": "3, 4, 5"
+          },
+          {
+            "name": "FULLFACE - Khẩu trang chống nắng",
+            "count": "3, 4"
           }
         ]
       },
@@ -3380,6 +3392,10 @@
           {
             "name": "DEERMA - Máy xay gia vị",
             "count": "6, 7, 8"
+          },
+          {
+            "name": "FULLFACE - Khẩu trang chống nắng",
+            "count": "5, 6"
           }
         ]
       },
@@ -3446,6 +3462,10 @@
           {
             "name": "DEERMA - Máy xay gia vị",
             "count": "9, 10, 11"
+          },
+          {
+            "name": "FULLFACE - Khẩu trang chống nắng",
+            "count": "7"
           }
         ]
       },
@@ -3512,6 +3532,10 @@
           {
             "name": "DEERMA - Máy xay gia vị",
             "count": "12, 13, 14"
+          },
+          {
+            "name": "FULLFACE - Khẩu trang chống nắng",
+            "count": "1"
           }
         ]
       },
@@ -3578,6 +3602,10 @@
           {
             "name": "DEERMA - Máy xay gia vị",
             "count": "15, 16, 17"
+          },
+          {
+            "name": "FULLFACE - Khẩu trang chống nắng",
+            "count": "2"
           }
         ]
       },
@@ -3644,6 +3672,10 @@
           {
             "name": "DEERMA - Máy xay gia vị",
             "count": "18, 19, 1"
+          },
+          {
+            "name": "FULLFACE - Khẩu trang chống nắng",
+            "count": "3"
           }
         ]
       }
@@ -3676,6 +3708,10 @@
       {
         "full_name": "DEERMA - Máy xay gia vị",
         "url": "https://drive.google.com/drive/folders/1Xz0opVxh2a4SVoB_jOpCS-6kOiLRLR3-"
+      },
+      {
+        "full_name": "FULLFACE - Khẩu trang chống nắng",
+        "url": "https://drive.google.com/drive/folders/1fdexP_b5rlkAM4lYon4OjRUQeQeAisH_"
       }
     ]
   }

@@ -157,10 +157,13 @@ ${coef}
 </div></div>`;
 }
 function renderGrid(){
-  document.getElementById('board').innerHTML=ORDER.map(pol=>{
+  let html='';
+  ORDER.forEach(pol=>{
     const p=POL[pol];const list=EMP.filter(e=>e.policy===pol);
     const extra=pol==='CS3'?' + THƯỞNG ĐƠN THEO HỆ SỐ':'';
-    return`<div class="section"><div class="section-head"><span class="nm">${p.label}</span><span class="tag">${list.length} NGƯỜI  •  LƯƠNG CỨNG: ${fmt(p.salary)}${extra}</span></div><div class="grid">${list.map(cardHtml).join('')}</div></div>`;
+    html+=`<div class="section"><div class="section-head"><span class="nm">${p.label}</span><span class="tag">${list.length} NGƯỜI  •  LƯƠNG CỨNG: ${fmt(p.salary)}${extra}</span></div><div class="grid">${list.map(cardHtml).join('')}</div></div>`;
+  });
+  document.getElementById('board').innerHTML=html;
   }).join('');
 }
 function calculate(){

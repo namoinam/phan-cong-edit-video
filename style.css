@@ -527,7 +527,6 @@ body {
 .contact { background: linear-gradient(160deg, #EEF4FF 0%, #E4EFFE 100%); text-align: center; }
 .contact-glow { display: none; }
 .contact-inner { max-width: 800px; margin: 0 auto; }
-.contact .section-label { background: #fff; display: block; width: fit-content; margin-bottom: 20px; }
 
 .cta-title {
   font-size: clamp(1.875rem, 4vw, 2.75rem);

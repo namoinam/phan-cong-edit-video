@@ -1,7 +1,7 @@
 [
   {
     "name": "TIEU MAN THAU STORE - Khẩu trang chống nắng ninja",
-    "videos_per_assign": 20,
+    "videos_per_assign": 15,
     "so_video_ngay": 5,
     "status": "active",
     "ton_video": 26,
@@ -17,7 +17,7 @@
   },
   {
     "name": "JISULIFE - Quạt đeo cổ Life 5",
-    "videos_per_assign": 20,
+    "videos_per_assign": 15,
     "so_video_ngay": 5,
     "status": "active",
     "last_assigned": "2026-06-03",

@@ -4,16 +4,16 @@
     "videos_per_assign": 15,
     "so_video_ngay": 3,
     "status": "active",
-    "ton_video": 26,
-    "ton_date": "2026-06-06"
+    "ton_video": 35,
+    "ton_date": "2026-06-09"
   },
   {
     "name": "PERYSMITH - Máy hút bụi cầm tay XS1Pro",
     "videos_per_assign": 15,
     "so_video_ngay": 3,
     "status": "active",
-    "ton_video": 23,
-    "ton_date": "2026-06-06"
+    "ton_video": 32,
+    "ton_date": "2026-06-09"
   },
   {
     "name": "JISULIFE - Quạt đeo cổ Life 5",
@@ -21,8 +21,8 @@
     "so_video_ngay": 3,
     "status": "active",
     "last_assigned": "2026-06-03",
-    "ton_video": 26,
-    "ton_date": "2026-06-06"
+    "ton_video": 32,
+    "ton_date": "2026-06-09"
   },
   {
     "name": "TORRAS - Ốp lưng trong suốt",
@@ -53,8 +53,8 @@
     "videos_per_assign": 10,
     "so_video_ngay": 3,
     "status": "active",
-    "ton_video": 13,
-    "ton_date": "2026-06-06"
+    "ton_video": 11,
+    "ton_date": "2026-06-09"
   },
   {
     "name": "REDCHEF - Bộ nồi chảo chống dính",
@@ -122,11 +122,11 @@
   },
   {
     "name": "HAPAS - Quà tặng Phụ nữ Việt Nam 20.10 (2026)",
-    "ton_date": "2026-06-06",
+    "ton_date": "2026-06-09",
     "videos_per_assign": 10,
     "so_video_ngay": 1,
     "status": "active",
-    "ton_video": 11
+    "ton_video": 15
   },
   {
     "name": "KINGTECH - Máy massage chân G8",
@@ -162,19 +162,19 @@
   },
   {
     "name": "DEN HOANG KIM - Đèn led năng lượng mặt trời",
-    "ton_date": "2026-06-06",
+    "ton_date": "2026-06-09",
     "videos_per_assign": 10,
     "so_video_ngay": 1,
     "status": "active",
-    "ton_video": 11
+    "ton_video": 15
   },
   {
     "name": "DOMINIC - Máy tỉa lông mũi",
-    "ton_date": "2026-06-06",
+    "ton_date": "2026-06-09",
     "videos_per_assign": 10,
     "so_video_ngay": 1,
     "status": "active",
-    "ton_video": 10
+    "ton_video": 14
   },
   {
     "name": "AJIDO - Cân điện tử thông minh",
@@ -189,8 +189,8 @@
     "videos_per_assign": 10,
     "so_video_ngay": 1,
     "status": "active",
-    "ton_video": 10,
-    "ton_date": "2026-06-06"
+    "ton_video": 14,
+    "ton_date": "2026-06-09"
   },
   {
     "name": "UGREEN - Chuột không dây",
@@ -256,8 +256,8 @@
     "videos_per_assign": 10,
     "so_video_ngay": 2,
     "status": "active",
-    "ton_video": 11,
-    "ton_date": "2026-06-06"
+    "ton_video": 12,
+    "ton_date": "2026-06-09"
   },
   {
     "name": "SELLION - Nước hoa nữ",
@@ -320,11 +320,11 @@
   },
   {
     "name": "GEBUOANG - Thiết bị quay góc pov",
-    "ton_date": "2026-06-06",
+    "ton_date": "2026-06-09",
     "videos_per_assign": 15,
     "so_video_ngay": 3,
     "status": "active",
-    "ton_video": 20
+    "ton_video": 26
   },
   {
     "name": "AMORTALS - Mút rửa mặt bọt biển",
@@ -399,8 +399,8 @@
     "videos_per_assign": 10,
     "so_video_ngay": 2,
     "status": "active",
-    "ton_video": 11,
-    "ton_date": "2026-06-06"
+    "ton_video": 12,
+    "ton_date": "2026-06-09"
   },
   {
     "name": "TORRAS - Ốp lưng Q3Air",

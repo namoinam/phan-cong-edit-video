@@ -42,6 +42,7 @@
     position: sticky;
     top: 0px;
     z-index: 100;
+    width: 100%;
   }
   .header h2 {
     font-size: 28px;
@@ -500,11 +501,12 @@
   </nav>
 </div>
 
+<div class="header">
+  <h2>Bảng lương team edit</h2>
+  <div class="header-sub" id="hdr-sub">Chọn tháng và nhập số liệu để tính lương</div>
+</div>
+
 <div class="container-custom">
-  <div class="header">
-    <h2>Bảng lương team edit</h2>
-    <div class="header-sub" id="hdr-sub">Chọn tháng và nhập số liệu để tính lương</div>
-  </div>
   <div class="toolbar">
     <label>Tháng</label>
     <select id="sel-m" onchange="autoFillDays()" style="width:96px">

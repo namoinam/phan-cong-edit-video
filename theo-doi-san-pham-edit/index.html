@@ -149,6 +149,174 @@
     th, td { padding: 8px 10px; font-size: 12px; }
     .status-sel { padding: 4px 6px; font-size: 11px; }
   }
+
+  /* Editor Pills & Section */
+  .editor-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 12px;
+    background: var(--bg-soft);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    font-size: 12.5px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    user-select: none;
+  }
+  .editor-pill:hover {
+    border-color: var(--blue);
+    background: var(--bg-blue);
+    color: var(--blue);
+  }
+  .editor-pill.active {
+    background: var(--blue);
+    border-color: var(--blue);
+    color: white;
+    box-shadow: 0 2px 8px rgba(37, 99, 235, 0.2);
+  }
+  .editor-pill .cap-badge {
+    font-size: 10px;
+    background: rgba(0, 0, 0, 0.08);
+    padding: 2px 6px;
+    border-radius: 999px;
+    color: inherit;
+    font-weight: 700;
+  }
+  .editor-pill.active .cap-badge {
+    background: rgba(255, 255, 255, 0.2);
+  }
+  
+  /* Preview Container */
+  .preview-container {
+    width: calc(100% - 48px);
+    margin: 24px 24px 80px 24px;
+    padding: 24px;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+  }
+  .preview-container h3 {
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: var(--text);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    letter-spacing: -0.02em;
+  }
+  .preview-summary {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+  .summary-card {
+    background: var(--bg-soft);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 14px 16px;
+  }
+  .summary-card .label {
+    font-size: 11px;
+    color: var(--text-sub);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 6px;
+    font-weight: 600;
+  }
+  .summary-card .value {
+    font-size: 18px;
+    font-weight: 800;
+    color: var(--text);
+  }
+  .preview-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+  .preview-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+  }
+  .preview-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-sm);
+    border-color: var(--blue-dim);
+  }
+  .preview-card .prod-title {
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--text);
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .preview-card .prod-title .badge {
+    background: var(--bg-blue);
+    color: var(--blue);
+    padding: 2px 8px;
+    border-radius: 999px;
+    font-size: 11px;
+    font-weight: 600;
+  }
+  .preview-assignments {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 12.5px;
+  }
+  .preview-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 0;
+    border-bottom: 1px dashed var(--border);
+  }
+  .preview-item:last-child {
+    border-bottom: none;
+  }
+  .preview-item .editor-name {
+    font-weight: 600;
+    color: var(--text-sub);
+  }
+  .preview-item .assignment-details {
+    text-align: right;
+  }
+  .preview-item .assignment-details .vid-count {
+    font-weight: 700;
+    color: var(--text);
+  }
+  .preview-item .assignment-details .voice-list {
+    font-size: 11px;
+    color: var(--blue);
+    background: var(--bg-blue);
+    padding: 2px 6px;
+    border-radius: 4px;
+    margin-left: 6px;
+    display: inline-flex;
+    align-items: center;
+    font-weight: 600;
+  }
+  .preview-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    border-top: 1px solid var(--border);
+    padding-top: 20px;
+  }
 </style>
 </head>
 
@@ -217,6 +385,21 @@
     </div>
     <span id="sync-time" style="display:none"></span>
   </div>
+  
+  <!-- Editor Selection Section -->
+  <div class="editor-section" style="width: 100%; border-top: 1px solid var(--border); padding-top: 12px; margin-top: 4px; display: flex; flex-direction: column; gap: 8px;">
+    <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px;">
+      <div style="font-size: 13px; font-weight: 700; color: var(--text-sub); display: flex; align-items: center; gap: 6px;">
+        <span style="font-size: 16px;">👥</span> Editor đi làm hôm nay:
+      </div>
+      <div id="capacity-summary" style="font-size: 13px; font-weight: 700; color: var(--blue);">
+        Tổng công suất: 0 video
+      </div>
+    </div>
+    <div class="editor-pills" id="editor-pills" style="display: flex; flex-wrap: wrap; gap: 6px;">
+      <!-- editor pills dynamically rendered -->
+    </div>
+  </div>
 </div>
 <div id="status-bar" class="status-bar loading"><svg class="spin" viewBox="0 0 24 24"><path d="M21 12a9 9 0 1 1-6.219-8.56"/></svg><span style="vertical-align:middle">Đang tải dữ liệu...</span></div>
 
@@ -227,10 +410,36 @@
     <th>Sản phẩm</th>
     <th>Cần edit</th><th>Đăng/ngày</th>
     <th title="Tồn kho thực tế hiện tại (ghi đè Cần edit khi tính ngày còn lại)">Video tồn</th>
-    <th title="Số ngày còn lại từ hôm nay" style="text-align:center">Ngày còn lại ↑</th><th>Trạng thái</th>
+    <th title="Số ngày còn lại từ hôm nay" style="text-align:center">Ngày còn lại ↑</th>
+    <th style="width:100px;text-align:center">Giao hôm nay</th>
+    <th>Trạng thái</th>
   </tr></thead>
   <tbody id="tbody"></tbody>
 </table>
+</div>
+
+<!-- Preview Section -->
+<div id="preview-section" class="preview-container" style="display:none;">
+  <h3>
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="color:var(--blue); vertical-align:-3px; margin-right:4px;"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg>
+    Xem trước phân công chi tiết
+  </h3>
+  
+  <div class="preview-summary" id="preview-summary-cards">
+    <!-- Summary cards -->
+  </div>
+  
+  <h4 style="font-size:14px; font-weight:700; color:var(--text-sub); margin-bottom:12px;">Chi tiết phân chia theo sản phẩm:</h4>
+  <div class="preview-grid" id="preview-grid-cards">
+    <!-- Detailed product cards -->
+  </div>
+  
+  <div class="preview-actions">
+    <button class="btn btn-primary" id="btn-post-web" onclick="postToWeb()" style="padding: 10px 24px; font-size: 14px;">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-2px; margin-right:4px;"><path d="M21.13 6.47a1 1 0 0 0-1.42 0L12 14.18l-3.21-3.22a1 1 0 0 0-1.42 0l-1.8 1.8a1 1 0 0 0 0 1.42l6.23 6.22a1 1 0 0 0 1.42 0l10.7-10.7a1 1 0 0 0 0-1.42z"/></svg>
+      Đăng lên Web 🚀
+    </button>
+  </div>
 </div>
 <div class="footer"><span id="stats-text"></span></div>
 <div class="toast" id="toast">Đã lưu</div>
@@ -271,6 +480,23 @@
 
 <script>
 const LOCAL_PATH = '/Users/nambui/Downloads/products.json';
+
+const ALL_EDITORS = [
+  { name: "Thư", capacity: 20, active: true },
+  { name: "Dung", capacity: 15, active: true },
+  { name: "Duyên", capacity: 15, active: true },
+  { name: "Hiếu", capacity: 15, active: true },
+  { name: "Thắm", capacity: 15, active: true },
+  { name: "Trân", capacity: 15, active: true },
+  { name: "Sơn", capacity: 15, active: true },
+  { name: "Tuyên", capacity: 10, active: true }
+];
+const PRIORITY_ORDER = ["Thư", "Dung", "Duyên", "Hiếu", "Thắm", "Trân", "Sơn", "Tuyên"];
+
+let globalHistoryData = null;
+let globalHistorySha = null;
+let currentSpPlans = [];
+let currentVoiceState = null;
 
 const FALLBACK = [
   {"name":"TIEU MAN THAU STORE - Khẩu trang chống nắng ninja","videos_per_assign":20,"so_video_ngay":5,"status":"active"},
@@ -503,6 +729,15 @@ function renderTable() {
       </td>
       <td>${tonVideoHTML(p, i)}</td>
       <td title="Kéo dài: ~${keoDai} ngày/lần" style="text-align:center">${conLaiHTML(p)}</td>
+      <td>
+        <input type="number" min="0" max="100" class="giao-input" 
+          value="${p.giao_hom_nay || ''}" placeholder="0" 
+          data-idx="${i}" 
+          oninput="this.value=this.value.replace(/[^0-9]/g,'')" 
+          onchange="updateGiaoField(this)" 
+          style="width: 70px; text-align: center; border-color: var(--blue-dim); font-weight: 600;"
+          ${p.status !== 'active' ? 'disabled' : ''}>
+      </td>
       <td><div style="display:flex;gap:10px;align-items:center">
         <select class="status-sel st-${p.status}" data-idx="${i}" onchange="changeStatus(this)">
           <option value="active" ${p.status==='active'?'selected':''}>Đang giao</option>
@@ -602,16 +837,35 @@ async function syncFromLocal() {
     const TOKEN = _getToken();
     if (!TOKEN) { setStatus('❌ Cần GitHub token để tải dữ liệu', 'error'); return; }
     const REPO  = 'namoinam/phan-cong-edit-video';
-    const res = await fetch(
+    
+    // Tải products.json
+    const resProducts = await fetch(
       `https://api.github.com/repos/${REPO}/contents/products.json`,
       { headers: { 'Authorization': 'token ' + TOKEN } }
     );
-    if (!res.ok) throw new Error('HTTP ' + res.status);
-    const data = await res.json();
-    _productsSha = data.sha;
-    const jsonStr = decodeURIComponent(escape(atob(data.content.replace(/\n/g, ''))));
-    const parsed = JSON.parse(jsonStr);
-    products = Array.isArray(parsed) ? parsed : (parsed.products || parsed);
+    if (!resProducts.ok) throw new Error('Lỗi tải products.json: ' + resProducts.status);
+    const dataProducts = await resProducts.json();
+    _productsSha = dataProducts.sha;
+    const jsonStrProducts = decodeURIComponent(escape(atob(dataProducts.content.replace(/\n/g, ''))));
+    const parsedProducts = JSON.parse(jsonStrProducts);
+    products = Array.isArray(parsedProducts) ? parsedProducts : (parsedProducts.products || parsedProducts);
+    
+    // Tải history.json
+    const resHistory = await fetch(
+      `https://api.github.com/repos/${REPO}/contents/history.json`,
+      { headers: { 'Authorization': 'token ' + TOKEN } }
+    );
+    if (!resHistory.ok) throw new Error('Lỗi tải history.json: ' + resHistory.status);
+    const dataHistory = await resHistory.json();
+    globalHistorySha = dataHistory.sha;
+    const jsonStrHistory = decodeURIComponent(escape(atob(dataHistory.content.replace(/\n/g, ''))));
+    globalHistoryData = JSON.parse(jsonStrHistory);
+
+    // Khởi tạo các giá trị
+    products.forEach(p => {
+      p.giao_hom_nay = p.giao_hom_nay || 0;
+    });
+
     _loadedFromFile = true;
     _isDirty = false;
     _history = []; _redo = [];
@@ -620,7 +874,10 @@ async function syncFromLocal() {
     const mm = String(now.getMinutes()).padStart(2,'0');
     document.getElementById('sync-time').textContent = `Cập nhật ${hh}:${mm}`;
     document.getElementById('status-bar').style.display = 'none';
+    
     renderTable();
+    renderEditorPills();
+    updateAssignmentAndPreview();
   } catch(e) {
     setStatus('⚠️ Không tải được — hiển thị dữ liệu có sẵn. Lỗi: ' + e.message, 'error');
   }
@@ -760,8 +1017,431 @@ window.addEventListener('beforeunload', (e) => {
   }
 });
 
+// Các hàm xử lý giao việc, tính toán thuật toán chia video và voice xoay vòng
+function renderEditorPills() {
+  const container = document.getElementById('editor-pills');
+  if (!container) return;
+  container.innerHTML = '';
+  
+  let totalCap = 0;
+  ALL_EDITORS.forEach((editor) => {
+    if (editor.active) {
+      totalCap += editor.capacity;
+    }
+    
+    const pill = document.createElement('div');
+    pill.className = `editor-pill ${editor.active ? 'active' : ''}`;
+    pill.innerHTML = `
+      <span>${editor.name}</span>
+      <span class="cap-badge">${editor.capacity}</span>
+    `;
+    pill.onclick = () => {
+      editor.active = !editor.active;
+      renderEditorPills();
+      updateAssignmentAndPreview();
+    };
+    container.appendChild(pill);
+  });
+  
+  document.getElementById('capacity-summary').innerHTML = `Tổng công suất: <strong>${totalCap}</strong> video`;
+  
+  // Điều chỉnh lại khoảng offset của header do chiều cao thay đổi
+  setTimeout(syncHeaderOffset, 50);
+}
+
+function updateGiaoField(el) {
+  const idx = parseInt(el.dataset.idx);
+  const val = parseInt(el.value) || 0;
+  products[idx].giao_hom_nay = val;
+  updateAssignmentAndPreview();
+}
+
+function distributeVideos(nVideos, activeEditors, capacities, remainderPtr) {
+  const activeOrdered = PRIORITY_ORDER.filter(e => activeEditors.includes(e));
+  const totalCap = activeEditors.reduce((sum, e) => sum + (capacities[e] || 0), 0);
+  
+  const shares = {};
+  activeEditors.forEach(e => {
+    shares[e] = totalCap > 0 ? Math.floor(nVideos * (capacities[e] || 0) / totalCap) : 0;
+  });
+  
+  const sumShares = activeEditors.reduce((sum, e) => sum + (shares[e] || 0), 0);
+  const remainder = nVideos - sumShares;
+  
+  let ptr = remainderPtr % activeOrdered.length;
+  for (let i = 0; i < remainder; i++) {
+    const editor = activeOrdered[ptr];
+    shares[editor] = (shares[editor] || 0) + 1;
+    ptr = (ptr + 1) % activeOrdered.length;
+  }
+  
+  return { shares, newRemainderPtr: ptr };
+}
+
+function distributeVoice(spName, editorVideos, voiceState, voiceTotalDrive) {
+  if (!voiceState[spName]) {
+    voiceState[spName] = { total: voiceTotalDrive, counter: 0 };
+  }
+  const state = voiceState[spName];
+  if (voiceTotalDrive > 0) {
+    state.total = voiceTotalDrive;
+  }
+  
+  const total = state.total || 0;
+  let counter = state.counter || 0;
+  const result = {};
+  
+  if (total === 0) {
+    return result;
+  }
+  
+  PRIORITY_ORDER.forEach(editor => {
+    const n = editorVideos[editor] || 0;
+    if (n === 0) return;
+    const voices = [];
+    for (let i = 0; i < n; i++) {
+      voices.push((counter % total) + 1);
+      counter++;
+    }
+    result[editor] = voices;
+  });
+  
+  state.counter = counter;
+  return result;
+}
+
+function runAssignmentAlgorithm() {
+  const activeEditors = ALL_EDITORS.filter(e => e.active).map(e => e.name);
+  const initialCapacities = {};
+  ALL_EDITORS.forEach(e => {
+    if (e.active) initialCapacities[e.name] = e.capacity;
+  });
+  
+  const totalCapacity = ALL_EDITORS.filter(e => e.active).reduce((sum, e) => sum + e.capacity, 0);
+  
+  const spList = [];
+  products.forEach(p => {
+    const n = parseInt(p.giao_hom_nay) || 0;
+    if (n > 0) {
+      spList.push({
+        name: p.name,
+        n_videos: n
+      });
+    }
+  });
+  
+  const totalVideosAssigned = spList.reduce((sum, item) => sum + item.n_videos, 0);
+  
+  if (totalCapacity === 0 || totalVideosAssigned !== totalCapacity) {
+    return {
+      success: false,
+      totalVideos: totalVideosAssigned,
+      totalCapacity: totalCapacity,
+      spPlans: [],
+      reason: `Tổng số video đã nhập (${totalVideosAssigned}) chưa khớp với công suất của các editor đi làm (${totalCapacity}).`
+    };
+  }
+  
+  let remainderPtr = 0;
+  const remainingCapacity = { ...initialCapacities };
+  const spPlans = [];
+  
+  const voiceStateCopy = JSON.parse(JSON.stringify(globalHistoryData?.["!voice_state"] || {}));
+  
+  for (const item of spList) {
+    const n_videos = item.n_videos;
+    const sp_name = item.name;
+    
+    const { shares, newRemainderPtr } = distributeVideos(n_videos, activeEditors, remainingCapacity, remainderPtr);
+    remainderPtr = newRemainderPtr;
+    
+    activeEditors.forEach(e => {
+      remainingCapacity[e] -= (shares[e] || 0);
+    });
+    
+    const voiceTotal = voiceStateCopy[sp_name]?.total || 0;
+    
+    const editorVideosSp = {};
+    activeEditors.forEach(e => {
+      if ((shares[e] || 0) > 0) {
+        editorVideosSp[e] = shares[e];
+      }
+    });
+    
+    const voiceAssignments = distributeVoice(sp_name, editorVideosSp, voiceStateCopy, voiceTotal);
+    
+    spPlans.push({
+      name: sp_name,
+      n_videos: n_videos,
+      shares: shares,
+      voice_assignments: voiceAssignments,
+      voice_total: voiceTotal
+    });
+  }
+  
+  const editorTotals = {};
+  activeEditors.forEach(e => {
+    editorTotals[e] = 0;
+  });
+  spPlans.forEach(plan => {
+    activeEditors.forEach(e => {
+      editorTotals[e] += (plan.shares[e] || 0);
+    });
+  });
+  
+  let capacitiesMatch = true;
+  activeEditors.forEach(e => {
+    if (editorTotals[e] !== initialCapacities[e]) {
+      capacitiesMatch = false;
+    }
+  });
+  
+  if (!capacitiesMatch) {
+    return {
+      success: false,
+      totalVideos: totalVideosAssigned,
+      totalCapacity: totalCapacity,
+      spPlans: spPlans,
+      reason: `Phân phối không khớp công suất chính xác cho từng Editor.`
+    };
+  }
+  
+  return {
+    success: true,
+    totalVideos: totalVideosAssigned,
+    totalCapacity: totalCapacity,
+    spPlans: spPlans,
+    voiceState: voiceStateCopy
+  };
+}
+
+function updateAssignmentAndPreview() {
+  const previewSection = document.getElementById('preview-section');
+  if (!previewSection) return;
+  
+  if (!globalHistoryData) {
+    previewSection.style.display = 'none';
+    return;
+  }
+  
+  const result = runAssignmentAlgorithm();
+  
+  if (result.success) {
+    currentSpPlans = result.spPlans;
+    currentVoiceState = result.voiceState;
+    
+    const summaryCards = document.getElementById('preview-summary-cards');
+    const activeOrdered = PRIORITY_ORDER.filter(e => ALL_EDITORS.find(ed => ed.name === e)?.active);
+    
+    const editorTotals = {};
+    activeOrdered.forEach(e => editorTotals[e] = 0);
+    result.spPlans.forEach(plan => {
+      activeOrdered.forEach(e => {
+        editorTotals[e] += (plan.shares[e] || 0);
+      });
+    });
+    
+    let summaryHTML = `
+      <div class="summary-card" style="border-left: 4px solid var(--blue);">
+        <div class="label">Tổng số Video</div>
+        <div class="value">${result.totalVideos} / ${result.totalCapacity}</div>
+      </div>
+    `;
+    activeOrdered.forEach(e => {
+      summaryHTML += `
+        <div class="summary-card">
+          <div class="label">${e}</div>
+          <div class="value">${editorTotals[e]} / ${ALL_EDITORS.find(ed => ed.name === e)?.capacity}</div>
+        </div>
+      `;
+    });
+    summaryCards.innerHTML = summaryHTML;
+    
+    const gridCards = document.getElementById('preview-grid-cards');
+    let gridHTML = '';
+    
+    result.spPlans.forEach(plan => {
+      const {brand, name} = parseName(plan.name);
+      
+      let assignmentsHTML = '';
+      activeOrdered.forEach(editor => {
+        const share = plan.shares[editor] || 0;
+        if (share > 0) {
+          const voiceNums = plan.voice_assignments[editor] || [];
+          const voiceStr = voiceNums.length > 0 ? `<span class="voice-list">🎙️ Voice: ${voiceNums.join(', ')}</span>` : '';
+          
+          assignmentsHTML += `
+            <div class="preview-item">
+              <span class="editor-name">${editor}</span>
+              <div class="assignment-details">
+                <span class="vid-count">📹 ${share} video</span>
+                ${voiceStr}
+              </div>
+            </div>
+          `;
+        }
+      });
+      
+      gridHTML += `
+        <div class="preview-card">
+          <div class="prod-title">
+            <span>${name} <small style="display:block; font-size:10.5px; font-weight:normal; color:var(--text-muted); margin-top:2px;">${brand}</small></span>
+            <span class="badge">${plan.n_videos} video</span>
+          </div>
+          <div class="preview-assignments">
+            ${assignmentsHTML || '<div style="color:var(--text-muted); font-style:italic; font-size:12px; text-align:center; padding:8px 0;">Không phân công editor nào</div>'}
+          </div>
+        </div>
+      `;
+    });
+    
+    gridCards.innerHTML = gridHTML;
+    previewSection.style.display = 'block';
+  } else {
+    previewSection.style.display = 'none';
+  }
+}
+
+function findDriveLinkInHistory(spName) {
+  if (!globalHistoryData) return '';
+  for (const dateKey in globalHistoryData) {
+    if (dateKey.startsWith('!')) continue;
+    const dayData = globalHistoryData[dateKey];
+    if (dayData && Array.isArray(dayData.links)) {
+      const found = dayData.links.find(l => l.full_name === spName);
+      if (found && found.url) {
+        return found.url;
+      }
+    }
+  }
+  return '';
+}
+
+function cleanupHistory(historyObj, todayStr) {
+  const cutoffDate = new Date(todayStr);
+  cutoffDate.setDate(cutoffDate.getDate() - 7);
+  
+  for (const key in historyObj) {
+    if (key.startsWith('!')) continue;
+    if (key.length === 10) {
+      const keyDate = new Date(key);
+      if (!isNaN(keyDate.getTime()) && keyDate < cutoffDate) {
+        delete historyObj[key];
+      }
+    }
+  }
+  return historyObj;
+}
+
+async function postToWeb() {
+  if (!globalHistoryData) {
+    setStatus('Không có dữ liệu lịch sử để cập nhật. Hãy nhấn Tải/Refresh.', 'error');
+    return;
+  }
+  if (!globalHistorySha) {
+    setStatus('Thiếu SHA của history.json, hãy nhấn tải lại.', 'error');
+    return;
+  }
+  
+  const localDate = new Date();
+  const yyyy = localDate.getFullYear();
+  const mm = String(localDate.getMonth() + 1).padStart(2, '0');
+  const dd = String(localDate.getDate()).padStart(2, '0');
+  const todayStr = `${yyyy}-${mm}-${dd}`;
+  
+  if (!confirm(`Bạn có chắc chắn muốn đăng phân công ngày ${todayStr} lên Web không?`)) {
+    return;
+  }
+  
+  setStatus('⏳ Đang đăng phân công lên GitHub...', 'loading');
+  
+  try {
+    const TOKEN = _getToken();
+    if (!TOKEN) { setStatus('❌ Cần GitHub token để lưu', 'error'); return; }
+    
+    const activeEditors = ALL_EDITORS.filter(e => e.active).map(e => e.name);
+    const assignments = {};
+    const links = [];
+    
+    currentSpPlans.forEach(plan => {
+      const driveUrl = findDriveLinkInHistory(plan.name);
+      links.push({
+        full_name: plan.name,
+        url: driveUrl
+      });
+      
+      PRIORITY_ORDER.forEach(editor => {
+        if (!activeEditors.includes(editor)) return;
+        const share = plan.shares[editor] || 0;
+        if (share === 0) return;
+        
+        if (!assignments[editor]) {
+          assignments[editor] = { videos: [], voices: [] };
+        }
+        
+        assignments[editor].videos.push({
+          name: plan.name,
+          count: share
+        });
+        
+        const voiceNums = plan.voice_assignments[editor] || [];
+        if (voiceNums.length > 0) {
+          assignments[editor].voices.push({
+            name: plan.name,
+            count: voiceNums.join(', ')
+          });
+        }
+      });
+    });
+    
+    globalHistoryData["!voice_state"] = currentVoiceState;
+    
+    globalHistoryData[todayStr] = {
+      assignments: assignments,
+      links: links
+    };
+    
+    globalHistoryData = cleanupHistory(globalHistoryData, todayStr);
+    
+    const REPO = 'namoinam/phan-cong-edit-video';
+    const content = JSON.stringify(globalHistoryData, null, 2);
+    const b64 = btoa(unescape(encodeURIComponent(content)));
+    
+    const res = await fetch(
+      `https://api.github.com/repos/${REPO}/contents/history.json`,
+      {
+        method: 'PUT',
+        headers: { 'Authorization': 'token ' + TOKEN, 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          message: `giao video ${todayStr}: ${currentSpPlans.length} SP, ${currentSpPlans.reduce((s, p)=>s+p.n_videos, 0)} video`,
+          content: b64,
+          sha: globalHistorySha
+        })
+      }
+    );
+    
+    const result = await res.json();
+    if (result.commit) {
+      globalHistorySha = result.content.sha;
+      setStatus('✅ Đã đăng phân công thành công lên GitHub!', 'ok');
+      
+      products.forEach(p => {
+        p.giao_hom_nay = 0;
+      });
+      
+      renderTable();
+      updateAssignmentAndPreview();
+    } else {
+      throw new Error(JSON.stringify(result).substring(0, 120));
+    }
+  } catch (e) {
+    setStatus('❌ Lỗi đăng phân công: ' + e.message, 'error');
+  }
+}
+
 renderTable();
 syncFromLocal();
+renderEditorPills();
 syncHeaderOffset();
 setTimeout(syncHeaderOffset, 200);
 </script>

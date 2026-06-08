@@ -95,6 +95,111 @@ def _notify(title: str, message: str):
         pass
 
 
+# ============================================================
+# TELEGRAM REPORT CONFIG & UTILS
+# ============================================================
+RUN_REPORT = {
+    "success": True,
+    "downloaded_dates": {},  # date_str -> count of videos downloaded
+    "updated_products": {},  # product_name -> {"added": X, "total": Y}
+    "unmatched_files": [],   # list of (raw_name, count)
+    "errors": []             # list of error strings
+}
+
+def get_telegram_config() -> tuple[str, str]:
+    """Đọc cấu hình Telegram từ file telegram_config.json hoặc biến môi trường"""
+    bot_token = os.environ.get("TELEGRAM_BOT_TOKEN", "")
+    chat_id = os.environ.get("TELEGRAM_CHAT_ID", "")
+    
+    config_path = SCRIPT_DIR / "telegram_config.json"
+    if config_path.exists():
+        try:
+            config = load_json(config_path)
+            bot_token = config.get("TELEGRAM_BOT_TOKEN", bot_token)
+            chat_id = config.get("TELEGRAM_CHAT_ID", chat_id)
+        except Exception as e:
+            print(f"   ⚠️ Lỗi đọc telegram_config.json: {e}")
+            
+    return bot_token.strip(), chat_id.strip()
+
+def send_telegram_message(text: str) -> bool:
+    """Gửi tin nhắn qua Telegram Bot API sử dụng POST request"""
+    token, chat_id = get_telegram_config()
+    if not token or not chat_id:
+        print("   ⚠️ Bỏ qua gửi Telegram do thiếu TELEGRAM_BOT_TOKEN hoặc TELEGRAM_CHAT_ID")
+        return False
+        
+    url = f"https://api.telegram.org/bot{token}/sendMessage"
+    payload = {
+        "chat_id": chat_id,
+        "text": text,
+        "parse_mode": "HTML",
+        "disable_web_page_preview": True
+    }
+    
+    try:
+        import urllib.request
+        data = json.dumps(payload).encode("utf-8")
+        req = urllib.request.Request(
+            url, 
+            data=data, 
+            headers={"Content-Type": "application/json"},
+            method="POST"
+        )
+        with urllib.request.urlopen(req, timeout=10) as resp:
+            res = json.loads(resp.read().decode("utf-8"))
+            if res.get("ok"):
+                print("   ✅ Đã gửi báo cáo qua Telegram")
+                return True
+            else:
+                print(f"   ❌ Gửi Telegram thất bại: {res}")
+                return False
+    except Exception as e:
+        print(f"   ⚠️ Lỗi khi gửi Telegram: {e}")
+        return False
+
+def send_run_report():
+    """Gửi báo cáo tóm tắt hoặc cảnh báo lỗi qua Telegram"""
+    if not RUN_REPORT["downloaded_dates"] and not RUN_REPORT["updated_products"] and not RUN_REPORT["errors"] and not RUN_REPORT["unmatched_files"]:
+        return
+
+    if RUN_REPORT["errors"] or RUN_REPORT["unmatched_files"]:
+        # Cảnh báo đỏ chi tiết
+        msg_lines = ["🔴 <b>[CẢNH BÁO TIKTOK WORKFLOW] GẶP LỖI</b>\n"]
+        
+        if RUN_REPORT["errors"]:
+            msg_lines.append("❌ <b>Các lỗi hệ thống:</b>")
+            for err in RUN_REPORT["errors"]:
+                msg_lines.append(f"- {err}")
+            msg_lines.append("")
+            
+        if RUN_REPORT["unmatched_files"]:
+            msg_lines.append("⚠️ <b>File đặt sai tên sản phẩm (chưa cập nhật tồn kho):</b>")
+            for name, count in RUN_REPORT["unmatched_files"]:
+                msg_lines.append(f"- <code>{name}</code> ({count} video)")
+            msg_lines.append("\n👉 Vui lòng sửa tên file trên Drive cho đúng tên SP rồi chạy lại.")
+            
+        msg = "\n".join(msg_lines)
+        send_telegram_message(msg)
+    else:
+        # Báo cáo tóm tắt khi thành công
+        msg_lines = ["🟢 <b>[BÁO CÁO TIKTOK WORKFLOW] THÀNH CÔNG</b>\n"]
+        
+        if RUN_REPORT["downloaded_dates"]:
+            msg_lines.append("📥 <b>Đã tải video:</b>")
+            for date_str, count in RUN_REPORT["downloaded_dates"].items():
+                msg_lines.append(f"- Ngày {date_str}: {count} video")
+            msg_lines.append("")
+            
+        if RUN_REPORT["updated_products"]:
+            msg_lines.append("📊 <b>Cập nhật tồn kho sản phẩm:</b>")
+            for prod_name, info in RUN_REPORT["updated_products"].items():
+                msg_lines.append(f"- {prod_name}: +{info['added']} (Tồn: {info['total']})")
+                
+        msg = "\n".join(msg_lines)
+        send_telegram_message(msg)
+
+
 def date_to_vi_name(date: datetime) -> str:
     """2026-06-03 → '3 tháng 6'"""
     return f"{date.day} tháng {date.month}"
@@ -420,15 +525,20 @@ def download_videos(target_date: datetime, folder_id: str) -> Path | None:
 
     if result.returncode != 0:
         print(f"   ❌ rclone thất bại (code {result.returncode})")
+        RUN_REPORT["errors"].append(f"rclone copy thất bại cho ngày {date_str} (code {result.returncode})")
+        RUN_REPORT["success"] = False
         return None
 
     _exts = {".mp4", ".mov", ".avi", ".mkv", ".m4v"}
     count = len([f for f in output_dir.rglob("*") if f.suffix.lower() in _exts])
     if count == 0:
         print(f"   ⚠️  Không tìm thấy video nào trong folder!")
+        RUN_REPORT["errors"].append(f"Không tìm thấy video nào trong folder Drive ngày {date_str}")
+        RUN_REPORT["success"] = False
         return None
 
     print(f"   ✅ Download xong: {count} video")
+    RUN_REPORT["downloaded_dates"][date_str] = count
 
     # Gom tất cả video vào 1 thư mục chung, xóa các thư mục con
     flatten_into_one_folder(output_dir, _exts)
@@ -482,7 +592,7 @@ def _github_get_products() -> tuple[list, str] | tuple[None, None]:
         return None, None
 
 
-def _push_products_to_github(products: list, sha: str):
+def _push_products_to_github(products: list, sha: str) -> bool:
     """Push products.json lên GitHub (GitHub là nguồn duy nhất, không dùng file local)."""
     import urllib.request, base64 as _b64
     url = f"https://api.github.com/repos/{GITHUB_REPO}/contents/{GITHUB_PRODUCTS}"
@@ -502,11 +612,15 @@ def _push_products_to_github(products: list, sha: str):
         with urllib.request.urlopen(req) as resp:
             result = json.loads(resp.read())
             print(f"   ✅ GitHub updated: {result['commit']['sha'][:8]}")
+            return True
     except Exception as e:
         print(f"   ⚠️  Push GitHub thất bại: {e}")
+        RUN_REPORT["errors"].append(f"Push products.json lên GitHub thất bại: {e}")
+        RUN_REPORT["success"] = False
+        return False
 
 
-def update_inventory(delivered: dict):
+def update_inventory(delivered: dict) -> bool:
     """
     Cập nhật tồn kho trong products.json (GitHub-only, không dùng file local):
       - CỘNG số video edit mới tải về cho mỗi SP.
@@ -515,12 +629,14 @@ def update_inventory(delivered: dict):
     """
     if not delivered:
         print("\n📊 Không có video mới khớp tên SP — tồn kho giữ nguyên")
-        return
+        return True
 
     products, sha = _github_get_products()
     if products is None:
         print("❌ Không lấy được products.json từ GitHub — bỏ qua cập nhật tồn kho")
-        return
+        RUN_REPORT["errors"].append("Không lấy được products.json từ GitHub")
+        RUN_REPORT["success"] = False
+        return False
 
     norm_map = {_norm_name(p.get("name", "")): p for p in products}
     # map bỏ hết dấu cách → khớp được cả khi tên file dính/thiếu dấu cách
@@ -566,7 +682,9 @@ def update_inventory(delivered: dict):
         print("   Tồn kho chưa được cập nhật.")
         _notify("⚠️ Có file sai tên SP — tồn kho chưa cập nhật",
                 f"{len(unmatched)} file chưa khớp. Sửa tên trên Drive rồi chạy lại. Xem log tu_chay_6h.log")
-        return
+        RUN_REPORT["unmatched_files"].extend(unmatched)
+        RUN_REPORT["success"] = False
+        return False
 
     # 3) Áp dụng MỘT lần cho mỗi SP: trừ phần đã đăng kể từ ton_date, rồi cộng tổng
     for p, total in per_product.values():
@@ -586,13 +704,21 @@ def update_inventory(delivered: dict):
         p["ton_video"] = cur + total
         p["ton_date"] = today_str
         updated.append((p["name"], total, p["ton_video"]))
+        
+        # Ghi nhận vào RUN_REPORT
+        prod_name = p["name"]
+        if prod_name in RUN_REPORT["updated_products"]:
+            RUN_REPORT["updated_products"][prod_name]["added"] += total
+            RUN_REPORT["updated_products"][prod_name]["total"] = p["ton_video"]
+        else:
+            RUN_REPORT["updated_products"][prod_name] = {"added": total, "total": p["ton_video"]}
 
     print("\n📊 Cập nhật tồn kho:")
     for name, added, total in updated:
         print(f"   +{added} → {name}: tồn {total}")
 
     # Push lên GitHub (nguồn duy nhất)
-    _push_products_to_github(products, sha)
+    return _push_products_to_github(products, sha)
 
 
 # ============================================================
@@ -696,8 +822,11 @@ def process_one_date(service, target_date: datetime, only_download: bool = False
             name = extract_product_name(f["name"])
             delivered[name] = delivered.get(name, 0) + 1
         print(f"   ✅ Đã quét {len(video_list)} video từ Drive API")
-        update_inventory(delivered)
-        return True
+        
+        # Ghi nhận vào RUN_REPORT downloaded dates
+        RUN_REPORT["downloaded_dates"][date_str] = len(video_list)
+        
+        return update_inventory(delivered)
     else:
         print(f"\n⬇️  Download video: {vi_name}")
         video_dir = download_videos(target_date, target_folder_id)
@@ -706,8 +835,7 @@ def process_one_date(service, target_date: datetime, only_download: bool = False
             return False
 
         delivered = count_delivered_per_product(video_dir)
-        update_inventory(delivered)
-        return True
+        return update_inventory(delivered)
 
 
 def main():

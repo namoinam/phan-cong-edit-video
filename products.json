@@ -86,8 +86,8 @@
     "so_video_ngay": 1,
     "status": "active",
     "last_assigned": "2026-06-04",
-    "ton_video": 10,
-    "ton_date": "2026-06-05"
+    "ton_video": 13,
+    "ton_date": "2026-06-09"
   },
   {
     "name": "MIA - Vali kéo du lịch Larita Aly",
@@ -140,8 +140,8 @@
     "so_video_ngay": 1,
     "status": "active",
     "last_assigned": "2026-06-04",
-    "ton_video": 11,
-    "ton_date": "2026-06-06"
+    "ton_video": 15,
+    "ton_date": "2026-06-09"
   },
   {
     "name": "MODECO - Máy massage cầm tay",
@@ -215,8 +215,8 @@
     "so_video_ngay": 1,
     "status": "active",
     "last_assigned": "2026-06-04",
-    "ton_video": 20,
-    "ton_date": "2026-06-06"
+    "ton_video": 33,
+    "ton_date": "2026-06-09"
   },
   {
     "name": "BOXERMAN - Quần sịp nam",
@@ -357,8 +357,8 @@
     "so_video_ngay": 3,
     "status": "active",
     "last_assigned": "2026-06-04",
-    "ton_video": 18,
-    "ton_date": "2026-06-06"
+    "ton_video": 25,
+    "ton_date": "2026-06-09"
   },
   {
     "name": "UPGEN - Bàn nâng hạ di động",
@@ -366,8 +366,8 @@
     "so_video_ngay": 3,
     "status": "active",
     "last_assigned": "2026-06-04",
-    "ton_video": 20,
-    "ton_date": "2026-06-05"
+    "ton_video": 23,
+    "ton_date": "2026-06-09"
   },
   {
     "name": "DEERMA - Vòi sen tăng áp",
@@ -408,8 +408,8 @@
     "so_video_ngay": 3,
     "status": "active",
     "last_assigned": "2026-06-04",
-    "ton_video": 9,
-    "ton_date": "2026-06-06"
+    "ton_video": 8,
+    "ton_date": "2026-06-09"
   },
   {
     "name": "DELI - Ổ điện chữ T",
@@ -418,7 +418,7 @@
     "status": "active",
     "last_assigned": "2026-06-04",
     "ton_video": 11,
-    "ton_date": "2026-06-05"
+    "ton_date": "2026-06-09"
   },
   {
     "name": "BESTON - Pin kiềm Alkaline",
@@ -450,8 +450,8 @@
     "so_video_ngay": 3,
     "status": "active",
     "last_assigned": "2026-06-04",
-    "ton_video": 20,
-    "ton_date": "2026-06-05"
+    "ton_video": 23,
+    "ton_date": "2026-06-09"
   },
   {
     "name": "DEERMA - Máy xay gia vị",
@@ -515,8 +515,8 @@
     "so_video_ngay": 3,
     "status": "active",
     "last_assigned": "2026-06-04",
-    "ton_video": 10,
-    "ton_date": "2026-06-06"
+    "ton_video": 9,
+    "ton_date": "2026-06-09"
   },
   {
     "name": "EDC VN - Đèn pin led zoom F35",
@@ -548,7 +548,7 @@
     "so_video_ngay": 3,
     "status": "active",
     "last_assigned": "2026-06-04",
-    "ton_video": 20,
-    "ton_date": "2026-06-05"
+    "ton_video": 23,
+    "ton_date": "2026-06-09"
   }
 ]

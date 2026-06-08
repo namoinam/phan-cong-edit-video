@@ -30,9 +30,9 @@
   :root { color-scheme: light; }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   input:focus, select:focus { outline: none; border-color: var(--blue) !important; box-shadow: 0 0 0 3px var(--blue-dim); }
-  body { font-family: 'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif; background: var(--bg-soft); color: var(--text); padding-top: 80px; padding-bottom: 80px; }
-  
-  .header { background: var(--bg-soft); border-bottom: 1px solid var(--border); padding: 24px 24px 12px; display: flex; flex-direction: column; align-items: center; gap: 12px; position: sticky; top: 60px; z-index: 10; }
+  body { font-family: 'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif; background: var(--bg-soft); color: var(--text); padding-top: 0px; padding-bottom: 80px; }
+  .navbar { display: none !important; }
+  .header { background: var(--bg-soft); border-bottom: 1px solid var(--border); padding: 24px 24px 12px; display: flex; flex-direction: column; align-items: center; gap: 12px; position: sticky; top: 0px; z-index: 10; }
   .header h2 { font-size: 26px; font-weight: 800; letter-spacing: -0.02em; color: var(--text); text-align: center; line-height: 1.2; text-transform: uppercase; }
   
   .header-controls { display: flex; gap: 8px; align-items: center; width: 100%; }
@@ -663,7 +663,7 @@ function syncHeaderOffset() {
   const h = document.querySelector('.header');
   const thead = document.querySelector('thead');
   if (h && thead) {
-    const navbarHeight = 60;
+    const navbarHeight = 0;
     thead.style.top = (navbarHeight + Math.round(h.getBoundingClientRect().height) - 1) + 'px';  // -1 để đè khít
   }
 }

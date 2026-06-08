@@ -17,8 +17,11 @@
     font-family: 'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
     background: var(--bg-soft);
     color: var(--text);
-    padding-top: 80px; /* offset for fixed navbar */
+    padding-top: 0px; /* adjusted top padding */
     padding-bottom: 80px; /* offset for fixed footer */
+  }
+  .navbar {
+    display: none !important;
   }
   .container-custom {
     width: 100%;
@@ -35,7 +38,7 @@
     align-items: center;
     gap: 8px;
     position: sticky;
-    top: 60px;
+    top: 0px;
     z-index: 100;
   }
   .header h2 {
@@ -514,12 +517,7 @@
 // Sticky header offset fix
 document.addEventListener("DOMContentLoaded", () => {
   const updateStickyOffset = () => {
-    const navbar = document.getElementById("navbar");
-    if (navbar) {
-      const height = navbar.offsetHeight;
-      // Add 20px breathing room above first content (matches padding-top: 80px intent)
-      document.body.style.paddingTop = (height + 20) + "px";
-    }
+    document.body.style.paddingTop = "0px";
   };
   window.addEventListener("resize", updateStickyOffset);
   updateStickyOffset();

@@ -55,7 +55,8 @@
   .spin { animation: spin 0.8s linear infinite; transform-origin: center; }
   @keyframes spin { to { transform: rotate(360deg); } }
   
-  table { width: calc(100% - 48px); margin: 24px 24px; border-collapse: collapse; background: var(--card-bg); border: 1px solid var(--border); border-radius: var(--radius-md); overflow: hidden; box-shadow: var(--shadow-sm); }
+  .table-responsive { width: calc(100% - 48px); margin: 24px 24px; overflow-x: auto; -webkit-overflow-scrolling: touch; border: 1px solid var(--border); border-radius: var(--radius-md); background: var(--card-bg); box-shadow: var(--shadow-sm); }
+  table { width: 100%; border-collapse: collapse; background: transparent; }
   thead { position: sticky; top: 160px; z-index: 9; }
   th { background: var(--bg-soft); padding: 12px 14px; text-align: left; font-weight: 600; font-size: 11px; color: var(--text-sub); text-transform: uppercase; letter-spacing: 0.04em; border-bottom: 2px solid var(--border); white-space: nowrap; }
   td { padding: 10px 14px; border-bottom: 1px solid var(--border); vertical-align: middle; }
@@ -90,6 +91,23 @@
   .footer { position: fixed; bottom: 0; left: 0; right: 0; background: var(--bg-soft); border-top: 1px solid var(--border); padding: 10px 16px; font-size: 12px; color: var(--text-muted); text-align: center; z-index: 10; }
   .toast { position: fixed; bottom: 60px; right: 20px; background: var(--text); color: white; padding: 10px 16px; border-radius: var(--radius-sm); font-size: 12.5px; display: none; z-index: 200; box-shadow: var(--shadow-md); }
   .toast.show { display: block; }
+
+  @media (max-width: 768px) {
+    body { padding-top: 0px; }
+    .header { padding: 16px 16px 12px; position: static; }
+    thead { position: static; }
+    .header-controls { flex-direction: column; align-items: stretch; gap: 12px; }
+    .header-filters { width: 100%; display: flex; gap: 8px; }
+    .header-filters input[type="text"] { flex: 1; width: 100%; }
+    .header-filters select { flex: 1; }
+    .header-actions { width: 100%; display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+    .header-actions .btn { width: 100%; justify-content: center; }
+    .header-actions button:last-child { grid-column: span 2; }
+    .table-responsive { width: calc(100% - 16px); margin: 8px; }
+    table { min-width: 750px; }
+    th, td { padding: 8px 10px; font-size: 12px; }
+    .status-sel { padding: 4px 6px; font-size: 11px; }
+  }
 </style>
 </head>
 
@@ -158,6 +176,7 @@
 </div>
 <div id="status-bar" class="status-bar loading"><svg class="spin" viewBox="0 0 24 24"><path d="M21 12a9 9 0 1 1-6.219-8.56"/></svg><span style="vertical-align:middle">Đang tải dữ liệu...</span></div>
 
+<div class="table-responsive">
 <table>
   <thead><tr>
     <th style="width:40px;text-align:center"><input type="checkbox" id="check-all" onchange="toggleAllChecks(this)" title="Chọn tất cả" style="width:16px;height:16px;cursor:pointer"></th>
@@ -168,6 +187,7 @@
   </tr></thead>
   <tbody id="tbody"></tbody>
 </table>
+</div>
 <div class="footer"><span id="stats-text"></span></div>
 <div class="toast" id="toast">Đã lưu</div>
 <div id="add-form" style="display:none;position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);background:white;border-radius:10px;box-shadow:0 8px 32px rgba(0,0,0,0.18);padding:20px 24px;z-index:300;min-width:300px">
@@ -283,6 +303,7 @@ let _statActive = 0, _statPaused = 0, _statShown = 0;
 
 let _loadedFromFile = false;          // chỉ true sau khi ĐỌC được products.json — chặn ghi đè bằng dữ liệu mặc định
 let _productsSha = null;               // SHA của products.json trên GitHub — cần để PUT/update
+let _isDirty = false;                  // true khi có thay đổi chưa lưu lên GitHub
 
 // ===== Lịch sử Hoàn tác / Làm lại (Ctrl/Cmd+Z, Ctrl/Cmd+Shift+Z) =====
 let _history = [], _redo = [];
@@ -290,11 +311,13 @@ function snapshot() {                  // gọi TRƯỚC mỗi thay đổi để
   _history.push(JSON.stringify(products));
   if (_history.length > 60) _history.shift();
   _redo = [];
+  _isDirty = true;
 }
 function undo() {
   if (!_history.length) { setStatus('Không còn gì để hoàn tác', 'ok'); return; }
   _redo.push(JSON.stringify(products));
   products = JSON.parse(_history.pop());
+  _isDirty = true;
   renderTable();
   setStatus('↩️ Đã hoàn tác — nhớ bấm Lưu', 'ok');
 }
@@ -302,6 +325,7 @@ function redo() {
   if (!_redo.length) { setStatus('Không còn gì để làm lại', 'ok'); return; }
   _history.push(JSON.stringify(products));
   products = JSON.parse(_redo.pop());
+  _isDirty = true;
   renderTable();
   setStatus('↪️ Đã làm lại — nhớ bấm Lưu', 'ok');
 }
@@ -359,7 +383,7 @@ function calcConLai(p) {
   let daChay = 0;
   if (p.ton_date) {   // số ngày kể từ lần cập nhật tồn gần nhất → tự trừ theo nhịp đăng
     const today = new Date(); today.setHours(0,0,0,0);
-    const last  = new Date(p.ton_date); last.setHours(0,0,0,0);
+    const last  = new Date(p.ton_date.replace(/-/g, '/')); last.setHours(0,0,0,0);
     daChay = Math.round((today - last) / 86400000);
   }
   return p.ton_video / p.so_video_ngay - daChay;
@@ -545,6 +569,7 @@ async function syncFromLocal() {
     const parsed = JSON.parse(jsonStr);
     products = Array.isArray(parsed) ? parsed : (parsed.products || parsed);
     _loadedFromFile = true;
+    _isDirty = false;
     _history = []; _redo = [];
     const now = new Date();
     const hh = String(now.getHours()).padStart(2,'0');
@@ -588,6 +613,7 @@ async function saveToLocal() {
     const result = await res.json();
     if (result.commit) {
       _productsSha = result.content.sha;
+      _isDirty = false;
       setStatus('✅ Đã lưu lên GitHub!', 'ok');
     } else {
       throw new Error(JSON.stringify(result).substring(0, 120));
@@ -682,6 +708,13 @@ burger.addEventListener('click', openMenu);
 mobileMenuClose.addEventListener('click', closeMenu);
 mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMenu));
 document.addEventListener('keydown', e => { if (e.key === 'Escape') closeMenu(); });
+
+window.addEventListener('beforeunload', (e) => {
+  if (_isDirty) {
+    e.preventDefault();
+    e.returnValue = 'Bạn có thay đổi chưa lưu. Bạn có chắc chắn muốn rời đi?';
+  }
+});
 
 renderTable();
 syncFromLocal();

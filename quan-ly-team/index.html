@@ -390,9 +390,16 @@
     // ─── HELPERS ───────────────────────────────────────────
     function todayStr() {
       const now = new Date();
-      // Dùng múi giờ Việt Nam (UTC+7)
-      const vn = new Date(now.getTime() + 7 * 3600 * 1000);
-      return vn.toISOString().slice(0, 10); // YYYY-MM-DD
+      const parts = new Intl.DateTimeFormat('en-US', {
+        timeZone: 'Asia/Ho_Chi_Minh',
+        year: 'numeric',
+        month: '2-digit',
+        day: '2-digit'
+      }).formatToParts(now);
+      const y = parts.find(p => p.type === 'year').value;
+      const m = parts.find(p => p.type === 'month').value;
+      const d = parts.find(p => p.type === 'day').value;
+      return `${y}-${m}-${d}`;
     }
 
     function parseDateLocal(str) {
@@ -446,7 +453,9 @@
         const daysLeft = (p.so_video_ngay && p.so_video_ngay > 0)
           ? Math.floor(stock / p.so_video_ngay)
           : 99;
-        if (daysLeft <= 2) {
+        
+        const isInactive = (status === 'paused' || status === 'het_hang' || status === 'loi_link');
+        if (isInactive || daysLeft <= 2) {
           lowItems.push({ 
             name: p.name, 
             daysLeft, 
@@ -494,7 +503,19 @@
         const banner = document.getElementById('alert-banner');
         const list   = document.getElementById('alert-items');
         banner.classList.add('show');
-        lowItems.sort((a, b) => a.daysLeft - b.daysLeft).forEach(item => {
+        lowItems.sort((a, b) => {
+          const aInactive = (a.status === 'paused' || a.status === 'het_hang' || a.status === 'loi_link');
+          const bInactive = (b.status === 'paused' || b.status === 'het_hang' || b.status === 'loi_link');
+          
+          if (aInactive && !bInactive) return 1;
+          if (!aInactive && bInactive) return -1;
+          
+          if (!aInactive && !bInactive) {
+            return a.daysLeft - b.daysLeft;
+          }
+          
+          return a.name.localeCompare(b.name, 'vi');
+        }).forEach(item => {
           const row = document.createElement('div');
           row.className = 'alert-item';
           
@@ -569,12 +590,26 @@
       const chipSalary = document.getElementById('chip-salary');
       chipSalary.style.display = 'inline-flex';
       const now = new Date();
-      const vnNow = new Date(now.getTime() + 7 * 3600 * 1000);
-      chipSalary.textContent = 'Tháng ' + (vnNow.getMonth() + 1) + '/' + vnNow.getFullYear();
+      const parts = new Intl.DateTimeFormat('en-US', {
+        timeZone: 'Asia/Ho_Chi_Minh',
+        year: 'numeric',
+        month: 'numeric',
+        day: 'numeric',
+        hour: '2-digit',
+        minute: '2-digit',
+        hour12: false
+      }).formatToParts(now);
+      const vnYear = parts.find(p => p.type === 'year').value;
+      const vnMonth = parts.find(p => p.type === 'month').value;
+      const vnDay = parts.find(p => p.type === 'day').value;
+      const vnHour = parts.find(p => p.type === 'hour').value;
+      const vnMinute = parts.find(p => p.type === 'minute').value;
+
+      chipSalary.textContent = 'Tháng ' + vnMonth + '/' + vnYear;
 
       // Last update
       const lu = document.getElementById('last-update');
-      lu.innerHTML = `<span class="dot-live"></span>Cập nhật lúc ${vnNow.toLocaleTimeString('vi-VN', {hour:'2-digit', minute:'2-digit'})} — ${vnNow.toLocaleDateString('vi-VN')}`;
+      lu.innerHTML = `<span class="dot-live"></span>Cập nhật lúc ${vnHour}:${vnMinute} — ${vnDay}/${vnMonth}/${vnYear}`;
     }
 
     loadDashboard().catch(err => {

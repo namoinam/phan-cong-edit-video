@@ -856,91 +856,113 @@ def main():
     print(f"📅  {datetime.today().strftime('%d/%m/%Y %H:%M')}")
     print("=" * 55)
 
-    # Khởi tạo Drive service
-    print("\n🔐 Kết nối Google Drive API...")
     try:
-        service = get_drive_service()
-        print("   ✅ Kết nối thành công")
-    except SystemExit:
+        # Khởi tạo Drive service
+        print("\n🔐 Kết nối Google Drive API...")
+        try:
+            service = get_drive_service()
+            print("   ✅ Kết nối thành công")
+        except SystemExit:
+            raise
+        except Exception as e:
+            print(f"   ⚠️  Lỗi kết nối Drive: {e}")
+            RUN_REPORT["errors"].append(f"Không kết nối được Google Drive API: {e}")
+            RUN_REPORT["success"] = False
+            sys.exit(1)
+
+        # BƯỚC 1: Tạo folder ngày mai + dọn folder cũ
+        if not args.skip_drive and not args.only_download:
+            create_tomorrow_folder(service)
+            cleanup_old_folders(service)
+        else:
+            if args.only_download:
+                print("\n⏭️  Bỏ qua quản lý Drive (Chỉ tải video)")
+            else:
+                print("\n⏭️  Bỏ qua quản lý Drive (--skip-drive)")
+
+        # BƯỚC 2: Xác định danh sách ngày cần xử lý
+        if args.date:
+            # Chỉ định ngày cụ thể → xử lý đúng ngày đó, KHÔNG catch-up
+            target_dates = [datetime.strptime(args.date, "%Y-%m-%d")]
+            print(f"\n📥  Chế độ: Chỉ định ngày ({args.date})")
+        elif args.no_catchup:
+            # Tắt catch-up → chỉ xử lý hôm qua
+            target_dates = [datetime.today() - timedelta(days=1)]
+            print("\n📥  Chế độ: Chỉ hôm qua (--no-catchup)")
+        else:
+            # Chế độ mặc định: catch-up + hôm qua
+            yesterday = datetime.today() - timedelta(days=1)
+            yesterday_str = yesterday.strftime("%Y-%m-%d")
+            processed = get_processed_dates()
+
+            missing = get_missing_dates()
+            # Đảm bảo hôm qua luôn có trong danh sách
+            if yesterday not in missing and yesterday_str not in processed:
+                missing.append(yesterday)
+            # Sắp xếp từ cũ đến mới
+            target_dates = sorted(set(missing), key=lambda d: d)
+
+            if len(target_dates) == 1:
+                print(f"\n📥  Chế độ: Tự động (hôm qua = {yesterday_str})")
+            else:
+                skipped = [d for d in target_dates if d != yesterday]
+                print(f"\n📥  Chế độ: Tự động + Catch-up {len(skipped)} ngày bị lỡ")
+                for d in skipped:
+                    print(f"   📅 Tải bù: {date_to_vi_name(d)} ({d.strftime('%Y-%m-%d')})")
+
+        if not target_dates:
+            print("\n✅ Không có ngày nào cần xử lý.")
+            return
+
+        # BƯỚC 3: Xử lý từng ngày theo thứ tự
+        success_count = 0
+        for target_date in target_dates:
+            date_str = target_date.strftime("%Y-%m-%d")
+            processed = get_processed_dates()
+
+            # Bảo vệ chống cộng đôi: bỏ qua nếu ngày đã được xử lý thành công
+            if date_str in processed and not args.date and not args.only_download:
+                print(f"\n⏭️  {date_to_vi_name(target_date)} ({date_str}) đã xử lý rồi — bỏ qua.")
+                continue
+
+            print(f"\n{'='*55}")
+            print(f"📥  Xử lý: {date_to_vi_name(target_date)} ({date_str})")
+            print(f"{'='*55}")
+
+            ok = process_one_date(service, target_date, only_download=args.only_download)
+            if ok:
+                if not args.only_download:
+                    mark_date_processed(date_str)
+                success_count += 1
+                print(f"   ✅ Hoàn tất {date_to_vi_name(target_date)}")
+            else:
+                print(f"   ⚠️  Thất bại {date_to_vi_name(target_date)} — sẽ thử lại lần chạy sau")
+                if not RUN_REPORT["errors"] and not RUN_REPORT["unmatched_files"]:
+                    RUN_REPORT["errors"].append(f"Xử lý thất bại ngày {date_to_vi_name(target_date)} ({date_str})")
+                RUN_REPORT["success"] = False
+
+        print("\n" + "=" * 55)
+        print(f"✅ Hoàn tất! Đã xử lý {success_count}/{len(target_dates)} ngày.")
+        if success_count > 0:
+            last_dir = DOWNLOAD_BASE / f"tiktok_{target_dates[-1].strftime('%Y-%m-%d')}"
+            print(f"   📂 Thư mục mới nhất: {last_dir}")
+        print("=" * 55)
+
+    except SystemExit as e:
+        if e.code != 0:
+            RUN_REPORT["success"] = False
+            if not RUN_REPORT["errors"]:
+                RUN_REPORT["errors"].append(f"Script dừng đột ngột với mã lỗi {e.code}")
         raise
     except Exception as e:
-        print(f"   ⚠️  Lỗi kết nối Drive: {e}")
-        sys.exit(1)
-
-    # BƯỚC 1: Tạo folder ngày mai + dọn folder cũ
-    if not args.skip_drive and not args.only_download:
-        create_tomorrow_folder(service)
-        cleanup_old_folders(service)
-    else:
-        if args.only_download:
-            print("\n⏭️  Bỏ qua quản lý Drive (Chỉ tải video)")
-        else:
-            print("\n⏭️  Bỏ qua quản lý Drive (--skip-drive)")
-
-    # BƯỚC 2: Xác định danh sách ngày cần xử lý
-    if args.date:
-        # Chỉ định ngày cụ thể → xử lý đúng ngày đó, KHÔNG catch-up
-        target_dates = [datetime.strptime(args.date, "%Y-%m-%d")]
-        print(f"\n📥  Chế độ: Chỉ định ngày ({args.date})")
-    elif args.no_catchup:
-        # Tắt catch-up → chỉ xử lý hôm qua
-        target_dates = [datetime.today() - timedelta(days=1)]
-        print("\n📥  Chế độ: Chỉ hôm qua (--no-catchup)")
-    else:
-        # Chế độ mặc định: catch-up + hôm qua
-        yesterday = datetime.today() - timedelta(days=1)
-        yesterday_str = yesterday.strftime("%Y-%m-%d")
-        processed = get_processed_dates()
-
-        missing = get_missing_dates()
-        # Đảm bảo hôm qua luôn có trong danh sách
-        if yesterday not in missing and yesterday_str not in processed:
-            missing.append(yesterday)
-        # Sắp xếp từ cũ đến mới
-        target_dates = sorted(set(missing), key=lambda d: d)
-
-        if len(target_dates) == 1:
-            print(f"\n📥  Chế độ: Tự động (hôm qua = {yesterday_str})")
-        else:
-            skipped = [d for d in target_dates if d != yesterday]
-            print(f"\n📥  Chế độ: Tự động + Catch-up {len(skipped)} ngày bị lỡ")
-            for d in skipped:
-                print(f"   📅 Tải bù: {date_to_vi_name(d)} ({d.strftime('%Y-%m-%d')})")
-
-    if not target_dates:
-        print("\n✅ Không có ngày nào cần xử lý.")
-        return
-
-    # BƯỚC 3: Xử lý từng ngày theo thứ tự
-    success_count = 0
-    for target_date in target_dates:
-        date_str = target_date.strftime("%Y-%m-%d")
-        processed = get_processed_dates()
-
-        # Bảo vệ chống cộng đôi: bỏ qua nếu ngày đã được xử lý thành công
-        if date_str in processed and not args.date and not args.only_download:
-            print(f"\n⏭️  {date_to_vi_name(target_date)} ({date_str}) đã xử lý rồi — bỏ qua.")
-            continue
-
-        print(f"\n{'='*55}")
-        print(f"📥  Xử lý: {date_to_vi_name(target_date)} ({date_str})")
-        print(f"{'='*55}")
-
-        ok = process_one_date(service, target_date, only_download=args.only_download)
-        if ok:
-            if not args.only_download:
-                mark_date_processed(date_str)
-            success_count += 1
-            print(f"   ✅ Hoàn tất {date_to_vi_name(target_date)}")
-        else:
-            print(f"   ⚠️  Thất bại {date_to_vi_name(target_date)} — sẽ thử lại lần chạy sau")
-
-    print("\n" + "=" * 55)
-    print(f"✅ Hoàn tất! Đã xử lý {success_count}/{len(target_dates)} ngày.")
-    if success_count > 0:
-        last_dir = DOWNLOAD_BASE / f"tiktok_{target_dates[-1].strftime('%Y-%m-%d')}"
-        print(f"   📂 Thư mục mới nhất: {last_dir}")
-    print("=" * 55)
+        import traceback
+        err_msg = f"Lỗi runtime script: {e}\n{traceback.format_exc()}"
+        print(f"   ❌ {err_msg}")
+        RUN_REPORT["errors"].append(f"Lỗi runtime: {e}")
+        RUN_REPORT["success"] = False
+        raise
+    finally:
+        send_run_report()
 
 
 if __name__ == "__main__":

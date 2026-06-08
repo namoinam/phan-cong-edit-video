@@ -29,7 +29,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="../style.css?v=9" />
 <style>
-  :root { color-scheme: light; }
+  :root { color-scheme: light; --header-offset: 160px; }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   input:focus, select:focus { outline: none; border-color: var(--blue) !important; box-shadow: 0 0 0 3px var(--blue-dim); }
   body { font-family: 'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif; background: var(--bg-soft); color: var(--text); padding-top: 0px; padding-bottom: 80px; }
@@ -59,7 +59,7 @@
   
   .table-responsive { width: calc(100% - 48px); margin: 24px 24px; border: 1px solid var(--border); border-radius: var(--radius-md); background: var(--card-bg); box-shadow: var(--shadow-sm); }
   table { width: 100%; border-collapse: collapse; background: transparent; }
-  thead { position: sticky; top: 160px; z-index: 9; }
+  thead th { position: sticky; top: var(--header-offset); z-index: 9; }
   th { background: var(--bg-soft); padding: 12px 14px; text-align: left; font-weight: 600; font-size: 11px; color: var(--text-sub); text-transform: uppercase; letter-spacing: 0.04em; border-bottom: 2px solid var(--border); white-space: nowrap; }
   td { padding: 10px 14px; border-bottom: 1px solid var(--border); vertical-align: middle; }
   tr:hover td { background: var(--bg-soft); }
@@ -97,7 +97,7 @@
   @media (max-width: 768px) {
     body { padding-top: 0px; }
     .header { padding: 16px 16px 12px; position: static; }
-    thead { position: static; }
+    thead th { position: static; }
     .header-controls { flex-direction: column; align-items: stretch; gap: 12px; }
     .header-filters { width: 100%; display: flex; gap: 8px; }
     .header-filters input[type="text"] { flex: 1; width: 100%; }
@@ -692,10 +692,10 @@ document.addEventListener('keydown', (e) => {
 // Đóng băng tiêu đề cột ngay dưới header (tự tính chiều cao header, kể cả khi đổi kích thước)
 function syncHeaderOffset() {
   const h = document.querySelector('.header');
-  const thead = document.querySelector('thead');
-  if (h && thead) {
+  if (h) {
     const navbarHeight = 0;
-    thead.style.top = (navbarHeight + Math.round(h.getBoundingClientRect().height) - 1) + 'px';  // -1 để đè khít
+    const offset = navbarHeight + Math.round(h.getBoundingClientRect().height) - 1;
+    document.documentElement.style.setProperty('--header-offset', offset + 'px');
   }
 }
 window.addEventListener('resize', syncHeaderOffset);

@@ -28,6 +28,46 @@
   --shadow-sm:    0 1px 4px rgba(31,35,41,0.08);
   --shadow-md:    0 4px 16px rgba(31,35,41,0.1);
   --shadow-blue:  0 4px 16px rgba(20,86,240,0.25);
+
+  /* Brand Status Colors */
+  --status-red:           #DC2626;
+  --status-red-bg:        #FEF2F2;
+  --status-red-border:    #FECACA;
+  --status-red-dim:       rgba(220, 38, 38, 0.15);
+  
+  --status-orange:        #EA580C;
+  --status-orange-bg:     #FFF7ED;
+  --status-orange-border: #FED7AA;
+  --status-orange-dim:    rgba(234, 88, 12, 0.15);
+
+  --status-amber:         #F59E0B;
+  --status-amber-bg:      #FFFBEB;
+  --status-amber-border:  #FEF3C7;
+  --status-amber-text:    #D97706;
+  --status-amber-dim:     rgba(245, 158, 11, 0.15);
+  
+  --status-green:         #10B981;
+  --status-green-dark:    #16A34A;
+  --status-green-bg:      #F0FDF4;
+  --status-green-border:  #BBF7D0;
+  --status-green-dim:     rgba(16, 185, 129, 0.15);
+  
+  --status-blue:          #3B82F6;
+  --status-blue-bg:       #EFF6FF;
+  --status-blue-border:   #BFDBFE;
+  
+  --status-purple:        #8B5CF6;
+  --status-purple-bg:     #F5F3FF;
+  --status-purple-border: #DDD6FE;
+  
+  --status-gray:          #6B7280;
+  --status-gray-bg:       #F9FAFB;
+  --status-gray-border:   #E5E7EB;
+  --status-gray-dim:      rgba(107, 114, 128, 0.15);
+  
+  --status-indigo:        #3730A3;
+  --status-indigo-bg:     #EEF2FF;
+  --status-indigo-border: #C7D2FE;
 }
 
 html { scroll-behavior: smooth; }

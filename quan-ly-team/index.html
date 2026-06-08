@@ -31,7 +31,8 @@
     }
     .container-custom {
       width: 100%;
-      max-width: 1000px;
+      max-width: 1100px;
+      margin: 0 auto;
       padding: 24px 20px;
       display: flex;
       flex-direction: column;
@@ -82,10 +83,10 @@
       background: var(--stripe-color, var(--blue));
       border-radius: 14px 14px 0 0;
     }
-    .stat-box.warn { --stripe-color: #f59e0b; }
-    .stat-box.ok   { --stripe-color: #10b981; }
-    .stat-box.blue { --stripe-color: #3b82f6; }
-    .stat-box.purple { --stripe-color: #8b5cf6; }
+    .stat-box.warn { --stripe-color: var(--status-amber); }
+    .stat-box.ok   { --stripe-color: var(--status-green); }
+    .stat-box.blue { --stripe-color: var(--status-blue); }
+    .stat-box.purple { --stripe-color: var(--status-purple); }
 
     .stat-label {
       font-size: 11px;
@@ -112,14 +113,14 @@
       color: var(--text-sub);
       margin-top: 2px;
     }
-    .stat-sub.bad  { color: #ef4444; font-weight: 600; }
-    .stat-sub.good { color: #10b981; font-weight: 600; }
+    .stat-sub.bad  { color: var(--status-red); font-weight: 600; }
+    .stat-sub.good { color: var(--status-green); font-weight: 600; }
 
     /* ─── ALERT BANNER ─────────────────── */
     .alert-banner {
       width: 100%;
-      background: rgba(245, 158, 11, 0.1);
-      border: 1px solid rgba(245, 158, 11, 0.3);
+      background: var(--status-amber-bg);
+      border: 1px solid var(--status-amber-border);
       border-radius: 12px;
       padding: 14px 18px;
       margin-bottom: 24px;
@@ -129,7 +130,7 @@
     .alert-banner-title {
       font-size: 13px;
       font-weight: 700;
-      color: #d97706;
+      color: var(--status-amber-text);
       margin-bottom: 8px;
     }
     .alert-items {
@@ -146,32 +147,32 @@
     }
     .alert-item .name { font-weight: 600; color: var(--text); }
     .badge-days {
-      background: rgba(239, 68, 68, 0.12);
-      color: #ef4444;
+      background: var(--status-red-dim);
+      color: var(--status-red);
       font-size: 11px;
       font-weight: 700;
       padding: 2px 8px;
       border-radius: 20px;
     }
     .badge-days.zero {
-      background: rgba(239, 68, 68, 0.2);
-      color: #dc2626;
+      background: var(--status-red-dim);
+      color: var(--status-red);
     }
     .badge-days.one {
-      background: rgba(245, 158, 11, 0.15);
-      color: #d97706;
+      background: var(--status-amber-dim);
+      color: var(--status-amber-text);
     }
     .badge-days.paused {
-      background: rgba(107, 114, 128, 0.15);
-      color: #6b7280;
+      background: var(--status-gray-dim);
+      color: var(--status-gray);
     }
     .badge-days.het_hang {
-      background: rgba(234, 88, 12, 0.15);
-      color: #ea580c;
+      background: var(--status-orange-dim);
+      color: var(--status-orange);
     }
     .badge-days.loi_link {
-      background: rgba(220, 38, 38, 0.15);
-      color: #dc2626;
+      background: var(--status-red-dim);
+      color: var(--status-red);
     }
 
     /* ─── CARDS GRID ─────────────────── */
@@ -274,6 +275,7 @@
     @media (max-width: 640px) {
       h1 { font-size: 26px; }
       body { padding-top: 24px; }
+      .container-custom { padding: 12px 12px; }
       .stat-strip { grid-template-columns: 1fr 1fr; }
       .stat-strip div:last-child { grid-column: span 2; }
       .stat-value { font-size: 22px; }

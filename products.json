@@ -61,8 +61,8 @@
     "videos_per_assign": 10,
     "so_video_ngay": 3,
     "status": "active",
-    "ton_video": 11,
-    "ton_date": "2026-06-07"
+    "ton_video": 14,
+    "ton_date": "2026-06-09"
   },
   {
     "name": "GOKU - Ổ khóa vân tay",
@@ -103,8 +103,8 @@
     "videos_per_assign": 15,
     "so_video_ngay": 3,
     "status": "active",
-    "ton_video": 17,
-    "ton_date": "2026-06-07"
+    "ton_video": 24,
+    "ton_date": "2026-06-09"
   },
   {
     "name": "PUZO - Ví da magsafe từ tính",
@@ -264,8 +264,8 @@
     "videos_per_assign": 10,
     "so_video_ngay": 1,
     "status": "active",
-    "ton_video": 11,
-    "ton_date": "2026-06-07"
+    "ton_video": 17,
+    "ton_date": "2026-06-09"
   },
   {
     "name": "LIVINOX - Combo 6 thìa inox 304",
@@ -285,11 +285,11 @@
   },
   {
     "name": "ENADE VN - Khẩu trang chống nắng full face",
-    "ton_date": "2026-06-07",
+    "ton_date": "2026-06-09",
     "videos_per_assign": 10,
     "so_video_ngay": 1,
     "status": "active",
-    "ton_video": 11
+    "ton_video": 18
   },
   {
     "name": "ULUCKY - Đai chườm ấm bụng",
@@ -340,8 +340,8 @@
     "so_video_ngay": 3,
     "status": "active",
     "last_assigned": "2026-06-03",
-    "ton_video": 12,
-    "ton_date": "2026-06-07"
+    "ton_video": 14,
+    "ton_date": "2026-06-09"
   },
   {
     "name": "LUCK - Bình đựng dầu ăn đa năng",
@@ -371,11 +371,11 @@
   },
   {
     "name": "DEERMA - Vòi sen tăng áp",
-    "ton_date": "2026-06-07",
+    "ton_date": "2026-06-09",
     "videos_per_assign": 15,
     "so_video_ngay": 3,
     "status": "active",
-    "ton_video": 23
+    "ton_video": 35
   },
   {
     "name": "XPANSE - Ghế công thái học",
@@ -383,8 +383,8 @@
     "so_video_ngay": 3,
     "status": "active",
     "last_assigned": "2026-06-03",
-    "ton_video": 11,
-    "ton_date": "2026-06-07"
+    "ton_video": 13,
+    "ton_date": "2026-06-09"
   },
   {
     "name": "ROYAL - Khăn tắm cotton",
@@ -455,11 +455,11 @@
   },
   {
     "name": "DEERMA - Máy xay gia vị",
-    "ton_date": "2026-06-07",
+    "ton_date": "2026-06-09",
     "videos_per_assign": 15,
     "so_video_ngay": 3,
     "status": "active",
-    "ton_video": 21
+    "ton_video": 32
   },
   {
     "name": "FORLOVE - Lọ tỏa hương",

@@ -58,16 +58,10 @@
   .spin { animation: spin 0.8s linear infinite; transform-origin: center; }
   @keyframes spin { to { transform: rotate(360deg); } }
   
-  .table-responsive { width: calc(100% - 48px); margin: 24px 24px; border-radius: var(--radius-md); box-shadow: var(--shadow-sm); }
+  .table-responsive { width: calc(100% - 48px); margin: 24px 24px; border: 1px solid var(--border); border-radius: var(--radius-md); background: var(--card-bg); box-shadow: var(--shadow-sm); }
   table { width: 100%; border-collapse: separate; border-spacing: 0; background: transparent; }
   thead th { position: sticky; top: var(--header-offset); z-index: 9; }
   
-  /* Thiết lập đường viền trực tiếp trên các ô */
-  th, td { border-bottom: 1px solid var(--border); }
-  th:first-child, td:first-child { border-left: 1px solid var(--border); }
-  th:last-child, td:last-child { border-right: 1px solid var(--border); }
-  thead th { border-top: 1px solid var(--border); }
-
   /* Bo góc tròn cho dòng tiêu đề đầu và dòng dữ liệu cuối */
   thead th:first-child { border-top-left-radius: calc(var(--radius-md) - 1px); }
   thead th:last-child { border-top-right-radius: calc(var(--radius-md) - 1px); }
@@ -76,22 +70,22 @@
   thead th:first-child::before {
     content: '';
     position: absolute;
-    top: -1px;
-    left: -1px;
-    width: var(--radius-md);
-    height: var(--radius-md);
-    background: radial-gradient(circle at 100% 100%, transparent calc(var(--radius-md) - 1px), var(--card-bg) calc(var(--radius-md) - 1px));
+    top: 0;
+    left: 0;
+    width: calc(var(--radius-md) - 1px);
+    height: calc(var(--radius-md) - 1px);
+    background: radial-gradient(circle at 100% 100%, transparent calc(var(--radius-md) - 1px), var(--bg-soft) calc(var(--radius-md) - 1px));
     z-index: -1;
     pointer-events: none;
   }
   thead th:last-child::before {
     content: '';
     position: absolute;
-    top: -1px;
-    right: -1px;
-    width: var(--radius-md);
-    height: var(--radius-md);
-    background: radial-gradient(circle at 0% 100%, transparent calc(var(--radius-md) - 1px), var(--card-bg) calc(var(--radius-md) - 1px));
+    top: 0;
+    right: 0;
+    width: calc(var(--radius-md) - 1px);
+    height: calc(var(--radius-md) - 1px);
+    background: radial-gradient(circle at 0% 100%, transparent calc(var(--radius-md) - 1px), var(--bg-soft) calc(var(--radius-md) - 1px));
     z-index: -1;
     pointer-events: none;
   }

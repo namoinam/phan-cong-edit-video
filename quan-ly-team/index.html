@@ -18,12 +18,12 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding-top: 80px; /* offset for fixed navbar */
+      padding-top: 80px;
       padding-bottom: 60px;
     }
     .container-custom {
       width: 100%;
-      max-width: 960px;
+      max-width: 1000px;
       padding: 24px 20px;
       display: flex;
       flex-direction: column;
@@ -31,19 +31,130 @@
       flex-grow: 1;
     }
     h1 {
-      font-size: 36px;
+      font-size: 34px;
       font-weight: 800;
       letter-spacing: -0.02em;
-      margin-bottom: 8px;
+      margin-bottom: 4px;
       text-align: center;
       color: var(--text);
     }
     .sub {
       color: var(--text-sub);
-      font-size: 14px;
-      margin-bottom: 40px;
+      font-size: 13px;
+      margin-bottom: 32px;
       text-align: center;
     }
+
+    /* ─── STAT STRIP ─────────────────── */
+    .stat-strip {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      width: 100%;
+      margin-bottom: 32px;
+    }
+    .stat-box {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 20px 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      box-shadow: var(--shadow-sm);
+      transition: var(--trans);
+      position: relative;
+      overflow: hidden;
+    }
+    .stat-box::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: var(--stripe-color, var(--blue));
+      border-radius: 14px 14px 0 0;
+    }
+    .stat-box.warn { --stripe-color: #f59e0b; }
+    .stat-box.ok   { --stripe-color: #10b981; }
+    .stat-box.blue { --stripe-color: #3b82f6; }
+    .stat-box.purple { --stripe-color: #8b5cf6; }
+
+    .stat-label {
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--text-muted);
+    }
+    .stat-value {
+      font-size: 28px;
+      font-weight: 800;
+      color: var(--text);
+      letter-spacing: -0.03em;
+      line-height: 1.1;
+    }
+    .stat-value .unit {
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--text-sub);
+      margin-left: 3px;
+    }
+    .stat-sub {
+      font-size: 12px;
+      color: var(--text-sub);
+      margin-top: 2px;
+    }
+    .stat-sub.bad  { color: #ef4444; font-weight: 600; }
+    .stat-sub.good { color: #10b981; font-weight: 600; }
+
+    /* ─── ALERT BANNER ─────────────────── */
+    .alert-banner {
+      width: 100%;
+      background: rgba(245, 158, 11, 0.1);
+      border: 1px solid rgba(245, 158, 11, 0.3);
+      border-radius: 12px;
+      padding: 14px 18px;
+      margin-bottom: 24px;
+      display: none;
+    }
+    .alert-banner.show { display: block; }
+    .alert-banner-title {
+      font-size: 13px;
+      font-weight: 700;
+      color: #d97706;
+      margin-bottom: 8px;
+    }
+    .alert-items {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+    .alert-item {
+      font-size: 12.5px;
+      color: var(--text-sub);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .alert-item .name { font-weight: 600; color: var(--text); }
+    .badge-days {
+      background: rgba(239, 68, 68, 0.12);
+      color: #ef4444;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 20px;
+    }
+    .badge-days.zero {
+      background: rgba(239, 68, 68, 0.2);
+      color: #dc2626;
+    }
+    .badge-days.one {
+      background: rgba(245, 158, 11, 0.15);
+      color: #d97706;
+    }
+
+    /* ─── CARDS GRID ─────────────────── */
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -66,27 +177,72 @@
       box-shadow: var(--shadow-md);
       border-color: var(--blue-border);
     }
-    .icon {
-      font-size: 38px;
-      margin-bottom: 14px;
-    }
-    .name {
-      font-size: 18px;
-      font-weight: 700;
-      margin-bottom: 6px;
-      color: var(--text);
-    }
-    .desc {
-      font-size: 13.5px;
-      color: var(--text-sub);
-      line-height: 1.5;
-    }
-    .go {
-      margin-top: 14px;
-      font-size: 13px;
+    .icon { font-size: 36px; margin-bottom: 12px; }
+    .name { font-size: 17px; font-weight: 700; margin-bottom: 6px; color: var(--text); }
+    .desc { font-size: 13px; color: var(--text-sub); line-height: 1.55; }
+    .go   { margin-top: 14px; font-size: 13px; font-weight: 600; color: var(--blue); }
+
+    /* chip số liệu trong card */
+    .card-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      background: rgba(59, 130, 246, 0.08);
+      border: 1px solid rgba(59, 130, 246, 0.2);
+      border-radius: 20px;
+      padding: 3px 10px;
+      font-size: 12px;
       font-weight: 600;
       color: var(--blue);
+      margin-top: 12px;
     }
+    .card-chip.red {
+      background: rgba(239, 68, 68, 0.08);
+      border-color: rgba(239, 68, 68, 0.2);
+      color: #ef4444;
+    }
+    .card-chip.green {
+      background: rgba(16, 185, 129, 0.08);
+      border-color: rgba(16, 185, 129, 0.2);
+      color: #10b981;
+    }
+
+    /* skeleton loader */
+    .skeleton {
+      display: inline-block;
+      background: linear-gradient(90deg, var(--border) 25%, var(--card-bg) 50%, var(--border) 75%);
+      background-size: 200% 100%;
+      animation: shimmer 1.4s infinite;
+      border-radius: 6px;
+      color: transparent;
+      min-width: 40px;
+    }
+    @keyframes shimmer {
+      0% { background-position: 200% 0; }
+      100% { background-position: -200% 0; }
+    }
+
+    /* last-update */
+    .last-update {
+      font-size: 11px;
+      color: var(--text-muted);
+      margin-top: 8px;
+      text-align: right;
+      width: 100%;
+    }
+    .dot-live {
+      display: inline-block;
+      width: 6px; height: 6px;
+      background: #10b981;
+      border-radius: 50%;
+      margin-right: 4px;
+      animation: pulse-dot 2s infinite;
+    }
+    @keyframes pulse-dot {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.3; }
+    }
+
     .footer-dashboard {
       margin-top: auto;
       padding-top: 40px;
@@ -94,9 +250,15 @@
       font-size: 12px;
       text-align: center;
     }
+
     @media (max-width: 640px) {
-      h1 { font-size: 28px; }
+      h1 { font-size: 26px; }
       body { padding-top: 70px; }
+      .stat-strip { grid-template-columns: 1fr 1fr; }
+      .stat-value { font-size: 22px; }
+    }
+    @media (max-width: 420px) {
+      .stat-strip { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -137,20 +299,48 @@
 
   <div class="container-custom">
     <h1>Quản lý team</h1>
-    <div class="sub">@namoinam — chọn việc cần làm</div>
+    <div class="sub">@namoinam — tổng quan hôm nay</div>
 
+    <!-- STAT STRIP -->
+    <div class="stat-strip">
+      <div class="stat-box warn" id="box-low">
+        <div class="stat-label">🔴 Sắp hết video</div>
+        <div class="stat-value"><span class="skeleton" id="val-low">00</span><span class="unit">SP</span></div>
+        <div class="stat-sub" id="sub-low">đang tải...</div>
+      </div>
+      <div class="stat-box blue" id="box-today">
+        <div class="stat-label">🎬 Hôm nay giao</div>
+        <div class="stat-value"><span class="skeleton" id="val-today">000</span><span class="unit">video</span></div>
+        <div class="stat-sub" id="sub-today">đang tải...</div>
+      </div>
+      <div class="stat-box ok" id="box-stock">
+        <div class="stat-label">📦 Tổng tồn kho</div>
+        <div class="stat-value"><span class="skeleton" id="val-stock">000</span><span class="unit">video</span></div>
+        <div class="stat-sub" id="sub-stock">đang tải...</div>
+      </div>
+    </div>
+
+    <!-- ALERT BANNER: sản phẩm sắp hết -->
+    <div class="alert-banner" id="alert-banner">
+      <div class="alert-banner-title">⚠️ Sản phẩm sắp hết video — cần nhập thêm</div>
+      <div class="alert-items" id="alert-items"></div>
+    </div>
+
+    <!-- CARDS -->
     <div class="grid">
-      <a class="card" href="../theo-doi-san-pham-edit/">
+      <a class="card" href="../theo-doi-san-pham-edit/" id="card-stock">
         <div class="icon">📦</div>
         <div class="name">Theo dõi sản phẩm edit</div>
         <div class="desc">Tồn kho video từng sản phẩm, ngày còn lại, chọn SP cần giao edit.</div>
+        <div id="chip-low" class="card-chip" style="display:none"></div>
         <div class="go">Mở trang →</div>
       </a>
 
-      <a class="card" href="../phan-cong-edit-video/">
+      <a class="card" href="../phan-cong-edit-video/" id="card-assign">
         <div class="icon">🎬</div>
         <div class="name">Phân công edit video</div>
         <div class="desc">Việc hôm nay của từng editor: số video, voice, link Drive sản phẩm.</div>
+        <div id="chip-today" class="card-chip" style="display:none"></div>
         <div class="go">Mở trang →</div>
       </a>
 
@@ -158,26 +348,199 @@
         <div class="icon">💰</div>
         <div class="name">Bảng tính lương thưởng</div>
         <div class="desc">Lương, thưởng, hệ số của team edit theo từng tháng.</div>
+        <div id="chip-salary" class="card-chip" style="display:none"></div>
         <div class="go">Mở trang →</div>
       </a>
     </div>
 
-    <div class="footer-dashboard">© 2026 namoinam.com/quan-ly-team • Lark Style Design System</div>
+    <div class="last-update" id="last-update"></div>
+    <div class="footer-dashboard">© 2026 namoinam.com/quan-ly-team</div>
   </div>
 
   <script>
-    // Burger menu script
+    // ─── BURGER MENU ───────────────────────────────────────
     const burger = document.getElementById('burger');
     const mobileMenu = document.getElementById('mobile-menu');
     const mobileMenuClose = document.getElementById('mobile-menu-close');
-
-    function openMenu() { mobileMenu.classList.add('open'); document.body.style.overflow = 'hidden'; }
+    function openMenu()  { mobileMenu.classList.add('open');    document.body.style.overflow = 'hidden'; }
     function closeMenu() { mobileMenu.classList.remove('open'); document.body.style.overflow = ''; }
-
     burger.addEventListener('click', openMenu);
     mobileMenuClose.addEventListener('click', closeMenu);
     mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMenu));
     document.addEventListener('keydown', e => { if (e.key === 'Escape') closeMenu(); });
+
+    // ─── HELPERS ───────────────────────────────────────────
+    function todayStr() {
+      const now = new Date();
+      // Dùng múi giờ Việt Nam (UTC+7)
+      const vn = new Date(now.getTime() + 7 * 3600 * 1000);
+      return vn.toISOString().slice(0, 10); // YYYY-MM-DD
+    }
+
+    function parseDateLocal(str) {
+      // str: YYYY-MM-DD → Date theo local (tránh UTC shift)
+      const [y, m, d] = str.split('-').map(Number);
+      return new Date(y, m - 1, d);
+    }
+
+    /**
+     * Tính tồn video thực tế theo ngày hôm nay.
+     * ton_video: số video đã nhập lần cuối
+     * so_video_ngay: nhịp đăng mỗi ngày
+     * ton_date: ngày ghi nhận ton_video (YYYY-MM-DD)
+     */
+    function calcRealStock(p) {
+      const today = parseDateLocal(todayStr());
+      const ref   = parseDateLocal(p.ton_date || todayStr());
+      const days  = Math.max(0, Math.round((today - ref) / 86400000));
+      return Math.max(0, (p.ton_video || 0) - (p.so_video_ngay || 0) * days);
+    }
+
+    // ─── REMOVE SKELETON ───────────────────────────────────
+    function setSkelDone(el) {
+      el.classList.remove('skeleton');
+    }
+
+    // ─── MAIN LOAD ─────────────────────────────────────────
+    async function loadDashboard() {
+      const today = todayStr();
+      const CB = '?cb=' + Date.now(); // cache-bust
+
+      // Fetch song song 2 file JSON
+      const [productsRes, historyRes] = await Promise.allSettled([
+        fetch('../products.json' + CB),
+        fetch('../history.json'  + CB),
+      ]);
+
+      // ── 1. PRODUCTS: tồn kho ────────────────────────────
+      let products = [];
+      if (productsRes.status === 'fulfilled' && productsRes.value.ok) {
+        products = await productsRes.value.json();
+      }
+
+      let totalStock = 0;
+      const lowItems = []; // ≤ 2 ngày
+
+      products.forEach(p => {
+        const stock = calcRealStock(p);
+        totalStock += stock;
+        const daysLeft = (p.so_video_ngay && p.so_video_ngay > 0)
+          ? Math.floor(stock / p.so_video_ngay)
+          : 99;
+        if (daysLeft <= 2) {
+          lowItems.push({ name: p.name, daysLeft, stock, rate: p.so_video_ngay });
+        }
+      });
+
+      // Stat: sắp hết
+      const valLow = document.getElementById('val-low');
+      const subLow = document.getElementById('sub-low');
+      setSkelDone(valLow);
+      valLow.textContent = lowItems.length;
+      if (lowItems.length > 0) {
+        subLow.textContent = `cần nhập thêm ngay`;
+        subLow.className = 'stat-sub bad';
+      } else {
+        subLow.textContent = 'tất cả ổn ✓';
+        subLow.className = 'stat-sub good';
+      }
+
+      // Stat: tổng tồn kho
+      const valStock = document.getElementById('val-stock');
+      const subStock = document.getElementById('sub-stock');
+      setSkelDone(valStock);
+      valStock.textContent = totalStock.toLocaleString('vi-VN');
+      subStock.textContent = products.length + ' sản phẩm đang theo dõi';
+
+      // Chip trên card Tồn kho
+      const chipLow = document.getElementById('chip-low');
+      if (lowItems.length > 0) {
+        chipLow.style.display = 'inline-flex';
+        chipLow.className = 'card-chip red';
+        chipLow.textContent = '⚠️ ' + lowItems.length + ' SP sắp hết';
+      } else {
+        chipLow.style.display = 'inline-flex';
+        chipLow.className = 'card-chip green';
+        chipLow.textContent = '✓ Tồn kho ổn định';
+      }
+
+      // Alert banner
+      if (lowItems.length > 0) {
+        const banner = document.getElementById('alert-banner');
+        const list   = document.getElementById('alert-items');
+        banner.classList.add('show');
+        lowItems.sort((a, b) => a.daysLeft - b.daysLeft).forEach(item => {
+          const row = document.createElement('div');
+          row.className = 'alert-item';
+          const badgeClass = item.daysLeft === 0 ? 'zero' : item.daysLeft === 1 ? 'one' : '';
+          const label = item.daysLeft === 0 ? 'Hết rồi!' : item.daysLeft === 1 ? '1 ngày' : item.daysLeft + ' ngày';
+          row.innerHTML = `<span class="name">${item.name}</span><span class="badge-days ${badgeClass}">${label}</span>`;
+          list.appendChild(row);
+        });
+      }
+
+      // ── 2. HISTORY: phân công hôm nay ───────────────────
+      let todayVideos = 0;
+      let todayEditors = 0;
+      let todayAssigned = false;
+
+      if (historyRes.status === 'fulfilled' && historyRes.value.ok) {
+        const history = await historyRes.value.json();
+        const entry = history[today];
+        if (entry && entry.assignments) {
+          todayAssigned = true;
+          Object.values(entry.assignments).forEach(a => {
+            if (a && a.videos && a.videos.length > 0) {
+              todayEditors++;
+              todayVideos += a.videos.reduce((sum, v) => sum + (v.count || 0), 0);
+            }
+          });
+        }
+      }
+
+      const valToday = document.getElementById('val-today');
+      const subToday = document.getElementById('sub-today');
+      setSkelDone(valToday);
+      valToday.textContent = todayVideos;
+      if (todayAssigned) {
+        subToday.textContent = todayEditors + ' editor có việc hôm nay';
+        subToday.className = 'stat-sub';
+      } else {
+        subToday.textContent = 'Chưa giao việc hôm nay';
+        subToday.className = 'stat-sub';
+      }
+
+      // Chip trên card Phân công
+      const chipToday = document.getElementById('chip-today');
+      chipToday.style.display = 'inline-flex';
+      if (todayAssigned) {
+        chipToday.className = 'card-chip green';
+        chipToday.textContent = '✓ Đã giao ' + todayVideos + ' video';
+      } else {
+        chipToday.className = 'card-chip';
+        chipToday.textContent = '○ Chưa giao hôm nay';
+      }
+
+      // Chip lương: tháng hiện tại
+      const chipSalary = document.getElementById('chip-salary');
+      chipSalary.style.display = 'inline-flex';
+      const now = new Date();
+      const vnNow = new Date(now.getTime() + 7 * 3600 * 1000);
+      chipSalary.textContent = 'Tháng ' + (vnNow.getMonth() + 1) + '/' + vnNow.getFullYear();
+
+      // Last update
+      const lu = document.getElementById('last-update');
+      lu.innerHTML = `<span class="dot-live"></span>Cập nhật lúc ${vnNow.toLocaleTimeString('vi-VN', {hour:'2-digit', minute:'2-digit'})} — ${vnNow.toLocaleDateString('vi-VN')}`;
+    }
+
+    loadDashboard().catch(err => {
+      console.error('Dashboard load error:', err);
+      // Xóa skeleton nếu lỗi
+      document.querySelectorAll('.skeleton').forEach(el => {
+        el.classList.remove('skeleton');
+        el.textContent = '—';
+      });
+    });
   </script>
 </body>
 </html>

@@ -271,12 +271,14 @@
 
     @media (max-width: 640px) {
       h1 { font-size: 26px; }
-      body { padding-top: 70px; }
+      body { padding-top: 24px; }
       .stat-strip { grid-template-columns: 1fr 1fr; }
+      .stat-strip div:last-child { grid-column: span 2; }
       .stat-value { font-size: 22px; }
     }
     @media (max-width: 420px) {
       .stat-strip { grid-template-columns: 1fr; }
+      .stat-strip div:last-child { grid-column: span 1; }
     }
   </style>
 </head>

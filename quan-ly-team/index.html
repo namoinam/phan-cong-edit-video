@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style id="auth-preload-style">body > *:not(#auth-container) { display: none !important; }</style>
+  <script src="../auth.js"></script>
   <title>Quản lý team — namoinam</title>
   <meta name="robots" content="noindex">
   <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png" />
@@ -319,7 +321,7 @@
 
   <div class="container-custom">
     <h1>Quản lý team</h1>
-    <div class="sub">@namoinam — tổng quan hôm nay</div>
+    <div class="sub">@namoinam — tổng quan hôm nay | <a href="#" onclick="authLogout()" style="color: #ef4444; text-decoration: none; font-weight: 600;">Đăng xuất 🔒</a></div>
 
     <!-- STAT STRIP -->
     <div class="stat-strip">

@@ -18,6 +18,8 @@
 </script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style id="auth-preload-style">body > *:not(#auth-container) { display: none !important; }</style>
+<script src="../auth.js"></script>
 <title>Theo dõi sản phẩm edit — namoinam</title>
 <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png" />
 <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16.png" />
@@ -169,6 +171,9 @@
       <button class="btn" style="background:var(--blue);color:white;border:none" onclick="giaEdit()" title="Giao edit SP đã chọn">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
         Giao edit<span id="sel-badge" style="margin-left:6px;font-size:11px;font-weight:600;opacity:0.95"></span>
+      </button>
+      <button class="btn" onclick="authLogout()" title="Đăng xuất" style="color: #ef4444; border-color: rgba(239, 68, 68, 0.2); background: rgba(239, 68, 68, 0.05);">
+        Đăng xuất 🔒
       </button>
     </div>
     <span id="sync-time" style="display:none"></span>

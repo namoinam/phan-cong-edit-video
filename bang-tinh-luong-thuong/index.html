@@ -3,6 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style id="auth-preload-style">body > *:not(#auth-container) { display: none !important; }</style>
+<script src="../auth.js"></script>
 <title>Bảng Tính Lương Thưởng – namoinam</title>
 <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png" />
 <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16.png" />
@@ -511,6 +513,7 @@
     <div class="sep"></div>
     <button class="btn btn-primary" onclick="calculate()">Tính lương</button>
     <button class="btn btn-outline" onclick="resetAll()">Reset</button>
+    <button class="btn btn-outline" onclick="authLogout()" style="color: #ef4444; border-color: rgba(239, 68, 68, 0.2); background: rgba(239, 68, 68, 0.05);">Đăng xuất</button>
   </div>
   <div class="cs3-bar" id="cs3-bar">
     <div class="cs3-stat"><span class="lbl">Tổng đơn:</span><span class="val" id="cs3-a">—</span></div>

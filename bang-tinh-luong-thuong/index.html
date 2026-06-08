@@ -444,6 +444,20 @@
      border-color: var(--blue) !important;
      box-shadow: 0 0 0 3px var(--blue-dim);
   }
+
+  @media (max-width: 768px) {
+    body { padding-top: 0px; }
+    .header { padding: 16px 0 12px 0; position: static; }
+    .header h2 { font-size: 22px; }
+    .toolbar { flex-direction: column; align-items: stretch; padding: 12px; gap: 10px; }
+    .toolbar label { margin-bottom: -4px; }
+    .toolbar select, .toolbar input { width: 100% !important; }
+    .toolbar .sep { display: none; }
+    .toolbar .btn { width: 100%; justify-content: center; }
+    .cs3-bar { flex-direction: column; gap: 8px; padding: 12px; }
+    .grid { grid-template-columns: 1fr; padding: 10px; }
+    .card { padding: 14px 16px; }
+  }
 </style>
 </head>
 <body>
@@ -619,7 +633,7 @@ function copyText(text, btn) {
   }
 }
 function copyAll(id){const d=td[id];if(!d)return;copyText(`Ngân hàng: ${d.bankName}\nSố TK: ${d.acct}\nChủ TK: ${d.full}\nSố tiền: ${d.amtStr}\nNội dung: ${d.memo}`,document.getElementById('copy-all-'+id));}
-function toggleQR(id){const box=document.getElementById('qrbox-'+id);const btn=document.getElementById('qrbtn-'+id);box.classList.toggle('open');btn.textContent='THÔNG TIN CHUYỂN KHOẢN';}
+function toggleQR(id){const box=document.getElementById('qrbox-'+id);const btn=document.getElementById('qrbtn-'+id);const isOpen=box.classList.toggle('open');btn.textContent=isOpen?'ẨN THÔNG TIN CHUYỂN KHOẢN':'THÔNG TIN CHUYỂN KHOẢN';}
 function updateCoef(id,coef){const emp=EMP.find(e=>e.id===id);if(emp){emp.coef=parseFloat(coef);calculate();}}
 function cardHtml(e){
   const p=POL[e.policy];
@@ -716,6 +730,7 @@ function resetAll(){
   document.getElementById('footer-total').textContent='';
 }
 renderGrid();
+calculate();
 </script>
 </body>
 </html>

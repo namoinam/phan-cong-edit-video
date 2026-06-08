@@ -90,6 +90,9 @@
     }
     @media (max-width: 540px) {
       .grid { grid-template-columns: 1fr; }
+      .card { flex-direction: column; align-items: stretch; gap: 12px; }
+      .card-left { flex-direction: row; width: 100%; align-items: center; text-align: left; gap: 12px; }
+      .av, .av-circle { margin-bottom: 0; }
     }
     .card {
       background: var(--card-bg);
@@ -496,9 +499,14 @@ function navigate(dir) {
     const res = await fetch('../history.json?t='+Date.now());
     historyData = await res.json();
     dates = Object.keys(historyData).sort();
-    idx = dates.length - 1;
-    render(dates[idx]);
-    updateNav();
+    if (dates.length > 0) {
+      idx = dates.length - 1;
+      render(dates[idx]);
+      updateNav();
+    } else {
+      document.getElementById('date-banner').textContent = 'CHƯA CÓ LỊCH SỬ PHÂN CÔNG';
+      document.getElementById('link-table').innerHTML = '<tr><td class="loading">Không có dữ liệu lịch sử</td></tr>';
+    }
   } catch(e) {
     const today = new Date();
     const iso = today.getFullYear()+'-'+String(today.getMonth()+1).padStart(2,'0')+'-'+String(today.getDate()).padStart(2,'0');

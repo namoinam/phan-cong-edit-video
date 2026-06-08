@@ -1,0 +1,1574 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NAM ƠI NAM — Portal Nội Bộ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #FFFFFF;
+      --bg-soft: #F7F8FA;
+      --bg-blue: #F0F4FF;
+      --blue: #1456F0;
+      --blue-hover: #0442D2;
+      --blue-light: #336DF4;
+      --blue-dim: rgba(20,86,240,0.08);
+      --blue-border: rgba(20,86,240,0.2);
+      --text: #1F2329;
+      --text-sub: #646A73;
+      --text-muted: #8F959E;
+      --border: #E0E5EB;
+      --card-bg: #FFFFFF;
+      --radius-sm: 8px;
+      --radius-md: 12px;
+      --radius-lg: 16px;
+      --trans: all 0.2s cubic-bezier(0.4,0,0.2,1);
+      --shadow-sm: 0 1px 4px rgba(31,35,41,0.08);
+      --shadow-md: 0 4px 16px rgba(31,35,41,0.1);
+      --shadow-blue: 0 4px 16px rgba(20,86,240,0.25);
+      --status-green: #10B981;
+      --status-purple: #8B5CF6;
+      --status-orange: #EA580C;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      height: 100%;
+      overflow: hidden;
+    }
+
+    body {
+      font-family: 'Be Vietnam Pro', -apple-system, sans-serif;
+      color: var(--text);
+      background: var(--bg-soft);
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    /* ===================== SCROLLBAR ===================== */
+    ::-webkit-scrollbar { width: 6px; height: 6px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: #D1D5DB; border-radius: 3px; }
+    ::-webkit-scrollbar-thumb:hover { background: #9CA3AF; }
+
+    /* ===================== HAMBURGER ===================== */
+    .hamburger {
+      display: none;
+      position: fixed;
+      top: 12px;
+      left: 12px;
+      z-index: 200;
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 8px 10px;
+      font-size: 1.2rem;
+      cursor: pointer;
+      align-items: center;
+      justify-content: center;
+      line-height: 1;
+      transition: var(--trans);
+    }
+    .hamburger:hover { background: var(--bg-soft); }
+
+    /* ===================== SIDEBAR BACKDROP ===================== */
+    .sidebar-backdrop {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.4);
+      z-index: 99;
+    }
+
+    /* ===================== SIDEBAR ===================== */
+    .sidebar {
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 240px;
+      height: 100vh;
+      background: #fff;
+      border-right: 1px solid var(--border);
+      display: flex;
+      flex-direction: column;
+      z-index: 100;
+      transition: transform 0.3s cubic-bezier(0.4,0,0.2,1);
+    }
+
+    /* Logo area */
+    .sidebar-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 20px 16px 16px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .logo-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #1456F0, #8B5CF6);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+      flex-shrink: 0;
+    }
+
+    .logo-text {
+      font-weight: 800;
+      font-size: 0.95rem;
+      color: var(--text);
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+    }
+
+    /* Nav */
+    .sidebar-nav {
+      flex: 1;
+      padding: 12px 8px;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .nav-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 12px;
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      transition: background 0.15s, color 0.15s;
+      color: var(--text-sub);
+      font-weight: 500;
+      font-size: 0.875rem;
+      user-select: none;
+      border: none;
+      background: none;
+      width: 100%;
+      text-align: left;
+    }
+
+    .nav-item:hover {
+      background: var(--bg-soft);
+      color: var(--text);
+    }
+
+    .nav-item.active {
+      background: #EBF2FF;
+      color: var(--blue);
+      font-weight: 600;
+    }
+
+    .nav-item .nav-icon {
+      font-size: 1rem;
+      width: 20px;
+      text-align: center;
+      flex-shrink: 0;
+    }
+
+    .nav-item .nav-label {
+      flex: 1;
+    }
+
+    /* Sidebar bottom user */
+    .sidebar-user {
+      padding: 14px 16px;
+      border-top: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .user-avatar {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #1456F0, #8B5CF6);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-weight: 700;
+      font-size: 0.875rem;
+      flex-shrink: 0;
+    }
+
+    .user-info { flex: 1; min-width: 0; }
+
+    .user-name {
+      font-weight: 600;
+      font-size: 0.875rem;
+      color: var(--text);
+      line-height: 1.2;
+    }
+
+    .user-role {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+
+    /* ===================== CONTENT AREA ===================== */
+    .content-area {
+      margin-left: 240px;
+      height: 100vh;
+      background: var(--bg-soft);
+      overflow-y: auto;
+    }
+
+    /* ===================== PANEL ===================== */
+    .panel {
+      display: none;
+      min-height: 100%;
+    }
+
+    .panel.active {
+      display: block;
+    }
+
+    /* Page header */
+    .page-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 24px 28px 0;
+      margin-bottom: 20px;
+    }
+
+    .page-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    /* ===================== BUTTONS ===================== */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 16px;
+      border-radius: var(--radius-sm);
+      font-family: inherit;
+      font-size: 0.875rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: var(--trans);
+      border: none;
+      line-height: 1;
+    }
+
+    .btn-primary {
+      background: var(--blue);
+      color: #fff;
+    }
+
+    .btn-primary:hover {
+      background: var(--blue-hover);
+      box-shadow: var(--shadow-blue);
+    }
+
+    .btn-outline {
+      background: #fff;
+      color: var(--text);
+      border: 1px solid var(--border);
+    }
+
+    .btn-outline:hover {
+      background: var(--bg-soft);
+    }
+
+    .btn-ghost {
+      background: transparent;
+      color: var(--text-sub);
+      border: none;
+      padding: 4px 8px;
+    }
+
+    .btn-ghost:hover {
+      background: var(--bg-soft);
+      color: var(--text);
+    }
+
+    /* ===================== CARD ===================== */
+    .card {
+      background: var(--card-bg);
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-sm);
+      border: 1px solid var(--border);
+    }
+
+    /* ===================== DASHBOARD PANEL ===================== */
+    #panel-dashboard {
+      padding: 0 0 28px;
+    }
+
+    .dashboard-content {
+      padding: 0 28px;
+    }
+
+    /* Clock */
+    .clock-wrapper {
+      font-size: 0.825rem;
+      color: var(--text-sub);
+      font-weight: 500;
+    }
+
+    /* Stat grid */
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      margin-bottom: 20px;
+    }
+
+    .stat-card {
+      background: var(--card-bg);
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-sm);
+      border: 1px solid var(--border);
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      transition: var(--trans);
+    }
+
+    .stat-card:hover {
+      box-shadow: var(--shadow-md);
+      transform: translateY(-1px);
+    }
+
+    .stat-icon-box {
+      width: 48px;
+      height: 48px;
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.3rem;
+      flex-shrink: 0;
+    }
+
+    .stat-info { flex: 1; }
+
+    .stat-value {
+      font-size: 1.875rem;
+      font-weight: 800;
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+
+    .stat-label {
+      font-size: 0.8rem;
+      color: var(--text-sub);
+      font-weight: 500;
+    }
+
+    /* Dashboard two-column bottom */
+    .dashboard-bottom {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .card-header {
+      padding: 16px 20px 12px;
+      border-bottom: 1px solid var(--border);
+      font-weight: 700;
+      font-size: 0.95rem;
+      color: var(--text);
+    }
+
+    /* Activity list */
+    .activity-list {
+      padding: 4px 0;
+    }
+
+    .activity-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      padding: 10px 20px;
+      border-bottom: 1px solid var(--border);
+      transition: background 0.15s;
+    }
+
+    .activity-item:last-child { border-bottom: none; }
+
+    .activity-item:hover { background: var(--bg-soft); }
+
+    .activity-icon { font-size: 1rem; flex-shrink: 0; margin-top: 1px; }
+
+    .activity-text {
+      flex: 1;
+      font-size: 0.85rem;
+      color: var(--text);
+      line-height: 1.5;
+    }
+
+    .activity-time {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      white-space: nowrap;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    /* Quick links */
+    .quick-links {
+      padding: 16px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .quick-link-btn {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 14px;
+      border-radius: var(--radius-sm);
+      background: var(--bg-soft);
+      border: 1px solid var(--border);
+      cursor: pointer;
+      font-family: inherit;
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: var(--text);
+      transition: var(--trans);
+      text-align: left;
+      width: 100%;
+    }
+
+    .quick-link-btn:hover {
+      background: var(--bg-blue);
+      border-color: var(--blue-border);
+      color: var(--blue);
+      box-shadow: var(--shadow-sm);
+    }
+
+    /* ===================== KANBAN ===================== */
+    .kanban-wrapper {
+      padding: 0 28px 28px;
+    }
+
+    .kanban-board {
+      display: flex;
+      gap: 14px;
+      overflow-x: auto;
+      padding-bottom: 8px;
+      min-height: calc(100vh - 160px);
+    }
+
+    .kanban-column {
+      min-width: 240px;
+      max-width: 260px;
+      background: var(--bg-soft);
+      border-radius: var(--radius-md);
+      padding: 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      border: 2px solid transparent;
+      transition: border-color 0.15s, background 0.15s;
+      flex-shrink: 0;
+    }
+
+    .kanban-column.drag-over {
+      border-color: var(--blue);
+      background: var(--bg-blue);
+    }
+
+    .col-header {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      margin-bottom: 4px;
+    }
+
+    .col-title {
+      font-weight: 700;
+      font-size: 0.85rem;
+      color: var(--text);
+      flex: 1;
+    }
+
+    .col-count {
+      background: var(--blue);
+      color: #fff;
+      border-radius: 20px;
+      padding: 1px 8px;
+      font-size: 0.75rem;
+      font-weight: 700;
+    }
+
+    .col-add-btn {
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: var(--text-muted);
+      font-size: 1rem;
+      padding: 2px 4px;
+      border-radius: 4px;
+      transition: background 0.15s, color 0.15s;
+      line-height: 1;
+    }
+
+    .col-add-btn:hover {
+      background: var(--blue-dim);
+      color: var(--blue);
+    }
+
+    .kanban-cards {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      flex: 1;
+      min-height: 40px;
+    }
+
+    /* Kanban card */
+    .kanban-card {
+      background: #fff;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-sm);
+      padding: 10px;
+      cursor: grab;
+      transition: box-shadow 0.15s, transform 0.15s;
+    }
+
+    .kanban-card:hover {
+      box-shadow: var(--shadow-md);
+      transform: translateY(-2px);
+    }
+
+    .kanban-card:active { cursor: grabbing; }
+
+    .kanban-card img {
+      width: 100%;
+      border-radius: var(--radius-sm);
+      display: block;
+      object-fit: cover;
+    }
+
+    .card-name {
+      font-weight: 700;
+      font-size: 0.875rem;
+      color: var(--text);
+      margin-bottom: 6px;
+    }
+
+    .card-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .card-link {
+      text-decoration: none;
+      font-size: 1rem;
+      opacity: 0.6;
+      transition: opacity 0.15s;
+    }
+    .card-link:hover { opacity: 1; }
+
+    /* Status badges */
+    .badge {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 20px;
+      font-size: 0.72rem;
+      font-weight: 600;
+    }
+
+    .badge-check { background: #FFF7ED; color: #EA580C; }
+    .badge-nhap { background: #EFF6FF; color: #3B82F6; }
+    .badge-banchai { background: #F0FDF4; color: #10B981; }
+    .badge-quay { background: #F5F3FF; color: #8B5CF6; }
+    .badge-dadang { background: #F0FDF4; color: #16A34A; }
+    .badge-quaylai { background: #FEF2F2; color: #DC2626; }
+
+    /* Video kanban badge */
+    .badge-mau { background: #FFF7ED; color: #EA580C; }
+    .badge-dangtao { background: #EFF6FF; color: #3B82F6; }
+    .badge-daduyet { background: #F5F3FF; color: #8B5CF6; }
+    .badge-vidoadang { background: #F0FDF4; color: #16A34A; }
+
+    /* Avatar small */
+    .avatar-sm {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #1456F0, #8B5CF6);
+      color: #fff;
+      font-size: 0.75rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    /* Video caption clamp */
+    .video-caption {
+      font-size: 0.8rem;
+      color: var(--text-sub);
+      line-height: 1.5;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      margin-bottom: 6px;
+    }
+
+    /* ===================== IFRAME PANEL ===================== */
+    #panel-iframe {
+      height: 100vh;
+      padding: 0;
+    }
+
+    #panel-iframe iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      display: block;
+    }
+
+    /* ===================== SETTINGS PANEL ===================== */
+    #panel-settings {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    .settings-placeholder {
+      text-align: center;
+      color: var(--text-muted);
+    }
+
+    .settings-placeholder .settings-icon {
+      font-size: 3rem;
+      margin-bottom: 16px;
+      display: block;
+    }
+
+    .settings-placeholder h2 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--text-sub);
+      margin-bottom: 6px;
+    }
+
+    .settings-placeholder p {
+      font-size: 0.875rem;
+    }
+
+    /* ===================== MODAL ===================== */
+    .modal-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.5);
+      z-index: 500;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .modal-overlay.open {
+      display: flex;
+    }
+
+    .modal-box {
+      background: #fff;
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-md);
+      padding: 28px;
+      width: 100%;
+      max-width: 420px;
+      animation: modalIn 0.2s cubic-bezier(0.4,0,0.2,1);
+    }
+
+    @keyframes modalIn {
+      from { opacity: 0; transform: scale(0.95) translateY(-10px); }
+      to { opacity: 1; transform: scale(1) translateY(0); }
+    }
+
+    .modal-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 16px;
+    }
+
+    .form-label {
+      display: block;
+      font-size: 0.825rem;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 6px;
+    }
+
+    .form-input, .form-select {
+      width: 100%;
+      padding: 9px 12px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      font-family: inherit;
+      font-size: 0.875rem;
+      color: var(--text);
+      background: #fff;
+      transition: border-color 0.15s, box-shadow 0.15s;
+      outline: none;
+    }
+
+    .form-input:focus, .form-select:focus {
+      border-color: var(--blue);
+      box-shadow: 0 0 0 3px var(--blue-dim);
+    }
+
+    .modal-actions {
+      display: flex;
+      gap: 10px;
+      justify-content: flex-end;
+      margin-top: 20px;
+    }
+
+    /* ===================== RESPONSIVE ===================== */
+    @media (max-width: 768px) {
+      .hamburger { display: flex; }
+
+      .sidebar {
+        transform: translateX(-240px);
+      }
+
+      .sidebar.open {
+        transform: translateX(0);
+      }
+
+      .sidebar-backdrop.open {
+        display: block;
+      }
+
+      .content-area {
+        margin-left: 0;
+      }
+
+      .stats-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .dashboard-bottom {
+        grid-template-columns: 1fr;
+      }
+
+      .kanban-board {
+        overflow-x: auto;
+      }
+
+      .page-header {
+        padding: 16px 16px 0;
+      }
+
+      .dashboard-content {
+        padding: 0 16px;
+      }
+
+      .kanban-wrapper {
+        padding: 0 16px 28px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .stats-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .modal-box {
+        margin: 16px;
+        max-width: calc(100% - 32px);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hamburger (mobile) -->
+  <button class="hamburger" id="hamburger-btn" onclick="toggleSidebar()" aria-label="Mở menu">☰</button>
+
+  <!-- Sidebar Backdrop (mobile) -->
+  <div class="sidebar-backdrop" id="sidebar-backdrop" onclick="closeSidebar()"></div>
+
+  <!-- ==================== SIDEBAR ==================== -->
+  <aside class="sidebar" id="sidebar">
+
+    <!-- Logo -->
+    <div class="sidebar-logo">
+      <div class="logo-icon">🌟</div>
+      <div class="logo-text">NAM ƠI NAM</div>
+    </div>
+
+    <!-- Nav Menu -->
+    <nav class="sidebar-nav" id="sidebar-nav">
+      <button class="nav-item active" id="nav-dashboard" onclick="navigate('dashboard')">
+        <span class="nav-icon">🏠</span>
+        <span class="nav-label">Dashboard</span>
+      </button>
+      <button class="nav-item" id="nav-products" onclick="navigate('products')">
+        <span class="nav-icon">📋</span>
+        <span class="nav-label">Quản lý sản phẩm</span>
+      </button>
+      <button class="nav-item" id="nav-videos" onclick="navigate('videos')">
+        <span class="nav-icon">🤖</span>
+        <span class="nav-label">Quản lý Video AI</span>
+      </button>
+      <button class="nav-item" id="nav-theo-doi" onclick="navigate('theo-doi')">
+        <span class="nav-icon">📦</span>
+        <span class="nav-label">Theo dõi sản phẩm edit</span>
+      </button>
+      <button class="nav-item" id="nav-phan-cong" onclick="navigate('phan-cong')">
+        <span class="nav-icon">🎬</span>
+        <span class="nav-label">Phân công edit video</span>
+      </button>
+      <button class="nav-item" id="nav-luong" onclick="navigate('luong')">
+        <span class="nav-icon">💰</span>
+        <span class="nav-label">Bảng lương thưởng</span>
+      </button>
+      <button class="nav-item" id="nav-settings" onclick="navigate('settings')">
+        <span class="nav-icon">⚙️</span>
+        <span class="nav-label">Cài đặt</span>
+      </button>
+    </nav>
+
+    <!-- Bottom User Info -->
+    <div class="sidebar-user">
+      <div class="user-avatar">N</div>
+      <div class="user-info">
+        <div class="user-name">Nam</div>
+        <div class="user-role">Admin</div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ==================== CONTENT AREA ==================== -->
+  <main class="content-area" id="content-area">
+
+    <!-- ===== DASHBOARD PANEL ===== -->
+    <div id="panel-dashboard" class="panel active">
+      <div class="page-header">
+        <h1 class="page-title">Dashboard</h1>
+        <div class="clock-wrapper">
+          <span id="realtime-clock"></span>
+        </div>
+      </div>
+
+      <div class="dashboard-content">
+        <!-- Stat cards -->
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-icon-box" style="background:rgba(20,86,240,0.1);">
+              <span>📋</span>
+            </div>
+            <div class="stat-info">
+              <div class="stat-value" style="color:#1456F0;">12</div>
+              <div class="stat-label">Sản phẩm đang edit</div>
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon-box" style="background:rgba(139,92,246,0.1);">
+              <span>🤖</span>
+            </div>
+            <div class="stat-info">
+              <div class="stat-value" style="color:#8B5CF6;">5</div>
+              <div class="stat-label">Video AI hôm nay</div>
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon-box" style="background:rgba(234,88,12,0.1);">
+              <span>⏳</span>
+            </div>
+            <div class="stat-info">
+              <div class="stat-value" style="color:#EA580C;">8</div>
+              <div class="stat-label">Video chờ duyệt</div>
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon-box" style="background:rgba(16,185,129,0.1);">
+              <span>✅</span>
+            </div>
+            <div class="stat-info">
+              <div class="stat-value" style="color:#10B981;">34</div>
+              <div class="stat-label">Đã đăng tháng này</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom two columns -->
+        <div class="dashboard-bottom">
+          <!-- Recent activity -->
+          <div class="card">
+            <div class="card-header">Hoạt động gần đây</div>
+            <div class="activity-list">
+              <div class="activity-item">
+                <span class="activity-icon">✅</span>
+                <span class="activity-text">Sản phẩm "Son dưỡng môi" đã được check xong</span>
+                <span class="activity-time">5 phút trước</span>
+              </div>
+              <div class="activity-item">
+                <span class="activity-icon">🤖</span>
+                <span class="activity-text">Video AI "Kem dưỡng da" đã tạo xong</span>
+                <span class="activity-time">15 phút trước</span>
+              </div>
+              <div class="activity-item">
+                <span class="activity-icon">🎬</span>
+                <span class="activity-text">Giao video cho Thảo (3 videos)</span>
+                <span class="activity-time">32 phút trước</span>
+              </div>
+              <div class="activity-item">
+                <span class="activity-icon">📦</span>
+                <span class="activity-text">Nhập hàng mới: "Serum vitamin C"</span>
+                <span class="activity-time">1 giờ trước</span>
+              </div>
+              <div class="activity-item">
+                <span class="activity-icon">✅</span>
+                <span class="activity-text">"Nước tẩy trang" đã đăng TikTok</span>
+                <span class="activity-time">2 giờ trước</span>
+              </div>
+              <div class="activity-item">
+                <span class="activity-icon">💰</span>
+                <span class="activity-text">Bảng lương tháng 6 đã cập nhật</span>
+                <span class="activity-time">3 giờ trước</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick links -->
+          <div class="card">
+            <div class="card-header">Truy cập nhanh</div>
+            <div class="quick-links">
+              <button class="quick-link-btn" onclick="navigate('products')">
+                <span>📋</span> Quản lý sản phẩm
+              </button>
+              <button class="quick-link-btn" onclick="navigate('videos')">
+                <span>🤖</span> Quản lý Video AI
+              </button>
+              <button class="quick-link-btn" onclick="navigate('theo-doi')">
+                <span>📦</span> Theo dõi sản phẩm edit
+              </button>
+              <button class="quick-link-btn" onclick="navigate('phan-cong')">
+                <span>🎬</span> Phân công edit video
+              </button>
+              <button class="quick-link-btn" onclick="navigate('luong')">
+                <span>💰</span> Bảng lương thưởng
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END DASHBOARD PANEL -->
+
+    <!-- ===== PRODUCT KANBAN PANEL ===== -->
+    <div id="panel-products" class="panel">
+      <div class="page-header">
+        <h1 class="page-title">Quản lý sản phẩm</h1>
+        <button class="btn btn-primary" onclick="openProductModal()">+ Thêm sản phẩm</button>
+      </div>
+      <div class="kanban-wrapper">
+        <div class="kanban-board" id="product-board"></div>
+      </div>
+    </div>
+    <!-- END PRODUCT KANBAN PANEL -->
+
+    <!-- ===== VIDEO AI KANBAN PANEL ===== -->
+    <div id="panel-videos" class="panel">
+      <div class="page-header">
+        <h1 class="page-title">Quản lý Video AI</h1>
+        <button class="btn btn-primary" onclick="openVideoModal()">+ Thêm video</button>
+      </div>
+      <div class="kanban-wrapper">
+        <div class="kanban-board" id="video-board"></div>
+      </div>
+    </div>
+    <!-- END VIDEO AI KANBAN PANEL -->
+
+    <!-- ===== IFRAME PANEL ===== -->
+    <div id="panel-iframe" class="panel" style="height:100vh;padding:0;">
+      <iframe id="main-iframe" src="" style="width:100%;height:100%;border:none;display:block;"></iframe>
+    </div>
+    <!-- END IFRAME PANEL -->
+
+    <!-- ===== SETTINGS PANEL ===== -->
+    <div id="panel-settings" class="panel">
+      <div class="settings-placeholder">
+        <span class="settings-icon">⚙️</span>
+        <h2>Cài đặt</h2>
+        <p>Coming soon — tính năng đang được phát triển.</p>
+      </div>
+    </div>
+    <!-- END SETTINGS PANEL -->
+
+  </main>
+  <!-- END CONTENT AREA -->
+
+  <!-- ==================== PRODUCT MODAL ==================== -->
+  <div class="modal-overlay" id="product-modal">
+    <div class="modal-box">
+      <div class="modal-title">➕ Thêm sản phẩm mới</div>
+      <div class="form-group">
+        <label class="form-label" for="prod-name-input">Tên sản phẩm</label>
+        <input class="form-input" id="prod-name-input" type="text" placeholder="Nhập tên sản phẩm...">
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="prod-status-input">Trạng thái</label>
+        <select class="form-select" id="prod-status-input">
+          <option value="Đang Check">Đang Check</option>
+          <option value="Đã Nhập Hàng">Đã Nhập Hàng</option>
+          <option value="Bán Chạy">Bán Chạy</option>
+          <option value="Cần Quay+Edit">Cần Quay+Edit</option>
+          <option value="Đã Đăng">Đã Đăng</option>
+          <option value="Cần Quay Lại">Cần Quay Lại</option>
+        </select>
+      </div>
+      <div class="modal-actions">
+        <button class="btn btn-outline" onclick="closeProductModal()">Huỷ</button>
+        <button class="btn btn-primary" onclick="confirmAddProduct()">Thêm</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== VIDEO MODAL ==================== -->
+  <div class="modal-overlay" id="video-modal">
+    <div class="modal-box">
+      <div class="modal-title">🎬 Thêm video AI mới</div>
+      <div class="form-group">
+        <label class="form-label" for="vid-name-input">Tên sản phẩm</label>
+        <input class="form-input" id="vid-name-input" type="text" placeholder="Nhập tên sản phẩm...">
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="vid-caption-input">Caption / Mô tả</label>
+        <input class="form-input" id="vid-caption-input" type="text" placeholder="Nhập mô tả video...">
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="vid-assignee-input">Người thực hiện</label>
+        <input class="form-input" id="vid-assignee-input" type="text" placeholder="Tên người thực hiện...">
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="vid-status-input">Trạng thái</label>
+        <select class="form-select" id="vid-status-input">
+          <option value="Video Mẫu">Video Mẫu</option>
+          <option value="Đang Tạo">Đang Tạo</option>
+          <option value="Đã Duyệt">Đã Duyệt</option>
+          <option value="Đã Đăng">Đã Đăng</option>
+        </select>
+      </div>
+      <div class="modal-actions">
+        <button class="btn btn-outline" onclick="closeVideoModal()">Huỷ</button>
+        <button class="btn btn-primary" onclick="confirmAddVideo()">Thêm</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== JAVASCRIPT ==================== -->
+  <script>
+    // ============================================================
+    // CONSTANTS & DATA DEFAULTS
+    // ============================================================
+
+    const PRODUCT_COLUMNS = [
+      'Đang Check',
+      'Đã Nhập Hàng',
+      'Bán Chạy',
+      'Cần Quay+Edit',
+      'Đã Đăng',
+      'Cần Quay Lại'
+    ];
+
+    const VIDEO_COLUMNS = [
+      'Video Mẫu',
+      'Đang Tạo',
+      'Đã Duyệt',
+      'Đã Đăng'
+    ];
+
+    const DEFAULT_PRODUCTS = [
+      { id: 1, name: 'Son dưỡng môi Cherry',     status: 'Đang Check',   seed: 'cherry'    },
+      { id: 2, name: 'Kem dưỡng da ban đêm',      status: 'Đã Nhập Hàng', seed: 'skincare'  },
+      { id: 3, name: 'Serum Vitamin C 30ml',       status: 'Bán Chạy',    seed: 'serum'     },
+      { id: 4, name: 'Nước tẩy trang Micellar',    status: 'Cần Quay+Edit', seed: 'cleanser' },
+      { id: 5, name: 'Mặt nạ ngủ collagen',        status: 'Đã Đăng',     seed: 'mask'      },
+      { id: 6, name: 'Tẩy da chết môi',            status: 'Cần Quay Lại', seed: 'lipscrub'  },
+      { id: 7, name: 'Tinh chất dưỡng trắng',      status: 'Bán Chạy',    seed: 'essence'   },
+      { id: 8, name: 'Kem chống nắng SPF50',        status: 'Đã Nhập Hàng', seed: 'sunscreen' }
+    ];
+
+    const DEFAULT_VIDEOS = [
+      { id: 1, name: 'Son dưỡng môi Cherry',   caption: 'Review chi tiết son dưỡng môi cherry, màu sắc đẹp cho mùa hè',         status: 'Video Mẫu', assignee: 'Thảo', seed: 'cherry1'   },
+      { id: 2, name: 'Kem dưỡng da Laneige',   caption: 'Đánh giá kem dưỡng da ban đêm Laneige cho da khô',                     status: 'Đang Tạo',  assignee: 'Lan',  seed: 'laneige'   },
+      { id: 3, name: 'Serum Vitamin C',         caption: 'Top 3 serum vitamin C giá tốt nhất thị trường 2024',                   status: 'Đã Duyệt',  assignee: 'Mai',  seed: 'vitc'      },
+      { id: 4, name: 'Nước tẩy trang',         caption: 'Tẩy trang sạch không cần rửa mặt lại, review chi tiết',                status: 'Đã Đăng',   assignee: 'Thảo', seed: 'cleanse'   },
+      { id: 5, name: 'Mặt nạ ngủ collagen',    caption: 'Ngủ dậy da căng mọng với mặt nạ ngủ collagen này',                    status: 'Đang Tạo',  assignee: 'Lan',  seed: 'collagen'  },
+      { id: 6, name: 'Tinh chất dưỡng trắng',  caption: 'Da trắng sáng chỉ sau 2 tuần dùng tinh chất này',                     status: 'Video Mẫu', assignee: 'Mai',  seed: 'bright'    },
+      { id: 7, name: 'Kem chống nắng SPF50',    caption: 'Bảo vệ da tối ưu với kem chống nắng SPF50 dưới nước',                 status: 'Đã Duyệt',  assignee: 'Thảo', seed: 'spf50'     },
+      { id: 8, name: 'Tẩy da chết môi',        caption: 'Môi mềm mại mướt mát với bộ tẩy da chết và dưỡng môi',               status: 'Đã Đăng',   assignee: 'Lan',  seed: 'lipscrub2' }
+    ];
+
+    // ============================================================
+    // LOCALSTORAGE HELPERS
+    // ============================================================
+
+    function saveProducts(data) {
+      localStorage.setItem('portal_products', JSON.stringify(data));
+    }
+
+    function loadProducts() {
+      const saved = localStorage.getItem('portal_products');
+      return saved ? JSON.parse(saved) : JSON.parse(JSON.stringify(DEFAULT_PRODUCTS));
+    }
+
+    function saveVideos(data) {
+      localStorage.setItem('portal_videos', JSON.stringify(data));
+    }
+
+    function loadVideos() {
+      const saved = localStorage.getItem('portal_videos');
+      return saved ? JSON.parse(saved) : JSON.parse(JSON.stringify(DEFAULT_VIDEOS));
+    }
+
+    // ============================================================
+    // LIVE DATA
+    // ============================================================
+    let products = loadProducts();
+    let videos   = loadVideos();
+
+    // ============================================================
+    // NAVIGATION
+    // ============================================================
+
+    // Map nav id → panel id
+    const NAV_MAP = {
+      'dashboard': { panel: 'panel-dashboard', nav: 'nav-dashboard', iframe: null },
+      'products':  { panel: 'panel-products',  nav: 'nav-products',  iframe: null },
+      'videos':    { panel: 'panel-videos',    nav: 'nav-videos',    iframe: null },
+      'theo-doi':  { panel: 'panel-iframe',    nav: 'nav-theo-doi',  iframe: '../theo-doi-san-pham-edit/' },
+      'phan-cong': { panel: 'panel-iframe',    nav: 'nav-phan-cong', iframe: '../phan-cong-edit-video/' },
+      'luong':     { panel: 'panel-iframe',    nav: 'nav-luong',     iframe: '../bang-tinh-luong-thuong/' },
+      'settings':  { panel: 'panel-settings',  nav: 'nav-settings',  iframe: null }
+    };
+
+    let currentNav = 'dashboard';
+
+    function navigate(id) {
+      const entry = NAV_MAP[id];
+      if (!entry) return;
+
+      // Remove active from all nav items
+      document.querySelectorAll('.nav-item').forEach(el => el.classList.remove('active'));
+
+      // Add active to clicked nav item
+      const navEl = document.getElementById(entry.nav);
+      if (navEl) navEl.classList.add('active');
+
+      // Hide all panels
+      document.querySelectorAll('.panel').forEach(el => el.classList.remove('active'));
+
+      // Show target panel
+      const panelEl = document.getElementById(entry.panel);
+      if (panelEl) panelEl.classList.add('active');
+
+      // Handle iframe
+      if (entry.panel === 'panel-iframe' && entry.iframe) {
+        document.getElementById('main-iframe').src = entry.iframe;
+      }
+
+      currentNav = id;
+
+      // On mobile, close sidebar after navigation
+      closeSidebar();
+    }
+
+    // ============================================================
+    // MOBILE SIDEBAR
+    // ============================================================
+
+    function toggleSidebar() {
+      const sidebar  = document.getElementById('sidebar');
+      const backdrop = document.getElementById('sidebar-backdrop');
+      const isOpen   = sidebar.classList.contains('open');
+      if (isOpen) {
+        sidebar.classList.remove('open');
+        backdrop.classList.remove('open');
+      } else {
+        sidebar.classList.add('open');
+        backdrop.classList.add('open');
+      }
+    }
+
+    function closeSidebar() {
+      document.getElementById('sidebar').classList.remove('open');
+      document.getElementById('sidebar-backdrop').classList.remove('open');
+    }
+
+    // ============================================================
+    // REALTIME CLOCK
+    // ============================================================
+
+    function updateClock() {
+      const now = new Date();
+      const options = {
+        weekday: 'long',
+        year:    'numeric',
+        month:   'long',
+        day:     'numeric',
+        hour:    '2-digit',
+        minute:  '2-digit',
+        second:  '2-digit'
+      };
+      const clockEl = document.getElementById('realtime-clock');
+      if (clockEl) {
+        clockEl.textContent = now.toLocaleString('vi-VN', options);
+      }
+    }
+    setInterval(updateClock, 1000);
+    updateClock();
+
+    // ============================================================
+    // BADGE HELPERS
+    // ============================================================
+
+    function getProductBadgeClass(status) {
+      const map = {
+        'Đang Check':   'badge-check',
+        'Đã Nhập Hàng': 'badge-nhap',
+        'Bán Chạy':     'badge-banchai',
+        'Cần Quay+Edit':'badge-quay',
+        'Đã Đăng':      'badge-dadang',
+        'Cần Quay Lại': 'badge-quaylai'
+      };
+      return map[status] || 'badge-check';
+    }
+
+    function getVideoBadgeClass(status) {
+      const map = {
+        'Video Mẫu': 'badge-mau',
+        'Đang Tạo':  'badge-dangtao',
+        'Đã Duyệt':  'badge-daduyet',
+        'Đã Đăng':   'badge-vidoadang'
+      };
+      return map[status] || 'badge-mau';
+    }
+
+    // ============================================================
+    // PRODUCT KANBAN RENDERING
+    // ============================================================
+
+    function renderProductBoard() {
+      const board = document.getElementById('product-board');
+      board.innerHTML = '';
+
+      PRODUCT_COLUMNS.forEach(colStatus => {
+        const colItems = products.filter(p => p.status === colStatus);
+
+        const col = document.createElement('div');
+        col.className = 'kanban-column';
+        col.dataset.status = colStatus;
+
+        col.addEventListener('dragover', e => {
+          e.preventDefault();
+          col.classList.add('drag-over');
+        });
+        col.addEventListener('dragleave', e => {
+          if (!col.contains(e.relatedTarget)) col.classList.remove('drag-over');
+        });
+        col.addEventListener('drop', e => {
+          e.preventDefault();
+          col.classList.remove('drag-over');
+          try {
+            const data = JSON.parse(e.dataTransfer.getData('text/plain'));
+            if (data.type === 'product') {
+              const item = products.find(p => p.id === data.id);
+              if (item && item.status !== colStatus) {
+                item.status = colStatus;
+                saveProducts(products);
+                renderProductBoard();
+              }
+            }
+          } catch (err) { /* ignore */ }
+        });
+
+        // Header
+        const header = document.createElement('div');
+        header.className = 'col-header';
+        header.innerHTML = `
+          <span class="col-title">${escHtml(colStatus)}</span>
+          <span class="col-count">${colItems.length}</span>
+          <button class="col-add-btn" title="Thêm" onclick="openProductModalWithStatus('${escHtml(colStatus)}')">+</button>
+        `;
+        col.appendChild(header);
+
+        // Cards container
+        const cards = document.createElement('div');
+        cards.className = 'kanban-cards';
+
+        colItems.forEach(prod => {
+          const card = document.createElement('div');
+          card.className = 'kanban-card';
+          card.draggable = true;
+          card.dataset.id   = prod.id;
+          card.dataset.type = 'product';
+
+          card.addEventListener('dragstart', e => {
+            e.dataTransfer.setData('text/plain', JSON.stringify({ id: prod.id, type: 'product' }));
+            card.style.opacity = '0.5';
+          });
+          card.addEventListener('dragend', () => {
+            card.style.opacity = '1';
+          });
+
+          const badgeClass = getProductBadgeClass(prod.status);
+          card.innerHTML = `
+            <img src="https://picsum.photos/seed/${escHtml(prod.seed)}/240/160" alt="${escHtml(prod.name)}" style="height:120px;margin-bottom:8px;" loading="lazy">
+            <div class="card-name">${escHtml(prod.name)}</div>
+            <div class="card-footer">
+              <span class="badge ${badgeClass}">${escHtml(prod.status)}</span>
+              <a href="#" class="card-link" title="Xem" onclick="return false;">🔗</a>
+            </div>
+          `;
+          cards.appendChild(card);
+        });
+
+        col.appendChild(cards);
+        board.appendChild(col);
+      });
+    }
+
+    // ============================================================
+    // VIDEO KANBAN RENDERING
+    // ============================================================
+
+    function renderVideoBoard() {
+      const board = document.getElementById('video-board');
+      board.innerHTML = '';
+
+      VIDEO_COLUMNS.forEach(colStatus => {
+        const colItems = videos.filter(v => v.status === colStatus);
+
+        const col = document.createElement('div');
+        col.className = 'kanban-column';
+        col.dataset.status = colStatus;
+
+        col.addEventListener('dragover', e => {
+          e.preventDefault();
+          col.classList.add('drag-over');
+        });
+        col.addEventListener('dragleave', e => {
+          if (!col.contains(e.relatedTarget)) col.classList.remove('drag-over');
+        });
+        col.addEventListener('drop', e => {
+          e.preventDefault();
+          col.classList.remove('drag-over');
+          try {
+            const data = JSON.parse(e.dataTransfer.getData('text/plain'));
+            if (data.type === 'video') {
+              const item = videos.find(v => v.id === data.id);
+              if (item && item.status !== colStatus) {
+                item.status = colStatus;
+                saveVideos(videos);
+                renderVideoBoard();
+              }
+            }
+          } catch (err) { /* ignore */ }
+        });
+
+        // Header
+        const header = document.createElement('div');
+        header.className = 'col-header';
+        header.innerHTML = `
+          <span class="col-title">${escHtml(colStatus)}</span>
+          <span class="col-count">${colItems.length}</span>
+          <button class="col-add-btn" title="Thêm" onclick="openVideoModalWithStatus('${escHtml(colStatus)}')">+</button>
+        `;
+        col.appendChild(header);
+
+        // Cards container
+        const cards = document.createElement('div');
+        cards.className = 'kanban-cards';
+
+        colItems.forEach(vid => {
+          const card = document.createElement('div');
+          card.className = 'kanban-card';
+          card.draggable = true;
+          card.dataset.id   = vid.id;
+          card.dataset.type = 'video';
+
+          card.addEventListener('dragstart', e => {
+            e.dataTransfer.setData('text/plain', JSON.stringify({ id: vid.id, type: 'video' }));
+            card.style.opacity = '0.5';
+          });
+          card.addEventListener('dragend', () => {
+            card.style.opacity = '1';
+          });
+
+          const badgeClass = getVideoBadgeClass(vid.status);
+          const initial = vid.assignee ? vid.assignee.charAt(0).toUpperCase() : '?';
+          card.innerHTML = `
+            <img src="https://picsum.photos/seed/${escHtml(vid.seed)}/320/180" alt="${escHtml(vid.name)}" style="aspect-ratio:16/9;height:auto;margin-bottom:8px;" loading="lazy">
+            <div style="font-weight:700;font-size:0.875rem;color:var(--text);margin-bottom:4px;">${escHtml(vid.name)}</div>
+            <div class="video-caption">${escHtml(vid.caption)}</div>
+            <div class="card-footer">
+              <div style="display:flex;align-items:center;gap:6px;">
+                <div class="avatar-sm">${escHtml(initial)}</div>
+                <span style="font-size:0.8rem;color:var(--text-sub);">${escHtml(vid.assignee)}</span>
+              </div>
+              <a href="#" class="card-link" title="Link" onclick="return false;">🔗</a>
+            </div>
+          `;
+          cards.appendChild(card);
+        });
+
+        col.appendChild(cards);
+        board.appendChild(col);
+      });
+    }
+
+    // ============================================================
+    // HTML ESCAPE UTILITY
+    // ============================================================
+    function escHtml(str) {
+      if (str === null || str === undefined) return '';
+      return String(str)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;');
+    }
+
+    // ============================================================
+    // PRODUCT MODAL
+    // ============================================================
+
+    function openProductModal() {
+      document.getElementById('prod-name-input').value   = '';
+      document.getElementById('prod-status-input').value = 'Đang Check';
+      document.getElementById('product-modal').classList.add('open');
+      document.getElementById('prod-name-input').focus();
+    }
+
+    function openProductModalWithStatus(status) {
+      document.getElementById('prod-name-input').value   = '';
+      document.getElementById('prod-status-input').value = status;
+      document.getElementById('product-modal').classList.add('open');
+      document.getElementById('prod-name-input').focus();
+    }
+
+    function closeProductModal() {
+      document.getElementById('product-modal').classList.remove('open');
+    }
+
+    function confirmAddProduct() {
+      const name   = document.getElementById('prod-name-input').value.trim();
+      const status = document.getElementById('prod-status-input').value;
+      if (!name) {
+        document.getElementById('prod-name-input').focus();
+        return;
+      }
+      const newId = products.length > 0 ? Math.max(...products.map(p => p.id)) + 1 : 1;
+      const seed  = 'new' + newId;
+      products.push({ id: newId, name, status, seed });
+      saveProducts(products);
+      renderProductBoard();
+      closeProductModal();
+    }
+
+    // ============================================================
+    // VIDEO MODAL
+    // ============================================================
+
+    function openVideoModal() {
+      document.getElementById('vid-name-input').value     = '';
+      document.getElementById('vid-caption-input').value  = '';
+      document.getElementById('vid-assignee-input').value = '';
+      document.getElementById('vid-status-input').value   = 'Video Mẫu';
+      document.getElementById('video-modal').classList.add('open');
+      document.getElementById('vid-name-input').focus();
+    }
+
+    function openVideoModalWithStatus(status) {
+      document.getElementById('vid-name-input').value     = '';
+      document.getElementById('vid-caption-input').value  = '';
+      document.getElementById('vid-assignee-input').value = '';
+      document.getElementById('vid-status-input').value   = status;
+      document.getElementById('video-modal').classList.add('open');
+      document.getElementById('vid-name-input').focus();
+    }
+
+    function closeVideoModal() {
+      document.getElementById('video-modal').classList.remove('open');
+    }
+
+    function confirmAddVideo() {
+      const name     = document.getElementById('vid-name-input').value.trim();
+      const caption  = document.getElementById('vid-caption-input').value.trim();
+      const assignee = document.getElementById('vid-assignee-input').value.trim() || 'N/A';
+      const status   = document.getElementById('vid-status-input').value;
+      if (!name) {
+        document.getElementById('vid-name-input').focus();
+        return;
+      }
+      const newId = videos.length > 0 ? Math.max(...videos.map(v => v.id)) + 1 : 1;
+      const seed  = 'vidnew' + newId;
+      videos.push({ id: newId, name, caption, status, assignee, seed });
+      saveVideos(videos);
+      renderVideoBoard();
+      closeVideoModal();
+    }
+
+    // ============================================================
+    // MODAL KEYBOARD SHORTCUT (Escape to close)
+    // ============================================================
+
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') {
+        closeProductModal();
+        closeVideoModal();
+      }
+    });
+
+    // Close modal when clicking the overlay backdrop itself
+    document.getElementById('product-modal').addEventListener('click', function(e) {
+      if (e.target === this) closeProductModal();
+    });
+    document.getElementById('video-modal').addEventListener('click', function(e) {
+      if (e.target === this) closeVideoModal();
+    });
+
+    // ============================================================
+    // INIT
+    // ============================================================
+
+    // Render both boards on load
+    renderProductBoard();
+    renderVideoBoard();
+
+    // Ensure dashboard is active by default
+    navigate('dashboard');
+
+  </script>
+</body>
+</html>

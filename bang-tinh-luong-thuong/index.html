@@ -510,9 +510,9 @@
     </select>
     <label>Năm</label><input type="text" inputmode="numeric" id="inp-y" value="2026" style="width:68px" oninput="this.value=this.value.replace(/[^0-9]/g,''); autoFillDays();">
     <div class="sep"></div>
-    <label>Tổng đơn hàng</label><input type="text" inputmode="numeric" id="inp-orders" value="0" style="width:90px" placeholder="0" oninput="this.value=this.value.replace(/[^0-9]/g,''); calculate();">
+    <label>Tổng đơn hàng</label><input type="text" inputmode="numeric" id="inp-orders" value="" style="width:90px" placeholder="0" oninput="this.value=this.value.replace(/[^0-9]/g,''); if(this.value!=='') { isShown=true; renderGrid(); } else { isShown=false; } calculate();">
     <div class="sep"></div>
-    <button class="btn btn-primary" onclick="calculate()">Tính lương</button>
+    <button class="btn btn-primary" onclick="isShown=true; renderGrid(); calculate();">Tính lương</button>
     <button class="btn btn-outline" onclick="resetAll()">Reset</button>
     <button class="btn btn-outline" onclick="authLogout()" style="color: #ef4444; border-color: rgba(239, 68, 68, 0.2); background: rgba(239, 68, 68, 0.05);">Đăng xuất</button>
   </div>
@@ -589,6 +589,7 @@ const POL={
 };
 const ORDER=['CS1','CS2L','CS3'];
 const td={};
+let isShown = false;
 function fmt(n){return Math.round(n).toLocaleString('vi-VN')+'đ';}
 function num(n){return(Math.round(n*100)/100).toLocaleString('vi-VN');}
 function daysOf(m,y){return new Date(y,m,0).getDate();}
@@ -676,7 +677,18 @@ function renderGrid(){
 function calculate(){
   const m=+document.getElementById('sel-m').value,y=+document.getElementById('inp-y').value;
   const D=daysOf(m,y);
-  const orders=+document.getElementById('inp-orders').value||0;
+  const ordersVal=document.getElementById('inp-orders').value.trim();
+  const orders=+ordersVal||0;
+  
+  if(!isShown){
+    document.getElementById('board').innerHTML='';
+    document.getElementById('cs3-bar').classList.remove('show');
+    document.getElementById('hdr-sub').textContent=`Tháng ${m}/${y} · ${D} ngày`;
+    document.getElementById('footer-period').textContent='—';
+    document.getElementById('footer-total').textContent='';
+    return;
+  }
+  
   const label=`HO KINH DOANH NAM OI NAM CK LUONG T${m}${y}`;
   const pool=orders*0.8*1000;
   const cs3List=EMP.filter(e=>e.policy==='CS3');
@@ -720,20 +732,10 @@ function calculate(){
   document.getElementById('footer-total').textContent='Tổng: '+fmt(grand);
 }
 function resetAll(){
-  EMP.forEach(e=>{
-    document.getElementById('off-'+e.id).value=0;
-    document.getElementById('bd-'+e.id).classList.remove('show');
-    document.getElementById('qrw-'+e.id).classList.remove('show');
-    document.getElementById('qrbox-'+e.id).classList.remove('open');
-    const btn=document.getElementById('qrbtn-'+e.id);if(btn)btn.textContent='THÔNG TIN CHUYỂN KHOẢN';
-  });
-  document.getElementById('cs3-bar').classList.remove('show');
-  document.getElementById('inp-orders').value=0;
-  document.getElementById('hdr-sub').textContent='Chọn tháng và nhập số liệu để tính lương';
-  document.getElementById('footer-period').textContent='—';
-  document.getElementById('footer-total').textContent='';
+  isShown=false;
+  document.getElementById('inp-orders').value='';
+  calculate();
 }
-renderGrid();
 calculate();
 </script>
 </body>

@@ -8,37 +8,29 @@
   <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
     :root {
-      /* slothUI-inspired palette */
-      --sidebar-bg: #4338CA;
-      --sidebar-hover: rgba(255,255,255,0.12);
-      --sidebar-active: rgba(255,255,255,0.22);
-      --sidebar-text: rgba(255,255,255,0.75);
-      --sidebar-text-active: #ffffff;
       --bg: #FFFFFF;
-      --bg-soft: #F0EFFF;
-      --bg-page: linear-gradient(135deg, #EEF2FF 0%, #F5F3FF 50%, #EFF6FF 100%);
-      --bg-blue: #EEF2FF;
-      --blue: #4338CA;
-      --blue-hover: #3730A3;
-      --blue-light: #6366F1;
-      --blue-dim: rgba(67,56,202,0.08);
-      --blue-border: rgba(67,56,202,0.2);
-      --text: #1E1B4B;
-      --text-sub: #6B7280;
-      --text-muted: #9CA3AF;
-      --border: #E5E7EB;
+      --bg-soft: #F7F8FA;
+      --bg-blue: #F0F4FF;
+      --blue: #1456F0;
+      --blue-hover: #0442D2;
+      --blue-light: #336DF4;
+      --blue-dim: rgba(20,86,240,0.08);
+      --blue-border: rgba(20,86,240,0.2);
+      --text: #1F2329;
+      --text-sub: #646A73;
+      --text-muted: #8F959E;
+      --border: #E0E5EB;
       --card-bg: #FFFFFF;
-      --radius-sm: 10px;
-      --radius-md: 14px;
-      --radius-lg: 20px;
-      --radius-pill: 999px;
+      --radius-sm: 8px;
+      --radius-md: 12px;
+      --radius-lg: 16px;
       --trans: all 0.2s cubic-bezier(0.4,0,0.2,1);
-      --shadow-sm: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
-      --shadow-md: 0 4px 16px rgba(67,56,202,0.10);
-      --shadow-card: 0 2px 8px rgba(0,0,0,0.07);
+      --shadow-sm: 0 1px 4px rgba(31,35,41,0.08);
+      --shadow-md: 0 4px 16px rgba(31,35,41,0.1);
+      --shadow-blue: 0 4px 16px rgba(20,86,240,0.25);
       --status-green: #10B981;
       --status-purple: #8B5CF6;
-      --status-orange: #F59E0B;
+      --status-orange: #EA580C;
     }
 
     *, *::before, *::after {
@@ -95,19 +87,19 @@
       z-index: 99;
     }
 
-    /* ===================== SIDEBAR — slothUI dark ===================== */
+    /* ===================== SIDEBAR ===================== */
     .sidebar {
       position: fixed;
       left: 0;
       top: 0;
       width: 240px;
       height: 100vh;
-      background: var(--sidebar-bg);
+      background: #fff;
+      border-right: 1px solid var(--border);
       display: flex;
       flex-direction: column;
       z-index: 100;
       transition: transform 0.3s cubic-bezier(0.4,0,0.2,1);
-      box-shadow: 4px 0 24px rgba(67,56,202,0.18);
     }
 
     /* Logo area */
@@ -115,61 +107,39 @@
       display: flex;
       align-items: center;
       gap: 10px;
-      padding: 22px 16px 18px;
-      border-bottom: 1px solid rgba(255,255,255,0.1);
+      padding: 20px 16px 16px;
+      border-bottom: 1px solid var(--border);
     }
 
     .logo-icon {
       width: 36px;
       height: 36px;
-      border-radius: 10px;
-      background: rgba(255,255,255,0.22);
+      border-radius: 50%;
+      background: linear-gradient(135deg, #1456F0, #8B5CF6);
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 1.1rem;
+      font-size: 1rem;
       flex-shrink: 0;
-      font-weight: 900;
-      color: #fff;
-      letter-spacing: -1px;
     }
 
     .logo-text {
       font-weight: 800;
-      font-size: 0.9rem;
-      color: #fff;
-      letter-spacing: -0.01em;
+      font-size: 0.95rem;
+      color: var(--text);
+      letter-spacing: -0.02em;
       line-height: 1.2;
     }
-
-    /* Sidebar search */
-    .sidebar-search {
-      padding: 12px 12px 4px;
-    }
-    .sidebar-search input {
-      width: 100%;
-      padding: 8px 12px;
-      border-radius: var(--radius-sm);
-      border: none;
-      background: rgba(255,255,255,0.12);
-      color: #fff;
-      font-family: inherit;
-      font-size: 0.8rem;
-      outline: none;
-    }
-    .sidebar-search input::placeholder { color: rgba(255,255,255,0.45); }
-    .sidebar-search input:focus { background: rgba(255,255,255,0.18); }
 
     /* Nav */
     .sidebar-nav {
       flex: 1;
-      padding: 8px;
+      padding: 12px 8px;
       overflow-y: auto;
       display: flex;
       flex-direction: column;
       gap: 2px;
     }
-    .sidebar-nav::-webkit-scrollbar { width: 0; }
 
     .nav-item {
       display: flex;
@@ -178,8 +148,8 @@
       padding: 10px 12px;
       border-radius: var(--radius-sm);
       cursor: pointer;
-      transition: background 0.15s;
-      color: var(--sidebar-text);
+      transition: background 0.15s, color 0.15s;
+      color: var(--text-sub);
       font-weight: 500;
       font-size: 0.875rem;
       user-select: none;
@@ -190,13 +160,13 @@
     }
 
     .nav-item:hover {
-      background: var(--sidebar-hover);
-      color: var(--sidebar-text-active);
+      background: var(--bg-soft);
+      color: var(--text);
     }
 
     .nav-item.active {
-      background: var(--sidebar-active);
-      color: var(--sidebar-text-active);
+      background: #EBF2FF;
+      color: var(--blue);
       font-weight: 600;
     }
 
@@ -206,42 +176,15 @@
       text-align: center;
       flex-shrink: 0;
     }
-    .nav-item .nav-label { flex: 1; }
 
-    /* Nav badge */
-    .nav-badge {
-      background: rgba(255,255,255,0.2);
-      color: #fff;
-      border-radius: 20px;
-      padding: 1px 7px;
-      font-size: 0.7rem;
-      font-weight: 700;
-      flex-shrink: 0;
+    .nav-item .nav-label {
+      flex: 1;
     }
 
-    /* Sidebar bottom */
-    .sidebar-upgrade {
-      margin: 8px 12px;
-      padding: 10px 14px;
-      border-radius: var(--radius-sm);
-      background: rgba(255,255,255,0.12);
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      cursor: pointer;
-      transition: background 0.15s;
-    }
-    .sidebar-upgrade:hover { background: rgba(255,255,255,0.18); }
-    .sidebar-upgrade-text {
-      font-size: 0.8rem;
-      font-weight: 600;
-      color: #fff;
-    }
-    .sidebar-upgrade-icon { color: rgba(255,255,255,0.7); font-size: 1rem; }
-
+    /* Sidebar bottom user */
     .sidebar-user {
-      padding: 12px 16px;
-      border-top: 1px solid rgba(255,255,255,0.1);
+      padding: 14px 16px;
+      border-top: 1px solid var(--border);
       display: flex;
       align-items: center;
       gap: 10px;
@@ -251,7 +194,7 @@
       width: 36px;
       height: 36px;
       border-radius: 50%;
-      background: linear-gradient(135deg, #818CF8, #C084FC);
+      background: linear-gradient(135deg, #1456F0, #8B5CF6);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -259,18 +202,27 @@
       font-weight: 700;
       font-size: 0.875rem;
       flex-shrink: 0;
-      border: 2px solid rgba(255,255,255,0.3);
     }
 
     .user-info { flex: 1; min-width: 0; }
-    .user-name { font-weight: 600; font-size: 0.85rem; color: #fff; line-height: 1.2; }
-    .user-role { font-size: 0.72rem; color: rgba(255,255,255,0.55); }
+
+    .user-name {
+      font-weight: 600;
+      font-size: 0.875rem;
+      color: var(--text);
+      line-height: 1.2;
+    }
+
+    .user-role {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
 
     /* ===================== CONTENT AREA ===================== */
     .content-area {
       margin-left: 240px;
       height: 100vh;
-      background: var(--bg-page);
+      background: var(--bg-soft);
       overflow-y: auto;
     }
 
@@ -284,79 +236,19 @@
       display: block;
     }
 
-    /* Page header — slothUI style */
+    /* Page header */
     .page-header {
       display: flex;
       align-items: center;
       justify-content: space-between;
       padding: 24px 28px 0;
-      margin-bottom: 8px;
+      margin-bottom: 20px;
     }
 
     .page-title {
-      font-size: 1.35rem;
-      font-weight: 800;
-      color: var(--text);
-      letter-spacing: -0.03em;
-    }
-
-    /* Header action buttons */
-    .header-actions {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-    .icon-btn {
-      width: 36px;
-      height: 36px;
-      border-radius: var(--radius-sm);
-      border: 1.5px solid var(--border);
-      background: #fff;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-      font-size: 0.95rem;
-      transition: var(--trans);
-      color: var(--text-sub);
-    }
-    .icon-btn:hover { background: var(--bg-soft); color: var(--text); }
-
-    /* Kanban tab nav */
-    .kanban-tabs {
-      display: flex;
-      align-items: center;
-      gap: 4px;
-      padding: 0 28px;
-      margin-bottom: 20px;
-      border-bottom: 1.5px solid var(--border);
-    }
-    .kanban-tab {
-      padding: 10px 14px;
-      font-size: 0.85rem;
-      font-weight: 500;
-      color: var(--text-sub);
-      cursor: pointer;
-      border: none;
-      background: none;
-      border-bottom: 2.5px solid transparent;
-      margin-bottom: -1.5px;
-      transition: color 0.15s, border-color 0.15s;
-      font-family: inherit;
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      white-space: nowrap;
-    }
-    .kanban-tab:hover { color: var(--text); }
-    .kanban-tab.active { color: var(--blue); border-bottom-color: var(--blue); font-weight: 600; }
-    .tab-count {
-      background: var(--blue);
-      color: #fff;
-      border-radius: 20px;
-      padding: 1px 7px;
-      font-size: 0.7rem;
+      font-size: 1.25rem;
       font-weight: 700;
+      color: var(--text);
     }
 
     /* ===================== BUTTONS ===================== */
@@ -379,14 +271,21 @@
       background: var(--blue);
       color: #fff;
     }
-    .btn-primary:hover { background: var(--blue-hover); box-shadow: 0 4px 16px rgba(67,56,202,0.3); }
+
+    .btn-primary:hover {
+      background: var(--blue-hover);
+      box-shadow: var(--shadow-blue);
+    }
 
     .btn-outline {
       background: #fff;
       color: var(--text);
-      border: 1.5px solid var(--border);
+      border: 1px solid var(--border);
     }
-    .btn-outline:hover { background: var(--bg-soft); }
+
+    .btn-outline:hover {
+      background: var(--bg-soft);
+    }
 
     .btn-ghost {
       background: transparent;
@@ -394,7 +293,11 @@
       border: none;
       padding: 4px 8px;
     }
-    .btn-ghost:hover { background: rgba(0,0,0,0.04); color: var(--text); }
+
+    .btn-ghost:hover {
+      background: var(--bg-soft);
+      color: var(--text);
+    }
 
     /* ===================== CARD ===================== */
     .card {
@@ -554,7 +457,7 @@
       box-shadow: var(--shadow-sm);
     }
 
-    /* ===================== KANBAN — slothUI STYLE ===================== */
+    /* ===================== KANBAN — LINEAR/NOTION STYLE ===================== */
     .kanban-wrapper {
       padding: 0 24px 28px;
     }
@@ -563,17 +466,17 @@
       display: flex;
       gap: 16px;
       overflow-x: auto;
-      padding-bottom: 16px;
-      min-height: calc(100vh - 180px);
+      padding-bottom: 12px;
+      min-height: calc(100vh - 160px);
       align-items: flex-start;
     }
 
-    /* Column — transparent background, no colored bg */
+    /* Column color themes */
     .kanban-column {
-      min-width: 270px;
-      max-width: 290px;
+      min-width: 260px;
+      max-width: 280px;
       border-radius: var(--radius-md);
-      padding: 0;
+      padding: 14px 12px;
       display: flex;
       flex-direction: column;
       gap: 10px;
@@ -582,66 +485,69 @@
       flex-shrink: 0;
     }
 
+    /* Column color variants — Notion style */
+    .kanban-column[data-col="0"] { background: #F2F3F5; }
+    .kanban-column[data-col="1"] { background: #EBF2FF; }
+    .kanban-column[data-col="2"] { background: #FFF4ED; }
+    .kanban-column[data-col="3"] { background: #EDFAF4; }
+    .kanban-column[data-col="4"] { background: #F5F3FF; }
+    .kanban-column[data-col="5"] { background: #FEF2F2; }
+
     .kanban-column.drag-over {
       border-color: var(--blue);
       box-shadow: 0 0 0 3px var(--blue-dim);
     }
 
-    /* ── Column header pill (slothUI signature) ── */
     .col-header {
       display: flex;
       align-items: center;
-      justify-content: space-between;
-      padding: 10px 14px;
-      border-radius: var(--radius-pill);
-      margin-bottom: 4px;
-    }
-
-    /* Pill colors per column index */
-    .kanban-column[data-col="0"] .col-header { background: #4F46E5; }
-    .kanban-column[data-col="1"] .col-header { background: #F59E0B; }
-    .kanban-column[data-col="2"] .col-header { background: #10B981; }
-    .kanban-column[data-col="3"] .col-header { background: #EF4444; }
-    .kanban-column[data-col="4"] .col-header { background: #8B5CF6; }
-    .kanban-column[data-col="5"] .col-header { background: #06B6D4; }
-
-    .col-header-left {
-      display: flex;
-      align-items: center;
       gap: 8px;
+      padding: 0 2px;
+      margin-bottom: 2px;
     }
 
-    /* Count badge inside header pill */
-    .col-count {
-      background: rgba(255,255,255,0.25);
-      color: #fff;
-      border-radius: 20px;
-      padding: 2px 9px;
-      font-size: 0.75rem;
-      font-weight: 700;
-      min-width: 26px;
-      text-align: center;
+    /* Colored dot indicator */
+    .col-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      flex-shrink: 0;
     }
+    .kanban-column[data-col="0"] .col-dot { background: #9CA3AF; }
+    .kanban-column[data-col="1"] .col-dot { background: #1456F0; }
+    .kanban-column[data-col="2"] .col-dot { background: #EA580C; }
+    .kanban-column[data-col="3"] .col-dot { background: #10B981; }
+    .kanban-column[data-col="4"] .col-dot { background: #8B5CF6; }
+    .kanban-column[data-col="5"] .col-dot { background: #DC2626; }
 
     .col-title {
       font-weight: 700;
       font-size: 0.875rem;
-      color: #fff;
+      color: var(--text);
+      flex: 1;
+    }
+
+    .col-count {
+      background: rgba(0,0,0,0.1);
+      color: var(--text-sub);
+      border-radius: 20px;
+      padding: 2px 9px;
+      font-size: 0.75rem;
+      font-weight: 700;
     }
 
     .col-add-btn {
-      background: rgba(255,255,255,0.2);
+      background: none;
       border: none;
       cursor: pointer;
-      color: #fff;
+      color: var(--text-muted);
       font-size: 1.1rem;
-      padding: 2px 7px;
-      border-radius: 6px;
-      transition: background 0.15s;
+      padding: 2px 4px;
+      border-radius: 4px;
+      transition: background 0.15s, color 0.15s;
       line-height: 1;
-      font-weight: 700;
     }
-    .col-add-btn:hover { background: rgba(255,255,255,0.35); }
+    .col-add-btn:hover { background: rgba(0,0,0,0.08); color: var(--text); }
 
     .kanban-cards {
       display: flex;
@@ -649,40 +555,24 @@
       gap: 10px;
       flex: 1;
       min-height: 40px;
-      padding: 0 2px;
     }
 
-    /* ── Kanban card — slothUI white card ── */
+    /* ── Kanban card — Linear/Notion style ── */
     .kanban-card {
       background: #fff;
-      border-radius: var(--radius-md);
-      border: 1px solid rgba(0,0,0,0.05);
-      box-shadow: var(--shadow-card);
+      border-radius: 10px;
+      border: 1px solid rgba(0,0,0,0.06);
+      box-shadow: 0 1px 3px rgba(0,0,0,0.08), 0 1px 2px rgba(0,0,0,0.04);
       overflow: hidden;
       cursor: grab;
-      transition: box-shadow 0.2s ease, transform 0.2s ease;
+      transition: box-shadow 0.18s cubic-bezier(0.4,0,0.2,1), transform 0.18s cubic-bezier(0.4,0,0.2,1);
     }
+
     .kanban-card:hover {
-      box-shadow: 0 8px 28px rgba(67,56,202,0.14);
-      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.12), 0 2px 6px rgba(0,0,0,0.06);
+      transform: translateY(-3px);
     }
     .kanban-card:active { cursor: grabbing; }
-
-    /* Priority tag — colored text, no bg (slothUI style) */
-    .card-priority {
-      font-size: 0.72rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.04em;
-      margin-bottom: 5px;
-    }
-    .priority-important { color: #4F46E5; }
-    .priority-ok        { color: #10B981; }
-    .priority-meh       { color: #F59E0B; }
-    .priority-urgent    { color: #EF4444; }
-    .priority-low       { color: #8B5CF6; }
-    .priority-high      { color: #EF4444; }
-    .priority-done      { color: #10B981; }
 
     /* Thumbnail with play button overlay */
     .card-thumb {
@@ -690,8 +580,9 @@
       width: 100%;
       aspect-ratio: 16 / 9;
       overflow: hidden;
-      background: #EEF2FF;
+      background: #E5E7EB;
     }
+
     .card-thumb img {
       width: 100%;
       height: 100%;
@@ -700,10 +591,11 @@
       transition: transform 0.3s ease;
     }
     .kanban-card:hover .card-thumb img { transform: scale(1.04); }
+
     .card-thumb-overlay {
       position: absolute;
       inset: 0;
-      background: rgba(67,56,202,0.25);
+      background: rgba(0,0,0,0.28);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -711,100 +603,50 @@
       transition: opacity 0.2s;
     }
     .kanban-card:hover .card-thumb-overlay { opacity: 1; }
+
     .play-btn {
       width: 40px;
       height: 40px;
       border-radius: 50%;
-      background: rgba(255,255,255,0.95);
+      background: rgba(255,255,255,0.92);
       display: flex;
       align-items: center;
       justify-content: center;
       font-size: 1rem;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
     }
 
     /* Card body */
-    .card-body { padding: 14px; }
+    .card-body { padding: 12px; }
 
     .card-name {
       font-weight: 700;
-      font-size: 0.9rem;
+      font-size: 0.875rem;
       color: var(--text);
       margin-bottom: 5px;
-      line-height: 1.4;
+      line-height: 1.35;
     }
 
-    .card-desc {
-      font-size: 0.8rem;
-      color: var(--text-sub);
-      line-height: 1.5;
-      display: -webkit-box;
-      -webkit-line-clamp: 2;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
-      margin-bottom: 10px;
-    }
-
-    /* Avatar stack + stats row */
     .card-footer {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-top: 8px;
+      margin-top: 10px;
+      padding-top: 10px;
+      border-top: 1px solid var(--border);
     }
-    .card-footer-left { display: flex; align-items: center; gap: 6px; }
 
-    /* Avatar stack (overlapping) */
-    .avatar-stack {
+    .card-footer-left {
       display: flex;
       align-items: center;
+      gap: 6px;
     }
-    .avatar-stack .avatar-sm {
-      margin-left: -6px;
-      border: 2px solid #fff;
-    }
-    .avatar-stack .avatar-sm:first-child { margin-left: 0; }
 
-    .avatar-sm {
-      width: 26px;
-      height: 26px;
-      border-radius: 50%;
-      color: #fff;
-      font-size: 0.68rem;
-      font-weight: 700;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-      border: 2px solid #fff;
-    }
-    .av-color-0 { background: linear-gradient(135deg, #6366F1, #8B5CF6); }
-    .av-color-1 { background: linear-gradient(135deg, #F59E0B, #EF4444); }
-    .av-color-2 { background: linear-gradient(135deg, #10B981, #06B6D4); }
-    .av-color-3 { background: linear-gradient(135deg, #EC4899, #F43F5E); }
-
-    .avatar-extra {
-      font-size: 0.65rem;
+    .card-assignee-name {
+      font-size: 0.78rem;
       color: var(--text-sub);
-      font-weight: 600;
-      margin-left: 4px;
-    }
-
-    /* Card stats */
-    .card-stats {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-    .card-stat {
-      display: flex;
-      align-items: center;
-      gap: 3px;
-      font-size: 0.75rem;
-      color: var(--text-muted);
       font-weight: 500;
     }
-    .card-stat-icon { font-size: 0.8rem; }
 
     .card-link {
       text-decoration: none;
@@ -815,12 +657,12 @@
       align-items: center;
       justify-content: center;
       color: var(--text-muted);
-      font-size: 0.85rem;
+      font-size: 0.9rem;
       transition: background 0.15s, color 0.15s;
     }
     .card-link:hover { background: var(--bg-soft); color: var(--blue); }
 
-    /* Priority / status badges */
+    /* Status badges */
     .badge {
       display: inline-block;
       padding: 3px 9px;
@@ -828,38 +670,55 @@
       font-size: 0.72rem;
       font-weight: 600;
     }
+
     .badge-check   { background: #FFF7ED; color: #C2410C; }
-    .badge-nhap    { background: #EEF2FF; color: #4338CA; }
+    .badge-nhap    { background: #EFF6FF; color: #1D4ED8; }
     .badge-banchai { background: #ECFDF5; color: #059669; }
     .badge-quay    { background: #F5F3FF; color: #7C3AED; }
     .badge-dadang  { background: #ECFDF5; color: #16A34A; }
     .badge-quaylai { background: #FEF2F2; color: #DC2626; }
+
     .badge-mau      { background: #F3F4F6; color: #4B5563; }
-    .badge-dangtao  { background: #EEF2FF; color: #4338CA; }
-    .badge-daduyet  { background: #FFF7ED; color: #D97706; }
+    .badge-dangtao  { background: #EBF2FF; color: #1456F0; }
+    .badge-daduyet  { background: #FFF4ED; color: #EA580C; }
     .badge-vidoadang{ background: #ECFDF5; color: #059669; }
+
+    /* Avatar small */
+    .avatar-sm {
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #1456F0, #8B5CF6);
+      color: #fff;
+      font-size: 0.7rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      border: 2px solid #fff;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+    }
 
     /* Col add card button */
     .col-add-card-btn {
       display: flex;
       align-items: center;
-      justify-content: center;
       gap: 6px;
-      padding: 9px 12px;
-      border-radius: var(--radius-sm);
-      background: rgba(255,255,255,0.6);
-      border: 1.5px dashed rgba(67,56,202,0.2);
+      padding: 8px 10px;
+      border-radius: 8px;
+      background: transparent;
+      border: 1.5px dashed rgba(0,0,0,0.15);
       cursor: pointer;
       font-family: inherit;
       font-size: 0.8rem;
-      font-weight: 600;
+      font-weight: 500;
       color: var(--text-muted);
       transition: var(--trans);
       width: 100%;
-      backdrop-filter: blur(4px);
     }
     .col-add-card-btn:hover {
-      background: rgba(255,255,255,0.9);
+      background: rgba(255,255,255,0.7);
       border-color: var(--blue);
       color: var(--blue);
     }
@@ -1063,13 +922,8 @@
 
     <!-- Logo -->
     <div class="sidebar-logo">
-      <div class="logo-icon">N</div>
+      <div class="logo-icon">🌟</div>
       <div class="logo-text">NAM ƠI NAM</div>
-    </div>
-
-    <!-- Search -->
-    <div class="sidebar-search">
-      <input type="text" placeholder="🔍  Tìm kiếm...">
     </div>
 
     <!-- Nav Menu -->
@@ -1077,7 +931,6 @@
       <button class="nav-item active" id="nav-dashboard" onclick="navigate('dashboard')">
         <span class="nav-icon">🏠</span>
         <span class="nav-label">Dashboard</span>
-        <span class="nav-badge">4</span>
       </button>
       <button class="nav-item" id="nav-products" onclick="navigate('products')">
         <span class="nav-icon">📋</span>
@@ -1086,14 +939,13 @@
       <button class="nav-item" id="nav-videos" onclick="navigate('videos')">
         <span class="nav-icon">🤖</span>
         <span class="nav-label">Quản lý Video AI</span>
-        <span class="nav-badge">8</span>
       </button>
       <button class="nav-item" id="nav-theo-doi" onclick="navigate('theo-doi')">
         <span class="nav-icon">📦</span>
         <span class="nav-label">Theo dõi sản phẩm edit</span>
       </button>
       <button class="nav-item" id="nav-phan-cong" onclick="navigate('phan-cong')">
-        <span class="nav-icon">🎦</span>
+        <span class="nav-icon">🎬</span>
         <span class="nav-label">Phân công edit video</span>
       </button>
       <button class="nav-item" id="nav-luong" onclick="navigate('luong')">
@@ -1106,12 +958,6 @@
       </button>
     </nav>
 
-    <!-- Upgrade Banner -->
-    <div class="sidebar-upgrade">
-      <span class="sidebar-upgrade-text">⭐ Nâng cấp Pro</span>
-      <span class="sidebar-upgrade-icon">→</span>
-    </div>
-
     <!-- Bottom User Info -->
     <div class="sidebar-user">
       <div class="user-avatar">N</div>
@@ -1119,7 +965,6 @@
         <div class="user-name">Nam</div>
         <div class="user-role">Admin</div>
       </div>
-    </div>
     </div>
   </aside>
 
@@ -1244,19 +1089,8 @@
     <!-- ===== PRODUCT KANBAN PANEL ===== -->
     <div id="panel-products" class="panel">
       <div class="page-header">
-        <h1 class="page-title">Quản lý sản phẩm 📋</h1>
-        <div class="header-actions">
-          <button class="icon-btn" title="Tìm kiếm">🔍</button>
-          <button class="icon-btn" title="Xuất file">⬆️</button>
-          <button class="btn btn-primary" onclick="openProductModal()">+ Thêm sản phẩm</button>
-        </div>
-      </div>
-      <!-- Kanban tabs -->
-      <div class="kanban-tabs">
-        <button class="kanban-tab active">Theo trạng thái <span class="tab-count" id="prod-tab-count">0</span></button>
-        <button class="kanban-tab">Bán chạy</button>
-        <button class="kanban-tab">Cần xuất thêm</button>
-        <button class="kanban-tab">Đã đăng</button>
+        <h1 class="page-title">Quản lý sản phẩm</h1>
+        <button class="btn btn-primary" onclick="openProductModal()">+ Thêm sản phẩm</button>
       </div>
       <div class="kanban-wrapper">
         <div class="kanban-board" id="product-board"></div>
@@ -1267,19 +1101,8 @@
     <!-- ===== VIDEO AI KANBAN PANEL ===== -->
     <div id="panel-videos" class="panel">
       <div class="page-header">
-        <h1 class="page-title">Quản lý Video AI 🤖</h1>
-        <div class="header-actions">
-          <button class="icon-btn" title="Tìm kiếm">🔍</button>
-          <button class="icon-btn" title="Xuất file">⬆️</button>
-          <button class="btn btn-primary" onclick="openVideoModal()">+ Thêm video</button>
-        </div>
-      </div>
-      <!-- Kanban tabs -->
-      <div class="kanban-tabs">
-        <button class="kanban-tab active">Theo trạng thái <span class="tab-count" id="vid-tab-count">0</span></button>
-        <button class="kanban-tab">Đang tạo</button>
-        <button class="kanban-tab">Đã duyệt</button>
-        <button class="kanban-tab">Đã đăng</button>
+        <h1 class="page-title">Quản lý Video AI</h1>
+        <button class="btn btn-primary" onclick="openVideoModal()">+ Thêm video</button>
       </div>
       <div class="kanban-wrapper">
         <div class="kanban-board" id="video-board"></div>
@@ -1596,10 +1419,9 @@
         const header = document.createElement('div');
         header.className = 'col-header';
         header.innerHTML = `
-          <div class="col-header-left">
-            <span class="col-count">${colItems.length}</span>
-            <span class="col-title">${escHtml(colStatus)}</span>
-          </div>
+          <div class="col-dot"></div>
+          <span class="col-title">${escHtml(colStatus)}</span>
+          <span class="col-count">${colItems.length}</span>
           <button class="col-add-btn" title="Thêm" onclick="openProductModalWithStatus('${escHtml(colStatus)}')">+</button>
         `;
         col.appendChild(header);
@@ -1608,28 +1430,7 @@
         const cards = document.createElement('div');
         cards.className = 'kanban-cards';
 
-        // Priority labels per column
-        const priorityMap = {
-          'Đang Check':   { label: 'Cần kiểm tra', cls: 'priority-urgent' },
-          'Đã Nhập Hàng': { label: 'Nhập hàng', cls: 'priority-ok' },
-          'Bán Chạy':    { label: 'Bán chạy 🔥',  cls: 'priority-important' },
-          'Cần Quay+Edit':{ label: 'Cần sản xuất', cls: 'priority-meh' },
-          'Đã Đăng':     { label: 'Hoàn thành', cls: 'priority-done' },
-          'Cần Quay Lại': { label: 'Cần làm lại', cls: 'priority-high' },
-        };
-
-        const descMap = {
-          'Đang Check':   'Kiểm tra chất lượng và thông số sản phẩm trước khi đăng',
-          'Đã Nhập Hàng': 'Sản phẩm đã nhập kho, chờ lên video TikTok',
-          'Bán Chạy':    'Sản phẩm đang bán tốt, tập trung đẩy mạnh hơn',
-          'Cần Quay+Edit':'Cần lên kịch bản và sản xuất video mới',
-          'Đã Đăng':     'Video đã lên TikTok, theo dõi hiệu suất',
-          'Cần Quay Lại': 'Video cũ chưa hiệu quả, cần sản xuất lại',
-        };
-
-        const assignees = ['Thảo', 'Lan', 'Mai', 'Trân'];
-
-        colItems.forEach((prod, idx) => {
+        colItems.forEach(prod => {
           const card = document.createElement('div');
           card.className = 'kanban-card';
           card.draggable = true;
@@ -1640,36 +1441,23 @@
             e.dataTransfer.setData('text/plain', JSON.stringify({ id: prod.id, type: 'product' }));
             card.style.opacity = '0.5';
           });
-          card.addEventListener('dragend', () => { card.style.opacity = '1'; });
+          card.addEventListener('dragend', () => {
+            card.style.opacity = '1';
+          });
 
-          const pInfo = priorityMap[prod.status] || { label: prod.status, cls: 'priority-ok' };
-          const desc  = descMap[prod.status] || '';
-          // build avatar stack (2 random assignees)
-          const av1 = assignees[idx % 4];
-          const av2 = assignees[(idx + 1) % 4];
-          const comments = 10 + idx * 7;
-          const views    = 100 + idx * 37;
-
+          const badgeClass = getProductBadgeClass(prod.status);
           card.innerHTML = `
             <div class="card-thumb">
               <img src="https://picsum.photos/seed/${escHtml(prod.seed)}/280/158" alt="${escHtml(prod.name)}" loading="lazy">
               <div class="card-thumb-overlay"><div class="play-btn">🔗</div></div>
             </div>
             <div class="card-body">
-              <div class="card-priority ${pInfo.cls}">${pInfo.label}</div>
               <div class="card-name">${escHtml(prod.name)}</div>
-              <div class="card-desc">${escHtml(desc)}</div>
               <div class="card-footer">
                 <div class="card-footer-left">
-                  <div class="avatar-stack">
-                    <div class="avatar-sm av-color-${idx % 4}">${av1.charAt(0)}</div>
-                    <div class="avatar-sm av-color-${(idx+1) % 4}">${av2.charAt(0)}</div>
-                  </div>
+                  <span class="badge ${badgeClass}">${escHtml(prod.status)}</span>
                 </div>
-                <div class="card-stats">
-                  <span class="card-stat"><span class="card-stat-icon">💬</span>${comments}</span>
-                  <span class="card-stat"><span class="card-stat-icon">👁️</span>${views}</span>
-                </div>
+                <a href="#" class="card-link" title="Xem link" onclick="return false;">&#128279;</a>
               </div>
             </div>
           `;
@@ -1731,31 +1519,18 @@
         const header = document.createElement('div');
         header.className = 'col-header';
         header.innerHTML = `
-          <div class="col-header-left">
-            <span class="col-count">${colItems.length}</span>
-            <span class="col-title">${escHtml(colStatus)}</span>
-          </div>
+          <div class="col-dot"></div>
+          <span class="col-title">${escHtml(colStatus)}</span>
+          <span class="col-count">${colItems.length}</span>
           <button class="col-add-btn" title="Thêm" onclick="openVideoModalWithStatus('${escHtml(colStatus)}')">+</button>
         `;
         col.appendChild(header);
-
-        // Update tab count
-        const tabCount = document.getElementById('vid-tab-count');
-        if (tabCount) tabCount.textContent = videos.length;
 
         // Cards container
         const cards = document.createElement('div');
         cards.className = 'kanban-cards';
 
-        // Priority labels for video columns
-        const vidPriorityMap = {
-          'Video Mẫu': { label: 'Nguồn mẫu',    cls: 'priority-meh' },
-          'Đang Tạo':  { label: 'Đang thực hiện', cls: 'priority-important' },
-          'Đã Duyệt':  { label: 'Đã duyệt ✅',    cls: 'priority-ok' },
-          'Đã Đăng':   { label: 'Hoàn thành 🚀', cls: 'priority-done' },
-        };
-
-        colItems.forEach((vid, idx) => {
+        colItems.forEach(vid => {
           const card = document.createElement('div');
           card.className = 'kanban-card';
           card.draggable = true;
@@ -1766,20 +1541,18 @@
             e.dataTransfer.setData('text/plain', JSON.stringify({ id: vid.id, type: 'video' }));
             card.style.opacity = '0.5';
           });
-          card.addEventListener('dragend', () => { card.style.opacity = '1'; });
+          card.addEventListener('dragend', () => {
+            card.style.opacity = '1';
+          });
 
-          const pInfo  = vidPriorityMap[vid.status] || { label: vid.status, cls: 'priority-ok' };
+          const badgeClass = getVideoBadgeClass(vid.status);
           const initial = vid.assignee ? vid.assignee.charAt(0).toUpperCase() : '?';
-          const comments = 5 + idx * 11;
-          const views    = 80 + idx * 43;
-
           card.innerHTML = `
             <div class="card-thumb">
               <img src="https://picsum.photos/seed/${escHtml(vid.seed)}/280/158" alt="${escHtml(vid.name)}" loading="lazy">
               <div class="card-thumb-overlay"><div class="play-btn">▶️</div></div>
             </div>
             <div class="card-body">
-              <div class="card-priority ${pInfo.cls}">${pInfo.label}</div>
               <div class="card-name">${escHtml(vid.name)}</div>
               <div class="video-caption">${escHtml(vid.caption)}</div>
               <div class="card-footer">

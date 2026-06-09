@@ -70,6 +70,9 @@ NAME_ALIASES = {
     "jetzt - máy hút bụi x9": "jetz - máy hút bụi x9",
     "torras - kính cường lực không viền": "torras - kính cường lực",
     "torras - kính cường lực khong vien": "torras - kính cường lực",
+    # ONECHI — sửa lỗi chính tả và rút gọn tên file
+    "onechi - dây dán velcro quản chống rối": "onechi - dây dán velcro quấn chống rối",
+    "dây dán velcro quản chống rối": "onechi - dây dán velcro quấn chống rối",
 }
 
 

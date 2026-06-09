@@ -65,6 +65,9 @@ NAME_ALIASES = {
     # TORRAS — editor hay thêm 'không viền' vào tên
     "torras - kính cường lực không viền": "torras - kính cường lực",
     "torras - kính cường lực khong vien": "torras - kính cường lực",
+    # ONECHI — sửa lỗi chính tả và rút gọn tên file
+    "onechi - dây dán velcro quản chống rối": "onechi - dây dán velcro quấn chống rối",
+    "dây dán velcro quản chống rối": "onechi - dây dán velcro quấn chống rối",
 }
 
 # ============================================================

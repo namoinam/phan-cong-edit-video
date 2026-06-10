@@ -307,9 +307,108 @@
       text-align: center;
       z-index: 10;
     }
+
+    /* Motivational Popup */
+    .popup-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(15, 23, 42, 0.4); /* Slate-900 overlay */
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      z-index: 9999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease;
+    }
+    .popup-overlay.show {
+      opacity: 1;
+      pointer-events: auto;
+    }
+    .popup-content {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 36px 24px;
+      max-width: 440px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.15);
+      transform: scale(0.9);
+      transition: transform 0.3s ease;
+    }
+    .popup-overlay.show .popup-content {
+      transform: scale(1);
+    }
+    .popup-icon {
+      font-size: 44px;
+      margin-bottom: 16px;
+      animation: bounce 2s infinite;
+    }
+    .popup-title {
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--text-sub);
+      margin-bottom: 12px;
+    }
+    .popup-quote {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--blue);
+      line-height: 1.6;
+      margin-bottom: 16px;
+      padding: 0 8px;
+    }
+    .popup-author {
+      font-size: 11px;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 24px;
+    }
+    .popup-btn {
+      background: linear-gradient(135deg, var(--blue) 0%, #3b82f6 100%);
+      color: #fff;
+      border: none;
+      border-radius: 12px;
+      padding: 12px 36px;
+      font-size: 14px;
+      font-weight: 700;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+      transition: var(--trans);
+    }
+    .popup-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(37, 99, 235, 0.3);
+    }
+    .popup-btn:active {
+      transform: translateY(0);
+    }
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-6px); }
+    }
   </style>
 </head>
 <body>
+
+<!-- MOTIVATIONAL POPUP -->
+<div id="motivational-popup" class="popup-overlay" style="display: none;">
+  <div class="popup-content">
+    <div class="popup-icon">✨</div>
+    <h3 class="popup-title">Chào mấy cục zàng! 👋</h3>
+    <p class="popup-quote" id="popup-quote">Chúc team mình ngày mới làm việc thật chill và nhiều cảm hứng! 🎧</p>
+    <div class="popup-author">— Lời nhắn từ anh Nam —</div>
+    <button class="popup-btn" onclick="closePopup()">Bắt đầu ngày mới thôi! 🔥</button>
+  </div>
+</div>
 
 <!-- NAVBAR -->
 <nav class="navbar" id="navbar">
@@ -556,6 +655,65 @@ burger.addEventListener('click', openMenu);
 mobileMenuClose.addEventListener('click', closeMenu);
 mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMenu));
 document.addEventListener('keydown', e => { if (e.key === 'Escape') closeMenu(); });
+
+// MOTIVATIONAL POPUP LOGIC
+const MOTIVATIONAL_QUOTES = [
+  "Chúc mấy cục zàng ngày mới tràn đầy năng lượng sáng tạo! Hãy biến mỗi frame hình thành một tác phẩm nghệ thuật nha! 🎬✨",
+  "Hôm nay hãy biến những source quay bình thường thành những thước phim triệu view nhé! Cố lên team mình ơi! 💪🔥",
+  "Sự tỉ mỉ trong từng giây cắt ghép chính là chìa khóa tạo nên sự khác biệt. Chúc cả team ngày mới làm việc thật chill và tràn ngập cảm hứng! 🎧🌈",
+  "Anh Nam biết công việc edit rất áp lực và cần sự kiên nhẫn cực lớn. Cảm ơn các em đã luôn đồng hành cùng anh để tạo ra những sản phẩm chất lượng nhất! ❤️🚀",
+  "Mỗi frame hình, mỗi tiếng sound effect đều chứa đựng tâm huyết của các em. Chúc team edit siêu ngầu ngày mới năng suất, tối đi chill! 🌟🍻",
+  "Một ngày làm việc hiệu quả bắt đầu bằng một nụ cười thật tươi. Hôm nay làm việc thật vui vẻ và thoải mái nhé mấy cục zàng! ☀️🌻",
+  "Sáng tạo là không giới hạn! Hãy cứ tự tin thử nghiệm những ý tưởng mới, những góc cắt táo bạo. Anh Nam luôn ủng hộ các em hết mình! 🎨⚡",
+  "Đường đi khó không khó vì ngăn sông cách núi, mà khó vì lòng người ngại núi e sông. Edit video khó cũng không khó khi team mình luôn đồng lòng! ⛰️❤️",
+  "Năng suất hôm nay, gặt hái ngày mai! Chúc mấy cục zàng hoàn thành xuất sắc các sản phẩm hôm nay thật nhanh để được nghỉ ngơi thoải mái! 🎉🕺",
+  "Sự kiên trì của các em trong phòng edit chính là bệ phóng cho từng video triệu view của kênh. Cảm ơn các cục zàng rất nhiều! 🌠🙏",
+  "Làm việc có tâm, ắt sẽ có tầm! Từng giây chuyển cảnh mượt mà của các em đang làm người xem thích thú lắm đó. Ngày mới thật rực rỡ nha! 💥✨",
+  "Làm hết sức, chơi hết mình! Chúc cả team ngày mới nhiều idea mới lạ, dựng video mượt mà không lo giật lag! 💻🔥",
+  "Mỗi ngày đi làm là một ngày được sáng tạo và cống hiến. Cảm ơn team edit đã luôn là chỗ dựa vững chắc cho kênh Nam ơi Nam! 💖🙌",
+  "Không có áp lực thì không có kim cương. Nhưng anh Nam mong các em làm việc vui vẻ và thoải mái là trên hết! Nhận năng lượng tích cực nào! 💎✨",
+  "Hãy tự hào về công việc các em đang làm, vì chính các em là những người thổi hồn và mang năng lượng tích cực đến cho hàng triệu khán giả! 🌈🎬"
+];
+
+function showMotivationalPopup() {
+  const today = new Date();
+  const dateStr = today.getFullYear() + '-' + String(today.getMonth() + 1).padStart(2, '0') + '-' + String(today.getDate()).padStart(2, '0');
+  
+  if (localStorage.getItem('last_popup_date') === dateStr) {
+    return;
+  }
+
+  const quoteIndex = today.getDate() % MOTIVATIONAL_QUOTES.length;
+  const quoteText = MOTIVATIONAL_QUOTES[quoteIndex];
+  
+  const popup = document.getElementById('motivational-popup');
+  const quoteEl = document.getElementById('popup-quote');
+  
+  if (popup && quoteEl) {
+    quoteEl.textContent = quoteText;
+    popup.style.display = 'flex';
+    popup.offsetHeight; // force reflow
+    popup.classList.add('show');
+  }
+}
+
+function closePopup() {
+  const popup = document.getElementById('motivational-popup');
+  if (popup) {
+    popup.classList.remove('show');
+    setTimeout(() => {
+      popup.style.display = 'none';
+      const today = new Date();
+      const dateStr = today.getFullYear() + '-' + String(today.getMonth() + 1).padStart(2, '0') + '-' + String(today.getDate()).padStart(2, '0');
+      localStorage.setItem('last_popup_date', dateStr);
+    }, 300);
+  }
+}
+
+// Gọi show popup sau khi trang load
+window.addEventListener('DOMContentLoaded', () => {
+  setTimeout(showMotivationalPopup, 650);
+});
 </script>
 </body>
 </html>

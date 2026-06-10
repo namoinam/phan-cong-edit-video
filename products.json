@@ -114,19 +114,19 @@
   },
   {
     "name": "HAPAS - Quà tặng Set \"Thân Thương\"",
-    "ton_date": "2026-06-08",
+    "ton_date": "2026-06-10",
     "videos_per_assign": 10,
     "so_video_ngay": 1,
     "status": "active",
-    "ton_video": 67
+    "ton_video": 8
   },
   {
     "name": "HAPAS - Quà tặng Phụ nữ Việt Nam 20.10 (2026)",
-    "ton_date": "2026-06-09",
+    "ton_date": "2026-06-10",
     "videos_per_assign": 10,
     "so_video_ngay": 1,
     "status": "active",
-    "ton_video": 15
+    "ton_video": 6
   },
   {
     "name": "KINGTECH - Máy massage chân G8",
@@ -157,8 +157,8 @@
     "so_video_ngay": 1,
     "status": "active",
     "last_assigned": "2026-06-03",
-    "ton_video": 23,
-    "ton_date": "2026-06-05"
+    "ton_video": 17,
+    "ton_date": "2026-06-10"
   },
   {
     "name": "DEN HOANG KIM - Đèn led năng lượng mặt trời",
@@ -306,8 +306,8 @@
     "so_video_ngay": 3,
     "status": "active",
     "last_assigned": "2026-06-03",
-    "ton_video": 98,
-    "ton_date": "2026-06-08"
+    "ton_video": 5,
+    "ton_date": "2026-06-10"
   },
   {
     "name": "JETZ - Máy hút bụi X9",
@@ -320,11 +320,11 @@
   },
   {
     "name": "GEBUOANG - Thiết bị quay góc pov",
-    "ton_date": "2026-06-09",
+    "ton_date": "2026-06-10",
     "videos_per_assign": 15,
     "so_video_ngay": 3,
     "status": "active",
-    "ton_video": 26
+    "ton_video": 0
   },
   {
     "name": "AMORTALS - Mút rửa mặt bọt biển",
@@ -349,7 +349,7 @@
     "videos_per_assign": 10,
     "so_video_ngay": 1,
     "status": "active",
-    "ton_video": 10
+    "ton_video": 9
   },
   {
     "name": "TJEAN - Máy hút bụi giường nệm",

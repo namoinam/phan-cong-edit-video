@@ -29,8 +29,8 @@
     "videos_per_assign": 15,
     "so_video_ngay": 3,
     "status": "active",
-    "ton_video": 17,
-    "ton_date": "2026-06-09"
+    "ton_video": 29,
+    "ton_date": "2026-06-10"
   },
   {
     "name": "TORRAS - Kính cường lực",
@@ -77,8 +77,8 @@
     "videos_per_assign": 10,
     "so_video_ngay": 1,
     "status": "active",
-    "ton_video": 11,
-    "ton_date": "2026-06-09"
+    "ton_video": 19,
+    "ton_date": "2026-06-10"
   },
   {
     "name": "MODECO - Lọ đựng gia vị có thìa",
@@ -228,11 +228,11 @@
   },
   {
     "name": "HAPAS - Túi xách tay dáng trống Tidy Mơ",
-    "ton_date": "2026-06-09",
+    "ton_date": "2026-06-10",
     "videos_per_assign": 10,
     "so_video_ngay": 1,
     "status": "active",
-    "ton_video": 11
+    "ton_video": 19
   },
   {
     "name": "HAPAS - Quà tặng Set \"Chân Thành\"",
@@ -357,8 +357,8 @@
     "so_video_ngay": 3,
     "status": "active",
     "last_assigned": "2026-06-04",
-    "ton_video": 40,
-    "ton_date": "2026-06-09"
+    "ton_video": 50,
+    "ton_date": "2026-06-10"
   },
   {
     "name": "UPGEN - Bàn nâng hạ di động",
@@ -408,8 +408,8 @@
     "so_video_ngay": 3,
     "status": "active",
     "last_assigned": "2026-06-04",
-    "ton_video": 18,
-    "ton_date": "2026-06-09"
+    "ton_video": 23,
+    "ton_date": "2026-06-10"
   },
   {
     "name": "DELI - Ổ điện chữ T",
@@ -433,8 +433,8 @@
     "videos_per_assign": 10,
     "so_video_ngay": 1,
     "status": "active",
-    "ton_video": 10,
-    "ton_date": "2026-06-09"
+    "ton_video": 19,
+    "ton_date": "2026-06-10"
   },
   {
     "name": "PHOTOOLEX - Bộ đèn pin chụp ảnh",
@@ -463,27 +463,27 @@
   },
   {
     "name": "FORLOVE - Lọ tỏa hương",
-    "ton_date": "2026-06-09",
+    "ton_date": "2026-06-10",
     "videos_per_assign": 10,
     "so_video_ngay": 1,
     "status": "active",
-    "ton_video": 16
+    "ton_video": 25
   },
   {
     "name": "TOKYOLIFE - Bàn chải đánh răng",
     "videos_per_assign": 15,
     "so_video_ngay": 1,
     "status": "active",
-    "ton_video": 22,
-    "ton_date": "2026-06-09"
+    "ton_video": 36,
+    "ton_date": "2026-06-10"
   },
   {
     "name": "PARROTI - Bộ cọ toilet",
-    "ton_date": "2026-06-09",
+    "ton_date": "2026-06-10",
     "videos_per_assign": 15,
     "so_video_ngay": 3,
     "status": "active",
-    "ton_video": 16
+    "ton_video": 28
   },
   {
     "name": "THINSHOP88 - Túi ngâm chân gấp gọn",
@@ -515,8 +515,8 @@
     "so_video_ngay": 3,
     "status": "active",
     "last_assigned": "2026-06-04",
-    "ton_video": 19,
-    "ton_date": "2026-06-09"
+    "ton_video": 26,
+    "ton_date": "2026-06-10"
   },
   {
     "name": "EDC VN - Đèn pin led zoom F35",

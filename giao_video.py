@@ -78,6 +78,10 @@ NAME_ALIASES = {
     "luck - bình đựng dầu ăn đa năng": "luck - bình đựng dầu ăn thủy tinh",
     "royal - khăn tắm cotton": "royal towel - khăn tắm",
     "thinshop88 - cây đấm lưng ngải cứu": "thinshop88 - cây đâm lưng ngải cứu",
+    "ajido - cân điện tử thông minh": "ajido - cân điện tử ajido s5 pro",
+    "edc vn - đèn pin led zoom f35": "edc vn - đèn pin led f35 vs f37",
+    "tosudo - móc treo đồ": "tosudo - móc kẹp, treo đồ",
+    "deli - ổ điện chữ t": "deli - ổ cắm điện chữ t",
 }
 
 

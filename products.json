@@ -137,11 +137,11 @@
   },
   {
     "name": "HAPAS - Quà tặng Phụ nữ Việt Nam 20.10 (2026)",
-    "ton_date": "2026-06-09",
+    "ton_date": "2026-06-10",
     "videos_per_assign": 10,
     "so_video_ngay": 1,
     "status": "active",
-    "ton_video": 15,
+    "ton_video": 6,
     "giao_hom_nay": 0
   },
   {
@@ -260,7 +260,7 @@
     "videos_per_assign": 10,
     "so_video_ngay": 1,
     "status": "active",
-    "ton_video": 19,
+    "ton_video": 9,
     "giao_hom_nay": 0
   },
   {

@@ -73,7 +73,13 @@ NAME_ALIASES = {
     # ONECHI — sửa lỗi chính tả và rút gọn tên file
     "onechi - dây dán velcro quản chống rối": "onechi - dây dán velcro quấn chống rối",
     "dây dán velcro quản chống rối": "onechi - dây dán velcro quấn chống rối",
+    # Mới bổ sung để khớp folder Google Drive
+    "hapas - quà tặng set \"chân thành\"": "hapas - quà tặng hapas set \"chân thành\"",
+    "luck - bình đựng dầu ăn đa năng": "luck - bình đựng dầu ăn thủy tinh",
+    "royal - khăn tắm cotton": "royal towel - khăn tắm",
+    "thinshop88 - cây đấm lưng ngải cứu": "thinshop88 - cây đâm lưng ngải cứu",
 }
+
 
 
 # ============================================================
@@ -213,7 +219,7 @@ def find_sp_folder(service, sp_name: str) -> tuple[str | None, str | None]:
 
 
 def count_voice_files(service, sp_folder_id: str) -> int:
-    """Đếm số file trong subfolder VOICE của SP."""
+    """Đếm số file trong subfolder VOICE của SP (đệ quy, ưu tiên Voice Daily nếu có subfolders)."""
     if not service or not sp_folder_id:
         return 0
     try:
@@ -227,25 +233,49 @@ def count_voice_files(service, sp_folder_id: str) -> int:
             return 0
 
         voice_id = folders[0]["id"]
-        count = 0
-        page_token = None
-        while True:
-            q_args = dict(
-                q=f"'{voice_id}' in parents and mimeType!='application/vnd.google-apps.folder' and trashed=false",
-                fields="nextPageToken, files(id)",
-                pageSize=1000,
-            )
-            if page_token:
-                q_args["pageToken"] = page_token
-            r2 = service.files().list(**q_args).execute()
-            count += len(r2.get("files", []))
-            page_token = r2.get("nextPageToken")
-            if not page_token:
-                break
-        return count
+        
+        # Kiểm tra xem bên trong folder VOICE này có chứa subfolders nào không
+        r_sub = service.files().list(
+            q=f"'{voice_id}' in parents and mimeType='application/vnd.google-apps.folder' and trashed=false",
+            fields="files(id,name)",
+        ).execute()
+        subfolders = r_sub.get("files", [])
+        
+        # Nếu có subfolders, tìm xem có folder nào tên chứa "daily" không
+        if subfolders:
+            daily_folders = [sf for sf in subfolders if "daily" in sf["name"].lower()]
+            if daily_folders:
+                # Nếu có folder chứa "daily", ta chỉ đếm trong folder daily này thôi!
+                voice_id = daily_folders[0]["id"]
+        
+        def _count_recursive(fid: str) -> int:
+            total_count = 0
+            page_token = None
+            while True:
+                q_args = dict(
+                    q=f"'{fid}' in parents and trashed=false",
+                    fields="nextPageToken, files(id, mimeType)",
+                    pageSize=1000,
+                )
+                if page_token:
+                    q_args["pageToken"] = page_token
+                res = service.files().list(**q_args).execute()
+                for f in res.get("files", []):
+                    if f["mimeType"] == "application/vnd.google-apps.folder":
+                        total_count += _count_recursive(f["id"])
+                    else:
+                        total_count += 1
+                page_token = res.get("nextPageToken")
+                if not page_token:
+                    break
+            return total_count
+
+        return _count_recursive(voice_id)
     except Exception as e:
         print(f"   ⚠️  Lỗi đếm VOICE: {e}")
         return 0
+
+
 
 
 # ============================================================
@@ -507,6 +537,52 @@ def build_history_entry(
     return assignments, links
 
 
+def deploy_to_cloudflare_landing():
+    """Tự động đồng bộ và deploy lên Cloudflare Pages nếu thư mục namoinam-landing tồn tại."""
+    import shutil
+    import subprocess
+    from pathlib import Path
+    import urllib.request
+    import base64 as _b64
+    import json
+    
+    # SCRIPT_DIR được định nghĩa ở config
+    landing_dir = Path("/Users/nambui/.gemini/antigravity/scratch/namoinam-landing")
+    if not landing_dir.exists():
+        return
+        
+    print("\n🔄 Phát hiện thư mục namoinam-landing local. Đang đồng bộ và deploy lên Cloudflare Pages...")
+    try:
+        # Fetch history.json and products.json from GitHub directly and write to landing_dir
+        for filename in ["history.json", "products.json"]:
+            url = f"https://api.github.com/repos/{GITHUB_REPO}/contents/{filename}"
+            req = urllib.request.Request(url, headers={"Authorization": f"token {GITHUB_TOKEN}"})
+            try:
+                with urllib.request.urlopen(req, timeout=15) as resp:
+                    data = json.loads(resp.read())
+                content_bytes = _b64.b64decode(data["content"].replace("\n", ""))
+                (landing_dir / filename).write_bytes(content_bytes)
+                print(f"   ✅ Đã tải và đồng bộ {filename} từ GitHub sang thư mục landing")
+            except Exception as fe:
+                print(f"   ⚠️  Không tải được {filename} từ GitHub: {fe}")
+                # Fallback to local copy if available
+                if (SCRIPT_DIR / filename).exists():
+                    shutil.copy(SCRIPT_DIR / filename, landing_dir / filename)
+                    print(f"   ✅ Đồng bộ {filename} từ file local sang thư mục landing (fallback)")
+                else:
+                    raise FileNotFoundError(f"Không có file local {filename} và không fetch được từ GitHub.")
+        
+        # Chạy lệnh deploy
+        cmd = ["npx", "wrangler", "pages", "deploy", ".", "--project-name=namoinam", "--branch=production"]
+        result = subprocess.run(cmd, cwd=str(landing_dir), capture_output=True, text=True)
+        if result.returncode == 0:
+            print("   ✅ Deploy Cloudflare Pages thành công!")
+        else:
+            print(f"   ⚠️  Deploy Cloudflare Pages thất bại: {result.stderr}")
+    except Exception as e:
+        print(f"   ⚠️  Lỗi đồng bộ/deploy: {e}")
+
+
 # ============================================================
 # MAIN
 # ============================================================
@@ -717,6 +793,9 @@ def main():
         print(f"     ✅ Push thành công! Commit: {new_sha[:7]}")
         print(f"\n  🔗 https://namoinam.com/phan-cong-edit-video/ — live ~1 phút")
         print(f"  👥 {len(active_editors)} editor · {len(sp_plans)} SP · {total_videos} video\n")
+        
+        # Tự động đồng bộ và deploy lên Cloudflare Pages
+        deploy_to_cloudflare_landing()
     except Exception as e:
         print(f"     ❌ Push thất bại: {e}")
         sys.exit(1)

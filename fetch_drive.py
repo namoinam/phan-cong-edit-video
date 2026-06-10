@@ -70,6 +70,7 @@ NAME_ALIASES = {
     "dây dán velcro quản chống rối": "onechi - dây dán velcro quấn chống rối",
 }
 
+
 # ============================================================
 # UTILITIES
 # ============================================================
@@ -535,10 +536,8 @@ def download_videos(target_date: datetime, folder_id: str) -> Path | None:
     _exts = {".mp4", ".mov", ".avi", ".mkv", ".m4v"}
     count = len([f for f in output_dir.rglob("*") if f.suffix.lower() in _exts])
     if count == 0:
-        print(f"   ⚠️  Không tìm thấy video nào trong folder!")
-        RUN_REPORT["errors"].append(f"Không tìm thấy video nào trong folder Drive ngày {date_str}")
-        RUN_REPORT["success"] = False
-        return None
+        print(f"   ⚠️  Không tìm thấy video nào trong folder! Ghi nhận ngày rỗng.")
+        return output_dir
 
     print(f"   ✅ Download xong: {count} video")
     RUN_REPORT["downloaded_dates"][date_str] = count
@@ -584,7 +583,7 @@ def _github_get_products() -> tuple[list, str] | tuple[None, None]:
     url = f"https://api.github.com/repos/{GITHUB_REPO}/contents/{GITHUB_PRODUCTS}"
     try:
         req = urllib.request.Request(url, headers={"Authorization": f"token {GITHUB_TOKEN}"})
-        with urllib.request.urlopen(req) as resp:
+        with urllib.request.urlopen(req, timeout=15) as resp:
             data = json.loads(resp.read())
         content_bytes = _b64.b64decode(data["content"].replace("\n", ""))
         products = json.loads(content_bytes.decode("utf-8"))
@@ -612,7 +611,7 @@ def _push_products_to_github(products: list, sha: str) -> bool:
         req = urllib.request.Request(
             url, data=json.dumps(data).encode(), headers=headers, method="PUT"
         )
-        with urllib.request.urlopen(req) as resp:
+        with urllib.request.urlopen(req, timeout=15) as resp:
             result = json.loads(resp.read())
             print(f"   ✅ GitHub updated: {result['commit']['sha'][:8]}")
             return True
@@ -641,17 +640,23 @@ def update_inventory(delivered: dict) -> bool:
         RUN_REPORT["success"] = False
         return False
 
-    norm_map = {_norm_name(p.get("name", "")): p for p in products}
-    # map bỏ hết dấu cách → khớp được cả khi tên file dính/thiếu dấu cách
-    squash_map = {_norm_name(p.get("name", "")).replace(" ", ""): p for p in products}
+    def _clean_quotes(s: str) -> str:
+        for char in ['"', "'", "“", "”", "‘", "’"]:
+            s = s.replace(char, "")
+        return s
+
+    norm_map = {_clean_quotes(_norm_name(p.get("name", ""))): p for p in products}
+    # map bỏ hết dấu cách và dấu ngoặc
+    squash_map = {_clean_quotes(_norm_name(p.get("name", "")).replace(" ", "")): p for p in products}
     today = datetime.today().replace(hour=0, minute=0, second=0, microsecond=0)
     today_str = today.strftime("%Y-%m-%d")
 
     def _match(raw):
-        key = _norm_name(raw)
+        key = _clean_quotes(_norm_name(raw))
         for short, full in NAME_ALIASES.items():   # tên viết tắt → tên đầy đủ
-            if key.startswith(short):
-                key = full + key[len(short):]
+            short_clean = _clean_quotes(short)
+            if key.startswith(short_clean):
+                key = _clean_quotes(full) + key[len(short_clean):]
                 break
         p = norm_map.get(key)
         if p is not None:
@@ -773,17 +778,12 @@ def mark_date_processed(date_str: str):
 
 
 def get_missing_dates() -> list[datetime]:
-    """Trả về danh sách ngày chưa xử lý từ ngày sớm nhất trong cache đến hôm qua."""
+    """Trả về danh sách ngày chưa xử lý trong vòng 3 ngày gần nhất (tính đến hôm qua)."""
     cache = load_json(FOLDER_CACHE)
     processed = set(cache.get(PROCESSED_KEY, []))
 
-    # Lấy ngày sớm nhất có folder trong cache (bỏ qua key đặc biệt)
-    date_keys = [k for k in cache if k != PROCESSED_KEY and len(k) == 10]
-    if not date_keys:
-        return []
-
-    earliest = min(datetime.strptime(d, "%Y-%m-%d") for d in date_keys)
     yesterday = datetime.today().replace(hour=0, minute=0, second=0, microsecond=0) - timedelta(days=1)
+    earliest = yesterday - timedelta(days=2)  # Quét tối đa 3 ngày gần nhất
 
     missing = []
     current = earliest
@@ -949,6 +949,9 @@ def main():
         if success_count > 0:
             last_dir = DOWNLOAD_BASE / f"tiktok_{target_dates[-1].strftime('%Y-%m-%d')}"
             print(f"   📂 Thư mục mới nhất: {last_dir}")
+            
+            # Tự động đồng bộ và deploy lên Cloudflare Pages
+            deploy_to_cloudflare_landing()
         print("=" * 55)
 
     except SystemExit as e:
@@ -966,6 +969,51 @@ def main():
         raise
     finally:
         send_run_report()
+
+
+def deploy_to_cloudflare_landing():
+    """Tự động đồng bộ và deploy lên Cloudflare Pages nếu thư mục namoinam-landing tồn tại."""
+    import shutil
+    import subprocess
+    from pathlib import Path
+    import urllib.request
+    import base64 as _b64
+    
+    # SCRIPT_DIR được định nghĩa ở config
+    landing_dir = Path("/Users/nambui/.gemini/antigravity/scratch/namoinam-landing")
+    if not landing_dir.exists():
+        return
+        
+    print("\n🔄 Phát hiện thư mục namoinam-landing local. Đang đồng bộ và deploy lên Cloudflare Pages...")
+    try:
+        # Fetch history.json and products.json from GitHub directly and write to landing_dir
+        for filename in ["history.json", "products.json"]:
+            url = f"https://api.github.com/repos/{GITHUB_REPO}/contents/{filename}"
+            req = urllib.request.Request(url, headers={"Authorization": f"token {GITHUB_TOKEN}"})
+            try:
+                with urllib.request.urlopen(req, timeout=15) as resp:
+                    data = json.loads(resp.read())
+                content_bytes = _b64.b64decode(data["content"].replace("\n", ""))
+                (landing_dir / filename).write_bytes(content_bytes)
+                print(f"   ✅ Đã tải và đồng bộ {filename} từ GitHub sang thư mục landing")
+            except Exception as fe:
+                print(f"   ⚠️  Không tải được {filename} từ GitHub: {fe}")
+                # Fallback to local copy if available
+                if (SCRIPT_DIR / filename).exists():
+                    shutil.copy(SCRIPT_DIR / filename, landing_dir / filename)
+                    print(f"   ✅ Đồng bộ {filename} từ file local sang thư mục landing (fallback)")
+                else:
+                    raise FileNotFoundError(f"Không có file local {filename} và không fetch được từ GitHub.")
+        
+        # Chạy lệnh deploy
+        cmd = ["npx", "wrangler", "pages", "deploy", ".", "--project-name=namoinam", "--branch=production"]
+        result = subprocess.run(cmd, cwd=str(landing_dir), capture_output=True, text=True)
+        if result.returncode == 0:
+            print("   ✅ Deploy Cloudflare Pages thành công!")
+        else:
+            print(f"   ⚠️  Deploy Cloudflare Pages thất bại: {result.stderr}")
+    except Exception as e:
+        print(f"   ⚠️  Lỗi đồng bộ/deploy: {e}")
 
 
 if __name__ == "__main__":

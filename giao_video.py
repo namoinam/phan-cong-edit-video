@@ -82,6 +82,9 @@ NAME_ALIASES = {
     "edc vn - đèn pin led zoom f35": "edc vn - đèn pin led f35 vs f37",
     "tosudo - móc treo đồ": "tosudo - móc kẹp, treo đồ",
     "deli - ổ điện chữ t": "deli - ổ cắm điện chữ t",
+    # Mới bổ sung cho phân công hôm nay
+    "perysmith - máy hút bụi cầm tay xs1pro": "perysmith - máy hút bụi cầm tay xs1 pro",
+    "jisulife - quạt đeo cổ life 5": "jisulife - quạt đeo cổ jisulife life 5",
 }
 
 

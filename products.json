@@ -61,7 +61,7 @@
     "videos_per_assign": 10,
     "so_video_ngay": 3,
     "status": "active",
-    "ton_video": 18,
+    "ton_video": 10,
     "ton_date": "2026-06-11"
   },
   {
@@ -149,11 +149,11 @@
   },
   {
     "name": "MODECO - Máy massage cầm tay",
-    "ton_date": "2026-06-09",
+    "ton_date": "2026-06-11",
     "videos_per_assign": 10,
     "so_video_ngay": 1,
     "status": "active",
-    "ton_video": 18
+    "ton_video": 0
   },
   {
     "name": "AOUB-VN - Thiết bị quay góc POV",

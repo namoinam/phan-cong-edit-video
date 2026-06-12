@@ -76,6 +76,7 @@ NAME_ALIASES = {
     "luck - bình đựng dầu ăn thủy tinh": "luck - bình đựng dầu ăn đa năng",
     "royal towel - khăn tắm": "royal - khăn tắm cotton",
     "thinshop88 - cây đâm lưng ngải cứu": "thinshop88 - cây đấm lưng ngải cứu",
+    "arzopa - màn hình di động": "arzopa - màn hình di động z1fc",
 }
 
 

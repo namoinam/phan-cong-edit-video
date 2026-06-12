@@ -85,6 +85,7 @@ NAME_ALIASES = {
     # Mới bổ sung cho phân công hôm nay
     "perysmith - máy hút bụi cầm tay xs1pro": "perysmith - máy hút bụi cầm tay xs1 pro",
     "jisulife - quạt đeo cổ life 5": "jisulife - quạt đeo cổ jisulife life 5",
+    "arzopa - màn hình di động z1fc": "arzopa - màn hình di động",
 }
 
 

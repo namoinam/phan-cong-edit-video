@@ -4,8 +4,8 @@
     "videos_per_assign": 15,
     "so_video_ngay": 3,
     "status": "active",
-    "ton_video": 34,
-    "ton_date": "2026-06-11",
+    "ton_video": 31,
+    "ton_date": "2026-06-12",
     "giao_hom_nay": 0
   },
   {
@@ -13,8 +13,8 @@
     "videos_per_assign": 15,
     "so_video_ngay": 3,
     "status": "active",
-    "ton_video": 32,
-    "ton_date": "2026-06-11",
+    "ton_video": 29,
+    "ton_date": "2026-06-12",
     "giao_hom_nay": 0
   },
   {
@@ -23,8 +23,8 @@
     "so_video_ngay": 3,
     "status": "active",
     "last_assigned": "2026-06-03",
-    "ton_video": 34,
-    "ton_date": "2026-06-11",
+    "ton_video": 31,
+    "ton_date": "2026-06-12",
     "giao_hom_nay": 0
   },
   {
@@ -32,8 +32,8 @@
     "videos_per_assign": 15,
     "so_video_ngay": 3,
     "status": "active",
-    "ton_video": 7,
-    "ton_date": "2026-06-11",
+    "ton_video": 19,
+    "ton_date": "2026-06-12",
     "giao_hom_nay": 0
   },
   {
@@ -41,8 +41,8 @@
     "videos_per_assign": 15,
     "so_video_ngay": 3,
     "status": "active",
-    "ton_video": 9,
-    "ton_date": "2026-06-11",
+    "ton_video": 6,
+    "ton_date": "2026-06-12",
     "giao_hom_nay": 0
   },
   {
@@ -50,8 +50,8 @@
     "videos_per_assign": 10,
     "so_video_ngay": 1,
     "status": "active",
-    "ton_video": 8,
-    "ton_date": "2026-06-11",
+    "ton_video": 7,
+    "ton_date": "2026-06-12",
     "giao_hom_nay": 0
   },
   {
@@ -59,8 +59,8 @@
     "videos_per_assign": 10,
     "so_video_ngay": 3,
     "status": "active",
-    "ton_video": 8,
-    "ton_date": "2026-06-11",
+    "ton_video": 15,
+    "ton_date": "2026-06-12",
     "giao_hom_nay": 0
   },
   {
@@ -68,8 +68,8 @@
     "videos_per_assign": 10,
     "so_video_ngay": 3,
     "status": "active",
-    "ton_video": 10,
-    "ton_date": "2026-06-11",
+    "ton_video": 7,
+    "ton_date": "2026-06-12",
     "giao_hom_nay": 0
   },
   {
@@ -77,8 +77,8 @@
     "videos_per_assign": 10,
     "so_video_ngay": 1,
     "status": "active",
-    "ton_video": 7,
-    "ton_date": "2026-06-11",
+    "ton_video": 6,
+    "ton_date": "2026-06-12",
     "giao_hom_nay": 0
   },
   {
@@ -86,8 +86,8 @@
     "videos_per_assign": 10,
     "so_video_ngay": 1,
     "status": "active",
-    "ton_video": 9,
-    "ton_date": "2026-06-11",
+    "ton_video": 8,
+    "ton_date": "2026-06-12",
     "giao_hom_nay": 0
   },
   {
@@ -96,18 +96,18 @@
     "so_video_ngay": 1,
     "status": "active",
     "last_assigned": "2026-06-04",
-    "ton_video": 4,
-    "ton_date": "2026-06-11",
+    "ton_video": 3,
+    "ton_date": "2026-06-12",
     "giao_hom_nay": 0
   },
   {
     "name": "MIA - Vali kéo du lịch Larita Aly",
-    "ton_date": "2026-06-11",
+    "ton_date": "2026-06-12",
     "videos_per_assign": 10,
     "so_video_ngay": 1,
     "status": "active",
     "last_assigned": "2026-06-03",
-    "ton_video": 5,
+    "ton_video": 4,
     "giao_hom_nay": 0
   },
   {
@@ -115,8 +115,8 @@
     "videos_per_assign": 15,
     "so_video_ngay": 3,
     "status": "active",
-    "ton_video": 35,
-    "ton_date": "2026-06-11",
+    "ton_video": 32,
+    "ton_date": "2026-06-12",
     "giao_hom_nay": 0
   },
   {
@@ -125,25 +125,25 @@
     "so_video_ngay": 1,
     "status": "paused",
     "ton_video": 0,
-    "ton_date": "2026-06-11",
+    "ton_date": "2026-06-12",
     "giao_hom_nay": 0
   },
   {
     "name": "HAPAS - Quà tặng Set \"Thân Thương\"",
-    "ton_date": "2026-06-11",
+    "ton_date": "2026-06-12",
     "videos_per_assign": 10,
     "so_video_ngay": 1,
     "status": "active",
-    "ton_video": 8,
+    "ton_video": 7,
     "giao_hom_nay": 0
   },
   {
     "name": "HAPAS - Quà tặng Phụ nữ Việt Nam 20.10 (2026)",
-    "ton_date": "2026-06-11",
+    "ton_date": "2026-06-12",
     "videos_per_assign": 10,
     "so_video_ngay": 1,
     "status": "active",
-    "ton_video": 6,
+    "ton_video": 5,
     "giao_hom_nay": 0
   },
   {
@@ -152,7 +152,7 @@
     "so_video_ngay": 1,
     "status": "paused",
     "ton_video": 0,
-    "ton_date": "2026-06-11",
+    "ton_date": "2026-06-12",
     "giao_hom_nay": 0
   },
   {
@@ -161,17 +161,17 @@
     "so_video_ngay": 1,
     "status": "active",
     "last_assigned": "2026-06-04",
-    "ton_video": 6,
-    "ton_date": "2026-06-11",
+    "ton_video": 5,
+    "ton_date": "2026-06-12",
     "giao_hom_nay": 0
   },
   {
     "name": "MODECO - Máy massage cầm tay",
-    "ton_date": "2026-06-11",
+    "ton_date": "2026-06-12",
     "videos_per_assign": 10,
     "so_video_ngay": 1,
     "status": "active",
-    "ton_video": 20,
+    "ton_video": 19,
     "giao_hom_nay": 0
   },
   {
@@ -180,35 +180,35 @@
     "so_video_ngay": 1,
     "status": "active",
     "last_assigned": "2026-06-03",
-    "ton_video": 17,
-    "ton_date": "2026-06-11",
+    "ton_video": 16,
+    "ton_date": "2026-06-12",
     "giao_hom_nay": 0
   },
   {
     "name": "DEN HOANG KIM - Đèn led năng lượng mặt trời",
-    "ton_date": "2026-06-11",
+    "ton_date": "2026-06-12",
     "videos_per_assign": 10,
     "so_video_ngay": 1,
     "status": "active",
-    "ton_video": 6,
+    "ton_video": 5,
     "giao_hom_nay": 0
   },
   {
     "name": "DOMINIC - Máy tỉa lông mũi",
-    "ton_date": "2026-06-11",
+    "ton_date": "2026-06-12",
     "videos_per_assign": 10,
     "so_video_ngay": 1,
     "status": "active",
-    "ton_video": 6,
+    "ton_video": 5,
     "giao_hom_nay": 0
   },
   {
     "name": "AJIDO - Cân điện tử thông minh",
-    "ton_date": "2026-06-11",
+    "ton_date": "2026-06-12",
     "videos_per_assign": 10,
     "so_video_ngay": 1,
     "status": "active",
-    "ton_video": 13,
+    "ton_video": 12,
     "giao_hom_nay": 0
   },
   {
@@ -216,8 +216,8 @@
     "videos_per_assign": 10,
     "so_video_ngay": 1,
     "status": "active",
-    "ton_video": 4,
-    "ton_date": "2026-06-11",
+    "ton_video": 3,
+    "ton_date": "2026-06-12",
     "giao_hom_nay": 0
   },
   {
@@ -225,8 +225,8 @@
     "videos_per_assign": 15,
     "so_video_ngay": 3,
     "status": "active",
-    "ton_video": 8,
-    "ton_date": "2026-06-11",
+    "ton_video": 5,
+    "ton_date": "2026-06-12",
     "giao_hom_nay": 0
   },
   {
@@ -235,8 +235,8 @@
     "so_video_ngay": 3,
     "status": "active",
     "last_assigned": "2026-06-03",
-    "ton_video": 25,
-    "ton_date": "2026-06-11",
+    "ton_video": 22,
+    "ton_date": "2026-06-12",
     "giao_hom_nay": 0
   },
   {
@@ -245,8 +245,8 @@
     "so_video_ngay": 1,
     "status": "active",
     "last_assigned": "2026-06-04",
-    "ton_video": 15,
-    "ton_date": "2026-06-11",
+    "ton_video": 14,
+    "ton_date": "2026-06-12",
     "giao_hom_nay": 0
   },
   {
@@ -254,26 +254,26 @@
     "videos_per_assign": 10,
     "so_video_ngay": 1,
     "status": "active",
-    "ton_video": 6,
-    "ton_date": "2026-06-11",
+    "ton_video": 5,
+    "ton_date": "2026-06-12",
     "giao_hom_nay": 0
   },
   {
     "name": "HAPAS - Túi xách tay dáng trống Tidy Mơ",
-    "ton_date": "2026-06-11",
+    "ton_date": "2026-06-12",
     "videos_per_assign": 10,
     "so_video_ngay": 1,
     "status": "active",
-    "ton_video": 9,
+    "ton_video": 8,
     "giao_hom_nay": 0
   },
   {
     "name": "HAPAS - Quà tặng Set \"Chân Thành\"",
-    "ton_date": "2026-06-11",
+    "ton_date": "2026-06-12",
     "videos_per_assign": 10,
     "so_video_ngay": 1,
     "status": "active",
-    "ton_video": 10,
+    "ton_video": 9,
     "giao_hom_nay": 0
   },
   {
@@ -282,8 +282,8 @@
     "so_video_ngay": 2,
     "status": "active",
     "last_assigned": "2026-06-03",
-    "ton_video": 7,
-    "ton_date": "2026-06-11",
+    "ton_video": 5,
+    "ton_date": "2026-06-12",
     "giao_hom_nay": 0
   },
   {
@@ -291,8 +291,8 @@
     "videos_per_assign": 10,
     "so_video_ngay": 2,
     "status": "active",
-    "ton_video": 12,
-    "ton_date": "2026-06-11",
+    "ton_video": 10,
+    "ton_date": "2026-06-12",
     "giao_hom_nay": 0
   },
   {
@@ -300,22 +300,13 @@
     "videos_per_assign": 10,
     "so_video_ngay": 1,
     "status": "active",
-    "ton_video": 7,
-    "ton_date": "2026-06-11",
+    "ton_video": 6,
+    "ton_date": "2026-06-12",
     "giao_hom_nay": 0
   },
   {
     "name": "LIVINOX - Combo 6 thìa inox 304",
-    "ton_date": "2026-06-11",
-    "videos_per_assign": 10,
-    "so_video_ngay": 1,
-    "status": "active",
-    "ton_video": 10,
-    "giao_hom_nay": 0
-  },
-  {
-    "name": "DELI - Bộ tuốc nơ vít đa năng",
-    "ton_date": "2026-06-11",
+    "ton_date": "2026-06-12",
     "videos_per_assign": 10,
     "so_video_ngay": 1,
     "status": "active",
@@ -323,12 +314,21 @@
     "giao_hom_nay": 0
   },
   {
-    "name": "ENADE VN - Khẩu trang chống nắng full face",
-    "ton_date": "2026-06-11",
+    "name": "DELI - Bộ tuốc nơ vít đa năng",
+    "ton_date": "2026-06-12",
     "videos_per_assign": 10,
     "so_video_ngay": 1,
     "status": "active",
-    "ton_video": 7,
+    "ton_video": 8,
+    "giao_hom_nay": 0
+  },
+  {
+    "name": "ENADE VN - Khẩu trang chống nắng full face",
+    "ton_date": "2026-06-12",
+    "videos_per_assign": 10,
+    "so_video_ngay": 1,
+    "status": "active",
+    "ton_video": 6,
     "giao_hom_nay": 0
   },
   {
@@ -337,8 +337,8 @@
     "so_video_ngay": 3,
     "status": "active",
     "last_assigned": "2026-06-03",
-    "ton_video": 35,
-    "ton_date": "2026-06-11",
+    "ton_video": 32,
+    "ton_date": "2026-06-12",
     "giao_hom_nay": 0
   },
   {
@@ -347,8 +347,8 @@
     "so_video_ngay": 3,
     "status": "active",
     "last_assigned": "2026-06-03",
-    "ton_video": 5,
-    "ton_date": "2026-06-11",
+    "ton_video": 17,
+    "ton_date": "2026-06-12",
     "giao_hom_nay": 0
   },
   {
@@ -357,17 +357,17 @@
     "so_video_ngay": 3,
     "status": "active",
     "last_assigned": "2026-06-03",
-    "ton_video": 5,
-    "ton_date": "2026-06-11",
+    "ton_video": 17,
+    "ton_date": "2026-06-12",
     "giao_hom_nay": 0
   },
   {
     "name": "GEBUOANG - Thiết bị quay góc pov",
-    "ton_date": "2026-06-11",
+    "ton_date": "2026-06-12",
     "videos_per_assign": 15,
     "so_video_ngay": 3,
     "status": "active",
-    "ton_video": 40,
+    "ton_video": 37,
     "giao_hom_nay": 0
   },
   {
@@ -375,8 +375,8 @@
     "videos_per_assign": 10,
     "so_video_ngay": 1,
     "status": "active",
-    "ton_video": 8,
-    "ton_date": "2026-06-11",
+    "ton_video": 7,
+    "ton_date": "2026-06-12",
     "giao_hom_nay": 0
   },
   {
@@ -385,17 +385,17 @@
     "so_video_ngay": 3,
     "status": "active",
     "last_assigned": "2026-06-03",
-    "ton_video": 14,
-    "ton_date": "2026-06-11",
+    "ton_video": 11,
+    "ton_date": "2026-06-12",
     "giao_hom_nay": 0
   },
   {
     "name": "LUCK - Bình đựng dầu ăn đa năng",
-    "ton_date": "2026-06-11",
+    "ton_date": "2026-06-12",
     "videos_per_assign": 10,
     "so_video_ngay": 1,
     "status": "active",
-    "ton_video": 9,
+    "ton_video": 8,
     "giao_hom_nay": 0
   },
   {
@@ -404,8 +404,8 @@
     "so_video_ngay": 3,
     "status": "active",
     "last_assigned": "2026-06-04",
-    "ton_video": 12,
-    "ton_date": "2026-06-11",
+    "ton_video": 9,
+    "ton_date": "2026-06-12",
     "giao_hom_nay": 0
   },
   {
@@ -414,17 +414,17 @@
     "so_video_ngay": 3,
     "status": "active",
     "last_assigned": "2026-06-04",
-    "ton_video": 30,
-    "ton_date": "2026-06-11",
+    "ton_video": 27,
+    "ton_date": "2026-06-12",
     "giao_hom_nay": 0
   },
   {
     "name": "DEERMA - Vòi sen tăng áp",
-    "ton_date": "2026-06-11",
+    "ton_date": "2026-06-12",
     "videos_per_assign": 15,
     "so_video_ngay": 3,
     "status": "active",
-    "ton_video": 15,
+    "ton_video": 12,
     "giao_hom_nay": 0
   },
   {
@@ -433,8 +433,8 @@
     "so_video_ngay": 3,
     "status": "active",
     "last_assigned": "2026-06-03",
-    "ton_video": 17,
-    "ton_date": "2026-06-11",
+    "ton_video": 14,
+    "ton_date": "2026-06-12",
     "giao_hom_nay": 0
   },
   {
@@ -442,8 +442,8 @@
     "videos_per_assign": 10,
     "so_video_ngay": 1,
     "status": "active",
-    "ton_video": 10,
-    "ton_date": "2026-06-11",
+    "ton_video": 9,
+    "ton_date": "2026-06-12",
     "giao_hom_nay": 0
   },
   {
@@ -451,8 +451,8 @@
     "videos_per_assign": 10,
     "so_video_ngay": 2,
     "status": "active",
-    "ton_video": 13,
-    "ton_date": "2026-06-11",
+    "ton_video": 11,
+    "ton_date": "2026-06-12",
     "giao_hom_nay": 0
   },
   {
@@ -461,8 +461,8 @@
     "so_video_ngay": 3,
     "status": "active",
     "last_assigned": "2026-06-04",
-    "ton_video": 7,
-    "ton_date": "2026-06-11",
+    "ton_video": 14,
+    "ton_date": "2026-06-12",
     "giao_hom_nay": 0
   },
   {
@@ -471,8 +471,8 @@
     "so_video_ngay": 2,
     "status": "active",
     "last_assigned": "2026-06-04",
-    "ton_video": 12,
-    "ton_date": "2026-06-11",
+    "ton_video": 10,
+    "ton_date": "2026-06-12",
     "giao_hom_nay": 0
   },
   {
@@ -480,8 +480,8 @@
     "videos_per_assign": 10,
     "so_video_ngay": 1,
     "status": "active",
-    "ton_video": 10,
-    "ton_date": "2026-06-11",
+    "ton_video": 9,
+    "ton_date": "2026-06-12",
     "giao_hom_nay": 0
   },
   {
@@ -489,8 +489,8 @@
     "videos_per_assign": 10,
     "so_video_ngay": 1,
     "status": "active",
-    "ton_video": 9,
-    "ton_date": "2026-06-11",
+    "ton_video": 8,
+    "ton_date": "2026-06-12",
     "giao_hom_nay": 0
   },
   {
@@ -498,8 +498,8 @@
     "videos_per_assign": 10,
     "so_video_ngay": 1,
     "status": "active",
-    "ton_video": 10,
-    "ton_date": "2026-06-11",
+    "ton_video": 9,
+    "ton_date": "2026-06-12",
     "giao_hom_nay": 0
   },
   {
@@ -508,26 +508,26 @@
     "so_video_ngay": 3,
     "status": "active",
     "last_assigned": "2026-06-04",
-    "ton_video": 7,
-    "ton_date": "2026-06-11",
+    "ton_video": 19,
+    "ton_date": "2026-06-12",
     "giao_hom_nay": 0
   },
   {
     "name": "DEERMA - Máy xay gia vị",
-    "ton_date": "2026-06-11",
+    "ton_date": "2026-06-12",
     "videos_per_assign": 15,
     "so_video_ngay": 3,
     "status": "active",
-    "ton_video": 10,
+    "ton_video": 7,
     "giao_hom_nay": 0
   },
   {
     "name": "FORLOVE - Lọ tỏa hương",
-    "ton_date": "2026-06-11",
+    "ton_date": "2026-06-12",
     "videos_per_assign": 10,
     "so_video_ngay": 1,
     "status": "active",
-    "ton_video": 10,
+    "ton_video": 9,
     "giao_hom_nay": 0
   },
   {
@@ -535,26 +535,26 @@
     "videos_per_assign": 15,
     "so_video_ngay": 1,
     "status": "active",
-    "ton_video": 17,
-    "ton_date": "2026-06-11",
+    "ton_video": 16,
+    "ton_date": "2026-06-12",
     "giao_hom_nay": 0
   },
   {
     "name": "PARROTI - Bộ cọ toilet",
-    "ton_date": "2026-06-11",
+    "ton_date": "2026-06-12",
     "videos_per_assign": 15,
     "so_video_ngay": 3,
     "status": "active",
-    "ton_video": 12,
+    "ton_video": 9,
     "giao_hom_nay": 0
   },
   {
     "name": "THINSHOP88 - Túi ngâm chân gấp gọn",
-    "ton_date": "2026-06-11",
+    "ton_date": "2026-06-12",
     "videos_per_assign": 10,
     "so_video_ngay": 1,
     "status": "active",
-    "ton_video": 10,
+    "ton_video": 9,
     "giao_hom_nay": 0
   },
   {
@@ -562,17 +562,17 @@
     "videos_per_assign": 10,
     "so_video_ngay": 1,
     "status": "active",
-    "ton_video": 11,
-    "ton_date": "2026-06-11",
+    "ton_video": 10,
+    "ton_date": "2026-06-12",
     "giao_hom_nay": 0
   },
   {
     "name": "SEANUO STORE VN - Màn hình phản chiếu từ tính",
-    "ton_date": "2026-06-11",
+    "ton_date": "2026-06-12",
     "videos_per_assign": 10,
     "so_video_ngay": 1,
     "status": "active",
-    "ton_video": 11,
+    "ton_video": 10,
     "giao_hom_nay": 0
   },
   {
@@ -581,17 +581,17 @@
     "so_video_ngay": 3,
     "status": "active",
     "last_assigned": "2026-06-04",
-    "ton_video": 7,
-    "ton_date": "2026-06-11",
+    "ton_video": 14,
+    "ton_date": "2026-06-12",
     "giao_hom_nay": 0
   },
   {
     "name": "EDC VN - Đèn pin led zoom F35",
-    "ton_date": "2026-06-11",
+    "ton_date": "2026-06-12",
     "videos_per_assign": 10,
     "so_video_ngay": 1,
     "status": "active",
-    "ton_video": 12,
+    "ton_video": 11,
     "giao_hom_nay": 0
   },
   {
@@ -600,16 +600,16 @@
     "so_video_ngay": 1,
     "status": "het_hang",
     "ton_video": 7,
-    "ton_date": "2026-06-11",
+    "ton_date": "2026-06-12",
     "giao_hom_nay": 0
   },
   {
     "name": "ULANZI - Gá đỡ điện thoại từ tính MA38",
-    "ton_date": "2026-06-11",
+    "ton_date": "2026-06-12",
     "videos_per_assign": 10,
     "so_video_ngay": 1,
     "status": "active",
-    "ton_video": 10,
+    "ton_video": 9,
     "giao_hom_nay": 0
   },
   {
@@ -618,8 +618,8 @@
     "so_video_ngay": 3,
     "status": "active",
     "last_assigned": "2026-06-04",
-    "ton_video": 6,
-    "ton_date": "2026-06-11",
+    "ton_video": 18,
+    "ton_date": "2026-06-12",
     "giao_hom_nay": 0
   },
   {
@@ -627,7 +627,7 @@
     "videos_per_assign": 15,
     "so_video_ngay": 3,
     "status": "active",
-    "ton_video": 0,
+    "ton_video": 15,
     "ton_date": "2026-06-12"
   }
 ]

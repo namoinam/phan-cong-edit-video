@@ -754,3 +754,64 @@ body {
   color: var(--text); padding: 8px;
   line-height: 1;
 }
+
+/* =============================================
+   SURVEY FORM (DAY 6)
+   ============================================= */
+.survey-section { background: var(--bg-soft); border-top: 1px solid var(--border); }
+.survey-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: start; }
+.survey-left { display: flex; flex-direction: column; align-items: flex-start; }
+.survey-card-form {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  box-shadow: var(--shadow-sm);
+  width: 100%;
+}
+.survey-group { margin-bottom: 18px; text-align: left; }
+.survey-group label {
+  display: block; font-size: 0.8125rem; font-weight: 700;
+  color: var(--text); margin-bottom: 6px;
+  text-transform: none; letter-spacing: normal;
+}
+.survey-control {
+  width: 100%; background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 10px 14px; color: var(--text);
+  font-size: 0.875rem; font-family: inherit;
+  transition: var(--trans);
+}
+.survey-control:focus {
+  outline: none; border-color: var(--blue);
+  box-shadow: 0 0 0 3px rgba(20,86,240,0.15);
+}
+select.survey-control { cursor: pointer; background: #fff; }
+
+.survey-modal-overlay {
+  position: fixed; inset: 0; background: rgba(31,35,41,0.6);
+  backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+  display: none; align-items: center; justify-content: center;
+  z-index: 100000; padding: 24px;
+}
+.survey-modal-overlay.open { display: flex; }
+.survey-modal-content {
+  background: #fff; border: 1px solid var(--blue-border);
+  max-width: 440px; width: 100%; border-radius: var(--radius-lg);
+  padding: 36px 24px; text-align: center; box-shadow: var(--shadow-md);
+}
+.survey-success-icon {
+  width: 54px; height: 54px; background: var(--status-green-bg);
+  border-radius: 50%; display: inline-flex; align-items: center;
+  justify-content: center; color: var(--status-green);
+  margin-bottom: 20px; border: 2px solid var(--status-green-border);
+}
+.survey-modal-content h3 { font-size: 1.25rem; color: var(--text); margin-bottom: 10px; font-weight: 800; }
+.survey-modal-content p { font-size: 0.9rem; color: var(--text-sub); margin-bottom: 24px; line-height: 1.6; }
+
+@media (max-width: 960px) {
+  .survey-grid { grid-template-columns: 1fr !important; gap: 40px; }
+  .survey-left { text-align: center; align-items: center; }
+  .survey-left .trust-list { text-align: left; }
+}

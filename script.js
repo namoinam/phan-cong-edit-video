@@ -74,3 +74,46 @@ window.addEventListener('scroll', () => {
     a.style.color = a.getAttribute('href') === '#' + current ? '#1456F0' : '';
   });
 }, { passive: true });
+
+// =============================================
+// SURVEY FORM (DAY 6)
+// =============================================
+const surveyModal = document.getElementById('survey-modal');
+
+window.handleSurveySubmit = function(event) {
+  event.preventDefault();
+  
+  const name = document.getElementById('surveyName').value;
+  const phone = document.getElementById('surveyPhone').value;
+  const room = document.getElementById('surveyRoom').value;
+  const budget = document.getElementById('surveyBudget').value;
+  const trouble = document.getElementById('surveyTrouble').value;
+  const interest = document.getElementById('surveyInterest').value;
+  const channel = document.getElementById('surveyChannel').value;
+  
+  const data = {
+    name,
+    phone,
+    room,
+    budget,
+    trouble,
+    interest,
+    channel,
+    timestamp: new Date().toISOString()
+  };
+  
+  // Save to localStorage
+  const existing = JSON.parse(localStorage.getItem('survey_leads') || '[]');
+  existing.push(data);
+  localStorage.setItem('survey_leads', JSON.stringify(existing));
+  
+  console.log("Survey submitted successfully:", data);
+  
+  // Open success modal
+  surveyModal.classList.add('open');
+};
+
+window.closeSurveyModal = function() {
+  surveyModal.classList.remove('open');
+  document.getElementById('survey-form').reset();
+};

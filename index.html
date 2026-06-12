@@ -333,6 +333,108 @@
     </div>
   </section>
 
+  <!-- SURVEY & NEWSLETTER FORM (DAY 6) -->
+  <section class="survey-section section" id="survey">
+    <div class="container survey-grid">
+      <div class="survey-left">
+        <div class="section-label">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg> Khảo sát nhận deal
+        </div>
+        <h2 class="section-title">Đăng Ký Nhận Deal Hàng Tuần & Khảo Sát</h2>
+        <p class="section-desc">Để lại thông tin và nhu cầu mua sắm của bạn. Nam sẽ tổng hợp ý kiến để làm việc với các hãng, mang lại những deal mua chung độc quyền và mã giảm giá sâu nhất cho cả nhà.</p>
+        <div class="trust-list" style="margin-top: 0; background: none; border: none; padding: 0;">
+          <div class="trust-item" style="background: #fff;"><span class="trust-check">✓</span> Cập nhật mã giảm giá độc quyền hằng tuần</div>
+          <div class="trust-item" style="background: #fff;"><span class="trust-check">✓</span> Hỗ trợ mua hàng & giải quyết sự cố sản phẩm</div>
+          <div class="trust-item" style="background: #fff;"><span class="trust-check">✓</span> Đề xuất sản phẩm bạn muốn Nam review thật</div>
+        </div>
+      </div>
+      
+      <div class="survey-right">
+        <div class="survey-card-form">
+          <form id="survey-form" onsubmit="handleSurveySubmit(event)">
+            <div class="survey-group">
+              <label for="surveyName">Họ và tên</label>
+              <input type="text" id="surveyName" class="survey-control" required placeholder="Ví dụ: Nguyễn Văn A">
+            </div>
+            
+            <div class="survey-group">
+              <label for="surveyPhone">Số điện thoại / Zalo</label>
+              <input type="tel" id="surveyPhone" class="survey-control" required placeholder="Ví dụ: 0866530630">
+            </div>
+            
+            <div class="survey-group">
+              <label for="surveyRoom">1. Căn phòng bạn muốn F5/Decor lại nhất?</label>
+              <select id="surveyRoom" class="survey-control" required>
+                <option value="" disabled selected>-- Chọn căn phòng --</option>
+                <option value="Phòng khách">Phòng khách</option>
+                <option value="Phòng ngủ">Phòng ngủ</option>
+                <option value="Nhà bếp">Nhà bếp</option>
+                <option value="Phòng làm việc">Phòng làm việc</option>
+                <option value="Nhà vệ sinh / Khác">Nhà vệ sinh / Khác</option>
+              </select>
+            </div>
+
+            <div class="survey-group">
+              <label for="surveyBudget">2. Ngân sách mua đồ gia dụng/decor mỗi tháng?</label>
+              <select id="surveyBudget" class="survey-control" required>
+                <option value="" disabled selected>-- Chọn mức ngân sách --</option>
+                <option value="Dưới 500.000đ">Dưới 500.000đ</option>
+                <option value="Từ 500.000đ - 2.000.000đ">Từ 500.000đ - 2.000.000đ</option>
+                <option value="Trên 2.000.000đ">Trên 2.000.000đ</option>
+              </select>
+            </div>
+
+            <div class="survey-group">
+              <label for="surveyTrouble">3. Khó khăn lớn nhất khi mua đồ online?</label>
+              <select id="surveyTrouble" class="survey-control" required>
+                <option value="" disabled selected>-- Chọn khó khăn lớn nhất --</option>
+                <option value="Sợ hàng kém chất lượng, quảng cáo ảo">Sợ hàng kém chất lượng, quảng cáo ảo</option>
+                <option value="Không biết cách tự lắp đặt hoặc sử dụng">Không biết cách tự lắp đặt hoặc sử dụng</option>
+                <option value="Giá cả quá cao, khó so sánh">Giá cả quá cao, khó so sánh</option>
+                <option value="Khó tìm mẫu mã phù hợp với không gian">Khó tìm mẫu mã phù hợp với không gian</option>
+              </select>
+            </div>
+
+            <div class="survey-group">
+              <label for="surveyInterest">4. Bạn muốn nhận deal hời của nhóm đồ nào nhất?</label>
+              <select id="surveyInterest" class="survey-control" required>
+                <option value="" disabled selected>-- Chọn nhóm sản phẩm --</option>
+                <option value="Đồ gia dụng thông minh">Đồ gia dụng thông minh</option>
+                <option value="Đồ trang trí / Decor phòng">Đồ trang trí / Decor phòng</option>
+                <option value="Phụ kiện công nghệ / Cá nhân">Phụ kiện công nghệ / Cá nhân</option>
+                <option value="Tất cả các nhóm trên">Tất cả các nhóm trên</option>
+              </select>
+            </div>
+
+            <div class="survey-group">
+              <label for="surveyChannel">5. Bạn thường theo dõi Nam qua kênh nào?</label>
+              <select id="surveyChannel" class="survey-control" required>
+                <option value="" disabled selected>-- Chọn kênh theo dõi --</option>
+                <option value="TikTok (@namoinam)">TikTok (@namoinam)</option>
+                <option value="Facebook Fanpage / Group">Facebook Fanpage / Group</option>
+                <option value="Khác">Kênh khác</option>
+              </select>
+            </div>
+            
+            <button type="submit" class="btn-primary" style="width: 100%; justify-content: center; border: none; font-size: 1rem; border-radius: var(--radius-sm);">Gửi thông tin & Nhận deal</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SUCCESS SURVEY MODAL -->
+  <div class="survey-modal-overlay" id="survey-modal">
+    <div class="survey-modal-content">
+      <div class="survey-success-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" width="24" height="24"><polyline points="20 6 9 17 4 12"/></svg>
+      </div>
+      <h3>Đăng Ký Thành Công!</h3>
+      <p id="survey-success-msg">Cảm ơn bạn đã gửi ý kiến khảo sát. Nam đã ghi nhận dữ liệu của bạn để làm việc với các hãng.</p>
+      <button class="btn-primary" style="border: none; border-radius: var(--radius-sm);" onclick="closeSurveyModal()">Đóng cửa sổ</button>
+    </div>
+  </div>
+
   <!-- FOOTER -->
   <footer class="footer">
     <div class="container footer-inner">

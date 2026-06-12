@@ -366,13 +366,20 @@ def distribute_voice(
         voice_state[sp_name] = state
         return result  # Không có voice
 
+    # SPECIAL OVERRIDE FOR STARFISH 2 (Only voices 22-32)
+    is_starfish2 = "starfish 2" in norm(sp_name)
+
     for editor in PRIORITY_ORDER:
         n = editor_videos.get(editor, 0)
         if n == 0:
             continue
         voices = []
         for _ in range(n):
-            voices.append((counter % total) + 1)
+            if is_starfish2:
+                # Chỉ phân phối từ voice 22 đến 32 (tổng cộng 11 files)
+                voices.append(22 + (counter % 11))
+            else:
+                voices.append((counter % total) + 1)
             counter += 1
         result[editor] = voices
 

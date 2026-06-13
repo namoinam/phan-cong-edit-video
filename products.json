@@ -279,7 +279,7 @@
   {
     "name": "VUA NỆM - Nệm lò xo",
     "videos_per_assign": 10,
-    "so_video_ngay": 2,
+    "so_video_ngay": 1,
     "status": "active",
     "last_assigned": "2026-06-03",
     "ton_video": 5,
@@ -628,6 +628,7 @@
     "so_video_ngay": 3,
     "status": "active",
     "ton_video": 30,
-    "ton_date": "2026-06-12"
+    "ton_date": "2026-06-12",
+    "giao_hom_nay": 0
   }
 ]

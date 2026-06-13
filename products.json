@@ -32,7 +32,7 @@
     "videos_per_assign": 15,
     "so_video_ngay": 3,
     "status": "active",
-    "ton_video": 19,
+    "ton_video": 34,
     "ton_date": "2026-06-12",
     "giao_hom_nay": 0
   },
@@ -59,7 +59,7 @@
     "videos_per_assign": 10,
     "so_video_ngay": 3,
     "status": "active",
-    "ton_video": 15,
+    "ton_video": 25,
     "ton_date": "2026-06-12",
     "giao_hom_nay": 0
   },
@@ -347,7 +347,7 @@
     "so_video_ngay": 3,
     "status": "active",
     "last_assigned": "2026-06-03",
-    "ton_video": 17,
+    "ton_video": 32,
     "ton_date": "2026-06-12",
     "giao_hom_nay": 0
   },
@@ -357,7 +357,7 @@
     "so_video_ngay": 3,
     "status": "active",
     "last_assigned": "2026-06-03",
-    "ton_video": 17,
+    "ton_video": 32,
     "ton_date": "2026-06-12",
     "giao_hom_nay": 0
   },
@@ -461,7 +461,7 @@
     "so_video_ngay": 3,
     "status": "active",
     "last_assigned": "2026-06-04",
-    "ton_video": 14,
+    "ton_video": 24,
     "ton_date": "2026-06-12",
     "giao_hom_nay": 0
   },
@@ -508,7 +508,7 @@
     "so_video_ngay": 3,
     "status": "active",
     "last_assigned": "2026-06-04",
-    "ton_video": 19,
+    "ton_video": 34,
     "ton_date": "2026-06-12",
     "giao_hom_nay": 0
   },
@@ -581,7 +581,7 @@
     "so_video_ngay": 3,
     "status": "active",
     "last_assigned": "2026-06-04",
-    "ton_video": 14,
+    "ton_video": 24,
     "ton_date": "2026-06-12",
     "giao_hom_nay": 0
   },
@@ -618,7 +618,7 @@
     "so_video_ngay": 3,
     "status": "active",
     "last_assigned": "2026-06-04",
-    "ton_video": 18,
+    "ton_video": 33,
     "ton_date": "2026-06-12",
     "giao_hom_nay": 0
   },
@@ -627,7 +627,7 @@
     "videos_per_assign": 15,
     "so_video_ngay": 3,
     "status": "active",
-    "ton_video": 15,
+    "ton_video": 30,
     "ton_date": "2026-06-12"
   }
 ]

@@ -273,11 +273,12 @@ def send_telegram_message(text: str) -> bool:
 
 def send_run_report():
     """Gửi báo cáo tóm tắt theo từng bước buổi sáng qua Telegram"""
+    import html
     # Nếu gặp lỗi hệ thống nghiêm trọng
     if RUN_REPORT["errors"]:
         msg_lines = ["🔴 <b>[CẢNH BÁO TIKTOK WORKFLOW] GẶP LỖI HỆ THỐNG</b>\n"]
         for err in RUN_REPORT["errors"]:
-            msg_lines.append(f"- {err}")
+            msg_lines.append(f"- {html.escape(err)}")
         send_telegram_message("\n".join(msg_lines))
         return
 
@@ -359,7 +360,7 @@ def send_run_report():
     if RUN_REPORT["unmatched_files"]:
         msg_lines.append("\n⚠️ <b>File đặt sai tên sản phẩm trên Drive:</b>")
         for name, count in RUN_REPORT["unmatched_files"]:
-            msg_lines.append(f"- <code>{name}</code> ({count} video)")
+            msg_lines.append(f"- <code>{html.escape(name)}</code> ({count} video)")
         msg_lines.append("👉 Vui lòng sửa tên file trên Drive cho đúng tên SP rồi chạy lại.")
 
     msg = "\n".join(msg_lines)

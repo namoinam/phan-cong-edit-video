@@ -446,6 +446,493 @@
     </div>
   </footer>
 
+  <!-- CHATBOT WIDGET -->
+  <div id="nam-chatbot" class="nam-chatbot">
+    <button id="chatbot-launcher" class="chatbot-launcher" aria-label="Mở khung trò chuyện">
+      <span class="launcher-icon">💬</span>
+      <span class="launcher-badge" id="launcher-badge">1</span>
+    </button>
+
+    <div id="chatbot-container" class="chatbot-container">
+      <div class="chatbot-header">
+        <div class="header-info">
+          <div class="header-avatar">
+            <img src="avatar.jpg" alt="Trợ lý Nam ơi Nam">
+          </div>
+          <div class="header-text">
+            <h4>Trợ lý Nam ơi Nam</h4>
+            <span class="status-indicator"><span class="status-dot"></span> Đang hoạt động 24/7</span>
+          </div>
+        </div>
+        <button id="chatbot-close" class="chatbot-close" aria-label="Đóng khung trò chuyện">✕</button>
+      </div>
+
+      <div id="chatbot-messages" class="chatbot-messages"></div>
+      <div id="chatbot-options" class="chatbot-options"></div>
+    </div>
+  </div>
+
+  <style>
+    /* Chatbot Styles */
+    .nam-chatbot {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      z-index: 99999;
+      font-family: inherit;
+    }
+    .chatbot-launcher {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: var(--blue);
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 4px 16px rgba(20,86,240,0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: var(--trans);
+      position: relative;
+    }
+    .chatbot-launcher:hover {
+      background: var(--blue-hover);
+      transform: scale(1.05);
+    }
+    .launcher-icon {
+      font-size: 28px;
+      color: #fff;
+      line-height: 1;
+    }
+    .launcher-badge {
+      position: absolute;
+      top: -2px;
+      right: -2px;
+      background: var(--status-red);
+      color: #fff;
+      font-size: 11px;
+      font-weight: 700;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid #fff;
+      transition: var(--trans);
+    }
+    .chatbot-container {
+      position: absolute;
+      bottom: 76px;
+      right: 0;
+      width: 380px;
+      max-height: 520px;
+      height: 520px;
+      background: #fff;
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-md), 0 8px 32px rgba(31,35,41,0.15);
+      border: 1px solid var(--border);
+      display: none;
+      flex-direction: column;
+      overflow: hidden;
+      transition: var(--trans);
+    }
+    .chatbot-container.open {
+      display: flex;
+      animation: slideUp 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .chatbot-header {
+      background: var(--blue);
+      color: #fff;
+      padding: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--blue-border);
+    }
+    .header-info {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .header-avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 2px solid rgba(255,255,255,0.8);
+    }
+    .header-avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .header-text h4 {
+      margin: 0;
+      font-size: 0.95rem;
+      font-weight: 700;
+    }
+    .status-indicator {
+      font-size: 11px;
+      opacity: 0.9;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .status-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #10B981;
+      display: inline-block;
+    }
+    .chatbot-close {
+      background: none;
+      border: none;
+      color: #fff;
+      font-size: 1.2rem;
+      cursor: pointer;
+      opacity: 0.8;
+      padding: 4px;
+      transition: var(--trans);
+    }
+    .chatbot-close:hover {
+      opacity: 1;
+    }
+    .chatbot-messages {
+      flex: 1;
+      padding: 16px;
+      overflow-y: auto;
+      background: #F8F9FA;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .message {
+      max-width: 85%;
+      padding: 12px 16px;
+      border-radius: var(--radius-md);
+      font-size: 0.875rem;
+      line-height: 1.5;
+      word-wrap: break-word;
+    }
+    .message.bot {
+      background: #fff;
+      color: var(--text);
+      align-self: flex-start;
+      border-top-left-radius: 4px;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+      border: 1px solid #ECEFF2;
+    }
+    .message.user {
+      background: var(--blue);
+      color: #fff;
+      align-self: flex-end;
+      border-top-right-radius: 4px;
+      box-shadow: 0 1px 2px rgba(20,86,240,0.1);
+    }
+    .typing-indicator {
+      display: flex;
+      gap: 4px;
+      padding: 12px 16px;
+      background: #fff;
+      border-radius: var(--radius-md);
+      border-top-left-radius: 4px;
+      align-self: flex-start;
+      border: 1px solid #ECEFF2;
+    }
+    .typing-dot {
+      width: 6px;
+      height: 6px;
+      background: var(--text-muted);
+      border-radius: 50%;
+      animation: typing 1.4s infinite ease-in-out both;
+    }
+    .typing-dot:nth-child(1) { animation-delay: -0.32s; }
+    .typing-dot:nth-child(2) { animation-delay: -0.16s; }
+    @keyframes typing {
+      0%, 80%, 100% { transform: scale(0); }
+      40% { transform: scale(1); }
+    }
+    .chatbot-options {
+      padding: 12px 16px;
+      background: #fff;
+      border-top: 1px solid var(--border);
+      max-height: 180px;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .option-btn {
+      background: #fff;
+      border: 1px solid var(--blue-border);
+      color: var(--blue);
+      padding: 8px 14px;
+      border-radius: var(--radius-sm);
+      font-size: 0.8125rem;
+      font-weight: 600;
+      cursor: pointer;
+      text-align: left;
+      transition: var(--trans);
+    }
+    .option-btn:hover {
+      background: var(--bg-blue);
+      border-color: var(--blue);
+    }
+    .chat-cta-container {
+      display: flex;
+      gap: 8px;
+      margin-top: 8px;
+    }
+    .chat-cta-btn {
+      flex: 1;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      padding: 10px;
+      border-radius: var(--radius-sm);
+      font-size: 0.8125rem;
+      font-weight: 700;
+      text-decoration: none;
+      text-align: center;
+      transition: var(--trans);
+      border: none;
+      cursor: pointer;
+    }
+    .chat-cta-btn.primary {
+      background: var(--blue);
+      color: #fff;
+    }
+    .chat-cta-btn.primary:hover {
+      background: var(--blue-hover);
+    }
+    .chat-cta-btn.secondary {
+      background: #0068FF;
+      color: #fff;
+    }
+    .chat-cta-btn.secondary:hover {
+      background: #0056D2;
+    }
+
+    @media (max-width: 480px) {
+      .chatbot-container {
+        width: calc(100vw - 32px);
+        right: -8px;
+      }
+    }
+  </style>
+
+  <script>
+    const CHATBOT_DATABASE = {
+      "q1": {
+        "question": "Máy chiếu ETOE Starfish 2 giá bao nhiêu?",
+        "answer": "Máy chiếu ETOE Starfish 2 đang có giá ưu đãi cực tốt mua qua link của Nam là <b>3.490.000 VNĐ</b> (giá gốc 4.500.000 VNĐ). Hơn nữa anh em còn được tặng kèm màn chiếu 100 inch cao cấp và được miễn phí vận chuyển toàn quốc nha!"
+      },
+      "q2": {
+        "question": "Máy chiếu xem ban ngày rõ không?",
+        "answer": "Máy có độ sáng 450 ANSI Lumens nên chiếu buổi tối hoặc trong phòng ngủ tắt đèn thì nét căng và đẹp như rạp phim. Ban ngày nếu chiếu trong phòng có rèm che nhẹ thì xem vẫn rất tốt, còn nếu phòng quá sáng hoặc ánh nắng chiếu trực tiếp thì hình ảnh sẽ bị mờ đi nhiều nhé."
+      },
+      "q3": {
+        "question": "Hệ điều hành, Netflix thế nào?",
+        "answer": "Có sẵn hệ điều hành Android TV chính chủ nên đã cài đặt sẵn YouTube, Netflix, Prime Video bản quyền xem cực mượt. Máy có tích hợp trợ lý Google và điều khiển giọng nói bằng tiếng Việt rất nhạy nha anh em."
+      },
+      "q4": {
+        "question": "Có cần loa ngoài không?",
+        "answer": "Máy chiếu có sẵn hệ thống loa kép công suất 10W nghe rất to, ấm và rõ trong không gian phòng ngủ tầm 15-20m2. Nếu bạn muốn xem phim hành động mạnh hoặc nghe nhạc bass lớn thì mới cần kết nối thêm loa ngoài qua cổng Bluetooth hoặc jack 3.5mm nhé."
+      },
+      "q5": {
+        "question": "Bảo hành đổi trả mua qua Nam?",
+        "answer": "Sản phẩm được bảo hành chính hãng 12 tháng. Đặc biệt, nếu anh em mua qua link của Nam mà gặp lỗi từ nhà sản xuất sẽ được <b>lỗi 1 đổi 1 trong vòng 30 ngày</b>. Có bất kỳ vấn đề gì, cứ gửi yêu cầu lên Cổng hỗ trợ đổi trả tại namoinam.com, Nam và team sẽ xử lý trực tiếp với hãng giúp bạn!"
+      },
+      "q6": {
+        "question": "Chi phí Booking KOC Nam ơi Nam?",
+        "answer": "Giá booking chính thức của kênh Nam ơi Nam là <b>5.000.000 VNĐ / 1 Video Review</b> đăng tải trên TikTok @namoinam (114.9K followers) và hỗ trợ đăng chéo Facebook Reels."
+      },
+      "q7": {
+        "question": "Quy trình hợp tác booking?",
+        "answer": "Quy trình rất rõ ràng: Hãng gửi sản phẩm mẫu -> Nam dùng thử thực tế ít nhất 7 ngày -> Nam lên kịch bản gửi hãng duyệt -> Quay dựng thực tế -> Gửi video nháp cho hãng check thông số/góc quay -> Đăng tải chính thức. Hãng được kiểm duyệt và sửa video trước khi đăng."
+      },
+      "q8": {
+        "question": "Sao giá booking Nam cao vậy?",
+        "answer": "Dạ vì Nam cam kết <b>dùng thật sản phẩm ít nhất 7 ngày</b> để có góc review chân thực nhất, đồng thời Nam và team sẽ <b>đứng ra hỗ trợ CSKH và đổi trả sản phẩm lỗi sau mua</b> cho khán giả qua website namoinam.com. Hãng không chỉ mua video quảng cáo, mà là mua sự tin cậy tuyệt đối và giải pháp giảm tải CSKH hậu mãi."
+      },
+      "q9": {
+        "question": "Có cam kết KPIs/Views không?",
+        "answer": "Bên Nam tập trung vào chất lượng nội dung chân thực để có tỷ lệ chuyển đổi tự nhiên tốt nhất. Do thuật toán phân phối của nền tảng, bên Nam không cam kết số view hay doanh số cố định, nhưng cam kết làm video chỉn chu, có tâm và đúng brand voice."
+      },
+      "q10": {
+        "question": "Có xuất hóa đơn VAT không?",
+        "answer": "Dạ có hỗ trợ đầy đủ. Bên Nam vận hành bài bản và chuyên nghiệp, hỗ trợ ký hợp đồng dịch vụ booking và xuất hóa đơn VAT đầy đủ cho các doanh nghiệp và nhãn hàng lớn để làm thủ tục thanh toán nhanh chóng."
+      },
+      "q11": {
+        "question": "Tôi muốn chốt đơn / booking!",
+        "answer": "Tuyệt vời quá ạ! Anh/chị muốn đặt mua máy chiếu ETOE Starfish 2 nhận quà tặng, hay muốn đặt lịch booking video review với Nam ngay bây giờ? Bấm nút dưới đây để gửi thông tin chốt đơn, Nam và team sẽ liên hệ hỗ trợ ngay nhé!",
+        "showCta": true
+      },
+      "q12": {
+        "question": "Để mình suy nghĩ thêm...",
+        "answer": "Dạ không sao đâu anh/chị ơi, mình cứ cân nhắc thêm cho kỹ nhé, tránh mua sắm lãng phí khi chưa thực sự cần thiết ạ. Tiện đây, anh/chị cứ điền nhanh vào biểu mẫu khảo sát bên dưới nha. Nam sẽ lưu thông tin lại để khi hãng có đợt deal hời hoặc mã giảm giá độc quyền mới, Nam sẽ chủ động gửi tặng anh/chị đầu tiên nhé!",
+        "showSurveyCta": true
+      }
+    };
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const launcher = document.getElementById("chatbot-launcher");
+      const container = document.getElementById("chatbot-container");
+      const closeBtn = document.getElementById("chatbot-close");
+      const messagesContainer = document.getElementById("chatbot-messages");
+      const optionsContainer = document.getElementById("chatbot-options");
+      const badge = document.getElementById("launcher-badge");
+      
+      let isInitialized = false;
+
+      // Toggle Chatbot
+      launcher.addEventListener("click", () => {
+        container.classList.toggle("open");
+        if (container.classList.contains("open")) {
+          badge.style.display = "none"; // Hide notification badge once opened
+          if (!isInitialized) {
+            initChat();
+            isInitialized = true;
+          }
+        }
+      });
+
+      closeBtn.addEventListener("click", () => {
+        container.classList.remove("open");
+      });
+
+      function initChat() {
+        messagesContainer.innerHTML = "";
+        
+        // Bot Welcome Message
+        appendMessage("Chào bạn nha! Mình là trợ lý tự động của Nam ơi Nam. Bạn đang quan tâm đến Máy chiếu mini ETOE Starfish 2, muốn gửi yêu cầu hỗ trợ đổi trả hay muốn liên hệ hợp tác booking KOC vậy? Nhắn cho mình biết hoặc chọn nhanh câu hỏi bên dưới nhé!", "bot");
+        
+        renderOptions();
+      }
+
+      function appendMessage(text, sender) {
+        const msgDiv = document.createElement("div");
+        msgDiv.className = `message ${sender}`;
+        msgDiv.innerHTML = text;
+        messagesContainer.appendChild(msgDiv);
+        messagesContainer.scrollTop = messagesContainer.scrollHeight;
+      }
+
+      function renderOptions() {
+        optionsContainer.innerHTML = "";
+        
+        Object.keys(CHATBOT_DATABASE).forEach(key => {
+          const btn = document.createElement("button");
+          btn.className = "option-btn";
+          btn.textContent = CHATBOT_DATABASE[key].question;
+          btn.addEventListener("click", () => selectOption(key));
+          optionsContainer.appendChild(btn);
+        });
+      }
+
+      function selectOption(key) {
+        const option = CHATBOT_DATABASE[key];
+        
+        // 1. Append user's selected question
+        appendMessage(option.question, "user");
+        optionsContainer.innerHTML = ""; // Clear options during thinking
+        
+        // 2. Show typing indicator
+        const typingDiv = document.createElement("div");
+        typingDiv.className = "typing-indicator";
+        typingDiv.innerHTML = '<div class="typing-dot"></div><div class="typing-dot"></div><div class="typing-dot"></div>';
+        messagesContainer.appendChild(typingDiv);
+        messagesContainer.scrollTop = messagesContainer.scrollHeight;
+
+        // 3. Bot replies after 800ms
+        setTimeout(() => {
+          typingDiv.remove();
+          appendMessage(option.answer, "bot");
+          
+          // Show additional CTAs if applicable
+          if (option.showCta) {
+            const ctaDiv = document.createElement("div");
+            ctaDiv.className = "chat-cta-container";
+            
+            const btnForm = document.createElement("button");
+            btnForm.className = "chat-cta-btn primary";
+            btnForm.innerHTML = "🎯 Điền Form Đăng Ký";
+            btnForm.addEventListener("click", () => {
+              container.classList.remove("open");
+              document.getElementById("survey").scrollIntoView({ behavior: "smooth" });
+            });
+            
+            const btnZalo = document.createElement("a");
+            btnZalo.className = "chat-cta-btn secondary";
+            btnZalo.href = "https://zalo.me/0866530630";
+            btnZalo.target = "_blank";
+            btnZalo.rel = "noopener";
+            btnZalo.innerHTML = "💬 Nhắn Zalo Nam";
+            
+            ctaDiv.appendChild(btnForm);
+            ctaDiv.appendChild(btnZalo);
+            messagesContainer.appendChild(ctaDiv);
+          } else if (option.showSurveyCta) {
+            const ctaDiv = document.createElement("div");
+            ctaDiv.className = "chat-cta-container";
+            
+            const btnForm = document.createElement("button");
+            btnForm.className = "chat-cta-btn primary";
+            btnForm.style.width = "100%";
+            btnForm.innerHTML = "🎯 Đăng Ký Nhận Deal Độc Quyền";
+            btnForm.addEventListener("click", () => {
+              container.classList.remove("open");
+              document.getElementById("survey").scrollIntoView({ behavior: "smooth" });
+            });
+            
+            ctaDiv.appendChild(btnForm);
+            messagesContainer.appendChild(ctaDiv);
+          }
+          
+          // Render Back to Menu option
+          renderBackMenuOption();
+          messagesContainer.scrollTop = messagesContainer.scrollHeight;
+        }, 800);
+      }
+
+      function renderBackMenuOption() {
+        optionsContainer.innerHTML = "";
+        
+        const btn = document.createElement("button");
+        btn.className = "option-btn";
+        btn.style.textAlign = "center";
+        btn.style.borderColor = "var(--blue)";
+        btn.style.background = "var(--bg-blue)";
+        btn.innerHTML = "↩️ Quay lại danh sách câu hỏi";
+        btn.addEventListener("click", () => {
+          appendMessage("Quay lại danh sách câu hỏi", "user");
+          
+          // Typing
+          const typingDiv = document.createElement("div");
+          typingDiv.className = "typing-indicator";
+          typingDiv.innerHTML = '<div class="typing-dot"></div><div class="typing-dot"></div><div class="typing-dot"></div>';
+          messagesContainer.appendChild(typingDiv);
+          messagesContainer.scrollTop = messagesContainer.scrollHeight;
+          
+          setTimeout(() => {
+            typingDiv.remove();
+            appendMessage("Dạ, mời bạn chọn câu hỏi tiếp theo cần Nam tư vấn nhé!", "bot");
+            renderOptions();
+          }, 500);
+        });
+        
+        optionsContainer.appendChild(btn);
+      }
+    });
+  </script>
+
   <script src="script.js"></script>
 </body>
 </html>

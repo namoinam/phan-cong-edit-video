@@ -4,3 +4,5 @@ token.json
 token.pickle
 __pycache__/
 *.log
+github_token.txt
+danh_sach.txt

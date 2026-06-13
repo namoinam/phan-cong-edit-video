@@ -34,7 +34,7 @@
     },
     "TOSUDO - Móc treo đồ": {
       "total": 17,
-      "counter": 40
+      "counter": 50
     },
     "MIA - Vali kéo du lịch Larita Aly": {
       "total": 14,
@@ -50,7 +50,7 @@
     },
     "MODECO - Lọ đựng gia vị có thìa": {
       "total": 10,
-      "counter": 10
+      "counter": 20
     },
     "PARROTI - Cây chà sàn": {
       "total": 2,
@@ -62,7 +62,7 @@
     },
     "TJEAN - Máy hút bụi giường nệm": {
       "total": 7,
-      "counter": 35
+      "counter": 50
     },
     "UPGEN - Bàn nâng hạ di động": {
       "total": 12,
@@ -110,7 +110,7 @@
     },
     "TIGERNU - Ba lô nam doanh nhân": {
       "total": 10,
-      "counter": 10
+      "counter": 20
     },
     "DIGI DOMAIN - Đế sạc không dây 3 in 1": {
       "total": 13,
@@ -126,7 +126,7 @@
     },
     "REDCHEF - Bộ nồi chảo chống dính": {
       "total": 10,
-      "counter": 30
+      "counter": 45
     },
     "AQUA - Máy phun sương tạo ẩm": {
       "total": 10,
@@ -142,7 +142,7 @@
     },
     "DEERMA - Máy xay gia vị": {
       "total": 19,
-      "counter": 20
+      "counter": 35
     },
     "ENADE VN - Khẩu trang chống nắng full face": {
       "total": 7,
@@ -150,7 +150,7 @@
     },
     "TORRAS - Kính cường lực": {
       "total": 15,
-      "counter": 15
+      "counter": 30
     },
     "MENCANON - Rèm che nắng ô tô": {
       "total": 10,
@@ -166,7 +166,7 @@
     },
     "UGREEN - Chuột không dây": {
       "total": 11,
-      "counter": 15
+      "counter": 30
     },
     "AMORTALS - Mút rửa mặt bọt biển": {
       "total": 10,
@@ -198,7 +198,7 @@
     },
     "PARROTI - Bộ cọ toilet": {
       "total": 10,
-      "counter": 15
+      "counter": 30
     },
     "HAPAS - Quà tặng Set \"Chân Thành\"": {
       "total": 25,
@@ -260,534 +260,6 @@
       "total": 32,
       "counter": 45
     }
-  },
-  "2026-06-06": {
-    "assignments": {
-      "Dung": {
-        "videos": [
-          {
-            "name": "REDCHEF - Bộ nồi chảo chống dính",
-            "count": 2
-          },
-          {
-            "name": "AQUA - Máy phun sương tạo ẩm",
-            "count": 2
-          },
-          {
-            "name": "SELLION - Nước hoa nữ",
-            "count": 1
-          },
-          {
-            "name": "ENADE VN - Khẩu trang chống nắng full face",
-            "count": 2
-          },
-          {
-            "name": "TOSUDO - Móc treo đồ",
-            "count": 1
-          },
-          {
-            "name": "DEERMA - Vòi sen tăng áp",
-            "count": 3
-          },
-          {
-            "name": "XPANSE - Ghế công thái học",
-            "count": 2
-          },
-          {
-            "name": "DEERMA - Máy xay gia vị",
-            "count": 2
-          }
-        ],
-        "voices": [
-          {
-            "name": "REDCHEF - Bộ nồi chảo chống dính",
-            "count": "1, 2"
-          },
-          {
-            "name": "AQUA - Máy phun sương tạo ẩm",
-            "count": "1, 2"
-          },
-          {
-            "name": "SELLION - Nước hoa nữ",
-            "count": "1"
-          },
-          {
-            "name": "TOSUDO - Móc treo đồ",
-            "count": "11"
-          },
-          {
-            "name": "DEERMA - Vòi sen tăng áp",
-            "count": "1, 2, 3"
-          },
-          {
-            "name": "XPANSE - Ghế công thái học",
-            "count": "1, 2"
-          },
-          {
-            "name": "DEERMA - Máy xay gia vị",
-            "count": "1, 2"
-          },
-          {
-            "name": "ENADE VN - Khẩu trang chống nắng full face",
-            "count": "1, 2"
-          }
-        ]
-      },
-      "Duyên": {
-        "videos": [
-          {
-            "name": "REDCHEF - Bộ nồi chảo chống dính",
-            "count": 2
-          },
-          {
-            "name": "AQUA - Máy phun sương tạo ẩm",
-            "count": 2
-          },
-          {
-            "name": "SELLION - Nước hoa nữ",
-            "count": 1
-          },
-          {
-            "name": "ENADE VN - Khẩu trang chống nắng full face",
-            "count": 2
-          },
-          {
-            "name": "TOSUDO - Móc treo đồ",
-            "count": 1
-          },
-          {
-            "name": "DEERMA - Vòi sen tăng áp",
-            "count": 3
-          },
-          {
-            "name": "XPANSE - Ghế công thái học",
-            "count": 1
-          },
-          {
-            "name": "DEERMA - Máy xay gia vị",
-            "count": 3
-          }
-        ],
-        "voices": [
-          {
-            "name": "REDCHEF - Bộ nồi chảo chống dính",
-            "count": "3, 4"
-          },
-          {
-            "name": "AQUA - Máy phun sương tạo ẩm",
-            "count": "3, 4"
-          },
-          {
-            "name": "SELLION - Nước hoa nữ",
-            "count": "2"
-          },
-          {
-            "name": "TOSUDO - Móc treo đồ",
-            "count": "12"
-          },
-          {
-            "name": "DEERMA - Vòi sen tăng áp",
-            "count": "4, 5, 6"
-          },
-          {
-            "name": "XPANSE - Ghế công thái học",
-            "count": "3"
-          },
-          {
-            "name": "DEERMA - Máy xay gia vị",
-            "count": "3, 4, 5"
-          },
-          {
-            "name": "ENADE VN - Khẩu trang chống nắng full face",
-            "count": "3, 4"
-          }
-        ]
-      },
-      "Hiếu": {
-        "videos": [
-          {
-            "name": "REDCHEF - Bộ nồi chảo chống dính",
-            "count": 2
-          },
-          {
-            "name": "AQUA - Máy phun sương tạo ẩm",
-            "count": 2
-          },
-          {
-            "name": "SELLION - Nước hoa nữ",
-            "count": 1
-          },
-          {
-            "name": "ENADE VN - Khẩu trang chống nắng full face",
-            "count": 2
-          },
-          {
-            "name": "TOSUDO - Móc treo đồ",
-            "count": 1
-          },
-          {
-            "name": "DEERMA - Vòi sen tăng áp",
-            "count": 3
-          },
-          {
-            "name": "XPANSE - Ghế công thái học",
-            "count": 1
-          },
-          {
-            "name": "DEERMA - Máy xay gia vị",
-            "count": 3
-          }
-        ],
-        "voices": [
-          {
-            "name": "REDCHEF - Bộ nồi chảo chống dính",
-            "count": "5, 6"
-          },
-          {
-            "name": "AQUA - Máy phun sương tạo ẩm",
-            "count": "5, 6"
-          },
-          {
-            "name": "SELLION - Nước hoa nữ",
-            "count": "3"
-          },
-          {
-            "name": "TOSUDO - Móc treo đồ",
-            "count": "13"
-          },
-          {
-            "name": "DEERMA - Vòi sen tăng áp",
-            "count": "7, 8, 9"
-          },
-          {
-            "name": "XPANSE - Ghế công thái học",
-            "count": "4"
-          },
-          {
-            "name": "DEERMA - Máy xay gia vị",
-            "count": "6, 7, 8"
-          },
-          {
-            "name": "ENADE VN - Khẩu trang chống nắng full face",
-            "count": "5, 6"
-          }
-        ]
-      },
-      "Thắm": {
-        "videos": [
-          {
-            "name": "REDCHEF - Bộ nồi chảo chống dính",
-            "count": 1
-          },
-          {
-            "name": "AQUA - Máy phun sương tạo ẩm",
-            "count": 3
-          },
-          {
-            "name": "SELLION - Nước hoa nữ",
-            "count": 1
-          },
-          {
-            "name": "ENADE VN - Khẩu trang chống nắng full face",
-            "count": 1
-          },
-          {
-            "name": "TOSUDO - Móc treo đồ",
-            "count": 2
-          },
-          {
-            "name": "DEERMA - Vòi sen tăng áp",
-            "count": 3
-          },
-          {
-            "name": "XPANSE - Ghế công thái học",
-            "count": 1
-          },
-          {
-            "name": "DEERMA - Máy xay gia vị",
-            "count": 3
-          }
-        ],
-        "voices": [
-          {
-            "name": "REDCHEF - Bộ nồi chảo chống dính",
-            "count": "7"
-          },
-          {
-            "name": "AQUA - Máy phun sương tạo ẩm",
-            "count": "7, 8, 9"
-          },
-          {
-            "name": "SELLION - Nước hoa nữ",
-            "count": "4"
-          },
-          {
-            "name": "TOSUDO - Móc treo đồ",
-            "count": "14, 15"
-          },
-          {
-            "name": "DEERMA - Vòi sen tăng áp",
-            "count": "10, 1, 2"
-          },
-          {
-            "name": "XPANSE - Ghế công thái học",
-            "count": "5"
-          },
-          {
-            "name": "DEERMA - Máy xay gia vị",
-            "count": "9, 10, 11"
-          },
-          {
-            "name": "ENADE VN - Khẩu trang chống nắng full face",
-            "count": "7"
-          }
-        ]
-      },
-      "Trân": {
-        "videos": [
-          {
-            "name": "REDCHEF - Bộ nồi chảo chống dính",
-            "count": 1
-          },
-          {
-            "name": "AQUA - Máy phun sương tạo ẩm",
-            "count": 2
-          },
-          {
-            "name": "SELLION - Nước hoa nữ",
-            "count": 2
-          },
-          {
-            "name": "ENADE VN - Khẩu trang chống nắng full face",
-            "count": 1
-          },
-          {
-            "name": "TOSUDO - Móc treo đồ",
-            "count": 2
-          },
-          {
-            "name": "DEERMA - Vòi sen tăng áp",
-            "count": 3
-          },
-          {
-            "name": "XPANSE - Ghế công thái học",
-            "count": 1
-          },
-          {
-            "name": "DEERMA - Máy xay gia vị",
-            "count": 3
-          }
-        ],
-        "voices": [
-          {
-            "name": "REDCHEF - Bộ nồi chảo chống dính",
-            "count": "8"
-          },
-          {
-            "name": "AQUA - Máy phun sương tạo ẩm",
-            "count": "10, 1"
-          },
-          {
-            "name": "SELLION - Nước hoa nữ",
-            "count": "5, 6"
-          },
-          {
-            "name": "TOSUDO - Móc treo đồ",
-            "count": "16, 17"
-          },
-          {
-            "name": "DEERMA - Vòi sen tăng áp",
-            "count": "3, 4, 5"
-          },
-          {
-            "name": "XPANSE - Ghế công thái học",
-            "count": "6"
-          },
-          {
-            "name": "DEERMA - Máy xay gia vị",
-            "count": "12, 13, 14"
-          },
-          {
-            "name": "ENADE VN - Khẩu trang chống nắng full face",
-            "count": "1"
-          }
-        ]
-      },
-      "Sơn": {
-        "videos": [
-          {
-            "name": "REDCHEF - Bộ nồi chảo chống dính",
-            "count": 1
-          },
-          {
-            "name": "AQUA - Máy phun sương tạo ẩm",
-            "count": 2
-          },
-          {
-            "name": "SELLION - Nước hoa nữ",
-            "count": 2
-          },
-          {
-            "name": "ENADE VN - Khẩu trang chống nắng full face",
-            "count": 1
-          },
-          {
-            "name": "TOSUDO - Móc treo đồ",
-            "count": 2
-          },
-          {
-            "name": "DEERMA - Vòi sen tăng áp",
-            "count": 2
-          },
-          {
-            "name": "XPANSE - Ghế công thái học",
-            "count": 2
-          },
-          {
-            "name": "DEERMA - Máy xay gia vị",
-            "count": 3
-          }
-        ],
-        "voices": [
-          {
-            "name": "REDCHEF - Bộ nồi chảo chống dính",
-            "count": "9"
-          },
-          {
-            "name": "AQUA - Máy phun sương tạo ẩm",
-            "count": "2, 3"
-          },
-          {
-            "name": "SELLION - Nước hoa nữ",
-            "count": "7, 8"
-          },
-          {
-            "name": "TOSUDO - Móc treo đồ",
-            "count": "1, 2"
-          },
-          {
-            "name": "DEERMA - Vòi sen tăng áp",
-            "count": "6, 7"
-          },
-          {
-            "name": "XPANSE - Ghế công thái học",
-            "count": "7, 8"
-          },
-          {
-            "name": "DEERMA - Máy xay gia vị",
-            "count": "15, 16, 17"
-          },
-          {
-            "name": "ENADE VN - Khẩu trang chống nắng full face",
-            "count": "2"
-          }
-        ]
-      },
-      "Tuyên": {
-        "videos": [
-          {
-            "name": "REDCHEF - Bộ nồi chảo chống dính",
-            "count": 1
-          },
-          {
-            "name": "AQUA - Máy phun sương tạo ẩm",
-            "count": 2
-          },
-          {
-            "name": "SELLION - Nước hoa nữ",
-            "count": 2
-          },
-          {
-            "name": "ENADE VN - Khẩu trang chống nắng full face",
-            "count": 1
-          },
-          {
-            "name": "TOSUDO - Móc treo đồ",
-            "count": 1
-          },
-          {
-            "name": "DEERMA - Vòi sen tăng áp",
-            "count": 3
-          },
-          {
-            "name": "XPANSE - Ghế công thái học",
-            "count": 2
-          },
-          {
-            "name": "DEERMA - Máy xay gia vị",
-            "count": 3
-          }
-        ],
-        "voices": [
-          {
-            "name": "REDCHEF - Bộ nồi chảo chống dính",
-            "count": "10"
-          },
-          {
-            "name": "AQUA - Máy phun sương tạo ẩm",
-            "count": "4, 5"
-          },
-          {
-            "name": "SELLION - Nước hoa nữ",
-            "count": "9, 10"
-          },
-          {
-            "name": "TOSUDO - Móc treo đồ",
-            "count": "3"
-          },
-          {
-            "name": "DEERMA - Vòi sen tăng áp",
-            "count": "8, 9, 10"
-          },
-          {
-            "name": "XPANSE - Ghế công thái học",
-            "count": "9, 10"
-          },
-          {
-            "name": "DEERMA - Máy xay gia vị",
-            "count": "18, 19, 1"
-          },
-          {
-            "name": "ENADE VN - Khẩu trang chống nắng full face",
-            "count": "3"
-          }
-        ]
-      }
-    },
-    "links": [
-      {
-        "full_name": "REDCHEF - Bộ nồi chảo chống dính",
-        "url": "https://drive.google.com/drive/folders/1MsG8ybRcomtrheDGPYxwwti7l4BUtEuw"
-      },
-      {
-        "full_name": "AQUA - Máy phun sương tạo ẩm",
-        "url": "https://drive.google.com/drive/folders/1UPD6-SdL9ru3Epj8KuIKdG6JVFhhDktD"
-      },
-      {
-        "full_name": "SELLION - Nước hoa nữ",
-        "url": "https://drive.google.com/drive/folders/1WDqWa_7xVVdmBMnqjHWJvLer83hc-Ssn"
-      },
-      {
-        "full_name": "TOSUDO - Móc treo đồ",
-        "url": "https://drive.google.com/drive/folders/1NVguQOkZdm0YnwFR5-HYkyuW7nXEnyaO"
-      },
-      {
-        "full_name": "DEERMA - Vòi sen tăng áp",
-        "url": "https://drive.google.com/drive/folders/1yPNIAUFJLQjvjBQbhdnIE8NBnsPsKbm3"
-      },
-      {
-        "full_name": "XPANSE - Ghế công thái học",
-        "url": "https://drive.google.com/drive/folders/1SrflrVq0RkiYKm6HmEDPIUSOy-_tNFlk"
-      },
-      {
-        "full_name": "DEERMA - Máy xay gia vị",
-        "url": "https://drive.google.com/drive/folders/1Xz0opVxh2a4SVoB_jOpCS-6kOiLRLR3-"
-      },
-      {
-        "full_name": "ENADE VN - Khẩu trang chống nắng full face",
-        "url": "https://drive.google.com/drive/folders/1fdexP_b5rlkAM4lYon4OjRUQeQeAisH_"
-      }
-    ]
   },
   "2026-06-07": {
     "assignments": {
@@ -4896,6 +4368,664 @@
       {
         "full_name": "ETOE - Máy chiếu Starfish 2",
         "url": "https://drive.google.com/drive/folders/1KgpI8dSxoL6fSMJhZx78n5uQ0JOJi1iZ"
+      }
+    ]
+  },
+  "2026-06-13": {
+    "assignments": {
+      "Thư": {
+        "videos": [
+          {
+            "name": "TORRAS - Kính cường lực",
+            "count": 3
+          },
+          {
+            "name": "REDCHEF - Bộ nồi chảo chống dính",
+            "count": 3
+          },
+          {
+            "name": "MODECO - Lọ đựng gia vị có thìa",
+            "count": 1
+          },
+          {
+            "name": "TIGERNU - Ba lô nam doanh nhân",
+            "count": 2
+          },
+          {
+            "name": "UGREEN - Chuột không dây",
+            "count": 2
+          },
+          {
+            "name": "TOSUDO - Móc treo đồ",
+            "count": 2
+          },
+          {
+            "name": "TJEAN - Máy hút bụi giường nệm",
+            "count": 2
+          },
+          {
+            "name": "DEERMA - Máy xay gia vị",
+            "count": 2
+          },
+          {
+            "name": "PARROTI - Bộ cọ toilet",
+            "count": 3
+          }
+        ],
+        "voices": [
+          {
+            "name": "TORRAS - Kính cường lực",
+            "count": "1, 2, 3"
+          },
+          {
+            "name": "REDCHEF - Bộ nồi chảo chống dính",
+            "count": "1, 2, 3"
+          },
+          {
+            "name": "MODECO - Lọ đựng gia vị có thìa",
+            "count": "1"
+          },
+          {
+            "name": "TIGERNU - Ba lô nam doanh nhân",
+            "count": "1, 2"
+          },
+          {
+            "name": "UGREEN - Chuột không dây",
+            "count": "5, 6"
+          },
+          {
+            "name": "TOSUDO - Móc treo đồ",
+            "count": "7, 8"
+          },
+          {
+            "name": "TJEAN - Máy hút bụi giường nệm",
+            "count": "1, 2"
+          },
+          {
+            "name": "DEERMA - Máy xay gia vị",
+            "count": "2, 3"
+          },
+          {
+            "name": "PARROTI - Bộ cọ toilet",
+            "count": "6, 7, 8"
+          }
+        ]
+      },
+      "Dung": {
+        "videos": [
+          {
+            "name": "TORRAS - Kính cường lực",
+            "count": 2
+          },
+          {
+            "name": "REDCHEF - Bộ nồi chảo chống dính",
+            "count": 2
+          },
+          {
+            "name": "MODECO - Lọ đựng gia vị có thìa",
+            "count": 1
+          },
+          {
+            "name": "TIGERNU - Ba lô nam doanh nhân",
+            "count": 1
+          },
+          {
+            "name": "UGREEN - Chuột không dây",
+            "count": 2
+          },
+          {
+            "name": "TOSUDO - Móc treo đồ",
+            "count": 2
+          },
+          {
+            "name": "TJEAN - Máy hút bụi giường nệm",
+            "count": 1
+          },
+          {
+            "name": "DEERMA - Máy xay gia vị",
+            "count": 2
+          },
+          {
+            "name": "PARROTI - Bộ cọ toilet",
+            "count": 2
+          }
+        ],
+        "voices": [
+          {
+            "name": "TORRAS - Kính cường lực",
+            "count": "4, 5"
+          },
+          {
+            "name": "REDCHEF - Bộ nồi chảo chống dính",
+            "count": "4, 5"
+          },
+          {
+            "name": "MODECO - Lọ đựng gia vị có thìa",
+            "count": "2"
+          },
+          {
+            "name": "TIGERNU - Ba lô nam doanh nhân",
+            "count": "3"
+          },
+          {
+            "name": "UGREEN - Chuột không dây",
+            "count": "7, 8"
+          },
+          {
+            "name": "TOSUDO - Móc treo đồ",
+            "count": "9, 10"
+          },
+          {
+            "name": "TJEAN - Máy hút bụi giường nệm",
+            "count": "3"
+          },
+          {
+            "name": "DEERMA - Máy xay gia vị",
+            "count": "4, 5"
+          },
+          {
+            "name": "PARROTI - Bộ cọ toilet",
+            "count": "9, 10"
+          }
+        ]
+      },
+      "Duyên": {
+        "videos": [
+          {
+            "name": "TORRAS - Kính cường lực",
+            "count": 2
+          },
+          {
+            "name": "REDCHEF - Bộ nồi chảo chống dính",
+            "count": 2
+          },
+          {
+            "name": "MODECO - Lọ đựng gia vị có thìa",
+            "count": 1
+          },
+          {
+            "name": "TIGERNU - Ba lô nam doanh nhân",
+            "count": 1
+          },
+          {
+            "name": "UGREEN - Chuột không dây",
+            "count": 2
+          },
+          {
+            "name": "TOSUDO - Móc treo đồ",
+            "count": 1
+          },
+          {
+            "name": "TJEAN - Máy hút bụi giường nệm",
+            "count": 3
+          },
+          {
+            "name": "DEERMA - Máy xay gia vị",
+            "count": 1
+          },
+          {
+            "name": "PARROTI - Bộ cọ toilet",
+            "count": 2
+          }
+        ],
+        "voices": [
+          {
+            "name": "TORRAS - Kính cường lực",
+            "count": "6, 7"
+          },
+          {
+            "name": "REDCHEF - Bộ nồi chảo chống dính",
+            "count": "6, 7"
+          },
+          {
+            "name": "MODECO - Lọ đựng gia vị có thìa",
+            "count": "3"
+          },
+          {
+            "name": "TIGERNU - Ba lô nam doanh nhân",
+            "count": "4"
+          },
+          {
+            "name": "UGREEN - Chuột không dây",
+            "count": "9, 10"
+          },
+          {
+            "name": "TOSUDO - Móc treo đồ",
+            "count": "11"
+          },
+          {
+            "name": "TJEAN - Máy hút bụi giường nệm",
+            "count": "4, 5, 6"
+          },
+          {
+            "name": "DEERMA - Máy xay gia vị",
+            "count": "6"
+          },
+          {
+            "name": "PARROTI - Bộ cọ toilet",
+            "count": "1, 2"
+          }
+        ]
+      },
+      "Hiếu": {
+        "videos": [
+          {
+            "name": "TORRAS - Kính cường lực",
+            "count": 2
+          },
+          {
+            "name": "REDCHEF - Bộ nồi chảo chống dính",
+            "count": 1
+          },
+          {
+            "name": "MODECO - Lọ đựng gia vị có thìa",
+            "count": 2
+          },
+          {
+            "name": "TIGERNU - Ba lô nam doanh nhân",
+            "count": 1
+          },
+          {
+            "name": "UGREEN - Chuột không dây",
+            "count": 2
+          },
+          {
+            "name": "TOSUDO - Móc treo đồ",
+            "count": 1
+          },
+          {
+            "name": "TJEAN - Máy hút bụi giường nệm",
+            "count": 3
+          },
+          {
+            "name": "DEERMA - Máy xay gia vị",
+            "count": 1
+          },
+          {
+            "name": "PARROTI - Bộ cọ toilet",
+            "count": 2
+          }
+        ],
+        "voices": [
+          {
+            "name": "TORRAS - Kính cường lực",
+            "count": "8, 9"
+          },
+          {
+            "name": "REDCHEF - Bộ nồi chảo chống dính",
+            "count": "8"
+          },
+          {
+            "name": "MODECO - Lọ đựng gia vị có thìa",
+            "count": "4, 5"
+          },
+          {
+            "name": "TIGERNU - Ba lô nam doanh nhân",
+            "count": "5"
+          },
+          {
+            "name": "UGREEN - Chuột không dây",
+            "count": "11, 1"
+          },
+          {
+            "name": "TOSUDO - Móc treo đồ",
+            "count": "12"
+          },
+          {
+            "name": "TJEAN - Máy hút bụi giường nệm",
+            "count": "7, 1, 2"
+          },
+          {
+            "name": "DEERMA - Máy xay gia vị",
+            "count": "7"
+          },
+          {
+            "name": "PARROTI - Bộ cọ toilet",
+            "count": "3, 4"
+          }
+        ]
+      },
+      "Thắm": {
+        "videos": [
+          {
+            "name": "TORRAS - Kính cường lực",
+            "count": 2
+          },
+          {
+            "name": "REDCHEF - Bộ nồi chảo chống dính",
+            "count": 1
+          },
+          {
+            "name": "MODECO - Lọ đựng gia vị có thìa",
+            "count": 2
+          },
+          {
+            "name": "TIGERNU - Ba lô nam doanh nhân",
+            "count": 1
+          },
+          {
+            "name": "UGREEN - Chuột không dây",
+            "count": 2
+          },
+          {
+            "name": "TOSUDO - Móc treo đồ",
+            "count": 1
+          },
+          {
+            "name": "TJEAN - Máy hút bụi giường nệm",
+            "count": 2
+          },
+          {
+            "name": "DEERMA - Máy xay gia vị",
+            "count": 3
+          },
+          {
+            "name": "PARROTI - Bộ cọ toilet",
+            "count": 1
+          }
+        ],
+        "voices": [
+          {
+            "name": "TORRAS - Kính cường lực",
+            "count": "10, 11"
+          },
+          {
+            "name": "REDCHEF - Bộ nồi chảo chống dính",
+            "count": "9"
+          },
+          {
+            "name": "MODECO - Lọ đựng gia vị có thìa",
+            "count": "6, 7"
+          },
+          {
+            "name": "TIGERNU - Ba lô nam doanh nhân",
+            "count": "6"
+          },
+          {
+            "name": "UGREEN - Chuột không dây",
+            "count": "2, 3"
+          },
+          {
+            "name": "TOSUDO - Móc treo đồ",
+            "count": "13"
+          },
+          {
+            "name": "TJEAN - Máy hút bụi giường nệm",
+            "count": "3, 4"
+          },
+          {
+            "name": "DEERMA - Máy xay gia vị",
+            "count": "8, 9, 10"
+          },
+          {
+            "name": "PARROTI - Bộ cọ toilet",
+            "count": "5"
+          }
+        ]
+      },
+      "Trân": {
+        "videos": [
+          {
+            "name": "TORRAS - Kính cường lực",
+            "count": 2
+          },
+          {
+            "name": "REDCHEF - Bộ nồi chảo chống dính",
+            "count": 1
+          },
+          {
+            "name": "MODECO - Lọ đựng gia vị có thìa",
+            "count": 2
+          },
+          {
+            "name": "TIGERNU - Ba lô nam doanh nhân",
+            "count": 1
+          },
+          {
+            "name": "UGREEN - Chuột không dây",
+            "count": 2
+          },
+          {
+            "name": "TOSUDO - Móc treo đồ",
+            "count": 1
+          },
+          {
+            "name": "TJEAN - Máy hút bụi giường nệm",
+            "count": 2
+          },
+          {
+            "name": "DEERMA - Máy xay gia vị",
+            "count": 3
+          },
+          {
+            "name": "PARROTI - Bộ cọ toilet",
+            "count": 1
+          }
+        ],
+        "voices": [
+          {
+            "name": "TORRAS - Kính cường lực",
+            "count": "12, 13"
+          },
+          {
+            "name": "REDCHEF - Bộ nồi chảo chống dính",
+            "count": "10"
+          },
+          {
+            "name": "MODECO - Lọ đựng gia vị có thìa",
+            "count": "8, 9"
+          },
+          {
+            "name": "TIGERNU - Ba lô nam doanh nhân",
+            "count": "7"
+          },
+          {
+            "name": "UGREEN - Chuột không dây",
+            "count": "4, 5"
+          },
+          {
+            "name": "TOSUDO - Móc treo đồ",
+            "count": "14"
+          },
+          {
+            "name": "TJEAN - Máy hút bụi giường nệm",
+            "count": "5, 6"
+          },
+          {
+            "name": "DEERMA - Máy xay gia vị",
+            "count": "11, 12, 13"
+          },
+          {
+            "name": "PARROTI - Bộ cọ toilet",
+            "count": "6"
+          }
+        ]
+      },
+      "Sơn": {
+        "videos": [
+          {
+            "name": "TORRAS - Kính cường lực",
+            "count": 1
+          },
+          {
+            "name": "REDCHEF - Bộ nồi chảo chống dính",
+            "count": 3
+          },
+          {
+            "name": "MODECO - Lọ đựng gia vị có thìa",
+            "count": 1
+          },
+          {
+            "name": "TIGERNU - Ba lô nam doanh nhân",
+            "count": 2
+          },
+          {
+            "name": "UGREEN - Chuột không dây",
+            "count": 2
+          },
+          {
+            "name": "TOSUDO - Móc treo đồ",
+            "count": 1
+          },
+          {
+            "name": "TJEAN - Máy hút bụi giường nệm",
+            "count": 1
+          },
+          {
+            "name": "DEERMA - Máy xay gia vị",
+            "count": 2
+          },
+          {
+            "name": "PARROTI - Bộ cọ toilet",
+            "count": 2
+          }
+        ],
+        "voices": [
+          {
+            "name": "TORRAS - Kính cường lực",
+            "count": "14"
+          },
+          {
+            "name": "REDCHEF - Bộ nồi chảo chống dính",
+            "count": "1, 2, 3"
+          },
+          {
+            "name": "MODECO - Lọ đựng gia vị có thìa",
+            "count": "10"
+          },
+          {
+            "name": "TIGERNU - Ba lô nam doanh nhân",
+            "count": "8, 9"
+          },
+          {
+            "name": "UGREEN - Chuột không dây",
+            "count": "6, 7"
+          },
+          {
+            "name": "TOSUDO - Móc treo đồ",
+            "count": "15"
+          },
+          {
+            "name": "TJEAN - Máy hút bụi giường nệm",
+            "count": "7"
+          },
+          {
+            "name": "DEERMA - Máy xay gia vị",
+            "count": "14, 15"
+          },
+          {
+            "name": "PARROTI - Bộ cọ toilet",
+            "count": "7, 8"
+          }
+        ]
+      },
+      "Tuyên": {
+        "videos": [
+          {
+            "name": "TORRAS - Kính cường lực",
+            "count": 1
+          },
+          {
+            "name": "REDCHEF - Bộ nồi chảo chống dính",
+            "count": 2
+          },
+          {
+            "name": "TIGERNU - Ba lô nam doanh nhân",
+            "count": 1
+          },
+          {
+            "name": "UGREEN - Chuột không dây",
+            "count": 1
+          },
+          {
+            "name": "TOSUDO - Móc treo đồ",
+            "count": 1
+          },
+          {
+            "name": "TJEAN - Máy hút bụi giường nệm",
+            "count": 1
+          },
+          {
+            "name": "DEERMA - Máy xay gia vị",
+            "count": 1
+          },
+          {
+            "name": "PARROTI - Bộ cọ toilet",
+            "count": 2
+          }
+        ],
+        "voices": [
+          {
+            "name": "TORRAS - Kính cường lực",
+            "count": "15"
+          },
+          {
+            "name": "REDCHEF - Bộ nồi chảo chống dính",
+            "count": "4, 5"
+          },
+          {
+            "name": "TIGERNU - Ba lô nam doanh nhân",
+            "count": "10"
+          },
+          {
+            "name": "UGREEN - Chuột không dây",
+            "count": "8"
+          },
+          {
+            "name": "TOSUDO - Móc treo đồ",
+            "count": "16"
+          },
+          {
+            "name": "TJEAN - Máy hút bụi giường nệm",
+            "count": "1"
+          },
+          {
+            "name": "DEERMA - Máy xay gia vị",
+            "count": "16"
+          },
+          {
+            "name": "PARROTI - Bộ cọ toilet",
+            "count": "9, 10"
+          }
+        ]
+      }
+    },
+    "links": [
+      {
+        "full_name": "TORRAS - Kính cường lực",
+        "url": "https://drive.google.com/drive/folders/1MH1gAKlw7cZ3S69tfsK2QSfjWlvJeT59"
+      },
+      {
+        "full_name": "REDCHEF - Bộ nồi chảo chống dính",
+        "url": "https://drive.google.com/drive/folders/1MsG8ybRcomtrheDGPYxwwti7l4BUtEuw"
+      },
+      {
+        "full_name": "MODECO - Lọ đựng gia vị có thìa",
+        "url": "https://drive.google.com/drive/folders/1UA5OaNtvphOz-g13j-9fO7RhfFM-GWiy"
+      },
+      {
+        "full_name": "TIGERNU - Ba lô nam doanh nhân",
+        "url": "https://drive.google.com/drive/folders/1A9Ls_DVKN7b63LXlo_5yV59_8MZ0me53"
+      },
+      {
+        "full_name": "UGREEN - Chuột không dây",
+        "url": "https://drive.google.com/drive/folders/1fb22N6oIr0C7SfGcxLVcQHR_HUNIloNE"
+      },
+      {
+        "full_name": "TOSUDO - Móc treo đồ",
+        "url": "https://drive.google.com/drive/folders/1NVguQOkZdm0YnwFR5-HYkyuW7nXEnyaO"
+      },
+      {
+        "full_name": "TJEAN - Máy hút bụi giường nệm",
+        "url": "https://drive.google.com/drive/folders/1kwlH7LrUwnb9ILGyaPf8NFUvVHaXF8I1"
+      },
+      {
+        "full_name": "DEERMA - Máy xay gia vị",
+        "url": "https://drive.google.com/drive/folders/1Xz0opVxh2a4SVoB_jOpCS-6kOiLRLR3-"
+      },
+      {
+        "full_name": "PARROTI - Bộ cọ toilet",
+        "url": "https://drive.google.com/drive/folders/1U_Rv8-djst10pyQ4ibgw4nyem-el8YAh"
       }
     ]
   }

@@ -86,6 +86,11 @@ NAME_ALIASES = {
     "perysmith - máy hút bụi cầm tay xs1pro": "perysmith - máy hút bụi cầm tay xs1 pro",
     "jisulife - quạt đeo cổ life 5": "jisulife - quạt đeo cổ jisulife life 5",
     "arzopa - màn hình di động z1fc": "arzopa - màn hình di động",
+    "hapas - phụ nữ việt nam 20.10 (2026)": "hapas - quà tặng phụ nữ việt nam 20.10 (2026)",
+    "hapas - valentine 14.2 (2026)": "hapas - quà tặng valentine 14.2 (2026)",
+    "dominic - máy cắt tỉa lông mũi": "dominic - máy tỉa lông mũi",
+    "boxerman - quần boxer nam profit": "boxerman - quần sịp nam",
+    "deerma - vòi sen tăng áp 2in1": "deerma - vòi sen tăng áp",
 }
 
 
@@ -589,11 +594,20 @@ def deploy_to_cloudflare_landing():
         
         # Chạy lệnh deploy
         cmd = ["npx", "wrangler", "pages", "deploy", ".", "--project-name=namoinam", "--branch=production"]
-        result = subprocess.run(cmd, cwd=str(landing_dir), capture_output=True, text=True)
-        if result.returncode == 0:
-            print("   ✅ Deploy Cloudflare Pages thành công!")
-        else:
-            print(f"   ⚠️  Deploy Cloudflare Pages thất bại: {result.stderr}")
+        try:
+            result = subprocess.run(cmd, cwd=str(landing_dir), capture_output=True, text=True, timeout=25)
+            if result.returncode == 0:
+                print("   ✅ Deploy Cloudflare Pages thành công!")
+            else:
+                print(f"   ⚠️  Deploy Cloudflare Pages thất bại: {result.stderr}")
+        except subprocess.TimeoutExpired as te:
+            stdout = te.stdout or b""
+            if isinstance(stdout, bytes):
+                stdout = stdout.decode("utf-8", errors="ignore")
+            if "Deployment complete!" in stdout or "Success!" in stdout:
+                print("   ✅ Deploy Cloudflare Pages thành công! (Tiến trình kết thúc chậm)")
+            else:
+                print(f"   ⚠️  Deploy Cloudflare Pages quá thời gian chờ (timeout): {te}")
     except Exception as e:
         print(f"   ⚠️  Lỗi đồng bộ/deploy: {e}")
 

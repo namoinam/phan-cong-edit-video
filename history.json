@@ -274,28 +274,4038 @@
     }
   },
   "2026-06-08": {
-    "assignments": {},
-    "links": []
+    "assignments": {
+      "Thư": {
+        "videos": [
+          {
+            "name": "TORRAS - Ốp lưng trong suốt",
+            "count": 3
+          },
+          {
+            "name": "ONECHI - Dây dán velcro quấn chống rối",
+            "count": 2
+          },
+          {
+            "name": "HAPAS - Túi xách tay dáng trống Tidy Mơ",
+            "count": 1
+          },
+          {
+            "name": "TJEAN - Máy hút bụi giường nệm",
+            "count": 3
+          },
+          {
+            "name": "TORRAS - Ốp lưng Q3Air",
+            "count": 1
+          },
+          {
+            "name": "BRUSHIE - Bàn chải điện",
+            "count": 1
+          },
+          {
+            "name": "FORLOVE - Lọ tỏa hương",
+            "count": 2
+          },
+          {
+            "name": "TOKYOLIFE - Bàn chải đánh răng",
+            "count": 2
+          },
+          {
+            "name": "PARROTI - Bộ cọ toilet",
+            "count": 4
+          },
+          {
+            "name": "PARROTI - Cây chà sàn",
+            "count": 1
+          }
+        ],
+        "voices": [
+          {
+            "name": "TORRAS - Ốp lưng trong suốt",
+            "count": "1, 2, 3"
+          },
+          {
+            "name": "ONECHI - Dây dán velcro quấn chống rối",
+            "count": "1, 2"
+          },
+          {
+            "name": "HAPAS - Túi xách tay dáng trống Tidy Mơ",
+            "count": "1"
+          },
+          {
+            "name": "TJEAN - Máy hút bụi giường nệm",
+            "count": "7, 1, 2"
+          },
+          {
+            "name": "TORRAS - Ốp lưng Q3Air",
+            "count": "11"
+          },
+          {
+            "name": "BRUSHIE - Bàn chải điện",
+            "count": "1"
+          },
+          {
+            "name": "FORLOVE - Lọ tỏa hương",
+            "count": "1, 2"
+          },
+          {
+            "name": "TOKYOLIFE - Bàn chải đánh răng",
+            "count": "1, 2"
+          },
+          {
+            "name": "PARROTI - Bộ cọ toilet",
+            "count": "1, 2, 3, 4"
+          },
+          {
+            "name": "PARROTI - Cây chà sàn",
+            "count": "1"
+          }
+        ]
+      },
+      "Dung": {
+        "videos": [
+          {
+            "name": "TORRAS - Ốp lưng trong suốt",
+            "count": 2
+          },
+          {
+            "name": "ONECHI - Dây dán velcro quấn chống rối",
+            "count": 1
+          },
+          {
+            "name": "HAPAS - Túi xách tay dáng trống Tidy Mơ",
+            "count": 2
+          },
+          {
+            "name": "TJEAN - Máy hút bụi giường nệm",
+            "count": 2
+          },
+          {
+            "name": "TORRAS - Ốp lưng Q3Air",
+            "count": 1
+          },
+          {
+            "name": "BRUSHIE - Bàn chải điện",
+            "count": 1
+          },
+          {
+            "name": "FORLOVE - Lọ tỏa hương",
+            "count": 1
+          },
+          {
+            "name": "TOKYOLIFE - Bàn chải đánh răng",
+            "count": 2
+          },
+          {
+            "name": "PARROTI - Bộ cọ toilet",
+            "count": 2
+          },
+          {
+            "name": "PARROTI - Cây chà sàn",
+            "count": 1
+          }
+        ],
+        "voices": [
+          {
+            "name": "TORRAS - Ốp lưng trong suốt",
+            "count": "4, 5"
+          },
+          {
+            "name": "ONECHI - Dây dán velcro quấn chống rối",
+            "count": "3"
+          },
+          {
+            "name": "HAPAS - Túi xách tay dáng trống Tidy Mơ",
+            "count": "2, 3"
+          },
+          {
+            "name": "TJEAN - Máy hút bụi giường nệm",
+            "count": "3, 4"
+          },
+          {
+            "name": "TORRAS - Ốp lưng Q3Air",
+            "count": "12"
+          },
+          {
+            "name": "BRUSHIE - Bàn chải điện",
+            "count": "2"
+          },
+          {
+            "name": "FORLOVE - Lọ tỏa hương",
+            "count": "3"
+          },
+          {
+            "name": "TOKYOLIFE - Bàn chải đánh răng",
+            "count": "3, 4"
+          },
+          {
+            "name": "PARROTI - Bộ cọ toilet",
+            "count": "5, 6"
+          },
+          {
+            "name": "PARROTI - Cây chà sàn",
+            "count": "2"
+          }
+        ]
+      },
+      "Duyên": {
+        "videos": [
+          {
+            "name": "TORRAS - Ốp lưng trong suốt",
+            "count": 2
+          },
+          {
+            "name": "ONECHI - Dây dán velcro quấn chống rối",
+            "count": 1
+          },
+          {
+            "name": "HAPAS - Túi xách tay dáng trống Tidy Mơ",
+            "count": 2
+          },
+          {
+            "name": "TJEAN - Máy hút bụi giường nệm",
+            "count": 1
+          },
+          {
+            "name": "TORRAS - Ốp lưng Q3Air",
+            "count": 2
+          },
+          {
+            "name": "BRUSHIE - Bàn chải điện",
+            "count": 1
+          },
+          {
+            "name": "FORLOVE - Lọ tỏa hương",
+            "count": 1
+          },
+          {
+            "name": "TOKYOLIFE - Bàn chải đánh răng",
+            "count": 2
+          },
+          {
+            "name": "PARROTI - Bộ cọ toilet",
+            "count": 2
+          },
+          {
+            "name": "PARROTI - Cây chà sàn",
+            "count": 1
+          }
+        ],
+        "voices": [
+          {
+            "name": "TORRAS - Ốp lưng trong suốt",
+            "count": "6, 7"
+          },
+          {
+            "name": "ONECHI - Dây dán velcro quấn chống rối",
+            "count": "4"
+          },
+          {
+            "name": "HAPAS - Túi xách tay dáng trống Tidy Mơ",
+            "count": "4, 5"
+          },
+          {
+            "name": "TJEAN - Máy hút bụi giường nệm",
+            "count": "5"
+          },
+          {
+            "name": "TORRAS - Ốp lưng Q3Air",
+            "count": "13, 14"
+          },
+          {
+            "name": "BRUSHIE - Bàn chải điện",
+            "count": "3"
+          },
+          {
+            "name": "FORLOVE - Lọ tỏa hương",
+            "count": "4"
+          },
+          {
+            "name": "TOKYOLIFE - Bàn chải đánh răng",
+            "count": "5, 6"
+          },
+          {
+            "name": "PARROTI - Bộ cọ toilet",
+            "count": "7, 8"
+          },
+          {
+            "name": "PARROTI - Cây chà sàn",
+            "count": "1"
+          }
+        ]
+      },
+      "Hiếu": {
+        "videos": [
+          {
+            "name": "TORRAS - Ốp lưng trong suốt",
+            "count": 2
+          },
+          {
+            "name": "ONECHI - Dây dán velcro quấn chống rối",
+            "count": 1
+          },
+          {
+            "name": "HAPAS - Túi xách tay dáng trống Tidy Mơ",
+            "count": 2
+          },
+          {
+            "name": "TJEAN - Máy hút bụi giường nệm",
+            "count": 1
+          },
+          {
+            "name": "TORRAS - Ốp lưng Q3Air",
+            "count": 2
+          },
+          {
+            "name": "BRUSHIE - Bàn chải điện",
+            "count": 1
+          },
+          {
+            "name": "FORLOVE - Lọ tỏa hương",
+            "count": 1
+          },
+          {
+            "name": "TOKYOLIFE - Bàn chải đánh răng",
+            "count": 2
+          },
+          {
+            "name": "PARROTI - Bộ cọ toilet",
+            "count": 2
+          },
+          {
+            "name": "PARROTI - Cây chà sàn",
+            "count": 1
+          }
+        ],
+        "voices": [
+          {
+            "name": "TORRAS - Ốp lưng trong suốt",
+            "count": "8, 9"
+          },
+          {
+            "name": "ONECHI - Dây dán velcro quấn chống rối",
+            "count": "5"
+          },
+          {
+            "name": "HAPAS - Túi xách tay dáng trống Tidy Mơ",
+            "count": "6, 7"
+          },
+          {
+            "name": "TJEAN - Máy hút bụi giường nệm",
+            "count": "6"
+          },
+          {
+            "name": "TORRAS - Ốp lưng Q3Air",
+            "count": "15, 16"
+          },
+          {
+            "name": "BRUSHIE - Bàn chải điện",
+            "count": "4"
+          },
+          {
+            "name": "FORLOVE - Lọ tỏa hương",
+            "count": "5"
+          },
+          {
+            "name": "TOKYOLIFE - Bàn chải đánh răng",
+            "count": "7, 8"
+          },
+          {
+            "name": "PARROTI - Bộ cọ toilet",
+            "count": "9, 10"
+          },
+          {
+            "name": "PARROTI - Cây chà sàn",
+            "count": "2"
+          }
+        ]
+      },
+      "Thắm": {
+        "videos": [
+          {
+            "name": "TORRAS - Ốp lưng trong suốt",
+            "count": 2
+          },
+          {
+            "name": "ONECHI - Dây dán velcro quấn chống rối",
+            "count": 1
+          },
+          {
+            "name": "HAPAS - Túi xách tay dáng trống Tidy Mơ",
+            "count": 1
+          },
+          {
+            "name": "TJEAN - Máy hút bụi giường nệm",
+            "count": 2
+          },
+          {
+            "name": "TORRAS - Ốp lưng Q3Air",
+            "count": 2
+          },
+          {
+            "name": "BRUSHIE - Bàn chải điện",
+            "count": 1
+          },
+          {
+            "name": "FORLOVE - Lọ tỏa hương",
+            "count": 1
+          },
+          {
+            "name": "TOKYOLIFE - Bàn chải đánh răng",
+            "count": 2
+          },
+          {
+            "name": "PARROTI - Bộ cọ toilet",
+            "count": 1
+          },
+          {
+            "name": "PARROTI - Cây chà sàn",
+            "count": 2
+          }
+        ],
+        "voices": [
+          {
+            "name": "TORRAS - Ốp lưng trong suốt",
+            "count": "10, 11"
+          },
+          {
+            "name": "ONECHI - Dây dán velcro quấn chống rối",
+            "count": "6"
+          },
+          {
+            "name": "HAPAS - Túi xách tay dáng trống Tidy Mơ",
+            "count": "8"
+          },
+          {
+            "name": "TJEAN - Máy hút bụi giường nệm",
+            "count": "7, 1"
+          },
+          {
+            "name": "TORRAS - Ốp lưng Q3Air",
+            "count": "17, 18"
+          },
+          {
+            "name": "BRUSHIE - Bàn chải điện",
+            "count": "5"
+          },
+          {
+            "name": "FORLOVE - Lọ tỏa hương",
+            "count": "6"
+          },
+          {
+            "name": "TOKYOLIFE - Bàn chải đánh răng",
+            "count": "9, 10"
+          },
+          {
+            "name": "PARROTI - Bộ cọ toilet",
+            "count": "1"
+          },
+          {
+            "name": "PARROTI - Cây chà sàn",
+            "count": "1, 2"
+          }
+        ]
+      },
+      "Trân": {
+        "videos": [
+          {
+            "name": "TORRAS - Ốp lưng trong suốt",
+            "count": 2
+          },
+          {
+            "name": "ONECHI - Dây dán velcro quấn chống rối",
+            "count": 1
+          },
+          {
+            "name": "HAPAS - Túi xách tay dáng trống Tidy Mơ",
+            "count": 1
+          },
+          {
+            "name": "TJEAN - Máy hút bụi giường nệm",
+            "count": 2
+          },
+          {
+            "name": "TORRAS - Ốp lưng Q3Air",
+            "count": 1
+          },
+          {
+            "name": "BRUSHIE - Bàn chải điện",
+            "count": 2
+          },
+          {
+            "name": "FORLOVE - Lọ tỏa hương",
+            "count": 1
+          },
+          {
+            "name": "TOKYOLIFE - Bàn chải đánh răng",
+            "count": 2
+          },
+          {
+            "name": "PARROTI - Bộ cọ toilet",
+            "count": 1
+          },
+          {
+            "name": "PARROTI - Cây chà sàn",
+            "count": 2
+          }
+        ],
+        "voices": [
+          {
+            "name": "TORRAS - Ốp lưng trong suốt",
+            "count": "12, 13"
+          },
+          {
+            "name": "ONECHI - Dây dán velcro quấn chống rối",
+            "count": "7"
+          },
+          {
+            "name": "HAPAS - Túi xách tay dáng trống Tidy Mơ",
+            "count": "9"
+          },
+          {
+            "name": "TJEAN - Máy hút bụi giường nệm",
+            "count": "2, 3"
+          },
+          {
+            "name": "TORRAS - Ốp lưng Q3Air",
+            "count": "19"
+          },
+          {
+            "name": "BRUSHIE - Bàn chải điện",
+            "count": "6, 7"
+          },
+          {
+            "name": "FORLOVE - Lọ tỏa hương",
+            "count": "7"
+          },
+          {
+            "name": "TOKYOLIFE - Bàn chải đánh răng",
+            "count": "11, 12"
+          },
+          {
+            "name": "PARROTI - Bộ cọ toilet",
+            "count": "2"
+          },
+          {
+            "name": "PARROTI - Cây chà sàn",
+            "count": "1, 2"
+          }
+        ]
+      },
+      "Sơn": {
+        "videos": [
+          {
+            "name": "TORRAS - Ốp lưng trong suốt",
+            "count": 1
+          },
+          {
+            "name": "ONECHI - Dây dán velcro quấn chống rối",
+            "count": 2
+          },
+          {
+            "name": "HAPAS - Túi xách tay dáng trống Tidy Mơ",
+            "count": 1
+          },
+          {
+            "name": "TJEAN - Máy hút bụi giường nệm",
+            "count": 2
+          },
+          {
+            "name": "TORRAS - Ốp lưng Q3Air",
+            "count": 1
+          },
+          {
+            "name": "BRUSHIE - Bàn chải điện",
+            "count": 2
+          },
+          {
+            "name": "FORLOVE - Lọ tỏa hương",
+            "count": 1
+          },
+          {
+            "name": "TOKYOLIFE - Bàn chải đánh răng",
+            "count": 2
+          },
+          {
+            "name": "PARROTI - Bộ cọ toilet",
+            "count": 1
+          },
+          {
+            "name": "PARROTI - Cây chà sàn",
+            "count": 2
+          }
+        ],
+        "voices": [
+          {
+            "name": "TORRAS - Ốp lưng trong suốt",
+            "count": "14"
+          },
+          {
+            "name": "ONECHI - Dây dán velcro quấn chống rối",
+            "count": "8, 9"
+          },
+          {
+            "name": "HAPAS - Túi xách tay dáng trống Tidy Mơ",
+            "count": "10"
+          },
+          {
+            "name": "TJEAN - Máy hút bụi giường nệm",
+            "count": "4, 5"
+          },
+          {
+            "name": "TORRAS - Ốp lưng Q3Air",
+            "count": "20"
+          },
+          {
+            "name": "BRUSHIE - Bàn chải điện",
+            "count": "8, 9"
+          },
+          {
+            "name": "FORLOVE - Lọ tỏa hương",
+            "count": "8"
+          },
+          {
+            "name": "TOKYOLIFE - Bàn chải đánh răng",
+            "count": "13, 14"
+          },
+          {
+            "name": "PARROTI - Bộ cọ toilet",
+            "count": "3"
+          },
+          {
+            "name": "PARROTI - Cây chà sàn",
+            "count": "1, 2"
+          }
+        ]
+      },
+      "Tuyên": {
+        "videos": [
+          {
+            "name": "TORRAS - Ốp lưng trong suốt",
+            "count": 1
+          },
+          {
+            "name": "ONECHI - Dây dán velcro quấn chống rối",
+            "count": 1
+          },
+          {
+            "name": "TJEAN - Máy hút bụi giường nệm",
+            "count": 2
+          },
+          {
+            "name": "BRUSHIE - Bàn chải điện",
+            "count": 1
+          },
+          {
+            "name": "FORLOVE - Lọ tỏa hương",
+            "count": 2
+          },
+          {
+            "name": "TOKYOLIFE - Bàn chải đánh răng",
+            "count": 1
+          },
+          {
+            "name": "PARROTI - Bộ cọ toilet",
+            "count": 2
+          }
+        ],
+        "voices": [
+          {
+            "name": "TORRAS - Ốp lưng trong suốt",
+            "count": "15"
+          },
+          {
+            "name": "ONECHI - Dây dán velcro quấn chống rối",
+            "count": "10"
+          },
+          {
+            "name": "TJEAN - Máy hút bụi giường nệm",
+            "count": "6, 7"
+          },
+          {
+            "name": "BRUSHIE - Bàn chải điện",
+            "count": "10"
+          },
+          {
+            "name": "FORLOVE - Lọ tỏa hương",
+            "count": "9, 10"
+          },
+          {
+            "name": "TOKYOLIFE - Bàn chải đánh răng",
+            "count": "15"
+          },
+          {
+            "name": "PARROTI - Bộ cọ toilet",
+            "count": "4, 5"
+          }
+        ]
+      }
+    },
+    "links": [
+      {
+        "full_name": "TORRAS - Ốp lưng trong suốt",
+        "url": "https://drive.google.com/drive/folders/1fi6MElfmk75JqhCFO-R_NQYqdQwMnaqB"
+      },
+      {
+        "full_name": "ONECHI - Dây dán velcro quấn chống rối",
+        "url": "https://drive.google.com/drive/folders/1nMgjM2SLQgOIvbwWtEJfKhqflJLxuzbs"
+      },
+      {
+        "full_name": "HAPAS - Túi xách tay dáng trống Tidy Mơ",
+        "url": "https://drive.google.com/drive/folders/1Sr3MRy8OW0Xe5OoT4Qbp3xNqdzakLk1m"
+      },
+      {
+        "full_name": "TJEAN - Máy hút bụi giường nệm",
+        "url": "https://drive.google.com/drive/folders/1kwlH7LrUwnb9ILGyaPf8NFUvVHaXF8I1"
+      },
+      {
+        "full_name": "TORRAS - Ốp lưng Q3Air",
+        "url": "https://drive.google.com/drive/folders/1Y6hBv7-9ft_aLTeEMd8J_oOP-iLxT1mW"
+      },
+      {
+        "full_name": "BRUSHIE - Bàn chải điện",
+        "url": "https://drive.google.com/drive/folders/1cfNh-WUM6StEkMLgxXMDtO7mgoC9-ted"
+      },
+      {
+        "full_name": "FORLOVE - Lọ tỏa hương",
+        "url": "https://drive.google.com/drive/folders/1PvWRWdjHHo2MQKSun_20CaWxIC6IszWf"
+      },
+      {
+        "full_name": "TOKYOLIFE - Bàn chải đánh răng",
+        "url": "https://drive.google.com/drive/folders/1lccNi1EQ6v9AuiiPnYtGbUMIY8o20OpC"
+      },
+      {
+        "full_name": "PARROTI - Bộ cọ toilet",
+        "url": "https://drive.google.com/drive/folders/1U_Rv8-djst10pyQ4ibgw4nyem-el8YAh"
+      },
+      {
+        "full_name": "PARROTI - Cây chà sàn",
+        "url": "https://drive.google.com/drive/folders/14848AFUWVsIu5uJ2d4AYvQESLgKDVyWr"
+      }
+    ]
   },
   "2026-06-09": {
-    "assignments": {},
-    "links": []
+    "assignments": {
+      "Thư": {
+        "videos": [
+          {
+            "name": "REDCHEF - Bộ dao kéo 6 món",
+            "count": 2
+          },
+          {
+            "name": "HAPAS - Quà tặng Set \"Chân Thành\"",
+            "count": 1
+          },
+          {
+            "name": "LIVINOX - Combo 6 thìa inox 304",
+            "count": 1
+          },
+          {
+            "name": "DELI - Bộ tuốc nơ vít đa năng",
+            "count": 2
+          },
+          {
+            "name": "LUCK - Bình đựng dầu ăn đa năng",
+            "count": 1
+          },
+          {
+            "name": "ROYAL - Khăn tắm cotton",
+            "count": 1
+          },
+          {
+            "name": "BESTON - Pin kiềm Alkaline",
+            "count": 2
+          },
+          {
+            "name": "PHOTOOLEX - Bộ đèn pin chụp ảnh",
+            "count": 3
+          },
+          {
+            "name": "THINSHOP88 - Túi ngâm chân gấp gọn",
+            "count": 1
+          },
+          {
+            "name": "THINSHOP88 - Cây đấm lưng ngải cứu",
+            "count": 2
+          },
+          {
+            "name": "SEANUO STORE VN - Màn hình phản chiếu từ tính",
+            "count": 2
+          },
+          {
+            "name": "ULANZI - Gá đỡ điện thoại từ tính MA38",
+            "count": 2
+          }
+        ],
+        "voices": [
+          {
+            "name": "REDCHEF - Bộ dao kéo 6 món",
+            "count": "1, 2"
+          },
+          {
+            "name": "HAPAS - Quà tặng Set \"Chân Thành\"",
+            "count": "11"
+          },
+          {
+            "name": "LIVINOX - Combo 6 thìa inox 304",
+            "count": "1"
+          },
+          {
+            "name": "DELI - Bộ tuốc nơ vít đa năng",
+            "count": "1, 2"
+          },
+          {
+            "name": "LUCK - Bình đựng dầu ăn đa năng",
+            "count": "1"
+          },
+          {
+            "name": "ROYAL - Khăn tắm cotton",
+            "count": "21"
+          },
+          {
+            "name": "BESTON - Pin kiềm Alkaline",
+            "count": "1, 2"
+          },
+          {
+            "name": "PHOTOOLEX - Bộ đèn pin chụp ảnh",
+            "count": "1, 2, 3"
+          },
+          {
+            "name": "THINSHOP88 - Túi ngâm chân gấp gọn",
+            "count": "1"
+          },
+          {
+            "name": "THINSHOP88 - Cây đấm lưng ngải cứu",
+            "count": "1, 2"
+          },
+          {
+            "name": "SEANUO STORE VN - Màn hình phản chiếu từ tính",
+            "count": "1, 2"
+          },
+          {
+            "name": "ULANZI - Gá đỡ điện thoại từ tính MA38",
+            "count": "1, 2"
+          }
+        ]
+      },
+      "Dung": {
+        "videos": [
+          {
+            "name": "REDCHEF - Bộ dao kéo 6 món",
+            "count": 2
+          },
+          {
+            "name": "HAPAS - Quà tặng Set \"Chân Thành\"",
+            "count": 1
+          },
+          {
+            "name": "LIVINOX - Combo 6 thìa inox 304",
+            "count": 1
+          },
+          {
+            "name": "DELI - Bộ tuốc nơ vít đa năng",
+            "count": 2
+          },
+          {
+            "name": "LUCK - Bình đựng dầu ăn đa năng",
+            "count": 1
+          },
+          {
+            "name": "ROYAL - Khăn tắm cotton",
+            "count": 1
+          },
+          {
+            "name": "BESTON - Pin kiềm Alkaline",
+            "count": 1
+          },
+          {
+            "name": "PHOTOOLEX - Bộ đèn pin chụp ảnh",
+            "count": 2
+          },
+          {
+            "name": "THINSHOP88 - Túi ngâm chân gấp gọn",
+            "count": 1
+          },
+          {
+            "name": "THINSHOP88 - Cây đấm lưng ngải cứu",
+            "count": 1
+          },
+          {
+            "name": "SEANUO STORE VN - Màn hình phản chiếu từ tính",
+            "count": 1
+          },
+          {
+            "name": "ULANZI - Gá đỡ điện thoại từ tính MA38",
+            "count": 1
+          }
+        ],
+        "voices": [
+          {
+            "name": "REDCHEF - Bộ dao kéo 6 món",
+            "count": "3, 4"
+          },
+          {
+            "name": "HAPAS - Quà tặng Set \"Chân Thành\"",
+            "count": "12"
+          },
+          {
+            "name": "LIVINOX - Combo 6 thìa inox 304",
+            "count": "2"
+          },
+          {
+            "name": "DELI - Bộ tuốc nơ vít đa năng",
+            "count": "3, 4"
+          },
+          {
+            "name": "LUCK - Bình đựng dầu ăn đa năng",
+            "count": "2"
+          },
+          {
+            "name": "ROYAL - Khăn tắm cotton",
+            "count": "22"
+          },
+          {
+            "name": "BESTON - Pin kiềm Alkaline",
+            "count": "3"
+          },
+          {
+            "name": "PHOTOOLEX - Bộ đèn pin chụp ảnh",
+            "count": "4, 5"
+          },
+          {
+            "name": "THINSHOP88 - Túi ngâm chân gấp gọn",
+            "count": "2"
+          },
+          {
+            "name": "THINSHOP88 - Cây đấm lưng ngải cứu",
+            "count": "3"
+          },
+          {
+            "name": "SEANUO STORE VN - Màn hình phản chiếu từ tính",
+            "count": "3"
+          },
+          {
+            "name": "ULANZI - Gá đỡ điện thoại từ tính MA38",
+            "count": "3"
+          }
+        ]
+      },
+      "Duyên": {
+        "videos": [
+          {
+            "name": "REDCHEF - Bộ dao kéo 6 món",
+            "count": 2
+          },
+          {
+            "name": "HAPAS - Quà tặng Set \"Chân Thành\"",
+            "count": 1
+          },
+          {
+            "name": "LIVINOX - Combo 6 thìa inox 304",
+            "count": 1
+          },
+          {
+            "name": "DELI - Bộ tuốc nơ vít đa năng",
+            "count": 2
+          },
+          {
+            "name": "LUCK - Bình đựng dầu ăn đa năng",
+            "count": 1
+          },
+          {
+            "name": "ROYAL - Khăn tắm cotton",
+            "count": 1
+          },
+          {
+            "name": "BESTON - Pin kiềm Alkaline",
+            "count": 1
+          },
+          {
+            "name": "PHOTOOLEX - Bộ đèn pin chụp ảnh",
+            "count": 1
+          },
+          {
+            "name": "THINSHOP88 - Túi ngâm chân gấp gọn",
+            "count": 2
+          },
+          {
+            "name": "THINSHOP88 - Cây đấm lưng ngải cứu",
+            "count": 1
+          },
+          {
+            "name": "SEANUO STORE VN - Màn hình phản chiếu từ tính",
+            "count": 1
+          },
+          {
+            "name": "ULANZI - Gá đỡ điện thoại từ tính MA38",
+            "count": 1
+          }
+        ],
+        "voices": [
+          {
+            "name": "REDCHEF - Bộ dao kéo 6 món",
+            "count": "5, 6"
+          },
+          {
+            "name": "HAPAS - Quà tặng Set \"Chân Thành\"",
+            "count": "13"
+          },
+          {
+            "name": "LIVINOX - Combo 6 thìa inox 304",
+            "count": "3"
+          },
+          {
+            "name": "DELI - Bộ tuốc nơ vít đa năng",
+            "count": "5, 6"
+          },
+          {
+            "name": "LUCK - Bình đựng dầu ăn đa năng",
+            "count": "3"
+          },
+          {
+            "name": "ROYAL - Khăn tắm cotton",
+            "count": "23"
+          },
+          {
+            "name": "BESTON - Pin kiềm Alkaline",
+            "count": "4"
+          },
+          {
+            "name": "PHOTOOLEX - Bộ đèn pin chụp ảnh",
+            "count": "6"
+          },
+          {
+            "name": "THINSHOP88 - Túi ngâm chân gấp gọn",
+            "count": "3, 4"
+          },
+          {
+            "name": "THINSHOP88 - Cây đấm lưng ngải cứu",
+            "count": "4"
+          },
+          {
+            "name": "SEANUO STORE VN - Màn hình phản chiếu từ tính",
+            "count": "4"
+          },
+          {
+            "name": "ULANZI - Gá đỡ điện thoại từ tính MA38",
+            "count": "4"
+          }
+        ]
+      },
+      "Hiếu": {
+        "videos": [
+          {
+            "name": "REDCHEF - Bộ dao kéo 6 món",
+            "count": 1
+          },
+          {
+            "name": "HAPAS - Quà tặng Set \"Chân Thành\"",
+            "count": 2
+          },
+          {
+            "name": "LIVINOX - Combo 6 thìa inox 304",
+            "count": 1
+          },
+          {
+            "name": "DELI - Bộ tuốc nơ vít đa năng",
+            "count": 1
+          },
+          {
+            "name": "LUCK - Bình đựng dầu ăn đa năng",
+            "count": 2
+          },
+          {
+            "name": "ROYAL - Khăn tắm cotton",
+            "count": 1
+          },
+          {
+            "name": "BESTON - Pin kiềm Alkaline",
+            "count": 1
+          },
+          {
+            "name": "PHOTOOLEX - Bộ đèn pin chụp ảnh",
+            "count": 1
+          },
+          {
+            "name": "THINSHOP88 - Túi ngâm chân gấp gọn",
+            "count": 2
+          },
+          {
+            "name": "THINSHOP88 - Cây đấm lưng ngải cứu",
+            "count": 1
+          },
+          {
+            "name": "SEANUO STORE VN - Màn hình phản chiếu từ tính",
+            "count": 1
+          },
+          {
+            "name": "ULANZI - Gá đỡ điện thoại từ tính MA38",
+            "count": 1
+          }
+        ],
+        "voices": [
+          {
+            "name": "REDCHEF - Bộ dao kéo 6 món",
+            "count": "7"
+          },
+          {
+            "name": "HAPAS - Quà tặng Set \"Chân Thành\"",
+            "count": "14, 15"
+          },
+          {
+            "name": "LIVINOX - Combo 6 thìa inox 304",
+            "count": "4"
+          },
+          {
+            "name": "DELI - Bộ tuốc nơ vít đa năng",
+            "count": "7"
+          },
+          {
+            "name": "LUCK - Bình đựng dầu ăn đa năng",
+            "count": "4, 5"
+          },
+          {
+            "name": "ROYAL - Khăn tắm cotton",
+            "count": "24"
+          },
+          {
+            "name": "BESTON - Pin kiềm Alkaline",
+            "count": "5"
+          },
+          {
+            "name": "PHOTOOLEX - Bộ đèn pin chụp ảnh",
+            "count": "7"
+          },
+          {
+            "name": "THINSHOP88 - Túi ngâm chân gấp gọn",
+            "count": "5, 6"
+          },
+          {
+            "name": "THINSHOP88 - Cây đấm lưng ngải cứu",
+            "count": "5"
+          },
+          {
+            "name": "SEANUO STORE VN - Màn hình phản chiếu từ tính",
+            "count": "5"
+          },
+          {
+            "name": "ULANZI - Gá đỡ điện thoại từ tính MA38",
+            "count": "5"
+          }
+        ]
+      },
+      "Thắm": {
+        "videos": [
+          {
+            "name": "REDCHEF - Bộ dao kéo 6 món",
+            "count": 1
+          },
+          {
+            "name": "HAPAS - Quà tặng Set \"Chân Thành\"",
+            "count": 2
+          },
+          {
+            "name": "LIVINOX - Combo 6 thìa inox 304",
+            "count": 1
+          },
+          {
+            "name": "DELI - Bộ tuốc nơ vít đa năng",
+            "count": 1
+          },
+          {
+            "name": "LUCK - Bình đựng dầu ăn đa năng",
+            "count": 2
+          },
+          {
+            "name": "ROYAL - Khăn tắm cotton",
+            "count": 1
+          },
+          {
+            "name": "BESTON - Pin kiềm Alkaline",
+            "count": 1
+          },
+          {
+            "name": "PHOTOOLEX - Bộ đèn pin chụp ảnh",
+            "count": 1
+          },
+          {
+            "name": "THINSHOP88 - Túi ngâm chân gấp gọn",
+            "count": 1
+          },
+          {
+            "name": "THINSHOP88 - Cây đấm lưng ngải cứu",
+            "count": 2
+          },
+          {
+            "name": "SEANUO STORE VN - Màn hình phản chiếu từ tính",
+            "count": 1
+          },
+          {
+            "name": "ULANZI - Gá đỡ điện thoại từ tính MA38",
+            "count": 1
+          }
+        ],
+        "voices": [
+          {
+            "name": "REDCHEF - Bộ dao kéo 6 món",
+            "count": "8"
+          },
+          {
+            "name": "HAPAS - Quà tặng Set \"Chân Thành\"",
+            "count": "16, 17"
+          },
+          {
+            "name": "LIVINOX - Combo 6 thìa inox 304",
+            "count": "5"
+          },
+          {
+            "name": "DELI - Bộ tuốc nơ vít đa năng",
+            "count": "8"
+          },
+          {
+            "name": "LUCK - Bình đựng dầu ăn đa năng",
+            "count": "6, 7"
+          },
+          {
+            "name": "ROYAL - Khăn tắm cotton",
+            "count": "25"
+          },
+          {
+            "name": "BESTON - Pin kiềm Alkaline",
+            "count": "6"
+          },
+          {
+            "name": "PHOTOOLEX - Bộ đèn pin chụp ảnh",
+            "count": "8"
+          },
+          {
+            "name": "THINSHOP88 - Túi ngâm chân gấp gọn",
+            "count": "7"
+          },
+          {
+            "name": "THINSHOP88 - Cây đấm lưng ngải cứu",
+            "count": "6, 7"
+          },
+          {
+            "name": "SEANUO STORE VN - Màn hình phản chiếu từ tính",
+            "count": "1"
+          },
+          {
+            "name": "ULANZI - Gá đỡ điện thoại từ tính MA38",
+            "count": "6"
+          }
+        ]
+      },
+      "Trân": {
+        "videos": [
+          {
+            "name": "REDCHEF - Bộ dao kéo 6 món",
+            "count": 1
+          },
+          {
+            "name": "HAPAS - Quà tặng Set \"Chân Thành\"",
+            "count": 2
+          },
+          {
+            "name": "LIVINOX - Combo 6 thìa inox 304",
+            "count": 1
+          },
+          {
+            "name": "DELI - Bộ tuốc nơ vít đa năng",
+            "count": 1
+          },
+          {
+            "name": "LUCK - Bình đựng dầu ăn đa năng",
+            "count": 1
+          },
+          {
+            "name": "ROYAL - Khăn tắm cotton",
+            "count": 2
+          },
+          {
+            "name": "BESTON - Pin kiềm Alkaline",
+            "count": 1
+          },
+          {
+            "name": "PHOTOOLEX - Bộ đèn pin chụp ảnh",
+            "count": 1
+          },
+          {
+            "name": "THINSHOP88 - Túi ngâm chân gấp gọn",
+            "count": 1
+          },
+          {
+            "name": "THINSHOP88 - Cây đấm lưng ngải cứu",
+            "count": 1
+          },
+          {
+            "name": "SEANUO STORE VN - Màn hình phản chiếu từ tính",
+            "count": 2
+          },
+          {
+            "name": "ULANZI - Gá đỡ điện thoại từ tính MA38",
+            "count": 1
+          }
+        ],
+        "voices": [
+          {
+            "name": "REDCHEF - Bộ dao kéo 6 món",
+            "count": "9"
+          },
+          {
+            "name": "HAPAS - Quà tặng Set \"Chân Thành\"",
+            "count": "18, 19"
+          },
+          {
+            "name": "LIVINOX - Combo 6 thìa inox 304",
+            "count": "6"
+          },
+          {
+            "name": "DELI - Bộ tuốc nơ vít đa năng",
+            "count": "9"
+          },
+          {
+            "name": "LUCK - Bình đựng dầu ăn đa năng",
+            "count": "8"
+          },
+          {
+            "name": "ROYAL - Khăn tắm cotton",
+            "count": "26, 27"
+          },
+          {
+            "name": "BESTON - Pin kiềm Alkaline",
+            "count": "7"
+          },
+          {
+            "name": "PHOTOOLEX - Bộ đèn pin chụp ảnh",
+            "count": "9"
+          },
+          {
+            "name": "THINSHOP88 - Túi ngâm chân gấp gọn",
+            "count": "8"
+          },
+          {
+            "name": "THINSHOP88 - Cây đấm lưng ngải cứu",
+            "count": "8"
+          },
+          {
+            "name": "SEANUO STORE VN - Màn hình phản chiếu từ tính",
+            "count": "2, 3"
+          },
+          {
+            "name": "ULANZI - Gá đỡ điện thoại từ tính MA38",
+            "count": "7"
+          }
+        ]
+      },
+      "Sơn": {
+        "videos": [
+          {
+            "name": "REDCHEF - Bộ dao kéo 6 món",
+            "count": 1
+          },
+          {
+            "name": "HAPAS - Quà tặng Set \"Chân Thành\"",
+            "count": 1
+          },
+          {
+            "name": "LIVINOX - Combo 6 thìa inox 304",
+            "count": 2
+          },
+          {
+            "name": "DELI - Bộ tuốc nơ vít đa năng",
+            "count": 1
+          },
+          {
+            "name": "LUCK - Bình đựng dầu ăn đa năng",
+            "count": 1
+          },
+          {
+            "name": "ROYAL - Khăn tắm cotton",
+            "count": 2
+          },
+          {
+            "name": "BESTON - Pin kiềm Alkaline",
+            "count": 1
+          },
+          {
+            "name": "PHOTOOLEX - Bộ đèn pin chụp ảnh",
+            "count": 1
+          },
+          {
+            "name": "THINSHOP88 - Túi ngâm chân gấp gọn",
+            "count": 1
+          },
+          {
+            "name": "THINSHOP88 - Cây đấm lưng ngải cứu",
+            "count": 1
+          },
+          {
+            "name": "SEANUO STORE VN - Màn hình phản chiếu từ tính",
+            "count": 1
+          },
+          {
+            "name": "ULANZI - Gá đỡ điện thoại từ tính MA38",
+            "count": 2
+          }
+        ],
+        "voices": [
+          {
+            "name": "REDCHEF - Bộ dao kéo 6 món",
+            "count": "10"
+          },
+          {
+            "name": "HAPAS - Quà tặng Set \"Chân Thành\"",
+            "count": "20"
+          },
+          {
+            "name": "LIVINOX - Combo 6 thìa inox 304",
+            "count": "7, 8"
+          },
+          {
+            "name": "DELI - Bộ tuốc nơ vít đa năng",
+            "count": "10"
+          },
+          {
+            "name": "LUCK - Bình đựng dầu ăn đa năng",
+            "count": "9"
+          },
+          {
+            "name": "ROYAL - Khăn tắm cotton",
+            "count": "28, 29"
+          },
+          {
+            "name": "BESTON - Pin kiềm Alkaline",
+            "count": "8"
+          },
+          {
+            "name": "PHOTOOLEX - Bộ đèn pin chụp ảnh",
+            "count": "10"
+          },
+          {
+            "name": "THINSHOP88 - Túi ngâm chân gấp gọn",
+            "count": "9"
+          },
+          {
+            "name": "THINSHOP88 - Cây đấm lưng ngải cứu",
+            "count": "9"
+          },
+          {
+            "name": "SEANUO STORE VN - Màn hình phản chiếu từ tính",
+            "count": "4"
+          },
+          {
+            "name": "ULANZI - Gá đỡ điện thoại từ tính MA38",
+            "count": "8, 9"
+          }
+        ]
+      },
+      "Tuyên": {
+        "videos": [
+          {
+            "name": "LIVINOX - Combo 6 thìa inox 304",
+            "count": 2
+          },
+          {
+            "name": "LUCK - Bình đựng dầu ăn đa năng",
+            "count": 1
+          },
+          {
+            "name": "ROYAL - Khăn tắm cotton",
+            "count": 1
+          },
+          {
+            "name": "BESTON - Pin kiềm Alkaline",
+            "count": 2
+          },
+          {
+            "name": "THINSHOP88 - Túi ngâm chân gấp gọn",
+            "count": 1
+          },
+          {
+            "name": "THINSHOP88 - Cây đấm lưng ngải cứu",
+            "count": 1
+          },
+          {
+            "name": "SEANUO STORE VN - Màn hình phản chiếu từ tính",
+            "count": 1
+          },
+          {
+            "name": "ULANZI - Gá đỡ điện thoại từ tính MA38",
+            "count": 1
+          }
+        ],
+        "voices": [
+          {
+            "name": "LIVINOX - Combo 6 thìa inox 304",
+            "count": "9, 10"
+          },
+          {
+            "name": "LUCK - Bình đựng dầu ăn đa năng",
+            "count": "10"
+          },
+          {
+            "name": "ROYAL - Khăn tắm cotton",
+            "count": "30"
+          },
+          {
+            "name": "BESTON - Pin kiềm Alkaline",
+            "count": "9, 10"
+          },
+          {
+            "name": "THINSHOP88 - Túi ngâm chân gấp gọn",
+            "count": "10"
+          },
+          {
+            "name": "THINSHOP88 - Cây đấm lưng ngải cứu",
+            "count": "10"
+          },
+          {
+            "name": "SEANUO STORE VN - Màn hình phản chiếu từ tính",
+            "count": "5"
+          },
+          {
+            "name": "ULANZI - Gá đỡ điện thoại từ tính MA38",
+            "count": "10"
+          }
+        ]
+      }
+    },
+    "links": [
+      {
+        "full_name": "REDCHEF - Bộ dao kéo 6 món",
+        "url": "https://drive.google.com/drive/folders/1huqYwqLII2l7JF9o6sdxPoP4eJgr-rR6"
+      },
+      {
+        "full_name": "HAPAS - Quà tặng Set \"Chân Thành\"",
+        "url": "https://drive.google.com/drive/folders/1CtqNV3OCSueEeQ9wW89Y6tXvmFUIaP2H"
+      },
+      {
+        "full_name": "LIVINOX - Combo 6 thìa inox 304",
+        "url": "https://drive.google.com/drive/folders/1JMx_h2bae4nwnOLLDnvQ58FtCpMZ5HEF"
+      },
+      {
+        "full_name": "DELI - Bộ tuốc nơ vít đa năng",
+        "url": "https://drive.google.com/drive/folders/1s5i3bnDx2faR-Fa7PSoIdy2mvz5kdyTn"
+      },
+      {
+        "full_name": "LUCK - Bình đựng dầu ăn đa năng",
+        "url": "https://drive.google.com/drive/folders/1sAvTuS9kUk0hAhZYOkXnae6qNk4b8C9a"
+      },
+      {
+        "full_name": "ROYAL - Khăn tắm cotton",
+        "url": "https://drive.google.com/drive/folders/1Q5O9ulncubx2fZpDve0oeMIlgAKw4eA8"
+      },
+      {
+        "full_name": "BESTON - Pin kiềm Alkaline",
+        "url": "https://drive.google.com/drive/folders/1FC2VmGH7NczYpOFyxKKa0wuFAI8b1A-Y"
+      },
+      {
+        "full_name": "PHOTOOLEX - Bộ đèn pin chụp ảnh",
+        "url": "https://drive.google.com/drive/folders/1gPJtFOCd9m3rlF8p_cBPq_7n0vC_tH1C"
+      },
+      {
+        "full_name": "THINSHOP88 - Túi ngâm chân gấp gọn",
+        "url": "https://drive.google.com/drive/folders/1JcIwdqJEDxRg-dwTK5ljBbQ9NyHfXj-_"
+      },
+      {
+        "full_name": "THINSHOP88 - Cây đấm lưng ngải cứu",
+        "url": "https://drive.google.com/drive/folders/1MQMrGzVlxfRLW3akwFfC6lcwGagbePK-"
+      },
+      {
+        "full_name": "SEANUO STORE VN - Màn hình phản chiếu từ tính",
+        "url": "https://drive.google.com/drive/folders/19Y5nCkc7nrC1oMM07ZV4zWrI4e56C1yM"
+      },
+      {
+        "full_name": "ULANZI - Gá đỡ điện thoại từ tính MA38",
+        "url": "https://drive.google.com/drive/folders/1ON7JYnuQIY18JlhAQ5av8NsEbIh79NTn"
+      }
+    ]
   },
   "2026-06-10": {
-    "assignments": {},
-    "links": []
+    "assignments": {
+      "Thư": {
+        "videos": [
+          {
+            "name": "REDCHEF - Bộ nồi chảo chống dính",
+            "count": 2
+          },
+          {
+            "name": "AJIDO - Cân điện tử thông minh",
+            "count": 1
+          },
+          {
+            "name": "DELI - Hộp đựng thực phẩm",
+            "count": 5
+          },
+          {
+            "name": "DIGI DOMAIN - Đế sạc không dây 3 in 1",
+            "count": 2
+          },
+          {
+            "name": "TOSUDO - Móc treo đồ",
+            "count": 1
+          },
+          {
+            "name": "XPANSE - Ghế công thái học",
+            "count": 3
+          },
+          {
+            "name": "DELI - Dao rọc giấy đa năng",
+            "count": 3
+          },
+          {
+            "name": "DELI - Ổ điện chữ T",
+            "count": 1
+          },
+          {
+            "name": "EDC VN - Đèn pin led zoom F35",
+            "count": 2
+          }
+        ],
+        "voices": [
+          {
+            "name": "REDCHEF - Bộ nồi chảo chống dính",
+            "count": "1, 2"
+          },
+          {
+            "name": "AJIDO - Cân điện tử thông minh",
+            "count": "11"
+          },
+          {
+            "name": "DELI - Hộp đựng thực phẩm",
+            "count": "1, 2, 3, 4, 5"
+          },
+          {
+            "name": "DIGI DOMAIN - Đế sạc không dây 3 in 1",
+            "count": "8, 9"
+          },
+          {
+            "name": "TOSUDO - Móc treo đồ",
+            "count": "14"
+          },
+          {
+            "name": "XPANSE - Ghế công thái học",
+            "count": "6, 7, 8"
+          },
+          {
+            "name": "DELI - Dao rọc giấy đa năng",
+            "count": "9, 10, 11"
+          },
+          {
+            "name": "DELI - Ổ điện chữ T",
+            "count": "8"
+          },
+          {
+            "name": "EDC VN - Đèn pin led zoom F35",
+            "count": "1, 2"
+          }
+        ]
+      },
+      "Dung": {
+        "videos": [
+          {
+            "name": "REDCHEF - Bộ nồi chảo chống dính",
+            "count": 2
+          },
+          {
+            "name": "AJIDO - Cân điện tử thông minh",
+            "count": 1
+          },
+          {
+            "name": "DELI - Hộp đựng thực phẩm",
+            "count": 3
+          },
+          {
+            "name": "DIGI DOMAIN - Đế sạc không dây 3 in 1",
+            "count": 1
+          },
+          {
+            "name": "TOSUDO - Móc treo đồ",
+            "count": 2
+          },
+          {
+            "name": "XPANSE - Ghế công thái học",
+            "count": 2
+          },
+          {
+            "name": "DELI - Dao rọc giấy đa năng",
+            "count": 1
+          },
+          {
+            "name": "DELI - Ổ điện chữ T",
+            "count": 2
+          },
+          {
+            "name": "EDC VN - Đèn pin led zoom F35",
+            "count": 1
+          }
+        ],
+        "voices": [
+          {
+            "name": "REDCHEF - Bộ nồi chảo chống dính",
+            "count": "3, 4"
+          },
+          {
+            "name": "AJIDO - Cân điện tử thông minh",
+            "count": "1"
+          },
+          {
+            "name": "DELI - Hộp đựng thực phẩm",
+            "count": "6, 7, 8"
+          },
+          {
+            "name": "DIGI DOMAIN - Đế sạc không dây 3 in 1",
+            "count": "10"
+          },
+          {
+            "name": "TOSUDO - Móc treo đồ",
+            "count": "15, 16"
+          },
+          {
+            "name": "XPANSE - Ghế công thái học",
+            "count": "9, 10"
+          },
+          {
+            "name": "DELI - Dao rọc giấy đa năng",
+            "count": "12"
+          },
+          {
+            "name": "DELI - Ổ điện chữ T",
+            "count": "9, 10"
+          },
+          {
+            "name": "EDC VN - Đèn pin led zoom F35",
+            "count": "3"
+          }
+        ]
+      },
+      "Duyên": {
+        "videos": [
+          {
+            "name": "REDCHEF - Bộ nồi chảo chống dính",
+            "count": 2
+          },
+          {
+            "name": "AJIDO - Cân điện tử thông minh",
+            "count": 1
+          },
+          {
+            "name": "DELI - Hộp đựng thực phẩm",
+            "count": 3
+          },
+          {
+            "name": "DIGI DOMAIN - Đế sạc không dây 3 in 1",
+            "count": 1
+          },
+          {
+            "name": "TOSUDO - Móc treo đồ",
+            "count": 2
+          },
+          {
+            "name": "XPANSE - Ghế công thái học",
+            "count": 2
+          },
+          {
+            "name": "DELI - Dao rọc giấy đa năng",
+            "count": 1
+          },
+          {
+            "name": "DELI - Ổ điện chữ T",
+            "count": 2
+          },
+          {
+            "name": "EDC VN - Đèn pin led zoom F35",
+            "count": 1
+          }
+        ],
+        "voices": [
+          {
+            "name": "REDCHEF - Bộ nồi chảo chống dính",
+            "count": "5, 6"
+          },
+          {
+            "name": "AJIDO - Cân điện tử thông minh",
+            "count": "2"
+          },
+          {
+            "name": "DELI - Hộp đựng thực phẩm",
+            "count": "9, 10, 11"
+          },
+          {
+            "name": "DIGI DOMAIN - Đế sạc không dây 3 in 1",
+            "count": "11"
+          },
+          {
+            "name": "TOSUDO - Móc treo đồ",
+            "count": "17, 1"
+          },
+          {
+            "name": "XPANSE - Ghế công thái học",
+            "count": "1, 2"
+          },
+          {
+            "name": "DELI - Dao rọc giấy đa năng",
+            "count": "1"
+          },
+          {
+            "name": "DELI - Ổ điện chữ T",
+            "count": "11, 12"
+          },
+          {
+            "name": "EDC VN - Đèn pin led zoom F35",
+            "count": "4"
+          }
+        ]
+      },
+      "Hiếu": {
+        "videos": [
+          {
+            "name": "REDCHEF - Bộ nồi chảo chống dính",
+            "count": 2
+          },
+          {
+            "name": "AJIDO - Cân điện tử thông minh",
+            "count": 1
+          },
+          {
+            "name": "DELI - Hộp đựng thực phẩm",
+            "count": 3
+          },
+          {
+            "name": "DIGI DOMAIN - Đế sạc không dây 3 in 1",
+            "count": 1
+          },
+          {
+            "name": "TOSUDO - Móc treo đồ",
+            "count": 2
+          },
+          {
+            "name": "XPANSE - Ghế công thái học",
+            "count": 2
+          },
+          {
+            "name": "DELI - Dao rọc giấy đa năng",
+            "count": 1
+          },
+          {
+            "name": "DELI - Ổ điện chữ T",
+            "count": 2
+          },
+          {
+            "name": "EDC VN - Đèn pin led zoom F35",
+            "count": 1
+          }
+        ],
+        "voices": [
+          {
+            "name": "REDCHEF - Bộ nồi chảo chống dính",
+            "count": "7, 8"
+          },
+          {
+            "name": "AJIDO - Cân điện tử thông minh",
+            "count": "3"
+          },
+          {
+            "name": "DELI - Hộp đựng thực phẩm",
+            "count": "12, 13, 14"
+          },
+          {
+            "name": "DIGI DOMAIN - Đế sạc không dây 3 in 1",
+            "count": "12"
+          },
+          {
+            "name": "TOSUDO - Móc treo đồ",
+            "count": "2, 3"
+          },
+          {
+            "name": "XPANSE - Ghế công thái học",
+            "count": "3, 4"
+          },
+          {
+            "name": "DELI - Dao rọc giấy đa năng",
+            "count": "2"
+          },
+          {
+            "name": "DELI - Ổ điện chữ T",
+            "count": "13, 1"
+          },
+          {
+            "name": "EDC VN - Đèn pin led zoom F35",
+            "count": "5"
+          }
+        ]
+      },
+      "Thắm": {
+        "videos": [
+          {
+            "name": "REDCHEF - Bộ nồi chảo chống dính",
+            "count": 1
+          },
+          {
+            "name": "AJIDO - Cân điện tử thông minh",
+            "count": 2
+          },
+          {
+            "name": "DELI - Hộp đựng thực phẩm",
+            "count": 3
+          },
+          {
+            "name": "DIGI DOMAIN - Đế sạc không dây 3 in 1",
+            "count": 1
+          },
+          {
+            "name": "TOSUDO - Móc treo đồ",
+            "count": 2
+          },
+          {
+            "name": "XPANSE - Ghế công thái học",
+            "count": 2
+          },
+          {
+            "name": "DELI - Dao rọc giấy đa năng",
+            "count": 1
+          },
+          {
+            "name": "DELI - Ổ điện chữ T",
+            "count": 1
+          },
+          {
+            "name": "EDC VN - Đèn pin led zoom F35",
+            "count": 2
+          }
+        ],
+        "voices": [
+          {
+            "name": "REDCHEF - Bộ nồi chảo chống dính",
+            "count": "9"
+          },
+          {
+            "name": "AJIDO - Cân điện tử thông minh",
+            "count": "4, 5"
+          },
+          {
+            "name": "DELI - Hộp đựng thực phẩm",
+            "count": "15, 16, 17"
+          },
+          {
+            "name": "DIGI DOMAIN - Đế sạc không dây 3 in 1",
+            "count": "13"
+          },
+          {
+            "name": "TOSUDO - Móc treo đồ",
+            "count": "4, 5"
+          },
+          {
+            "name": "XPANSE - Ghế công thái học",
+            "count": "5, 6"
+          },
+          {
+            "name": "DELI - Dao rọc giấy đa năng",
+            "count": "3"
+          },
+          {
+            "name": "DELI - Ổ điện chữ T",
+            "count": "2"
+          },
+          {
+            "name": "EDC VN - Đèn pin led zoom F35",
+            "count": "6, 7"
+          }
+        ]
+      },
+      "Trân": {
+        "videos": [
+          {
+            "name": "REDCHEF - Bộ nồi chảo chống dính",
+            "count": 1
+          },
+          {
+            "name": "AJIDO - Cân điện tử thông minh",
+            "count": 2
+          },
+          {
+            "name": "DELI - Hộp đựng thực phẩm",
+            "count": 2
+          },
+          {
+            "name": "DIGI DOMAIN - Đế sạc không dây 3 in 1",
+            "count": 2
+          },
+          {
+            "name": "TOSUDO - Móc treo đồ",
+            "count": 1
+          },
+          {
+            "name": "XPANSE - Ghế công thái học",
+            "count": 3
+          },
+          {
+            "name": "DELI - Dao rọc giấy đa năng",
+            "count": 1
+          },
+          {
+            "name": "DELI - Ổ điện chữ T",
+            "count": 1
+          },
+          {
+            "name": "EDC VN - Đèn pin led zoom F35",
+            "count": 2
+          }
+        ],
+        "voices": [
+          {
+            "name": "REDCHEF - Bộ nồi chảo chống dính",
+            "count": "10"
+          },
+          {
+            "name": "AJIDO - Cân điện tử thông minh",
+            "count": "6, 7"
+          },
+          {
+            "name": "DELI - Hộp đựng thực phẩm",
+            "count": "18, 19"
+          },
+          {
+            "name": "DIGI DOMAIN - Đế sạc không dây 3 in 1",
+            "count": "1, 2"
+          },
+          {
+            "name": "TOSUDO - Móc treo đồ",
+            "count": "6"
+          },
+          {
+            "name": "XPANSE - Ghế công thái học",
+            "count": "7, 8, 9"
+          },
+          {
+            "name": "DELI - Dao rọc giấy đa năng",
+            "count": "4"
+          },
+          {
+            "name": "DELI - Ổ điện chữ T",
+            "count": "3"
+          },
+          {
+            "name": "EDC VN - Đèn pin led zoom F35",
+            "count": "8, 9"
+          }
+        ]
+      },
+      "Tuyên": {
+        "videos": [
+          {
+            "name": "AJIDO - Cân điện tử thông minh",
+            "count": 2
+          },
+          {
+            "name": "DELI - Hộp đựng thực phẩm",
+            "count": 1
+          },
+          {
+            "name": "DIGI DOMAIN - Đế sạc không dây 3 in 1",
+            "count": 2
+          },
+          {
+            "name": "XPANSE - Ghế công thái học",
+            "count": 1
+          },
+          {
+            "name": "DELI - Dao rọc giấy đa năng",
+            "count": 2
+          },
+          {
+            "name": "DELI - Ổ điện chữ T",
+            "count": 1
+          },
+          {
+            "name": "EDC VN - Đèn pin led zoom F35",
+            "count": 1
+          }
+        ],
+        "voices": [
+          {
+            "name": "AJIDO - Cân điện tử thông minh",
+            "count": "8, 9"
+          },
+          {
+            "name": "DELI - Hộp đựng thực phẩm",
+            "count": "20"
+          },
+          {
+            "name": "DIGI DOMAIN - Đế sạc không dây 3 in 1",
+            "count": "3, 4"
+          },
+          {
+            "name": "XPANSE - Ghế công thái học",
+            "count": "10"
+          },
+          {
+            "name": "DELI - Dao rọc giấy đa năng",
+            "count": "5, 6"
+          },
+          {
+            "name": "DELI - Ổ điện chữ T",
+            "count": "4"
+          },
+          {
+            "name": "EDC VN - Đèn pin led zoom F35",
+            "count": "10"
+          }
+        ]
+      }
+    },
+    "links": [
+      {
+        "full_name": "REDCHEF - Bộ nồi chảo chống dính",
+        "url": "https://drive.google.com/drive/folders/1MsG8ybRcomtrheDGPYxwwti7l4BUtEuw"
+      },
+      {
+        "full_name": "AJIDO - Cân điện tử thông minh",
+        "url": "https://drive.google.com/drive/folders/1l2zU_Ex4GqNE38DzjeqnzwEGTGz44Za1"
+      },
+      {
+        "full_name": "DELI - Hộp đựng thực phẩm",
+        "url": "https://drive.google.com/drive/folders/1Bjf-Ak1yEKniuxnQ9Ycg6M5UEFPcf4LR"
+      },
+      {
+        "full_name": "DIGI DOMAIN - Đế sạc không dây 3 in 1",
+        "url": "https://drive.google.com/drive/folders/1aM_XMr8mIMYfHeBBcPJQ7tia4O1DnwnJ"
+      },
+      {
+        "full_name": "TOSUDO - Móc treo đồ",
+        "url": "https://drive.google.com/drive/folders/1NVguQOkZdm0YnwFR5-HYkyuW7nXEnyaO"
+      },
+      {
+        "full_name": "XPANSE - Ghế công thái học",
+        "url": "https://drive.google.com/drive/folders/1SrflrVq0RkiYKm6HmEDPIUSOy-_tNFlk"
+      },
+      {
+        "full_name": "DELI - Dao rọc giấy đa năng",
+        "url": "https://drive.google.com/drive/folders/1-UomE0Uo54OvbMU2ZWRLfQXoXnoQCsE1"
+      },
+      {
+        "full_name": "DELI - Ổ điện chữ T",
+        "url": "https://drive.google.com/drive/folders/1CaJyvQiWIH-J8QRBagxjUG-Tcu3d48Sd"
+      },
+      {
+        "full_name": "EDC VN - Đèn pin led zoom F35",
+        "url": "https://drive.google.com/drive/folders/10wu4smyBgm6n1z5BfICXQHuKCWbda3tJ"
+      }
+    ]
   },
   "2026-06-11": {
-    "assignments": {},
-    "links": []
+    "assignments": {
+      "Thư": {
+        "videos": [
+          {
+            "name": "TIEU MAN THAU STORE - Khẩu trang chống nắng ninja",
+            "count": 3
+          },
+          {
+            "name": "PERYSMITH - Máy hút bụi cầm tay XS1Pro",
+            "count": 3
+          },
+          {
+            "name": "JISULIFE - Quạt đeo cổ Life 5",
+            "count": 2
+          },
+          {
+            "name": "AQUA - Máy phun sương tạo ẩm",
+            "count": 3
+          },
+          {
+            "name": "MODECO - Máy massage cầm tay",
+            "count": 1
+          },
+          {
+            "name": "ULUCKY - Đai chườm ấm bụng",
+            "count": 2
+          },
+          {
+            "name": "GEBUOANG - Thiết bị quay góc pov",
+            "count": 4
+          },
+          {
+            "name": "UPGEN - Bàn nâng hạ di động",
+            "count": 2
+          }
+        ],
+        "voices": [
+          {
+            "name": "TIEU MAN THAU STORE - Khẩu trang chống nắng ninja",
+            "count": "1, 2, 3"
+          },
+          {
+            "name": "PERYSMITH - Máy hút bụi cầm tay XS1Pro",
+            "count": "1, 2, 3"
+          },
+          {
+            "name": "JISULIFE - Quạt đeo cổ Life 5",
+            "count": "1, 2"
+          },
+          {
+            "name": "AQUA - Máy phun sương tạo ẩm",
+            "count": "6, 7, 8"
+          },
+          {
+            "name": "MODECO - Máy massage cầm tay",
+            "count": "1"
+          },
+          {
+            "name": "ULUCKY - Đai chườm ấm bụng",
+            "count": "6, 7"
+          },
+          {
+            "name": "GEBUOANG - Thiết bị quay góc pov",
+            "count": "1, 2, 3, 4"
+          },
+          {
+            "name": "UPGEN - Bàn nâng hạ di động",
+            "count": "9, 10"
+          }
+        ]
+      },
+      "Dung": {
+        "videos": [
+          {
+            "name": "TIEU MAN THAU STORE - Khẩu trang chống nắng ninja",
+            "count": 2
+          },
+          {
+            "name": "PERYSMITH - Máy hút bụi cầm tay XS1Pro",
+            "count": 2
+          },
+          {
+            "name": "JISULIFE - Quạt đeo cổ Life 5",
+            "count": 1
+          },
+          {
+            "name": "AQUA - Máy phun sương tạo ẩm",
+            "count": 2
+          },
+          {
+            "name": "MODECO - Máy massage cầm tay",
+            "count": 2
+          },
+          {
+            "name": "ULUCKY - Đai chườm ấm bụng",
+            "count": 1
+          },
+          {
+            "name": "GEBUOANG - Thiết bị quay góc pov",
+            "count": 3
+          },
+          {
+            "name": "UPGEN - Bàn nâng hạ di động",
+            "count": 2
+          }
+        ],
+        "voices": [
+          {
+            "name": "TIEU MAN THAU STORE - Khẩu trang chống nắng ninja",
+            "count": "4, 5"
+          },
+          {
+            "name": "PERYSMITH - Máy hút bụi cầm tay XS1Pro",
+            "count": "4, 5"
+          },
+          {
+            "name": "JISULIFE - Quạt đeo cổ Life 5",
+            "count": "3"
+          },
+          {
+            "name": "AQUA - Máy phun sương tạo ẩm",
+            "count": "9, 10"
+          },
+          {
+            "name": "MODECO - Máy massage cầm tay",
+            "count": "2, 3"
+          },
+          {
+            "name": "ULUCKY - Đai chườm ấm bụng",
+            "count": "8"
+          },
+          {
+            "name": "GEBUOANG - Thiết bị quay góc pov",
+            "count": "5, 1, 2"
+          },
+          {
+            "name": "UPGEN - Bàn nâng hạ di động",
+            "count": "11, 12"
+          }
+        ]
+      },
+      "Duyên": {
+        "videos": [
+          {
+            "name": "TIEU MAN THAU STORE - Khẩu trang chống nắng ninja",
+            "count": 2
+          },
+          {
+            "name": "PERYSMITH - Máy hút bụi cầm tay XS1Pro",
+            "count": 2
+          },
+          {
+            "name": "JISULIFE - Quạt đeo cổ Life 5",
+            "count": 1
+          },
+          {
+            "name": "AQUA - Máy phun sương tạo ẩm",
+            "count": 2
+          },
+          {
+            "name": "MODECO - Máy massage cầm tay",
+            "count": 2
+          },
+          {
+            "name": "ULUCKY - Đai chườm ấm bụng",
+            "count": 1
+          },
+          {
+            "name": "GEBUOANG - Thiết bị quay góc pov",
+            "count": 3
+          },
+          {
+            "name": "UPGEN - Bàn nâng hạ di động",
+            "count": 2
+          }
+        ],
+        "voices": [
+          {
+            "name": "TIEU MAN THAU STORE - Khẩu trang chống nắng ninja",
+            "count": "6, 7"
+          },
+          {
+            "name": "PERYSMITH - Máy hút bụi cầm tay XS1Pro",
+            "count": "6, 7"
+          },
+          {
+            "name": "JISULIFE - Quạt đeo cổ Life 5",
+            "count": "4"
+          },
+          {
+            "name": "AQUA - Máy phun sương tạo ẩm",
+            "count": "1, 2"
+          },
+          {
+            "name": "MODECO - Máy massage cầm tay",
+            "count": "4, 5"
+          },
+          {
+            "name": "ULUCKY - Đai chườm ấm bụng",
+            "count": "9"
+          },
+          {
+            "name": "GEBUOANG - Thiết bị quay góc pov",
+            "count": "3, 4, 5"
+          },
+          {
+            "name": "UPGEN - Bàn nâng hạ di động",
+            "count": "1, 2"
+          }
+        ]
+      },
+      "Hiếu": {
+        "videos": [
+          {
+            "name": "TIEU MAN THAU STORE - Khẩu trang chống nắng ninja",
+            "count": 2
+          },
+          {
+            "name": "PERYSMITH - Máy hút bụi cầm tay XS1Pro",
+            "count": 1
+          },
+          {
+            "name": "JISULIFE - Quạt đeo cổ Life 5",
+            "count": 3
+          },
+          {
+            "name": "AQUA - Máy phun sương tạo ẩm",
+            "count": 1
+          },
+          {
+            "name": "MODECO - Máy massage cầm tay",
+            "count": 2
+          },
+          {
+            "name": "ULUCKY - Đai chườm ấm bụng",
+            "count": 1
+          },
+          {
+            "name": "GEBUOANG - Thiết bị quay góc pov",
+            "count": 3
+          },
+          {
+            "name": "UPGEN - Bàn nâng hạ di động",
+            "count": 2
+          }
+        ],
+        "voices": [
+          {
+            "name": "TIEU MAN THAU STORE - Khẩu trang chống nắng ninja",
+            "count": "8, 9"
+          },
+          {
+            "name": "PERYSMITH - Máy hút bụi cầm tay XS1Pro",
+            "count": "8"
+          },
+          {
+            "name": "JISULIFE - Quạt đeo cổ Life 5",
+            "count": "5, 6, 7"
+          },
+          {
+            "name": "AQUA - Máy phun sương tạo ẩm",
+            "count": "3"
+          },
+          {
+            "name": "MODECO - Máy massage cầm tay",
+            "count": "6, 7"
+          },
+          {
+            "name": "ULUCKY - Đai chườm ấm bụng",
+            "count": "10"
+          },
+          {
+            "name": "GEBUOANG - Thiết bị quay góc pov",
+            "count": "1, 2, 3"
+          },
+          {
+            "name": "UPGEN - Bàn nâng hạ di động",
+            "count": "3, 4"
+          }
+        ]
+      },
+      "Thắm": {
+        "videos": [
+          {
+            "name": "TIEU MAN THAU STORE - Khẩu trang chống nắng ninja",
+            "count": 2
+          },
+          {
+            "name": "PERYSMITH - Máy hút bụi cầm tay XS1Pro",
+            "count": 1
+          },
+          {
+            "name": "JISULIFE - Quạt đeo cổ Life 5",
+            "count": 3
+          },
+          {
+            "name": "AQUA - Máy phun sương tạo ẩm",
+            "count": 1
+          },
+          {
+            "name": "MODECO - Máy massage cầm tay",
+            "count": 1
+          },
+          {
+            "name": "ULUCKY - Đai chườm ấm bụng",
+            "count": 3
+          },
+          {
+            "name": "GEBUOANG - Thiết bị quay góc pov",
+            "count": 2
+          },
+          {
+            "name": "UPGEN - Bàn nâng hạ di động",
+            "count": 2
+          }
+        ],
+        "voices": [
+          {
+            "name": "TIEU MAN THAU STORE - Khẩu trang chống nắng ninja",
+            "count": "10, 1"
+          },
+          {
+            "name": "PERYSMITH - Máy hút bụi cầm tay XS1Pro",
+            "count": "9"
+          },
+          {
+            "name": "JISULIFE - Quạt đeo cổ Life 5",
+            "count": "8, 9, 10"
+          },
+          {
+            "name": "AQUA - Máy phun sương tạo ẩm",
+            "count": "4"
+          },
+          {
+            "name": "MODECO - Máy massage cầm tay",
+            "count": "8"
+          },
+          {
+            "name": "ULUCKY - Đai chườm ấm bụng",
+            "count": "11, 12, 13"
+          },
+          {
+            "name": "GEBUOANG - Thiết bị quay góc pov",
+            "count": "4, 5"
+          },
+          {
+            "name": "UPGEN - Bàn nâng hạ di động",
+            "count": "5, 6"
+          }
+        ]
+      },
+      "Trân": {
+        "videos": [
+          {
+            "name": "TIEU MAN THAU STORE - Khẩu trang chống nắng ninja",
+            "count": 2
+          },
+          {
+            "name": "PERYSMITH - Máy hút bụi cầm tay XS1Pro",
+            "count": 1
+          },
+          {
+            "name": "JISULIFE - Quạt đeo cổ Life 5",
+            "count": 3
+          },
+          {
+            "name": "AQUA - Máy phun sương tạo ẩm",
+            "count": 1
+          },
+          {
+            "name": "MODECO - Máy massage cầm tay",
+            "count": 1
+          },
+          {
+            "name": "ULUCKY - Đai chườm ấm bụng",
+            "count": 3
+          },
+          {
+            "name": "GEBUOANG - Thiết bị quay góc pov",
+            "count": 2
+          },
+          {
+            "name": "UPGEN - Bàn nâng hạ di động",
+            "count": 2
+          }
+        ],
+        "voices": [
+          {
+            "name": "TIEU MAN THAU STORE - Khẩu trang chống nắng ninja",
+            "count": "2, 3"
+          },
+          {
+            "name": "PERYSMITH - Máy hút bụi cầm tay XS1Pro",
+            "count": "10"
+          },
+          {
+            "name": "JISULIFE - Quạt đeo cổ Life 5",
+            "count": "1, 2, 3"
+          },
+          {
+            "name": "AQUA - Máy phun sương tạo ẩm",
+            "count": "5"
+          },
+          {
+            "name": "MODECO - Máy massage cầm tay",
+            "count": "9"
+          },
+          {
+            "name": "ULUCKY - Đai chườm ấm bụng",
+            "count": "14, 15, 1"
+          },
+          {
+            "name": "GEBUOANG - Thiết bị quay góc pov",
+            "count": "1, 2"
+          },
+          {
+            "name": "UPGEN - Bàn nâng hạ di động",
+            "count": "7, 8"
+          }
+        ]
+      },
+      "Sơn": {
+        "videos": [
+          {
+            "name": "TIEU MAN THAU STORE - Khẩu trang chống nắng ninja",
+            "count": 1
+          },
+          {
+            "name": "PERYSMITH - Máy hút bụi cầm tay XS1Pro",
+            "count": 3
+          },
+          {
+            "name": "JISULIFE - Quạt đeo cổ Life 5",
+            "count": 1
+          },
+          {
+            "name": "AQUA - Máy phun sương tạo ẩm",
+            "count": 3
+          },
+          {
+            "name": "MODECO - Máy massage cầm tay",
+            "count": 1
+          },
+          {
+            "name": "ULUCKY - Đai chườm ấm bụng",
+            "count": 2
+          },
+          {
+            "name": "GEBUOANG - Thiết bị quay góc pov",
+            "count": 2
+          },
+          {
+            "name": "UPGEN - Bàn nâng hạ di động",
+            "count": 2
+          }
+        ],
+        "voices": [
+          {
+            "name": "TIEU MAN THAU STORE - Khẩu trang chống nắng ninja",
+            "count": "4"
+          },
+          {
+            "name": "PERYSMITH - Máy hút bụi cầm tay XS1Pro",
+            "count": "1, 2, 3"
+          },
+          {
+            "name": "JISULIFE - Quạt đeo cổ Life 5",
+            "count": "4"
+          },
+          {
+            "name": "AQUA - Máy phun sương tạo ẩm",
+            "count": "6, 7, 8"
+          },
+          {
+            "name": "MODECO - Máy massage cầm tay",
+            "count": "10"
+          },
+          {
+            "name": "ULUCKY - Đai chườm ấm bụng",
+            "count": "2, 3"
+          },
+          {
+            "name": "GEBUOANG - Thiết bị quay góc pov",
+            "count": "3, 4"
+          },
+          {
+            "name": "UPGEN - Bàn nâng hạ di động",
+            "count": "9, 10"
+          }
+        ]
+      },
+      "Tuyên": {
+        "videos": [
+          {
+            "name": "TIEU MAN THAU STORE - Khẩu trang chống nắng ninja",
+            "count": 1
+          },
+          {
+            "name": "PERYSMITH - Máy hút bụi cầm tay XS1Pro",
+            "count": 2
+          },
+          {
+            "name": "JISULIFE - Quạt đeo cổ Life 5",
+            "count": 1
+          },
+          {
+            "name": "AQUA - Máy phun sương tạo ẩm",
+            "count": 2
+          },
+          {
+            "name": "ULUCKY - Đai chườm ấm bụng",
+            "count": 2
+          },
+          {
+            "name": "GEBUOANG - Thiết bị quay góc pov",
+            "count": 1
+          },
+          {
+            "name": "UPGEN - Bàn nâng hạ di động",
+            "count": 1
+          }
+        ],
+        "voices": [
+          {
+            "name": "TIEU MAN THAU STORE - Khẩu trang chống nắng ninja",
+            "count": "5"
+          },
+          {
+            "name": "PERYSMITH - Máy hút bụi cầm tay XS1Pro",
+            "count": "4, 5"
+          },
+          {
+            "name": "JISULIFE - Quạt đeo cổ Life 5",
+            "count": "5"
+          },
+          {
+            "name": "AQUA - Máy phun sương tạo ẩm",
+            "count": "9, 10"
+          },
+          {
+            "name": "ULUCKY - Đai chườm ấm bụng",
+            "count": "4, 5"
+          },
+          {
+            "name": "GEBUOANG - Thiết bị quay góc pov",
+            "count": "5"
+          },
+          {
+            "name": "UPGEN - Bàn nâng hạ di động",
+            "count": "11"
+          }
+        ]
+      }
+    },
+    "links": [
+      {
+        "full_name": "TIEU MAN THAU STORE - Khẩu trang chống nắng ninja",
+        "url": "https://drive.google.com/drive/folders/11EkJ8JvX1UkAas7isFrrM9OIRGHZHWcj"
+      },
+      {
+        "full_name": "PERYSMITH - Máy hút bụi cầm tay XS1Pro",
+        "url": "https://drive.google.com/drive/folders/18L8T9RTJefIx9wC0cbs4tuXT6i6RVxN1"
+      },
+      {
+        "full_name": "JISULIFE - Quạt đeo cổ Life 5",
+        "url": "https://drive.google.com/drive/folders/1_vPUvtnk56rR0Ir3s9jlnpXr4V1WEj0u"
+      },
+      {
+        "full_name": "AQUA - Máy phun sương tạo ẩm",
+        "url": "https://drive.google.com/drive/folders/1UPD6-SdL9ru3Epj8KuIKdG6JVFhhDktD"
+      },
+      {
+        "full_name": "MODECO - Máy massage cầm tay",
+        "url": "https://drive.google.com/drive/folders/1A-OOzgXifKaqC08JRQcRjY6RhfF9JfZ7"
+      },
+      {
+        "full_name": "ULUCKY - Đai chườm ấm bụng",
+        "url": "https://drive.google.com/drive/folders/1BM4G4qNqabTGkapyW61SdfcdXLAVQuvD"
+      },
+      {
+        "full_name": "GEBUOANG - Thiết bị quay góc pov",
+        "url": "https://drive.google.com/drive/folders/1BsGQpQ93UPohmBoA2TvD--fSsnffP5Jb"
+      },
+      {
+        "full_name": "UPGEN - Bàn nâng hạ di động",
+        "url": "https://drive.google.com/drive/folders/19I2_wKqrXnfyBW6evvcCC9J2Mk_T3Xc8"
+      }
+    ]
   },
   "2026-06-12": {
-    "assignments": {},
-    "links": []
+    "assignments": {
+      "Thư": {
+        "videos": [
+          {
+            "name": "TORRAS - Ốp lưng trong suốt",
+            "count": 3
+          },
+          {
+            "name": "REDCHEF - Bộ dao kéo 6 món",
+            "count": 2
+          },
+          {
+            "name": "ETOE - Máy chiếu E3 Pro",
+            "count": 2
+          },
+          {
+            "name": "JETZ - Máy hút bụi X9",
+            "count": 3
+          },
+          {
+            "name": "TORRAS - Ốp lưng Q3Air",
+            "count": 1
+          },
+          {
+            "name": "ARZOPA - Màn hình di động Z1FC",
+            "count": 3
+          },
+          {
+            "name": "PARROTI - Cây chà sàn",
+            "count": 2
+          },
+          {
+            "name": "MIXUAN - Găng Tay Cao Su Bảo Hộ",
+            "count": 2
+          },
+          {
+            "name": "ETOE - Máy chiếu Starfish 2",
+            "count": 2
+          }
+        ],
+        "voices": [
+          {
+            "name": "TORRAS - Ốp lưng trong suốt",
+            "count": "10, 11, 12"
+          },
+          {
+            "name": "REDCHEF - Bộ dao kéo 6 món",
+            "count": "1, 2"
+          },
+          {
+            "name": "ETOE - Máy chiếu E3 Pro",
+            "count": "6, 7"
+          },
+          {
+            "name": "JETZ - Máy hút bụi X9",
+            "count": "11, 1, 2"
+          },
+          {
+            "name": "TORRAS - Ốp lưng Q3Air",
+            "count": "20"
+          },
+          {
+            "name": "ARZOPA - Màn hình di động Z1FC",
+            "count": "1, 2, 3"
+          },
+          {
+            "name": "PARROTI - Cây chà sàn",
+            "count": "1, 2"
+          },
+          {
+            "name": "MIXUAN - Găng Tay Cao Su Bảo Hộ",
+            "count": "1, 2"
+          },
+          {
+            "name": "ETOE - Máy chiếu Starfish 2",
+            "count": "30, 31"
+          }
+        ]
+      },
+      "Dung": {
+        "videos": [
+          {
+            "name": "TORRAS - Ốp lưng trong suốt",
+            "count": 2
+          },
+          {
+            "name": "REDCHEF - Bộ dao kéo 6 món",
+            "count": 1
+          },
+          {
+            "name": "ETOE - Máy chiếu E3 Pro",
+            "count": 2
+          },
+          {
+            "name": "JETZ - Máy hút bụi X9",
+            "count": 2
+          },
+          {
+            "name": "TORRAS - Ốp lưng Q3Air",
+            "count": 1
+          },
+          {
+            "name": "ARZOPA - Màn hình di động Z1FC",
+            "count": 2
+          },
+          {
+            "name": "PARROTI - Cây chà sàn",
+            "count": 1
+          },
+          {
+            "name": "MIXUAN - Găng Tay Cao Su Bảo Hộ",
+            "count": 2
+          },
+          {
+            "name": "ETOE - Máy chiếu Starfish 2",
+            "count": 2
+          }
+        ],
+        "voices": [
+          {
+            "name": "TORRAS - Ốp lưng trong suốt",
+            "count": "13, 14"
+          },
+          {
+            "name": "REDCHEF - Bộ dao kéo 6 món",
+            "count": "3"
+          },
+          {
+            "name": "ETOE - Máy chiếu E3 Pro",
+            "count": "8, 9"
+          },
+          {
+            "name": "JETZ - Máy hút bụi X9",
+            "count": "3, 4"
+          },
+          {
+            "name": "TORRAS - Ốp lưng Q3Air",
+            "count": "21"
+          },
+          {
+            "name": "ARZOPA - Màn hình di động Z1FC",
+            "count": "4, 5"
+          },
+          {
+            "name": "PARROTI - Cây chà sàn",
+            "count": "1"
+          },
+          {
+            "name": "MIXUAN - Găng Tay Cao Su Bảo Hộ",
+            "count": "3, 4"
+          },
+          {
+            "name": "ETOE - Máy chiếu Starfish 2",
+            "count": "32, 22"
+          }
+        ]
+      },
+      "Duyên": {
+        "videos": [
+          {
+            "name": "TORRAS - Ốp lưng trong suốt",
+            "count": 2
+          },
+          {
+            "name": "REDCHEF - Bộ dao kéo 6 món",
+            "count": 1
+          },
+          {
+            "name": "ETOE - Máy chiếu E3 Pro",
+            "count": 2
+          },
+          {
+            "name": "JETZ - Máy hút bụi X9",
+            "count": 2
+          },
+          {
+            "name": "TORRAS - Ốp lưng Q3Air",
+            "count": 1
+          },
+          {
+            "name": "ARZOPA - Màn hình di động Z1FC",
+            "count": 2
+          },
+          {
+            "name": "PARROTI - Cây chà sàn",
+            "count": 1
+          },
+          {
+            "name": "MIXUAN - Găng Tay Cao Su Bảo Hộ",
+            "count": 2
+          },
+          {
+            "name": "ETOE - Máy chiếu Starfish 2",
+            "count": 2
+          }
+        ],
+        "voices": [
+          {
+            "name": "TORRAS - Ốp lưng trong suốt",
+            "count": "15, 16"
+          },
+          {
+            "name": "REDCHEF - Bộ dao kéo 6 món",
+            "count": "4"
+          },
+          {
+            "name": "ETOE - Máy chiếu E3 Pro",
+            "count": "10, 11"
+          },
+          {
+            "name": "JETZ - Máy hút bụi X9",
+            "count": "5, 6"
+          },
+          {
+            "name": "TORRAS - Ốp lưng Q3Air",
+            "count": "1"
+          },
+          {
+            "name": "ARZOPA - Màn hình di động Z1FC",
+            "count": "6, 7"
+          },
+          {
+            "name": "PARROTI - Cây chà sàn",
+            "count": "2"
+          },
+          {
+            "name": "MIXUAN - Găng Tay Cao Su Bảo Hộ",
+            "count": "5, 6"
+          },
+          {
+            "name": "ETOE - Máy chiếu Starfish 2",
+            "count": "23, 24"
+          }
+        ]
+      },
+      "Hiếu": {
+        "videos": [
+          {
+            "name": "TORRAS - Ốp lưng trong suốt",
+            "count": 2
+          },
+          {
+            "name": "REDCHEF - Bộ dao kéo 6 món",
+            "count": 1
+          },
+          {
+            "name": "ETOE - Máy chiếu E3 Pro",
+            "count": 2
+          },
+          {
+            "name": "JETZ - Máy hút bụi X9",
+            "count": 2
+          },
+          {
+            "name": "TORRAS - Ốp lưng Q3Air",
+            "count": 1
+          },
+          {
+            "name": "ARZOPA - Màn hình di động Z1FC",
+            "count": 2
+          },
+          {
+            "name": "PARROTI - Cây chà sàn",
+            "count": 1
+          },
+          {
+            "name": "MIXUAN - Găng Tay Cao Su Bảo Hộ",
+            "count": 2
+          },
+          {
+            "name": "ETOE - Máy chiếu Starfish 2",
+            "count": 2
+          }
+        ],
+        "voices": [
+          {
+            "name": "TORRAS - Ốp lưng trong suốt",
+            "count": "17, 18"
+          },
+          {
+            "name": "REDCHEF - Bộ dao kéo 6 món",
+            "count": "5"
+          },
+          {
+            "name": "ETOE - Máy chiếu E3 Pro",
+            "count": "12, 13"
+          },
+          {
+            "name": "JETZ - Máy hút bụi X9",
+            "count": "7, 8"
+          },
+          {
+            "name": "TORRAS - Ốp lưng Q3Air",
+            "count": "2"
+          },
+          {
+            "name": "ARZOPA - Màn hình di động Z1FC",
+            "count": "8, 9"
+          },
+          {
+            "name": "PARROTI - Cây chà sàn",
+            "count": "1"
+          },
+          {
+            "name": "MIXUAN - Găng Tay Cao Su Bảo Hộ",
+            "count": "7, 8"
+          },
+          {
+            "name": "ETOE - Máy chiếu Starfish 2",
+            "count": "25, 26"
+          }
+        ]
+      },
+      "Thắm": {
+        "videos": [
+          {
+            "name": "TORRAS - Ốp lưng trong suốt",
+            "count": 2
+          },
+          {
+            "name": "REDCHEF - Bộ dao kéo 6 món",
+            "count": 1
+          },
+          {
+            "name": "ETOE - Máy chiếu E3 Pro",
+            "count": 2
+          },
+          {
+            "name": "JETZ - Máy hút bụi X9",
+            "count": 2
+          },
+          {
+            "name": "TORRAS - Ốp lưng Q3Air",
+            "count": 1
+          },
+          {
+            "name": "ARZOPA - Màn hình di động Z1FC",
+            "count": 2
+          },
+          {
+            "name": "PARROTI - Cây chà sàn",
+            "count": 1
+          },
+          {
+            "name": "MIXUAN - Găng Tay Cao Su Bảo Hộ",
+            "count": 2
+          },
+          {
+            "name": "ETOE - Máy chiếu Starfish 2",
+            "count": 2
+          }
+        ],
+        "voices": [
+          {
+            "name": "TORRAS - Ốp lưng trong suốt",
+            "count": "1, 2"
+          },
+          {
+            "name": "REDCHEF - Bộ dao kéo 6 món",
+            "count": "6"
+          },
+          {
+            "name": "ETOE - Máy chiếu E3 Pro",
+            "count": "14, 15"
+          },
+          {
+            "name": "JETZ - Máy hút bụi X9",
+            "count": "9, 10"
+          },
+          {
+            "name": "TORRAS - Ốp lưng Q3Air",
+            "count": "3"
+          },
+          {
+            "name": "ARZOPA - Màn hình di động Z1FC",
+            "count": "10, 1"
+          },
+          {
+            "name": "PARROTI - Cây chà sàn",
+            "count": "2"
+          },
+          {
+            "name": "MIXUAN - Găng Tay Cao Su Bảo Hộ",
+            "count": "9, 10"
+          },
+          {
+            "name": "ETOE - Máy chiếu Starfish 2",
+            "count": "27, 28"
+          }
+        ]
+      },
+      "Trân": {
+        "videos": [
+          {
+            "name": "TORRAS - Ốp lưng trong suốt",
+            "count": 2
+          },
+          {
+            "name": "REDCHEF - Bộ dao kéo 6 món",
+            "count": 1
+          },
+          {
+            "name": "ETOE - Máy chiếu E3 Pro",
+            "count": 2
+          },
+          {
+            "name": "JETZ - Máy hút bụi X9",
+            "count": 1
+          },
+          {
+            "name": "TORRAS - Ốp lưng Q3Air",
+            "count": 2
+          },
+          {
+            "name": "ARZOPA - Màn hình di động Z1FC",
+            "count": 2
+          },
+          {
+            "name": "PARROTI - Cây chà sàn",
+            "count": 1
+          },
+          {
+            "name": "MIXUAN - Găng Tay Cao Su Bảo Hộ",
+            "count": 2
+          },
+          {
+            "name": "ETOE - Máy chiếu Starfish 2",
+            "count": 2
+          }
+        ],
+        "voices": [
+          {
+            "name": "TORRAS - Ốp lưng trong suốt",
+            "count": "3, 4"
+          },
+          {
+            "name": "REDCHEF - Bộ dao kéo 6 món",
+            "count": "7"
+          },
+          {
+            "name": "ETOE - Máy chiếu E3 Pro",
+            "count": "1, 2"
+          },
+          {
+            "name": "JETZ - Máy hút bụi X9",
+            "count": "11"
+          },
+          {
+            "name": "TORRAS - Ốp lưng Q3Air",
+            "count": "4, 5"
+          },
+          {
+            "name": "ARZOPA - Màn hình di động Z1FC",
+            "count": "2, 3"
+          },
+          {
+            "name": "PARROTI - Cây chà sàn",
+            "count": "1"
+          },
+          {
+            "name": "MIXUAN - Găng Tay Cao Su Bảo Hộ",
+            "count": "1, 2"
+          },
+          {
+            "name": "ETOE - Máy chiếu Starfish 2",
+            "count": "29, 30"
+          }
+        ]
+      },
+      "Sơn": {
+        "videos": [
+          {
+            "name": "TORRAS - Ốp lưng trong suốt",
+            "count": 1
+          },
+          {
+            "name": "REDCHEF - Bộ dao kéo 6 món",
+            "count": 2
+          },
+          {
+            "name": "ETOE - Máy chiếu E3 Pro",
+            "count": 2
+          },
+          {
+            "name": "JETZ - Máy hút bụi X9",
+            "count": 1
+          },
+          {
+            "name": "TORRAS - Ốp lưng Q3Air",
+            "count": 2
+          },
+          {
+            "name": "ARZOPA - Màn hình di động Z1FC",
+            "count": 1
+          },
+          {
+            "name": "PARROTI - Cây chà sàn",
+            "count": 2
+          },
+          {
+            "name": "MIXUAN - Găng Tay Cao Su Bảo Hộ",
+            "count": 2
+          },
+          {
+            "name": "ETOE - Máy chiếu Starfish 2",
+            "count": 2
+          }
+        ],
+        "voices": [
+          {
+            "name": "TORRAS - Ốp lưng trong suốt",
+            "count": "5"
+          },
+          {
+            "name": "REDCHEF - Bộ dao kéo 6 món",
+            "count": "8, 9"
+          },
+          {
+            "name": "ETOE - Máy chiếu E3 Pro",
+            "count": "3, 4"
+          },
+          {
+            "name": "JETZ - Máy hút bụi X9",
+            "count": "1"
+          },
+          {
+            "name": "TORRAS - Ốp lưng Q3Air",
+            "count": "6, 7"
+          },
+          {
+            "name": "ARZOPA - Màn hình di động Z1FC",
+            "count": "4"
+          },
+          {
+            "name": "PARROTI - Cây chà sàn",
+            "count": "2, 1"
+          },
+          {
+            "name": "MIXUAN - Găng Tay Cao Su Bảo Hộ",
+            "count": "3, 4"
+          },
+          {
+            "name": "ETOE - Máy chiếu Starfish 2",
+            "count": "31, 32"
+          }
+        ]
+      },
+      "Tuyên": {
+        "videos": [
+          {
+            "name": "TORRAS - Ốp lưng trong suốt",
+            "count": 1
+          },
+          {
+            "name": "REDCHEF - Bộ dao kéo 6 món",
+            "count": 1
+          },
+          {
+            "name": "ETOE - Máy chiếu E3 Pro",
+            "count": 1
+          },
+          {
+            "name": "JETZ - Máy hút bụi X9",
+            "count": 2
+          },
+          {
+            "name": "TORRAS - Ốp lưng Q3Air",
+            "count": 1
+          },
+          {
+            "name": "ARZOPA - Màn hình di động Z1FC",
+            "count": 1
+          },
+          {
+            "name": "PARROTI - Cây chà sàn",
+            "count": 1
+          },
+          {
+            "name": "MIXUAN - Găng Tay Cao Su Bảo Hộ",
+            "count": 1
+          },
+          {
+            "name": "ETOE - Máy chiếu Starfish 2",
+            "count": 1
+          }
+        ],
+        "voices": [
+          {
+            "name": "TORRAS - Ốp lưng trong suốt",
+            "count": "6"
+          },
+          {
+            "name": "REDCHEF - Bộ dao kéo 6 món",
+            "count": "10"
+          },
+          {
+            "name": "ETOE - Máy chiếu E3 Pro",
+            "count": "5"
+          },
+          {
+            "name": "JETZ - Máy hút bụi X9",
+            "count": "2, 3"
+          },
+          {
+            "name": "TORRAS - Ốp lưng Q3Air",
+            "count": "8"
+          },
+          {
+            "name": "ARZOPA - Màn hình di động Z1FC",
+            "count": "5"
+          },
+          {
+            "name": "PARROTI - Cây chà sàn",
+            "count": "2"
+          },
+          {
+            "name": "MIXUAN - Găng Tay Cao Su Bảo Hộ",
+            "count": "5"
+          },
+          {
+            "name": "ETOE - Máy chiếu Starfish 2",
+            "count": "22"
+          }
+        ]
+      }
+    },
+    "links": [
+      {
+        "full_name": "TORRAS - Ốp lưng trong suốt",
+        "url": "https://drive.google.com/drive/folders/1fi6MElfmk75JqhCFO-R_NQYqdQwMnaqB"
+      },
+      {
+        "full_name": "REDCHEF - Bộ dao kéo 6 món",
+        "url": "https://drive.google.com/drive/folders/1huqYwqLII2l7JF9o6sdxPoP4eJgr-rR6"
+      },
+      {
+        "full_name": "ETOE - Máy chiếu E3 Pro",
+        "url": "https://drive.google.com/drive/folders/1qjw0O3EPTHLWPotdz0Hu_WjIf2QchCZ3"
+      },
+      {
+        "full_name": "JETZ - Máy hút bụi X9",
+        "url": "https://drive.google.com/drive/folders/1zsnDwsXgw23OeM8G_UX5g76xf4XLipYu"
+      },
+      {
+        "full_name": "TORRAS - Ốp lưng Q3Air",
+        "url": "https://drive.google.com/drive/folders/1Y6hBv7-9ft_aLTeEMd8J_oOP-iLxT1mW"
+      },
+      {
+        "full_name": "ARZOPA - Màn hình di động Z1FC",
+        "url": "https://drive.google.com/drive/folders/1yI_Qt7dLUGQmFCWj47LylW9RiA_zKrWq"
+      },
+      {
+        "full_name": "PARROTI - Cây chà sàn",
+        "url": "https://drive.google.com/drive/folders/14848AFUWVsIu5uJ2d4AYvQESLgKDVyWr"
+      },
+      {
+        "full_name": "MIXUAN - Găng Tay Cao Su Bảo Hộ",
+        "url": "https://drive.google.com/drive/folders/1qI71XopJUWDJUJqxSdqJaG7tapeUtk6F"
+      },
+      {
+        "full_name": "ETOE - Máy chiếu Starfish 2",
+        "url": "https://drive.google.com/drive/folders/1KgpI8dSxoL6fSMJhZx78n5uQ0JOJi1iZ"
+      }
+    ]
   },
   "2026-06-13": {
-    "assignments": {},
-    "links": []
+    "assignments": {
+      "Thư": {
+        "videos": [
+          {
+            "name": "TORRAS - Kính cường lực",
+            "count": 3
+          },
+          {
+            "name": "REDCHEF - Bộ nồi chảo chống dính",
+            "count": 3
+          },
+          {
+            "name": "MODECO - Lọ đựng gia vị có thìa",
+            "count": 1
+          },
+          {
+            "name": "TIGERNU - Ba lô nam doanh nhân",
+            "count": 2
+          },
+          {
+            "name": "UGREEN - Chuột không dây",
+            "count": 2
+          },
+          {
+            "name": "TOSUDO - Móc treo đồ",
+            "count": 2
+          },
+          {
+            "name": "TJEAN - Máy hút bụi giường nệm",
+            "count": 2
+          },
+          {
+            "name": "DEERMA - Máy xay gia vị",
+            "count": 2
+          },
+          {
+            "name": "PARROTI - Bộ cọ toilet",
+            "count": 3
+          }
+        ],
+        "voices": [
+          {
+            "name": "TORRAS - Kính cường lực",
+            "count": "1, 2, 3"
+          },
+          {
+            "name": "REDCHEF - Bộ nồi chảo chống dính",
+            "count": "1, 2, 3"
+          },
+          {
+            "name": "MODECO - Lọ đựng gia vị có thìa",
+            "count": "1"
+          },
+          {
+            "name": "TIGERNU - Ba lô nam doanh nhân",
+            "count": "1, 2"
+          },
+          {
+            "name": "UGREEN - Chuột không dây",
+            "count": "5, 6"
+          },
+          {
+            "name": "TOSUDO - Móc treo đồ",
+            "count": "7, 8"
+          },
+          {
+            "name": "TJEAN - Máy hút bụi giường nệm",
+            "count": "1, 2"
+          },
+          {
+            "name": "DEERMA - Máy xay gia vị",
+            "count": "2, 3"
+          },
+          {
+            "name": "PARROTI - Bộ cọ toilet",
+            "count": "6, 7, 8"
+          }
+        ]
+      },
+      "Dung": {
+        "videos": [
+          {
+            "name": "TORRAS - Kính cường lực",
+            "count": 2
+          },
+          {
+            "name": "REDCHEF - Bộ nồi chảo chống dính",
+            "count": 2
+          },
+          {
+            "name": "MODECO - Lọ đựng gia vị có thìa",
+            "count": 1
+          },
+          {
+            "name": "TIGERNU - Ba lô nam doanh nhân",
+            "count": 1
+          },
+          {
+            "name": "UGREEN - Chuột không dây",
+            "count": 2
+          },
+          {
+            "name": "TOSUDO - Móc treo đồ",
+            "count": 2
+          },
+          {
+            "name": "TJEAN - Máy hút bụi giường nệm",
+            "count": 1
+          },
+          {
+            "name": "DEERMA - Máy xay gia vị",
+            "count": 2
+          },
+          {
+            "name": "PARROTI - Bộ cọ toilet",
+            "count": 2
+          }
+        ],
+        "voices": [
+          {
+            "name": "TORRAS - Kính cường lực",
+            "count": "4, 5"
+          },
+          {
+            "name": "REDCHEF - Bộ nồi chảo chống dính",
+            "count": "4, 5"
+          },
+          {
+            "name": "MODECO - Lọ đựng gia vị có thìa",
+            "count": "2"
+          },
+          {
+            "name": "TIGERNU - Ba lô nam doanh nhân",
+            "count": "3"
+          },
+          {
+            "name": "UGREEN - Chuột không dây",
+            "count": "7, 8"
+          },
+          {
+            "name": "TOSUDO - Móc treo đồ",
+            "count": "9, 10"
+          },
+          {
+            "name": "TJEAN - Máy hút bụi giường nệm",
+            "count": "3"
+          },
+          {
+            "name": "DEERMA - Máy xay gia vị",
+            "count": "4, 5"
+          },
+          {
+            "name": "PARROTI - Bộ cọ toilet",
+            "count": "9, 10"
+          }
+        ]
+      },
+      "Duyên": {
+        "videos": [
+          {
+            "name": "TORRAS - Kính cường lực",
+            "count": 2
+          },
+          {
+            "name": "REDCHEF - Bộ nồi chảo chống dính",
+            "count": 2
+          },
+          {
+            "name": "MODECO - Lọ đựng gia vị có thìa",
+            "count": 1
+          },
+          {
+            "name": "TIGERNU - Ba lô nam doanh nhân",
+            "count": 1
+          },
+          {
+            "name": "UGREEN - Chuột không dây",
+            "count": 2
+          },
+          {
+            "name": "TOSUDO - Móc treo đồ",
+            "count": 1
+          },
+          {
+            "name": "TJEAN - Máy hút bụi giường nệm",
+            "count": 3
+          },
+          {
+            "name": "DEERMA - Máy xay gia vị",
+            "count": 1
+          },
+          {
+            "name": "PARROTI - Bộ cọ toilet",
+            "count": 2
+          }
+        ],
+        "voices": [
+          {
+            "name": "TORRAS - Kính cường lực",
+            "count": "6, 7"
+          },
+          {
+            "name": "REDCHEF - Bộ nồi chảo chống dính",
+            "count": "6, 7"
+          },
+          {
+            "name": "MODECO - Lọ đựng gia vị có thìa",
+            "count": "3"
+          },
+          {
+            "name": "TIGERNU - Ba lô nam doanh nhân",
+            "count": "4"
+          },
+          {
+            "name": "UGREEN - Chuột không dây",
+            "count": "9, 10"
+          },
+          {
+            "name": "TOSUDO - Móc treo đồ",
+            "count": "11"
+          },
+          {
+            "name": "TJEAN - Máy hút bụi giường nệm",
+            "count": "4, 5, 6"
+          },
+          {
+            "name": "DEERMA - Máy xay gia vị",
+            "count": "6"
+          },
+          {
+            "name": "PARROTI - Bộ cọ toilet",
+            "count": "1, 2"
+          }
+        ]
+      },
+      "Hiếu": {
+        "videos": [
+          {
+            "name": "TORRAS - Kính cường lực",
+            "count": 2
+          },
+          {
+            "name": "REDCHEF - Bộ nồi chảo chống dính",
+            "count": 1
+          },
+          {
+            "name": "MODECO - Lọ đựng gia vị có thìa",
+            "count": 2
+          },
+          {
+            "name": "TIGERNU - Ba lô nam doanh nhân",
+            "count": 1
+          },
+          {
+            "name": "UGREEN - Chuột không dây",
+            "count": 2
+          },
+          {
+            "name": "TOSUDO - Móc treo đồ",
+            "count": 1
+          },
+          {
+            "name": "TJEAN - Máy hút bụi giường nệm",
+            "count": 3
+          },
+          {
+            "name": "DEERMA - Máy xay gia vị",
+            "count": 1
+          },
+          {
+            "name": "PARROTI - Bộ cọ toilet",
+            "count": 2
+          }
+        ],
+        "voices": [
+          {
+            "name": "TORRAS - Kính cường lực",
+            "count": "8, 9"
+          },
+          {
+            "name": "REDCHEF - Bộ nồi chảo chống dính",
+            "count": "8"
+          },
+          {
+            "name": "MODECO - Lọ đựng gia vị có thìa",
+            "count": "4, 5"
+          },
+          {
+            "name": "TIGERNU - Ba lô nam doanh nhân",
+            "count": "5"
+          },
+          {
+            "name": "UGREEN - Chuột không dây",
+            "count": "11, 1"
+          },
+          {
+            "name": "TOSUDO - Móc treo đồ",
+            "count": "12"
+          },
+          {
+            "name": "TJEAN - Máy hút bụi giường nệm",
+            "count": "7, 1, 2"
+          },
+          {
+            "name": "DEERMA - Máy xay gia vị",
+            "count": "7"
+          },
+          {
+            "name": "PARROTI - Bộ cọ toilet",
+            "count": "3, 4"
+          }
+        ]
+      },
+      "Thắm": {
+        "videos": [
+          {
+            "name": "TORRAS - Kính cường lực",
+            "count": 2
+          },
+          {
+            "name": "REDCHEF - Bộ nồi chảo chống dính",
+            "count": 1
+          },
+          {
+            "name": "MODECO - Lọ đựng gia vị có thìa",
+            "count": 2
+          },
+          {
+            "name": "TIGERNU - Ba lô nam doanh nhân",
+            "count": 1
+          },
+          {
+            "name": "UGREEN - Chuột không dây",
+            "count": 2
+          },
+          {
+            "name": "TOSUDO - Móc treo đồ",
+            "count": 1
+          },
+          {
+            "name": "TJEAN - Máy hút bụi giường nệm",
+            "count": 2
+          },
+          {
+            "name": "DEERMA - Máy xay gia vị",
+            "count": 3
+          },
+          {
+            "name": "PARROTI - Bộ cọ toilet",
+            "count": 1
+          }
+        ],
+        "voices": [
+          {
+            "name": "TORRAS - Kính cường lực",
+            "count": "10, 11"
+          },
+          {
+            "name": "REDCHEF - Bộ nồi chảo chống dính",
+            "count": "9"
+          },
+          {
+            "name": "MODECO - Lọ đựng gia vị có thìa",
+            "count": "6, 7"
+          },
+          {
+            "name": "TIGERNU - Ba lô nam doanh nhân",
+            "count": "6"
+          },
+          {
+            "name": "UGREEN - Chuột không dây",
+            "count": "2, 3"
+          },
+          {
+            "name": "TOSUDO - Móc treo đồ",
+            "count": "13"
+          },
+          {
+            "name": "TJEAN - Máy hút bụi giường nệm",
+            "count": "3, 4"
+          },
+          {
+            "name": "DEERMA - Máy xay gia vị",
+            "count": "8, 9, 10"
+          },
+          {
+            "name": "PARROTI - Bộ cọ toilet",
+            "count": "5"
+          }
+        ]
+      },
+      "Trân": {
+        "videos": [
+          {
+            "name": "TORRAS - Kính cường lực",
+            "count": 2
+          },
+          {
+            "name": "REDCHEF - Bộ nồi chảo chống dính",
+            "count": 1
+          },
+          {
+            "name": "MODECO - Lọ đựng gia vị có thìa",
+            "count": 2
+          },
+          {
+            "name": "TIGERNU - Ba lô nam doanh nhân",
+            "count": 1
+          },
+          {
+            "name": "UGREEN - Chuột không dây",
+            "count": 2
+          },
+          {
+            "name": "TOSUDO - Móc treo đồ",
+            "count": 1
+          },
+          {
+            "name": "TJEAN - Máy hút bụi giường nệm",
+            "count": 2
+          },
+          {
+            "name": "DEERMA - Máy xay gia vị",
+            "count": 3
+          },
+          {
+            "name": "PARROTI - Bộ cọ toilet",
+            "count": 1
+          }
+        ],
+        "voices": [
+          {
+            "name": "TORRAS - Kính cường lực",
+            "count": "12, 13"
+          },
+          {
+            "name": "REDCHEF - Bộ nồi chảo chống dính",
+            "count": "10"
+          },
+          {
+            "name": "MODECO - Lọ đựng gia vị có thìa",
+            "count": "8, 9"
+          },
+          {
+            "name": "TIGERNU - Ba lô nam doanh nhân",
+            "count": "7"
+          },
+          {
+            "name": "UGREEN - Chuột không dây",
+            "count": "4, 5"
+          },
+          {
+            "name": "TOSUDO - Móc treo đồ",
+            "count": "14"
+          },
+          {
+            "name": "TJEAN - Máy hút bụi giường nệm",
+            "count": "5, 6"
+          },
+          {
+            "name": "DEERMA - Máy xay gia vị",
+            "count": "11, 12, 13"
+          },
+          {
+            "name": "PARROTI - Bộ cọ toilet",
+            "count": "6"
+          }
+        ]
+      },
+      "Sơn": {
+        "videos": [
+          {
+            "name": "TORRAS - Kính cường lực",
+            "count": 1
+          },
+          {
+            "name": "REDCHEF - Bộ nồi chảo chống dính",
+            "count": 3
+          },
+          {
+            "name": "MODECO - Lọ đựng gia vị có thìa",
+            "count": 1
+          },
+          {
+            "name": "TIGERNU - Ba lô nam doanh nhân",
+            "count": 2
+          },
+          {
+            "name": "UGREEN - Chuột không dây",
+            "count": 2
+          },
+          {
+            "name": "TOSUDO - Móc treo đồ",
+            "count": 1
+          },
+          {
+            "name": "TJEAN - Máy hút bụi giường nệm",
+            "count": 1
+          },
+          {
+            "name": "DEERMA - Máy xay gia vị",
+            "count": 2
+          },
+          {
+            "name": "PARROTI - Bộ cọ toilet",
+            "count": 2
+          }
+        ],
+        "voices": [
+          {
+            "name": "TORRAS - Kính cường lực",
+            "count": "14"
+          },
+          {
+            "name": "REDCHEF - Bộ nồi chảo chống dính",
+            "count": "1, 2, 3"
+          },
+          {
+            "name": "MODECO - Lọ đựng gia vị có thìa",
+            "count": "10"
+          },
+          {
+            "name": "TIGERNU - Ba lô nam doanh nhân",
+            "count": "8, 9"
+          },
+          {
+            "name": "UGREEN - Chuột không dây",
+            "count": "6, 7"
+          },
+          {
+            "name": "TOSUDO - Móc treo đồ",
+            "count": "15"
+          },
+          {
+            "name": "TJEAN - Máy hút bụi giường nệm",
+            "count": "7"
+          },
+          {
+            "name": "DEERMA - Máy xay gia vị",
+            "count": "14, 15"
+          },
+          {
+            "name": "PARROTI - Bộ cọ toilet",
+            "count": "7, 8"
+          }
+        ]
+      },
+      "Tuyên": {
+        "videos": [
+          {
+            "name": "TORRAS - Kính cường lực",
+            "count": 1
+          },
+          {
+            "name": "REDCHEF - Bộ nồi chảo chống dính",
+            "count": 2
+          },
+          {
+            "name": "TIGERNU - Ba lô nam doanh nhân",
+            "count": 1
+          },
+          {
+            "name": "UGREEN - Chuột không dây",
+            "count": 1
+          },
+          {
+            "name": "TOSUDO - Móc treo đồ",
+            "count": 1
+          },
+          {
+            "name": "TJEAN - Máy hút bụi giường nệm",
+            "count": 1
+          },
+          {
+            "name": "DEERMA - Máy xay gia vị",
+            "count": 1
+          },
+          {
+            "name": "PARROTI - Bộ cọ toilet",
+            "count": 2
+          }
+        ],
+        "voices": [
+          {
+            "name": "TORRAS - Kính cường lực",
+            "count": "15"
+          },
+          {
+            "name": "REDCHEF - Bộ nồi chảo chống dính",
+            "count": "4, 5"
+          },
+          {
+            "name": "TIGERNU - Ba lô nam doanh nhân",
+            "count": "10"
+          },
+          {
+            "name": "UGREEN - Chuột không dây",
+            "count": "8"
+          },
+          {
+            "name": "TOSUDO - Móc treo đồ",
+            "count": "16"
+          },
+          {
+            "name": "TJEAN - Máy hút bụi giường nệm",
+            "count": "1"
+          },
+          {
+            "name": "DEERMA - Máy xay gia vị",
+            "count": "16"
+          },
+          {
+            "name": "PARROTI - Bộ cọ toilet",
+            "count": "9, 10"
+          }
+        ]
+      }
+    },
+    "links": [
+      {
+        "full_name": "TORRAS - Kính cường lực",
+        "url": "https://drive.google.com/drive/folders/1MH1gAKlw7cZ3S69tfsK2QSfjWlvJeT59"
+      },
+      {
+        "full_name": "REDCHEF - Bộ nồi chảo chống dính",
+        "url": "https://drive.google.com/drive/folders/1MsG8ybRcomtrheDGPYxwwti7l4BUtEuw"
+      },
+      {
+        "full_name": "MODECO - Lọ đựng gia vị có thìa",
+        "url": "https://drive.google.com/drive/folders/1UA5OaNtvphOz-g13j-9fO7RhfFM-GWiy"
+      },
+      {
+        "full_name": "TIGERNU - Ba lô nam doanh nhân",
+        "url": "https://drive.google.com/drive/folders/1A9Ls_DVKN7b63LXlo_5yV59_8MZ0me53"
+      },
+      {
+        "full_name": "UGREEN - Chuột không dây",
+        "url": "https://drive.google.com/drive/folders/1fb22N6oIr0C7SfGcxLVcQHR_HUNIloNE"
+      },
+      {
+        "full_name": "TOSUDO - Móc treo đồ",
+        "url": "https://drive.google.com/drive/folders/1NVguQOkZdm0YnwFR5-HYkyuW7nXEnyaO"
+      },
+      {
+        "full_name": "TJEAN - Máy hút bụi giường nệm",
+        "url": "https://drive.google.com/drive/folders/1kwlH7LrUwnb9ILGyaPf8NFUvVHaXF8I1"
+      },
+      {
+        "full_name": "DEERMA - Máy xay gia vị",
+        "url": "https://drive.google.com/drive/folders/1Xz0opVxh2a4SVoB_jOpCS-6kOiLRLR3-"
+      },
+      {
+        "full_name": "PARROTI - Bộ cọ toilet",
+        "url": "https://drive.google.com/drive/folders/1U_Rv8-djst10pyQ4ibgw4nyem-el8YAh"
+      }
+    ]
   },
   "2026-06-14": {
     "assignments": {
@@ -1064,6 +5074,740 @@
       {
         "full_name": "DELI - Ổ điện chữ T",
         "url": "https://drive.google.com/drive/folders/1CaJyvQiWIH-J8QRBagxjUG-Tcu3d48Sd"
+      }
+    ]
+  },
+  "2026-06-07": {
+    "assignments": {
+      "Thư": {
+        "videos": [
+          {
+            "name": "TORRAS - Kính cường lực",
+            "count": 3
+          },
+          {
+            "name": "MENCANON - Rèm che nắng ô tô",
+            "count": 1
+          },
+          {
+            "name": "GOKU - Ổ khóa vân tay",
+            "count": 2
+          },
+          {
+            "name": "HAPAS - Quà tặng Set \"Thân Thương\"",
+            "count": 1
+          },
+          {
+            "name": "UGREEN - Chuột không dây",
+            "count": 3
+          },
+          {
+            "name": "VUA NỆM - Nệm lò xo",
+            "count": 1
+          },
+          {
+            "name": "ULUCKY - Đai chườm ấm bụng",
+            "count": 3
+          },
+          {
+            "name": "ETOE - Máy chiếu E3 Pro",
+            "count": 2
+          },
+          {
+            "name": "JETZ - Máy hút bụi X9",
+            "count": 3
+          },
+          {
+            "name": "AMORTALS - Mút rửa mặt bọt biển",
+            "count": 1
+          }
+        ],
+        "voices": [
+          {
+            "name": "TORRAS - Kính cường lực",
+            "count": "1, 2, 3"
+          },
+          {
+            "name": "MENCANON - Rèm che nắng ô tô",
+            "count": "1"
+          },
+          {
+            "name": "GOKU - Ổ khóa vân tay",
+            "count": "1, 2"
+          },
+          {
+            "name": "HAPAS - Quà tặng Set \"Thân Thương\"",
+            "count": "1"
+          },
+          {
+            "name": "UGREEN - Chuột không dây",
+            "count": "1, 2, 3"
+          },
+          {
+            "name": "VUA NỆM - Nệm lò xo",
+            "count": "11"
+          },
+          {
+            "name": "ULUCKY - Đai chườm ấm bụng",
+            "count": "6, 7, 8"
+          },
+          {
+            "name": "ETOE - Máy chiếu E3 Pro",
+            "count": "6, 7"
+          },
+          {
+            "name": "JETZ - Máy hút bụi X9",
+            "count": "10, 11, 1"
+          },
+          {
+            "name": "AMORTALS - Mút rửa mặt bọt biển",
+            "count": "1"
+          }
+        ]
+      },
+      "Dung": {
+        "videos": [
+          {
+            "name": "TORRAS - Kính cường lực",
+            "count": 2
+          },
+          {
+            "name": "MENCANON - Rèm che nắng ô tô",
+            "count": 1
+          },
+          {
+            "name": "GOKU - Ổ khóa vân tay",
+            "count": 2
+          },
+          {
+            "name": "HAPAS - Quà tặng Set \"Thân Thương\"",
+            "count": 1
+          },
+          {
+            "name": "UGREEN - Chuột không dây",
+            "count": 2
+          },
+          {
+            "name": "VUA NỆM - Nệm lò xo",
+            "count": 1
+          },
+          {
+            "name": "ULUCKY - Đai chườm ấm bụng",
+            "count": 2
+          },
+          {
+            "name": "ETOE - Máy chiếu E3 Pro",
+            "count": 1
+          },
+          {
+            "name": "JETZ - Máy hút bụi X9",
+            "count": 2
+          },
+          {
+            "name": "AMORTALS - Mút rửa mặt bọt biển",
+            "count": 1
+          }
+        ],
+        "voices": [
+          {
+            "name": "TORRAS - Kính cường lực",
+            "count": "4, 5"
+          },
+          {
+            "name": "MENCANON - Rèm che nắng ô tô",
+            "count": "2"
+          },
+          {
+            "name": "GOKU - Ổ khóa vân tay",
+            "count": "3, 4"
+          },
+          {
+            "name": "HAPAS - Quà tặng Set \"Thân Thương\"",
+            "count": "2"
+          },
+          {
+            "name": "UGREEN - Chuột không dây",
+            "count": "4, 5"
+          },
+          {
+            "name": "VUA NỆM - Nệm lò xo",
+            "count": "12"
+          },
+          {
+            "name": "ULUCKY - Đai chườm ấm bụng",
+            "count": "9, 10"
+          },
+          {
+            "name": "ETOE - Máy chiếu E3 Pro",
+            "count": "8"
+          },
+          {
+            "name": "JETZ - Máy hút bụi X9",
+            "count": "2, 3"
+          },
+          {
+            "name": "AMORTALS - Mút rửa mặt bọt biển",
+            "count": "2"
+          }
+        ]
+      },
+      "Duyên": {
+        "videos": [
+          {
+            "name": "TORRAS - Kính cường lực",
+            "count": 2
+          },
+          {
+            "name": "MENCANON - Rèm che nắng ô tô",
+            "count": 1
+          },
+          {
+            "name": "GOKU - Ổ khóa vân tay",
+            "count": 1
+          },
+          {
+            "name": "HAPAS - Quà tặng Set \"Thân Thương\"",
+            "count": 2
+          },
+          {
+            "name": "UGREEN - Chuột không dây",
+            "count": 1
+          },
+          {
+            "name": "VUA NỆM - Nệm lò xo",
+            "count": 2
+          },
+          {
+            "name": "ULUCKY - Đai chườm ấm bụng",
+            "count": 1
+          },
+          {
+            "name": "ETOE - Máy chiếu E3 Pro",
+            "count": 2
+          },
+          {
+            "name": "JETZ - Máy hút bụi X9",
+            "count": 2
+          },
+          {
+            "name": "AMORTALS - Mút rửa mặt bọt biển",
+            "count": 1
+          }
+        ],
+        "voices": [
+          {
+            "name": "TORRAS - Kính cường lực",
+            "count": "6, 7"
+          },
+          {
+            "name": "MENCANON - Rèm che nắng ô tô",
+            "count": "3"
+          },
+          {
+            "name": "GOKU - Ổ khóa vân tay",
+            "count": "5"
+          },
+          {
+            "name": "HAPAS - Quà tặng Set \"Thân Thương\"",
+            "count": "3, 4"
+          },
+          {
+            "name": "UGREEN - Chuột không dây",
+            "count": "6"
+          },
+          {
+            "name": "VUA NỆM - Nệm lò xo",
+            "count": "13, 14"
+          },
+          {
+            "name": "ULUCKY - Đai chườm ấm bụng",
+            "count": "11"
+          },
+          {
+            "name": "ETOE - Máy chiếu E3 Pro",
+            "count": "9, 10"
+          },
+          {
+            "name": "JETZ - Máy hút bụi X9",
+            "count": "4, 5"
+          },
+          {
+            "name": "AMORTALS - Mút rửa mặt bọt biển",
+            "count": "3"
+          }
+        ]
+      },
+      "Hiếu": {
+        "videos": [
+          {
+            "name": "TORRAS - Kính cường lực",
+            "count": 2
+          },
+          {
+            "name": "MENCANON - Rèm che nắng ô tô",
+            "count": 1
+          },
+          {
+            "name": "GOKU - Ổ khóa vân tay",
+            "count": 1
+          },
+          {
+            "name": "HAPAS - Quà tặng Set \"Thân Thương\"",
+            "count": 2
+          },
+          {
+            "name": "UGREEN - Chuột không dây",
+            "count": 1
+          },
+          {
+            "name": "VUA NỆM - Nệm lò xo",
+            "count": 2
+          },
+          {
+            "name": "ULUCKY - Đai chườm ấm bụng",
+            "count": 1
+          },
+          {
+            "name": "ETOE - Máy chiếu E3 Pro",
+            "count": 2
+          },
+          {
+            "name": "JETZ - Máy hút bụi X9",
+            "count": 2
+          },
+          {
+            "name": "AMORTALS - Mút rửa mặt bọt biển",
+            "count": 1
+          }
+        ],
+        "voices": [
+          {
+            "name": "TORRAS - Kính cường lực",
+            "count": "8, 9"
+          },
+          {
+            "name": "MENCANON - Rèm che nắng ô tô",
+            "count": "4"
+          },
+          {
+            "name": "GOKU - Ổ khóa vân tay",
+            "count": "6"
+          },
+          {
+            "name": "HAPAS - Quà tặng Set \"Thân Thương\"",
+            "count": "5, 6"
+          },
+          {
+            "name": "UGREEN - Chuột không dây",
+            "count": "7"
+          },
+          {
+            "name": "VUA NỆM - Nệm lò xo",
+            "count": "15, 16"
+          },
+          {
+            "name": "ULUCKY - Đai chườm ấm bụng",
+            "count": "12"
+          },
+          {
+            "name": "ETOE - Máy chiếu E3 Pro",
+            "count": "11, 12"
+          },
+          {
+            "name": "JETZ - Máy hút bụi X9",
+            "count": "6, 7"
+          },
+          {
+            "name": "AMORTALS - Mút rửa mặt bọt biển",
+            "count": "4"
+          }
+        ]
+      },
+      "Thắm": {
+        "videos": [
+          {
+            "name": "TORRAS - Kính cường lực",
+            "count": 2
+          },
+          {
+            "name": "MENCANON - Rèm che nắng ô tô",
+            "count": 1
+          },
+          {
+            "name": "GOKU - Ổ khóa vân tay",
+            "count": 1
+          },
+          {
+            "name": "HAPAS - Quà tặng Set \"Thân Thương\"",
+            "count": 1
+          },
+          {
+            "name": "UGREEN - Chuột không dây",
+            "count": 2
+          },
+          {
+            "name": "VUA NỆM - Nệm lò xo",
+            "count": 1
+          },
+          {
+            "name": "ULUCKY - Đai chườm ấm bụng",
+            "count": 2
+          },
+          {
+            "name": "ETOE - Máy chiếu E3 Pro",
+            "count": 2
+          },
+          {
+            "name": "JETZ - Máy hút bụi X9",
+            "count": 2
+          },
+          {
+            "name": "AMORTALS - Mút rửa mặt bọt biển",
+            "count": 1
+          }
+        ],
+        "voices": [
+          {
+            "name": "TORRAS - Kính cường lực",
+            "count": "10, 11"
+          },
+          {
+            "name": "MENCANON - Rèm che nắng ô tô",
+            "count": "5"
+          },
+          {
+            "name": "GOKU - Ổ khóa vân tay",
+            "count": "7"
+          },
+          {
+            "name": "HAPAS - Quà tặng Set \"Thân Thương\"",
+            "count": "7"
+          },
+          {
+            "name": "UGREEN - Chuột không dây",
+            "count": "8, 9"
+          },
+          {
+            "name": "VUA NỆM - Nệm lò xo",
+            "count": "17"
+          },
+          {
+            "name": "ULUCKY - Đai chườm ấm bụng",
+            "count": "13, 14"
+          },
+          {
+            "name": "ETOE - Máy chiếu E3 Pro",
+            "count": "13, 14"
+          },
+          {
+            "name": "JETZ - Máy hút bụi X9",
+            "count": "8, 9"
+          },
+          {
+            "name": "AMORTALS - Mút rửa mặt bọt biển",
+            "count": "5"
+          }
+        ]
+      },
+      "Trân": {
+        "videos": [
+          {
+            "name": "TORRAS - Kính cường lực",
+            "count": 2
+          },
+          {
+            "name": "MENCANON - Rèm che nắng ô tô",
+            "count": 1
+          },
+          {
+            "name": "GOKU - Ổ khóa vân tay",
+            "count": 1
+          },
+          {
+            "name": "HAPAS - Quà tặng Set \"Thân Thương\"",
+            "count": 1
+          },
+          {
+            "name": "UGREEN - Chuột không dây",
+            "count": 2
+          },
+          {
+            "name": "VUA NỆM - Nệm lò xo",
+            "count": 1
+          },
+          {
+            "name": "ULUCKY - Đai chườm ấm bụng",
+            "count": 2
+          },
+          {
+            "name": "ETOE - Máy chiếu E3 Pro",
+            "count": 2
+          },
+          {
+            "name": "JETZ - Máy hút bụi X9",
+            "count": 2
+          },
+          {
+            "name": "AMORTALS - Mút rửa mặt bọt biển",
+            "count": 1
+          }
+        ],
+        "voices": [
+          {
+            "name": "TORRAS - Kính cường lực",
+            "count": "12, 13"
+          },
+          {
+            "name": "MENCANON - Rèm che nắng ô tô",
+            "count": "6"
+          },
+          {
+            "name": "GOKU - Ổ khóa vân tay",
+            "count": "8"
+          },
+          {
+            "name": "HAPAS - Quà tặng Set \"Thân Thương\"",
+            "count": "8"
+          },
+          {
+            "name": "UGREEN - Chuột không dây",
+            "count": "10, 11"
+          },
+          {
+            "name": "VUA NỆM - Nệm lò xo",
+            "count": "18"
+          },
+          {
+            "name": "ULUCKY - Đai chườm ấm bụng",
+            "count": "15, 1"
+          },
+          {
+            "name": "ETOE - Máy chiếu E3 Pro",
+            "count": "15, 1"
+          },
+          {
+            "name": "JETZ - Máy hút bụi X9",
+            "count": "10, 11"
+          },
+          {
+            "name": "AMORTALS - Mút rửa mặt bọt biển",
+            "count": "6"
+          }
+        ]
+      },
+      "Sơn": {
+        "videos": [
+          {
+            "name": "TORRAS - Kính cường lực",
+            "count": 1
+          },
+          {
+            "name": "MENCANON - Rèm che nắng ô tô",
+            "count": 2
+          },
+          {
+            "name": "GOKU - Ổ khóa vân tay",
+            "count": 1
+          },
+          {
+            "name": "HAPAS - Quà tặng Set \"Thân Thương\"",
+            "count": 1
+          },
+          {
+            "name": "UGREEN - Chuột không dây",
+            "count": 2
+          },
+          {
+            "name": "VUA NỆM - Nệm lò xo",
+            "count": 1
+          },
+          {
+            "name": "ULUCKY - Đai chườm ấm bụng",
+            "count": 2
+          },
+          {
+            "name": "ETOE - Máy chiếu E3 Pro",
+            "count": 2
+          },
+          {
+            "name": "JETZ - Máy hút bụi X9",
+            "count": 1
+          },
+          {
+            "name": "AMORTALS - Mút rửa mặt bọt biển",
+            "count": 2
+          }
+        ],
+        "voices": [
+          {
+            "name": "TORRAS - Kính cường lực",
+            "count": "14"
+          },
+          {
+            "name": "MENCANON - Rèm che nắng ô tô",
+            "count": "7, 8"
+          },
+          {
+            "name": "GOKU - Ổ khóa vân tay",
+            "count": "9"
+          },
+          {
+            "name": "HAPAS - Quà tặng Set \"Thân Thương\"",
+            "count": "9"
+          },
+          {
+            "name": "UGREEN - Chuột không dây",
+            "count": "1, 2"
+          },
+          {
+            "name": "VUA NỆM - Nệm lò xo",
+            "count": "19"
+          },
+          {
+            "name": "ULUCKY - Đai chườm ấm bụng",
+            "count": "2, 3"
+          },
+          {
+            "name": "ETOE - Máy chiếu E3 Pro",
+            "count": "2, 3"
+          },
+          {
+            "name": "JETZ - Máy hút bụi X9",
+            "count": "1"
+          },
+          {
+            "name": "AMORTALS - Mút rửa mặt bọt biển",
+            "count": "7, 8"
+          }
+        ]
+      },
+      "Tuyên": {
+        "videos": [
+          {
+            "name": "TORRAS - Kính cường lực",
+            "count": 1
+          },
+          {
+            "name": "MENCANON - Rèm che nắng ô tô",
+            "count": 2
+          },
+          {
+            "name": "GOKU - Ổ khóa vân tay",
+            "count": 1
+          },
+          {
+            "name": "HAPAS - Quà tặng Set \"Thân Thương\"",
+            "count": 1
+          },
+          {
+            "name": "UGREEN - Chuột không dây",
+            "count": 2
+          },
+          {
+            "name": "VUA NỆM - Nệm lò xo",
+            "count": 1
+          },
+          {
+            "name": "ULUCKY - Đai chườm ấm bụng",
+            "count": 2
+          },
+          {
+            "name": "ETOE - Máy chiếu E3 Pro",
+            "count": 2
+          },
+          {
+            "name": "JETZ - Máy hút bụi X9",
+            "count": 1
+          },
+          {
+            "name": "AMORTALS - Mút rửa mặt bọt biển",
+            "count": 2
+          }
+        ],
+        "voices": [
+          {
+            "name": "TORRAS - Kính cường lực",
+            "count": "15"
+          },
+          {
+            "name": "MENCANON - Rèm che nắng ô tô",
+            "count": "9, 10"
+          },
+          {
+            "name": "GOKU - Ổ khóa vân tay",
+            "count": "10"
+          },
+          {
+            "name": "HAPAS - Quà tặng Set \"Thân Thương\"",
+            "count": "10"
+          },
+          {
+            "name": "UGREEN - Chuột không dây",
+            "count": "3, 4"
+          },
+          {
+            "name": "VUA NỆM - Nệm lò xo",
+            "count": "1"
+          },
+          {
+            "name": "ULUCKY - Đai chườm ấm bụng",
+            "count": "4, 5"
+          },
+          {
+            "name": "ETOE - Máy chiếu E3 Pro",
+            "count": "4, 5"
+          },
+          {
+            "name": "JETZ - Máy hút bụi X9",
+            "count": "2"
+          },
+          {
+            "name": "AMORTALS - Mút rửa mặt bọt biển",
+            "count": "9, 10"
+          }
+        ]
+      }
+    },
+    "links": [
+      {
+        "full_name": "TORRAS - Kính cường lực",
+        "url": "https://drive.google.com/drive/folders/1MH1gAKlw7cZ3S69tfsK2QSfjWlvJeT59"
+      },
+      {
+        "full_name": "MENCANON - Rèm che nắng ô tô",
+        "url": "https://drive.google.com/drive/folders/1YCkNvjJyexJHDhy9tmjdTGJu1GXxRTPg"
+      },
+      {
+        "full_name": "GOKU - Ổ khóa vân tay",
+        "url": "https://drive.google.com/drive/folders/1DPWoifOHOXnly7PaJXOuF_IqcWFgQgG8"
+      },
+      {
+        "full_name": "HAPAS - Quà tặng Set \"Thân Thương\"",
+        "url": "https://drive.google.com/drive/folders/1E3LVrEp8oyfDqEfX649B6gr_j3X3T1Q_"
+      },
+      {
+        "full_name": "UGREEN - Chuột không dây",
+        "url": "https://drive.google.com/drive/folders/1fb22N6oIr0C7SfGcxLVcQHR_HUNIloNE"
+      },
+      {
+        "full_name": "VUA NỆM - Nệm lò xo",
+        "url": "https://drive.google.com/drive/folders/1F-wyVQ735p7P2b6sj1Oyv7abGFK-vzGL"
+      },
+      {
+        "full_name": "ULUCKY - Đai chườm ấm bụng",
+        "url": "https://drive.google.com/drive/folders/1BM4G4qNqabTGkapyW61SdfcdXLAVQuvD"
+      },
+      {
+        "full_name": "ETOE - Máy chiếu E3 Pro",
+        "url": "https://drive.google.com/drive/folders/1qjw0O3EPTHLWPotdz0Hu_WjIf2QchCZ3"
+      },
+      {
+        "full_name": "JETZ - Máy hút bụi X9",
+        "url": "https://drive.google.com/drive/folders/1zsnDwsXgw23OeM8G_UX5g76xf4XLipYu"
+      },
+      {
+        "full_name": "AMORTALS - Mút rửa mặt bọt biển",
+        "url": "https://drive.google.com/drive/folders/167oV3hGpt3h7-ZTA_yMsAI3CActjx0-c"
       }
     ]
   }

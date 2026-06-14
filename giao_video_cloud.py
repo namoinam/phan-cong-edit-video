@@ -180,6 +180,42 @@ def db_read_products() -> list[dict]:
         conn.close()
 
 
+# ============================================================
+# GITHUB API
+# ============================================================
+def _gh_request(url: str, method: str = "GET", body: bytes | None = None) -> dict:
+    req = urllib.request.Request(url, data=body, method=method, headers={
+        "Authorization": f"token {GITHUB_TOKEN}",
+        "Accept": "application/vnd.github.v3+json",
+        "Content-Type": "application/json",
+    })
+    with urllib.request.urlopen(req) as resp:
+        return json.loads(resp.read())
+
+
+def gh_read_json(path: str) -> tuple[dict | list, str]:
+    """Đọc file JSON từ GitHub. Trả về (parsed_data, sha)."""
+    data = _gh_request(f"https://api.github.com/repos/{GITHUB_REPO}/contents/{path}")
+    content = base64.b64decode(data["content"]).decode("utf-8")
+    return json.loads(content), data["sha"]
+
+
+def gh_push_json(path: str, sha: str, content: dict | list, message: str) -> str:
+    """Push file JSON lên GitHub. Trả về commit sha mới."""
+    body = json.dumps({
+        "message": message,
+        "content": base64.b64encode(
+            json.dumps(content, ensure_ascii=False, indent=2).encode("utf-8")
+        ).decode("ascii"),
+        "sha": sha,
+    }).encode("utf-8")
+    result = _gh_request(
+        f"https://api.github.com/repos/{GITHUB_REPO}/contents/{path}",
+        method="PUT", body=body,
+    )
+    return result["commit"]["sha"]
+
+
 def db_read_voice_state() -> dict:
     conn = get_db_connection()
     if not conn:
@@ -867,6 +903,27 @@ def main():
         conn.commit()
         print(f"     ✅ Lưu kết quả thành công lên Supabase!")
         print(f"  👥 {len(active_editors)} editor · {len(sp_plans)} SP · {total_videos} video\n")
+
+        # 3. Đồng bộ (push) history.json lên GitHub để cập nhật trang web static
+        print("  📤 Đang đồng bộ history.json lên GitHub...")
+        try:
+            history_old, history_sha = gh_read_json(GITHUB_HISTORY)
+            history_old[today_str] = {
+                "assignments": assignments,
+                "links": links,
+            }
+            history_old["!voice_state"] = voice_state
+            history_new = cleanup_history(history_old, today)
+            new_sha = gh_push_json(
+                GITHUB_HISTORY,
+                history_sha,
+                history_new,
+                f"giao video {today_str}: {len(sp_plans)} SP, {total_videos} video, {len(active_editors)} editor (cloud sync)",
+            )
+            print(f"     ✅ Push lên GitHub thành công! Commit: {new_sha[:7]}")
+            print(f"     🔗 Web live sau khoảng 1 phút: https://namoinam.com/phan-cong-edit-video/")
+        except Exception as github_err:
+            print(f"     ❌ Đồng bộ lên GitHub thất bại: {github_err}")
 
         # Tự động kích hoạt deploy Cloudflare Pages để cập nhật tĩnh (nếu có thư mục)
         deploy_to_cloudflare_landing()
